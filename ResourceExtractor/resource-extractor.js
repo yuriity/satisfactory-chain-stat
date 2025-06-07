@@ -29,23 +29,30 @@ try {
   // Iterate through the top-level array
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
-      // Filter and transform objects within the "Classes" array
-      // Also, ensure that the topLevelItem itself has the NativeClass we are interested in
       if (
-        typeof topLevelItem.NativeClass === 'string' &&
-        topLevelItem.NativeClass.startsWith("/Script/CoreUObject.Class'/Script/FactoryGame.FGItem")
+        typeof topLevelItem.NativeClass === "string" &&
+        topLevelItem.NativeClass.startsWith(
+          "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
+        )
       ) {
         for (const classItem of topLevelItem.Classes) {
-          // The actual items to be extracted are directly within the "Classes" array of the filtered topLevelItem
-          // No need to check classItem.NativeClass here, as the filtering is done at the topLevelItem
           if (classItem) {
             const resource = {
               ClassName: classItem.ClassName,
               DisplayName: classItem.mDisplayName,
-              Description: classItem.mDescription,
+              Description: classItem.mDescription
+                ? classItem.mDescription
+                    .replace(/\r\n/g, " ")
+                    .replace(/\n/g, " ")
+                    .replace(/\s+/g, " ")
+                    .trim()
+                : "",
             };
-            // Add only if essential fields are present
-            if (resource.ClassName && resource.DisplayName && resource.Description) {
+            if (
+              resource.ClassName &&
+              resource.DisplayName &&
+              resource.Description
+            ) {
               extractedResources.push(resource);
             }
           }
