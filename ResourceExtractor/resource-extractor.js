@@ -38,9 +38,9 @@ try {
         for (const classItem of topLevelItem.Classes) {
           if (classItem) {
             const resource = {
-              ClassName: classItem.ClassName,
-              DisplayName: classItem.mDisplayName,
-              Description: classItem.mDescription
+              className: classItem.ClassName?.toLowerCase().replace(/_/g, "-"),
+              displayName: classItem.mDisplayName,
+              description: classItem.mDescription
                 ? classItem.mDescription
                     .replace(/\r\n/g, " ")
                     .replace(/\n/g, " ")
@@ -49,9 +49,9 @@ try {
                 : "",
             };
             if (
-              resource.ClassName &&
-              resource.DisplayName &&
-              resource.Description
+              resource.className &&
+              resource.displayName &&
+              resource.description
             ) {
               extractedResources.push(resource);
             }

@@ -1,1 +1,8 @@
-<p>Resource: {{ resource().displayName }}</p>
+@if (resource() != null) {
+  <p>Resource: {{ resource()?.displayName }} <img src="{{ resource()?.getSmallIconUrl() }}"  width="32" height="32"><img src="{{ resource()?.getLargeIconUrl() }}"  width="256" height="256"></p>
+}
+@else {
+  <p>No resource selected</p>
+}
+
+<img src="https://www.satisfactorytools.com/assets/images/items/desc-aluminumplate-c_64.png"  width="32" height="32">

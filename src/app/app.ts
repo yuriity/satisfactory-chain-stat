@@ -10,23 +10,20 @@ import { Resource } from './models/resource';
 })
 export class App {
   protected title = 'satisfactory-chain-stat';
-  protected resource = signal<Resource>({
-    className: 'classNameTest',
-    displayName: 'displayNameTest',
-    description: 'descriptionTest',
-  });
+  protected resource = signal<Resource | null>(
+    new Resource(
+      'desc-nuclearwaste-c',
+      'Uranium Waste',
+      'Highly radioactive waste material'
+    )
+  );
 
   constructor(private resourcesService: ResourcesService) {}
 
   ngOnInit() {
     this.resourcesService.getResources().subscribe((resources: Resource[]) => {
       console.log('Resources loaded:', resources[0]);
-      this.resource.set(resources[0]);
-      // this.resource.set({
-      //   className: 'classNameTest1',
-      //   displayName: 'displayNameTest2',
-      //   description: 'descriptionTest2',
-      // });
+      this.resource.set(resources[1]);
     });
   }
 }

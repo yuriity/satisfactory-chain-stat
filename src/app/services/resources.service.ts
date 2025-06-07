@@ -14,13 +14,6 @@ export class ResourcesService {
   getResources(): Observable<Resource[]> {
     if (!this.resources$) {
       this.resources$ = this.http.get<any[]>('/en-US_extracted.json').pipe(
-        map((resources) =>
-          resources.map((resource) => ({
-            className: resource.ClassName,
-            displayName: resource.DisplayName,
-            description: resource.Description,
-          }))
-        ),
         shareReplay(1) // Cache the result and replay for subsequent subscribers
       );
     }
