@@ -9,7 +9,7 @@ import { Resource } from './models/resource';
   styles: [],
 })
 export class App {
-  protected title = 'satisfactory-chain-stat';
+  protected title = 'Satisfactory Chain Stat';
   protected resource = signal<Resource | null>(
     new Resource(
       'desc-nuclearwaste-c',
