@@ -23,24 +23,24 @@ This guide outlines **best practices** for building an **Angular 20** applicatio
 Keep a **logical and predictable** folder structure:
 ```
 
-/src
-/app
-/components # Reusable UI components
-/pages # Page components (main content areas)
-/services # Angular services
-/models # TypeScript interfaces and classes
-/directives # Custom directives
-/pipes # Custom pipes
-/guards # Route guards
-/interfaces # TypeScript interfaces
-/utils # Utility functions
-app.config.ts # Application configuration
-app.ts # Root component
-app.html # Root component template
 /public # Static assets (images, icons, etc.)
 /environments # Environment configurations
-main.ts # Entry point
-styles.scss # Global styles
+/src
+  /app
+    /components # Reusable UI components
+    /pages # Page components (main content areas)
+    /services # Angular services
+    /models # TypeScript interfaces and classes
+    /directives # Custom directives
+    /pipes # Custom pipes
+    /guards # Route guards
+    /interfaces # TypeScript interfaces
+    /utils # Utility functions
+    app.config.ts # Application configuration
+    app.ts # Root component
+    app.html # Root component template
+  main.ts # Entry point
+  styles.scss # Global styles
 
 ````
 
