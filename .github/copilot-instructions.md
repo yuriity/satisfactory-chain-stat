@@ -1,6 +1,3 @@
-# Creating a new copilot-instructions.md file for your Angular 20 project:
-
-```markdown
 # Satisfactory Chain Stat
 
 An application for analyzing production chains in the game Satisfactory.
