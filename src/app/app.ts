@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { ResourcesService } from './services/resources.service';
 import { Resource } from './models/resource';
+import { BoardComponent } from './components/board/board.component';
 
 @Component({
   selector: 'scs-root',
-  imports: [],
+  imports: [BoardComponent],
   templateUrl: './app.html',
   styles: [],
 })
