@@ -1,12 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+/*
+ * To execute this script, ensure you have Node.js installed.
+ *   1. Navigate to the ResourceExtractor directory.
+ *   2. Run the script using the command: node resource-extractor.js
+ */
 
-const inputFile = path.join(__dirname, 'en-US.json');
-const outputFile = path.join(__dirname, 'en-US_extracted.json');
+const fs = require("fs");
+const path = require("path");
+
+const inputFile = path.join(__dirname, "en-US.json");
+const outputFile = path.join(__dirname, "en-US_extracted.json");
 
 try {
   // Read the input JSON file, trying utf16le encoding
-  let rawData = fs.readFileSync(inputFile, 'utf16le');
+  let rawData = fs.readFileSync(inputFile, "utf16le");
 
   // Remove BOM if present (though 'utf16le' should handle it, this is a fallback)
   // For UTF-16 LE, the BOM is U+FEFF, which appears as FEFF at the start of the stream.
@@ -30,9 +36,12 @@ try {
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
       if (
-        typeof topLevelItem.NativeClass === "string" &&
+        (typeof topLevelItem.NativeClass === "string" &&
+          topLevelItem.NativeClass.startsWith(
+            "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
+          )) ||
         topLevelItem.NativeClass.startsWith(
-          "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
+          "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
         )
       ) {
         for (const classItem of topLevelItem.Classes) {
@@ -62,11 +71,18 @@ try {
   }
 
   // Write the extracted resources to the output file
-  fs.writeFileSync(outputFile, JSON.stringify(extractedResources, null, 2), 'utf-8');
+  fs.writeFileSync(
+    outputFile,
+    JSON.stringify(extractedResources, null, 2),
+    "utf-8"
+  );
 
   console.log(
     `Successfully extracted resources to ${outputFile}, items count = ${extractedResources.length}`
   );
 } catch (error) {
-  console.error('Error processing the file:', error);
+  console.error("Error processing the file:", error);
 }
+
+// "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
+// "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
