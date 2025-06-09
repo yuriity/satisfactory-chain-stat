@@ -1,0 +1,71 @@
+<div class="location-card card" *ngIf="location()">
+  <!-- Card Header with Title and Edit Button -->
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h2 class="fs-4 mb-0">{{ location()?.name }}</h2>
+    <button
+      class="btn btn-sm btn-outline-primary edit-button"
+      (click)="onEditClick()"
+    >
+      <i class="bi bi-pencil"></i>
+    </button>
+  </div>
+
+  <!-- Card Body -->
+  <div class="card-body">
+    <!-- Input Resources Section -->
+    <div class="input-section mb-4">
+      <h3 class="section-title">INPUT</h3>
+
+      <div class="resource-list">
+        @for (record of consumptionRecords(); track record.resourceClass) {
+        <div
+          class="resource-item d-flex align-items-center justify-content-between mb-2"
+        >
+          <div class="d-flex align-items-center">
+            <img
+              [src]="getResourceIconUrl(record.resourceClass)"
+              [alt]="getResourceName(record.resourceClass)"
+              class="resource-icon me-2"
+              width="32"
+              height="32"
+            />
+            <span class="resource-name"
+              >{{ getResourceName(record.resourceClass) }}</span
+            >
+          </div>
+          <span class="resource-amount">{{ record.amount }} /min</span>
+        </div>
+        }
+      </div>
+
+      <hr class="my-3" />
+    </div>
+
+    <!-- Production Resources Section -->
+    <div class="production-section">
+      <h3 class="section-title">PRODUCTION</h3>
+
+      <div class="resource-list">
+        @for (record of productionRecords(); track record.resourceClass) {
+        <div
+          class="resource-item d-flex align-items-center justify-content-between mb-2"
+        >
+          <div class="d-flex align-items-center">
+            <img
+              [src]="getResourceIconUrl(record.resourceClass)"
+              [alt]="getResourceName(record.resourceClass)"
+              class="resource-icon me-2"
+              width="32"
+              height="32"
+            />
+            <span class="resource-name"
+              >{{ getResourceName(record.resourceClass) }}</span
+            >
+          </div>
+          <span class="resource-amount">{{ record.amount }} /min</span>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>
