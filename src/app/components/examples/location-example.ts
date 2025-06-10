@@ -1,7 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Location } from '../../models/location';
 import { LocationCardComponent } from '../location-card';
+import { Resource } from '../../models/resource';
 
 /**
  * Example component demonstrating how to use the LocationCardComponent
@@ -21,14 +22,31 @@ import { LocationCardComponent } from '../location-card';
   `,
 })
 export class LocationExampleComponent {
+  // Create Resource objects for our example
+  private readonly silica = new Resource(
+    'desc-silica-c',
+    'Silica',
+    'Derived from Raw Quartz'
+  );
+  private readonly plastic = new Resource(
+    'desc-plastic-c',
+    'Plastic',
+    'Derived from Crude Oil'
+  );
+  private readonly circuitBoard = new Resource(
+    'desc-circuitboard-c',
+    'Circuit Board',
+    'Used for electronics manufacturing'
+  );
+
   protected circuitBoardPlant = signal<Location>({
     id: 'circuit-board-plant',
     name: 'Circuit Board Plant',
     resourceSources: [],
     consumption: [
-      { resourceClass: 'desc-silica-c', amount: 240 },
-      { resourceClass: 'desc-plastic-c', amount: 140 },
+      { resource: this.silica, amount: 240 },
+      { resource: this.plastic, amount: 140 },
     ],
-    production: [{ resourceClass: 'desc-circuitboard-c', amount: 150 }],
+    production: [{ resource: this.circuitBoard, amount: 150 }],
   });
 }

@@ -1,16 +1,16 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
+// Import Bootstrap in the correct order with a single import
+@use "bootstrap/scss/bootstrap" as bootstrap;
+@use "sass:color";
 
 .location-card {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid $border-color;
+  border: 2px solid bootstrap.$border-color;
 
   .card-header {
-    background-color: $white;
-    border-bottom: 1px solid $border-color;
+    background-color: bootstrap.$white;
+      border-bottom: 1px solid bootstrap.$border-color;
     padding: 1rem;
   }
 
@@ -21,13 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: tint-color($primary, 80%);
-    border-color: tint-color($primary, 80%);
-    color: $primary;
+    background-color: bootstrap.tint-color(bootstrap.$primary, 80%);
+      border-color: bootstrap.tint-color(bootstrap.$primary, 80%);
+      color: bootstrap.$primary;
 
     &:hover {
-      background-color: tint-color($primary, 60%);
-      border-color: tint-color($primary, 60%);
+      background-color: bootstrap.tint-color(bootstrap.$primary, 60%);
+        border-color: bootstrap.tint-color(bootstrap.$primary, 60%);
     }
 
     i {
@@ -62,6 +62,6 @@
   }
 
   hr {
-    border-color: darken($border-color, 5%);
+    border-color: color.adjust(bootstrap.$border-color, $lightness: -5%);
   }
 }

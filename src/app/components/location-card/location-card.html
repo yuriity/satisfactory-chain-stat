@@ -1,7 +1,7 @@
-<div class="location-card card" *ngIf="location()">
+<div class="location-card card">
   <!-- Card Header with Title and Edit Button -->
   <div class="card-header d-flex justify-content-between align-items-center">
-    <h2 class="fs-4 mb-0">{{ location()?.name }}</h2>
+    <h2 class="fs-4 mb-0">{{ location().name }}</h2>
     <button
       class="btn btn-sm btn-outline-primary edit-button"
       (click)="onEditClick()"
@@ -17,20 +17,20 @@
       <h3 class="section-title">INPUT</h3>
 
       <div class="resource-list">
-        @for (record of consumptionRecords(); track record.resourceClass) {
+        @for (record of consumptionRecords(); track record.resource.className) {
         <div
           class="resource-item d-flex align-items-center justify-content-between mb-2"
         >
           <div class="d-flex align-items-center">
             <img
-              [src]="getResourceIconUrl(record.resourceClass)"
-              [alt]="getResourceName(record.resourceClass)"
+              [src]="getResourceIconUrl(record.resource)"
+              [alt]="getResourceName(record.resource)"
               class="resource-icon me-2"
               width="32"
               height="32"
             />
             <span class="resource-name"
-              >{{ getResourceName(record.resourceClass) }}</span
+              >{{ getResourceName(record.resource) }}</span
             >
           </div>
           <span class="resource-amount">{{ record.amount }} /min</span>
@@ -46,20 +46,20 @@
       <h3 class="section-title">PRODUCTION</h3>
 
       <div class="resource-list">
-        @for (record of productionRecords(); track record.resourceClass) {
+        @for (record of productionRecords(); track record.resource.className) {
         <div
           class="resource-item d-flex align-items-center justify-content-between mb-2"
         >
           <div class="d-flex align-items-center">
             <img
-              [src]="getResourceIconUrl(record.resourceClass)"
-              [alt]="getResourceName(record.resourceClass)"
+              [src]="getResourceIconUrl(record.resource)"
+              [alt]="getResourceName(record.resource)"
               class="resource-icon me-2"
               width="32"
               height="32"
             />
             <span class="resource-name"
-              >{{ getResourceName(record.resourceClass) }}</span
+              >{{ getResourceName(record.resource) }}</span
             >
           </div>
           <span class="resource-amount">{{ record.amount }} /min</span>

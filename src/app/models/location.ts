@@ -1,3 +1,5 @@
+import { Resource } from './resource';
+
 export interface Location {
   id: string;
   name: string;
@@ -7,11 +9,11 @@ export interface Location {
 }
 
 export interface ConsumptionRecord {
-  resourceClass: string;
+  resource: Resource;
   amount: number;
 }
 
 export interface ProductionRecord {
-  resourceClass: string;
+  resource: Resource;
   amount: number;
 }
