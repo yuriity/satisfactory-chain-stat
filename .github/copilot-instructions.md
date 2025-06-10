@@ -244,6 +244,7 @@ export class ResourcesService {
 // component.spec.ts
 import { provideZonelessChangeDetection } from "@angular/core";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
 import { YourComponent } from "./your.component";
 
 describe("YourComponent", () => {
@@ -265,11 +266,49 @@ describe("YourComponent", () => {
     expect(component).toBeTruthy();
   });
 
+  // Testing signals
   it("should update signal value", () => {
     component.incrementValue();
-    fixture.detectChanges();
+    fixture.detectChanges(); // Needed after signal updates
     const element = fixture.nativeElement.querySelector(".value");
     expect(element.textContent).toContain("1");
+  });
+
+  // Testing input signals
+  it("should accept input signal value", () => {
+    component.resourceInput.set({ id: '123', name: 'Iron Ore' });
+    fixture.detectChanges();
+    // Alternative using official API:
+    // fixture.componentRef.setInput('resourceInput', { id: '123', name: 'Iron Ore' });
+
+    expect(fixture.debugElement.query(By.css('.resource-name')).nativeElement.textContent)
+      .toContain('Iron Ore');
+  });
+
+  // Testing output signals
+  it("should emit from output signal", () => {
+    const spy = jasmine.createSpy('outputSpy');
+    component.resourceSelected.subscribe(spy);
+
+    component.selectResource({ id: '123', name: 'Iron Ore' });
+
+    expect(spy).toHaveBeenCalledOnceWith({ id: '123', name: 'Iron Ore' });
+  });
+
+  // Testing effects
+  it("should trigger effect when signal changes", () => {
+    // Setup for testing an effect (must be in injection context)
+    const effectSpy = jasmine.createSpy('effectSpy');
+    TestBed.runInInjectionContext(() => {
+      effect(() => {
+        effectSpy(component.selectedResource());
+      });
+    });
+
+    component.selectResource({ id: '123', name: 'Iron Ore' });
+    TestBed.tick(); // Trigger effect execution
+
+    expect(effectSpy).toHaveBeenCalledWith({ id: '123', name: 'Iron Ore' });
   });
 });
 ```
@@ -277,8 +316,20 @@ describe("YourComponent", () => {
 📌 **Rules:**
 
 - **Always include provideZonelessChangeDetection() in test modules.**
-- **Test signal updates and effects.**
-- **Use fixture.detectChanges() after signal updates.**
+- **Remember fixture.detectChanges() after signal updates to reflect changes in the DOM.**
+- **For InputSignal testing:**
+  - Use `component.myInput.set('value')` or `fixture.componentRef.setInput('myInput', 'value')`.
+- **For OutputSignal testing:**
+  - Use `component.myOutput.subscribe(spy)` and verify with `spy.toHaveBeenCalledWith(...)`.
+- **For signal effects testing:**
+  - Define effects inside `TestBed.runInInjectionContext(() => { ... })`.
+  - Trigger effects with `TestBed.tick()` after changing signal dependencies.
+  - Use `fakeAsync` and `tick()` for effects with async operations.
+- **Follow the AAA pattern (Arrange-Act-Assert)** for clean, maintainable tests.
+- **Mock external dependencies** using `jasmine.createSpyObj` or simple mock classes.
+- **Use element queries appropriately:**
+  - `fixture.nativeElement.querySelector()` for simple DOM queries.
+  - `fixture.debugElement.query(By.css())` for more robust element selections.
 - **Mock HTTP requests and services.**
 
 ---
