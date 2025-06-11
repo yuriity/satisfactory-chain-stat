@@ -24,7 +24,9 @@
   <div class="starter-template">
     <h1>Main Content Section</h1>
     <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    <scs-location-example></scs-location-example>
+    @for (location of locationsService.locations(); track location.id) {
+      <scs-location-card [location]="location.toLocation()" />
+    }
   </div>
 </main>
 

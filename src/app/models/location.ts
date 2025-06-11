@@ -3,7 +3,7 @@ import { Resource } from './resource';
 export interface Location {
   id: string;
   name: string;
-  resourceSources: Array<Location>;
+  resourceSources: Array<string>;
   consumption?: ConsumptionRecord[];
   production?: ProductionRecord[];
 }

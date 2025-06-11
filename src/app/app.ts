@@ -1,16 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { ResourcesService } from './services/resources.service';
-import { Resource } from './models/resource';
-import { LocationExampleComponent } from './components/examples/location-example';
+import { CommonModule } from '@angular/common';
+import { LocationCardComponent } from './components/location-card/location-card';
+import { LocationsService } from './services/locations.service';
 
 @Component({
   selector: 'scs-root',
-  imports: [LocationExampleComponent],
+  standalone: true,
+  imports: [CommonModule, LocationCardComponent],
   templateUrl: './app.html',
   styles: [],
 })
 export class App {
   protected title = 'Satisfactory Chain Stat';
 
-  constructor(private resourcesService: ResourcesService) {}
+  constructor(protected locationsService: LocationsService) {}
 }
