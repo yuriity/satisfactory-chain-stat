@@ -1,11 +1,12 @@
 <div class="location-card card">
   <!-- Card Header with Title and Edit Button -->
   <div class="card-header d-flex justify-content-between align-items-center">
-    <h2 class="fs-4 mb-0">{{ location().name }}</h2>
+    <h2 class="fs-4 mb-0">{{ locationVM().name() }}</h2>
     <button
       class="btn btn-sm rounded-circle edit-button"
       (click)="onEditClick()"
-      aria-label="Edit location">
+      aria-label="Edit location"
+    >
       <i class="bi bi-pencil-fill"></i>
     </button>
   </div>
@@ -17,7 +18,8 @@
       <h3 class="section-title">INPUT</h3>
 
       <div class="resource-list">
-        @for (record of consumptionRecords(); track record.resource.className) {
+        @for (record of locationVM().consumption(); track
+        record.resource.className) {
         <div
           class="resource-item d-flex align-items-center justify-content-between mb-2"
         >
@@ -46,7 +48,8 @@
       <h3 class="section-title">PRODUCTION</h3>
 
       <div class="resource-list">
-        @for (record of productionRecords(); track record.resource.className) {
+        @for (record of locationVM().production(); track
+        record.resource.className) {
         <div
           class="resource-item d-flex align-items-center justify-content-between mb-2"
         >

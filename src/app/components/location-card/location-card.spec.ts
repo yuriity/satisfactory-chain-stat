@@ -5,13 +5,14 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { LocationCardComponent } from './location-card';
 import { Resource } from '../../models/resource';
 import { Location } from '../../models/location';
+import { LocationViewModel } from '../../view-models/location-view-model';
 
 describe('LocationCardComponent', () => {
   let component: LocationCardComponent;
   let fixture: ComponentFixture<LocationCardComponent>;
   let mockResource1: Resource;
   let mockResource2: Resource;
-  let mockLocation: Location;
+  let mockLocationVM: LocationViewModel;
 
   beforeEach(async () => {
     // Create mock resources
@@ -26,14 +27,17 @@ describe('LocationCardComponent', () => {
       'Iron Plates are used for crafting.'
     );
 
-    // Create mock location with consumption and production records
-    mockLocation = {
+    // Create mock location
+    const mockLocation: Location = {
       id: 'loc-123',
       name: 'Iron Factory',
       resourceSources: [],
       consumption: [{ resource: mockResource1, amount: 60 }],
       production: [{ resource: mockResource2, amount: 20 }],
     };
+
+    // Create LocationViewModel from the mock location
+    mockLocationVM = new LocationViewModel(mockLocation);
 
     await TestBed.configureTestingModule({
       imports: [LocationCardComponent],
@@ -43,8 +47,8 @@ describe('LocationCardComponent', () => {
     fixture = TestBed.createComponent(LocationCardComponent);
     component = fixture.componentInstance;
 
-    // Set up required input
-    fixture.componentRef.setInput('location', mockLocation);
+    // Set up required input with LocationViewModel
+    fixture.componentRef.setInput('locationVM', mockLocationVM);
     fixture.detectChanges();
   });
 
@@ -131,7 +135,8 @@ describe('LocationCardComponent', () => {
     expect(console.log).toHaveBeenCalledWith('Editing location: loc-123');
   });
 
-  it('should update signals when location input changes', () => {
+  it('should update display when locationVM input changes', () => {
+    // Create a new location
     const newLocation: Location = {
       id: 'loc-456',
       name: 'Steel Factory',
@@ -143,8 +148,11 @@ describe('LocationCardComponent', () => {
       production: [],
     };
 
-    // Update the location input
-    fixture.componentRef.setInput('location', newLocation);
+    // Create a new LocationViewModel
+    const newLocationVM = new LocationViewModel(newLocation);
+
+    // Update the locationVM input
+    fixture.componentRef.setInput('locationVM', newLocationVM);
     fixture.detectChanges();
 
     // Check if consumption records updated
@@ -160,6 +168,45 @@ describe('LocationCardComponent', () => {
     expect(productionItems.length).toBe(0);
   });
 
+  it('should display total consumption and production', () => {
+    // Create a location with multiple consumption and production records
+    const location: Location = {
+      id: 'loc-totals',
+      name: 'Test Factory',
+      resourceSources: [],
+      consumption: [
+        { resource: mockResource1, amount: 30 },
+        { resource: mockResource2, amount: 15 },
+      ],
+      production: [
+        { resource: mockResource1, amount: 60 },
+        { resource: mockResource2, amount: 40 },
+      ],
+    };
+
+    // Create LocationViewModel from the location
+    const locationVM = new LocationViewModel(location);
+
+    // Update the locationVM input
+    fixture.componentRef.setInput('locationVM', locationVM);
+    fixture.detectChanges();
+
+    // Check totals
+    const totalConsumption = fixture.debugElement.query(
+      By.css('.input-section strong')
+    );
+    const totalProduction = fixture.debugElement.query(
+      By.css('.production-section strong')
+    );
+
+    expect(totalConsumption.nativeElement.textContent).toContain(
+      'Total: 45 /min'
+    );
+    expect(totalProduction.nativeElement.textContent).toContain(
+      'Total: 100 /min'
+    );
+  });
+
   it('should handle locations with empty consumption and production arrays', () => {
     const emptyLocation: Location = {
       id: 'loc-empty',
@@ -169,8 +216,11 @@ describe('LocationCardComponent', () => {
       production: [],
     };
 
-    // Update the location input
-    fixture.componentRef.setInput('location', emptyLocation);
+    // Create LocationViewModel from the empty location
+    const emptyLocationVM = new LocationViewModel(emptyLocation);
+
+    // Update the locationVM input
+    fixture.componentRef.setInput('locationVM', emptyLocationVM);
     fixture.detectChanges();
 
     // Check that no resource items are displayed
@@ -183,29 +233,20 @@ describe('LocationCardComponent', () => {
 
     expect(consumptionItems.length).toBe(0);
     expect(productionItems.length).toBe(0);
-  });
 
-  it('should handle locations with undefined consumption and production', () => {
-    const incompleteLocation: Location = {
-      id: 'loc-incomplete',
-      name: 'Incomplete Factory',
-      resourceSources: [],
-      // consumption and production are undefined
-    };
-
-    // Update the location input
-    fixture.componentRef.setInput('location', incompleteLocation);
-    fixture.detectChanges();
-
-    // Check that no resource items are displayed
-    const consumptionItems = fixture.debugElement.queryAll(
-      By.css('.input-section .resource-item')
+    // Check totals are zero
+    const totalConsumption = fixture.debugElement.query(
+      By.css('.input-section strong')
     );
-    const productionItems = fixture.debugElement.queryAll(
-      By.css('.production-section .resource-item')
+    const totalProduction = fixture.debugElement.query(
+      By.css('.production-section strong')
     );
 
-    expect(consumptionItems.length).toBe(0);
-    expect(productionItems.length).toBe(0);
+    expect(totalConsumption.nativeElement.textContent).toContain(
+      'Total: 0 /min'
+    );
+    expect(totalProduction.nativeElement.textContent).toContain(
+      'Total: 0 /min'
+    );
   });
 });
