@@ -1,4 +1,5 @@
 import { Injectable, signal } from '@angular/core';
+import { Location } from '../models/location';
 import { LocationViewModel } from '../view-models/location-view-model';
 import { Resource } from '../models/resource';
 
@@ -72,11 +73,20 @@ const Locations = [
   providedIn: 'root',
 })
 export class LocationsService {
+  private _editableLocation = signal<LocationViewModel | null>(null);
   private locationsSignal = signal<LocationViewModel[]>([
     new LocationViewModel(Locations[0]),
     new LocationViewModel(Locations[1]),
     new LocationViewModel(Locations[2]),
   ]);
 
+  public readonly editableLocation = this._editableLocation.asReadonly();
   public readonly locations = this.locationsSignal.asReadonly();
+
+  constructor() {}
+
+  public selectLocationForEditing(location: Location): void {
+    const viewModel = new LocationViewModel(location);
+    this._editableLocation.set(viewModel);
+  }
 }
