@@ -1,7 +1,7 @@
 import { Component, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Location } from '../../models/location';
-import { LocationCardComponent } from '../location-card';
+import { LocationCardComponent } from '../location-card/location-card';
 import { Resource } from '../../models/resource';
 
 /**
