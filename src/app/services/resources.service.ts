@@ -6,6 +6,7 @@ import { Resource } from '../models/resource';
   providedIn: 'root',
 })
 export class ResourcesService {
+  private resourcesDataSource = '/data/en-US_extracted.json';
   private resourcesSignal = signal<Resource[]>([]);
   private isLoading = signal(false);
   private error = signal<Error | null>(null);
@@ -61,7 +62,7 @@ export class ResourcesService {
     this.isLoading.set(true);
     this.error.set(null);
 
-    this.http.get<any[]>('/en-US_extracted.json').subscribe({
+    this.http.get<any[]>(this.resourcesDataSource).subscribe({
       next: (data) => {
         const resources = data.map(
           (item) =>
