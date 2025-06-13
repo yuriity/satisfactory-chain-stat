@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 
 const inputFile = path.join(__dirname, "en-US.json");
-const outputFile = path.join(__dirname, "en-US_extracted.json");
+const outputFile = path.join(__dirname, "../public/data/en-US_resources.json");
 
 try {
   // Read the input JSON file, trying utf16le encoding
@@ -44,6 +44,7 @@ try {
           "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
         )
       ) {
+        // "/Script/CoreUObject.Class'/Script/FactoryGame.FGItemDescriptor'"
         for (const classItem of topLevelItem.Classes) {
           if (classItem) {
             const resource = {
@@ -69,6 +70,13 @@ try {
       }
     }
   }
+
+  // Sort `extractedResources` by `className` field
+  extractedResources.sort((a, b) => {
+    if (a.className < b.className) return -1;
+    if (a.className > b.className) return 1;
+    return 0;
+  });
 
   // Write the extracted resources to the output file
   fs.writeFileSync(

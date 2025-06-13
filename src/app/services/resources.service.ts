@@ -6,7 +6,7 @@ import { Resource } from '../models/resource';
   providedIn: 'root',
 })
 export class ResourcesService {
-  private resourcesDataSource = '/data/en-US_extracted.json';
+  private resourcesDataSource = '/data/en-US_resources.json';
   private resourcesSignal = signal<Resource[]>([]);
   private isLoading = signal(false);
   private error = signal<Error | null>(null);
