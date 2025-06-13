@@ -46,14 +46,14 @@ export const LOCATIONS: Location[] = [
       { resource: RawQuartzResource, amount: 300 },
       { resource: LimestoneResource, amount: 100 },
     ],
-    production: [{ resource: SilicaResource, amount: 200, consumption: 240 }],
+    production: [{ resource: SilicaResource, amount: 200, consumption: 0 }],
   },
   {
     id: 'plastic-plant-1',
     name: 'Plastic Plant',
     resourceSources: [],
     consumption: [{ resource: CrudeOilResource, amount: 500 }],
-    production: [{ resource: PlasticResource, amount: 300, consumption: 140 }],
+    production: [{ resource: PlasticResource, amount: 300, consumption: 0 }],
   },
   {
     id: 'circuit-board-plant1',
