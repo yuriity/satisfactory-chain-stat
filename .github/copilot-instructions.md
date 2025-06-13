@@ -164,8 +164,7 @@ export class ResourceManagerComponent {
         <div class="card-body">
           <h5 class="card-title">{{ resource().name }}</h5>
           <p class="card-text">{{ resource().description }}</p>
-          <button class="btn btn-outline-primary">Details</button>
-        </div>
+          <button class="btn btn-outline-primary">Details</div>
       </div>
     </div>
   </div>
@@ -195,6 +194,59 @@ $secondary: #2ecc71;
 - **Leverage Bootstrap utilities before writing custom CSS.**
 - **Use Bootstrap components (cards, modals, etc.) when possible.**
 - **Customize Bootstrap variables to match your theme.**
+
+---
+
+## 💉 Dependency Injection Best Practices
+
+### ✅ Using inject() Function
+
+1. **Prefer inject() over constructor injection.**
+2. **Keep injected dependencies protected or private as appropriate.**
+3. **Group injections logically at the top of the class.**
+
+```ts
+// ✅ GOOD: Using inject() function for dependency injection
+import { Component, inject } from '@angular/core';
+import { ResourcesService } from '../../services/resources.service';
+
+@Component({
+  selector: 'scs-resource-manager',
+  standalone: true,
+  // Other metadata
+})
+export class ResourceManagerComponent {
+  // Dependency injection with inject()
+  protected resourcesService = inject(ResourcesService);
+  private logService = inject(LogService);
+
+  // Component logic...
+}
+```
+
+```ts
+// ❌ BAD: Using constructor injection
+@Component({
+  selector: 'scs-resource-manager',
+  standalone: true,
+  // Other metadata
+})
+export class ResourceManagerComponent {
+  constructor(
+    protected resourcesService: ResourcesService,
+    private logService: LogService
+  ) {}
+
+  // Component logic...
+}
+```
+
+📌 **Rules:**
+
+- **Always use inject() function instead of constructor injection.**
+- **Place injected dependencies at the top of the class.**
+- **Use appropriate access modifiers (protected/private) for injected services.**
+- **Keep functional dependencies (services used together) grouped together.**
 
 ---
 
