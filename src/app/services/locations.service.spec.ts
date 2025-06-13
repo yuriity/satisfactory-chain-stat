@@ -22,7 +22,12 @@ describe('LocationsService', () => {
   it('should have a read-only locations signal', () => {
     // Access the locations read-only signal
     expect(service.locations).toBeDefined();
-    expect(service.locations()).toEqual([]);
+
+    // Since we're using mock data from LOCATIONS, we should expect that data
+    expect(service.locations().length).toBe(3);
+    expect(service.locations()[0].name).toBe('Silica Plant');
+    expect(service.locations()[1].name).toBe('Plastic Plant');
+    expect(service.locations()[2].name).toBe('Circuit Board Plant');
 
     // Service currently doesn't expose methods to modify locations
     // This will need to be updated when such methods are added

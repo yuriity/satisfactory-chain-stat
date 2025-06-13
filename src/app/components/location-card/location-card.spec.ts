@@ -32,7 +32,7 @@ describe('LocationCardComponent', () => {
       name: 'Iron Factory',
       resourceSources: [],
       consumption: [{ resource: mockResource1, amount: 60 }],
-      production: [{ resource: mockResource2, amount: 20 }],
+      production: [{ resource: mockResource2, amount: 20, consumption: 30 }],
     };
 
     await TestBed.configureTestingModule({
@@ -86,7 +86,7 @@ describe('LocationCardComponent', () => {
     expect(
       productionItems[0].query(By.css('.resource-amount')).nativeElement
         .textContent
-    ).toContain('20 /min');
+    ).toContain('20 /min - Consumption 30 /min');
   });
 
   it('should display correct resource names in the UI', () => {

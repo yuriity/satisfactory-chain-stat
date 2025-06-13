@@ -16,4 +16,5 @@ export interface ConsumptionRecord {
 export interface ProductionRecord {
   resource: Resource;
   amount: number;
+  consumption: number;
 }

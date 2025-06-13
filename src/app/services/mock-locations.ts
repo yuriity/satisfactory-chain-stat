@@ -39,30 +39,32 @@ export const CircuitBoardResource = new Resource(
 
 export const LOCATIONS: Location[] = [
   {
-    id: crypto.randomUUID(),
+    id: 'silica-plant-1',
     name: 'Silica Plant',
     resourceSources: [],
     consumption: [
       { resource: RawQuartzResource, amount: 300 },
       { resource: LimestoneResource, amount: 100 },
     ],
-    production: [{ resource: SilicaResource, amount: 200 }],
+    production: [{ resource: SilicaResource, amount: 200, consumption: 240 }],
   },
   {
-    id: crypto.randomUUID(),
+    id: 'plastic-plant-1',
     name: 'Plastic Plant',
     resourceSources: [],
     consumption: [{ resource: CrudeOilResource, amount: 500 }],
-    production: [{ resource: PlasticResource, amount: 300 }],
+    production: [{ resource: PlasticResource, amount: 300, consumption: 140 }],
   },
   {
-    id: crypto.randomUUID(),
+    id: 'circuit-board-plant1',
     name: 'Circuit Board Plant',
-    resourceSources: ['silica-plant', 'plastic-plant'],
+    resourceSources: ['silica-plant-1', 'plastic-plant-1'],
     consumption: [
       { resource: SilicaResource, amount: 240 },
       { resource: PlasticResource, amount: 140 },
     ],
-    production: [{ resource: CircuitBoardResource, amount: 150 }],
+    production: [
+      { resource: CircuitBoardResource, amount: 150, consumption: 0 },
+    ],
   },
 ];
