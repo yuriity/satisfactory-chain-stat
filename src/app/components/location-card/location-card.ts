@@ -1,4 +1,4 @@
-import { Component, input, computed } from '@angular/core';
+import { Component, input, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Resource } from '../../models/resource';
 import {
@@ -6,6 +6,7 @@ import {
   ConsumptionRecord,
   ProductionRecord,
 } from '../../models/location';
+import { LocationsService } from '../../services/locations.service';
 
 @Component({
   selector: 'scs-location-card',
@@ -15,6 +16,8 @@ import {
   styleUrl: './location-card.scss',
 })
 export class LocationCardComponent {
+  private locationsService = inject(LocationsService);
+
   // Input for the location (required, never undefined)
   public location = input.required<Location>();
 
@@ -35,6 +38,6 @@ export class LocationCardComponent {
   // Handle edit button click
   protected onEditClick(): void {
     console.log(`Editing location: ${this.location().id}`);
-    // Implement edit functionality here
+    this.locationsService.editLocation(this.location().id);
   }
 }
