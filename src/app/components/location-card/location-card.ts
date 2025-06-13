@@ -1,7 +1,11 @@
-import { Component, input } from '@angular/core';
+import { Component, input, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Resource } from '../../models/resource';
-import { LocationViewModel } from '../../view-models/location-view-model';
+import {
+  Location,
+  ConsumptionRecord,
+  ProductionRecord,
+} from '../../models/location';
 
 @Component({
   selector: 'scs-location-card',
@@ -11,8 +15,12 @@ import { LocationViewModel } from '../../view-models/location-view-model';
   styleUrl: './location-card.scss',
 })
 export class LocationCardComponent {
-  // Input for the location view model (required, never undefined)
-  public locationVM = input.required<LocationViewModel>();
+  // Input for the location (required, never undefined)
+  public location = input.required<Location>();
+
+  // Computed signals for consumption and production for safe null handling
+  protected consumption = computed(() => this.location().consumption || []);
+  protected production = computed(() => this.location().production || []);
 
   // Helper method to get resource display name
   protected getResourceName(resource: Resource): string {
@@ -26,7 +34,7 @@ export class LocationCardComponent {
 
   // Handle edit button click
   protected onEditClick(): void {
-    console.log(`Editing location: ${this.locationVM().id}`);
+    console.log(`Editing location: ${this.location().id}`);
     // Implement edit functionality here
   }
 }

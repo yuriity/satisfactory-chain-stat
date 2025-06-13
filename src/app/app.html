@@ -45,7 +45,7 @@
 
     <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     @for (location of locationsService.locations(); track location.id) {
-      <scs-location-card [locationVM]="location" />
+      <scs-location-card [location]="location" />
     }
   </div>
 </main>
