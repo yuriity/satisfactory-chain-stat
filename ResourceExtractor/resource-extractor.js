@@ -7,7 +7,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const inputFile = path.join(__dirname, "en-US.json");
+const inputFile = path.join(__dirname, "en-US_v1.1.1.0.json");
 const outputFile = path.join(__dirname, "../public/data/en-US_resources.json");
 
 try {

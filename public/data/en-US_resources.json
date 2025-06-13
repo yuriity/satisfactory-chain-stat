@@ -62,7 +62,7 @@
   {
     "className": "desc-candycane-c",
     "displayName": "Candy Cane",
-    "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays. *Disclaimer: Not for human consumption…"
+    "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays. *Disclaimer: Not for human consumption..."
   },
   {
     "className": "desc-cement-c",
@@ -177,12 +177,12 @@
   {
     "className": "desc-ficsitemesh-c",
     "displayName": "Ficsite Trigon",
-    "description": "The Ficsite Trigon, made from Ficsite Ingots, is perfectly shaped for all construction challenges. It's performance is so exceptional, it basically solved structural engineering."
+    "description": "The Ficsite Trigon, made from Ficsite Ingots, is perfectly shaped for all construction challenges. Its performance is so exceptional, it basically solved structural engineering."
   },
   {
     "className": "desc-ficsonium-c",
     "displayName": "Ficsonium",
-    "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. Power Usage: 500-1500 MW (1000 MW average)."
+    "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. Power Usage: 500-1500 MW (1000 MW average). Caution: Moderately Radioactive."
   },
   {
     "className": "desc-ficsoniumfuelrod-c",
@@ -291,7 +291,7 @@
   },
   {
     "className": "desc-ironscrew-c",
-    "displayName": "Screw",
+    "displayName": "Screws",
     "description": "Used for crafting. One of the most basic parts."
   },
   {
@@ -467,7 +467,7 @@
   {
     "className": "desc-plutoniumcell-c",
     "displayName": "Encased Plutonium Cell",
-    "description": "Plutonium Pellets encased in concrete. Used to produce Plutonium Fuel Rods for Nuclear Power production. Caution: Moderately Radioactive."
+    "description": "Plutonium Pellets encased in concrete. Used to produce Plutonium Fuel Rods for Nuclear Power production. Power Usage: 250-750 MW (500 MW average). Caution: Moderately Radioactive."
   },
   {
     "className": "desc-plutoniumfuelrod-c",
@@ -537,7 +537,7 @@
   {
     "className": "desc-samfluctuator-c",
     "displayName": "SAM Fluctuator",
-    "description": "The SAM Fluctuator is able to regulate and direct the behaviour of Reanimated SAM through the application of electric charges with varying frequencies. This control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation."
+    "description": "The SAM Fluctuator is able to regulate and direct the behavior of Reanimated SAM through the application of electric charges with varying frequencies. This control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation."
   },
   {
     "className": "desc-samingot-c",
