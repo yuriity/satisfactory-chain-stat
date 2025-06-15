@@ -1,0 +1,21 @@
+.resource-item {
+  cursor: pointer;
+}
+
+.resource-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.resource-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.input-group-text {
+  background-color: #fff;
+  border-right: none;
+}
+
+.input-group-text + .form-control {
+  border-left: none;
+}
