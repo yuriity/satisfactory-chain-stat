@@ -14,7 +14,23 @@ The owner of the GitHub repo is yuriity.
 
 # 🏗 Angular 20 / ZonelessChangeDetection / Bootstrap 5 Best Practices
 
-This guide outlines **best practices** for building an **Angular 20** application with **ZonelessChangeDetection** and **Bootstrap 5**. The goal is **readability and maintainability**, minimizing abstraction to keep the codebase clear.
+This guide outlines  // Testing protected state via DOM assertions
+  it("should hide content when toggle is clicked", () => {
+    // Initial state check via DOM
+    expect(fixture.debugElement.query(By.css('.content')))
+      .withContext('Content should be visible initially')
+      .toBeTruthy();
+
+    // Click the toggle button (which changes a protected signal)
+    const toggleBtn = fixture.debugElement.query(By.css('.toggle-btn'));
+    toggleBtn.triggerEventHandler('click', null);
+    fixture.detectChanges();
+
+    // Verify outcome via DOM, not by accessing protected property
+    expect(fixture.debugElement.query(By.css('.content')))
+      .withContext('Content should be hidden after clicking toggle')
+      .toBeNull();
+  });ices** for building an **Angular 20** application with **ZonelessChangeDetection** and **Bootstrap 5**. The goal is **readability and maintainability**, minimizing abstraction to keep the codebase clear.
 
 ---
 
@@ -59,6 +75,7 @@ Keep a **logical and predictable** folder structure:
 1. **Use standalone components when possible.**
 2. **Keep components focused on a single responsibility.**
 3. **Use signals for component state management.**
+4. **Follow a consistent order for class members.**
 
 ```ts
 // ✅ GOOD: Clean, focused component with signals
@@ -77,7 +94,75 @@ export class ResourceCardComponent {
     this.resourceAmount.update(current => current + 1);
   }
 }
-````
+```
+
+### ✅ Class Member Organization
+
+Organize class members in this consistent order to improve readability:
+
+1. **Input Signals and Inputs**
+   ```typescript
+   placeholder = input.required<string>({
+     alias: 'placeholder',
+     transform: (v: unknown) => (v as string) || 'Search resources...'
+   });
+   ```
+
+2. **Output Event Emitters**
+   ```typescript
+   @Output() resourceSelected = new EventEmitter<Resource | null>();
+   ```
+
+3. **Protected/Public Signals** (component state)
+   ```typescript
+   protected searchTerm = signal('');
+   protected showDropdown = signal(false);
+   ```
+
+4. **Computed Signals** (derived state)
+   ```typescript
+   protected isSearching = computed(() => {
+     const selected = this.selectedResource();
+     return selected && this.searchTerm() !== selected.displayName;
+   });
+   ```
+
+5. **Dependency Injections** (grouped logically)
+   ```typescript
+   private readonly resourcesService = inject(ResourcesService);
+   private readonly changeDetectorRef = inject(ChangeDetectorRef);
+   ```
+
+6. **Private Properties**
+   ```typescript
+   private hideDropdownTimeout: number | undefined;
+   private skipNextHideDropdown = false;
+   ```
+
+7. **Lifecycle Methods**
+   ```typescript
+   constructor() { /* effects setup */ }
+   ngOnInit(): void { /* initialization logic */ }
+   ngOnDestroy(): void { /* cleanup logic */ }
+   ```
+
+8. **Public Methods** (exposed API)
+   ```typescript
+   selectResource(resource: Resource): void { /* implementation */ }
+   clearSelection(): void { /* implementation */ }
+   ```
+
+9. **Protected Methods** (used in template or subclasses)
+   ```typescript
+   protected toggleDropdown(event?: MouseEvent): void { /* implementation */ }
+   protected onSearchChange(event: Event): void { /* implementation */ }
+   ```
+
+10. **Private Methods** (internal implementation details)
+    ```typescript
+    private updateFilteredResources(): void { /* implementation */ }
+    private closeDropdown(): void { /* implementation */ }
+    ```
 
 ### ✅ Component Templates
 
@@ -320,18 +405,31 @@ describe("YourComponent", () => {
 
   // Testing signals
   it("should update signal value", () => {
-    component.incrementValue();
+    component.incrementValue(); // Public method that updates protected signal
     fixture.detectChanges(); // Needed after signal updates
     const element = fixture.nativeElement.querySelector(".value");
     expect(element.textContent).toContain("1");
   });
 
+  // ✅ GOOD: Testing protected state via DOM assertions
+  it("should hide content when toggle is clicked", () => {
+    // Initial state check via DOM
+    expect(fixture.debugElement.query(By.css('.content'))).toBeTruthy();
+
+    // Click the toggle button (which changes a protected signal)
+    const toggleBtn = fixture.debugElement.query(By.css('.toggle-btn'));
+    toggleBtn.triggerEventHandler('click', null);
+    fixture.detectChanges();
+
+    // Verify outcome via DOM, not by accessing protected property
+    expect(fixture.debugElement.query(By.css('.content'))).toBeNull();
+  });
+
   // Testing input signals
   it("should accept input signal value", () => {
-    component.resourceInput.set({ id: '123', name: 'Iron Ore' });
+    // Use the official setInput API
+    fixture.componentRef.setInput('resourceInput', { id: '123', name: 'Iron Ore' });
     fixture.detectChanges();
-    // Alternative using official API:
-    // fixture.componentRef.setInput('resourceInput', { id: '123', name: 'Iron Ore' });
 
     expect(fixture.debugElement.query(By.css('.resource-name')).nativeElement.textContent)
       .toContain('Iron Ore');
@@ -342,7 +440,7 @@ describe("YourComponent", () => {
     const spy = jasmine.createSpy('outputSpy');
     component.resourceSelected.subscribe(spy);
 
-    component.selectResource({ id: '123', name: 'Iron Ore' });
+    component.selectResource({ id: '123', name: 'Iron Ore' }); // Public method
 
     expect(spy).toHaveBeenCalledOnceWith({ id: '123', name: 'Iron Ore' });
   });
@@ -353,11 +451,11 @@ describe("YourComponent", () => {
     const effectSpy = jasmine.createSpy('effectSpy');
     TestBed.runInInjectionContext(() => {
       effect(() => {
-        effectSpy(component.selectedResource());
+        effectSpy(component.selectedResource()); // Public read-only signal
       });
     });
 
-    component.selectResource({ id: '123', name: 'Iron Ore' });
+    component.selectResource({ id: '123', name: 'Iron Ore' }); // Public method
     TestBed.tick(); // Trigger effect execution
 
     expect(effectSpy).toHaveBeenCalledWith({ id: '123', name: 'Iron Ore' });
@@ -382,6 +480,16 @@ describe("YourComponent", () => {
 - **Use element queries appropriately:**
   - `fixture.nativeElement.querySelector()` for simple DOM queries.
   - `fixture.debugElement.query(By.css())` for more robust element selections.
+- **Testing protected properties:**
+  - Do not expose protected properties just for testing.
+  - Test through the public API, inputs/outputs, and DOM interactions.
+  - Verify behavior rather than implementation details.
+  - Use DOM assertions to confirm UI state instead of checking protected signals directly.
+- **Use withContext for descriptive test failures:**
+  - Use `withContext()` instead of passing messages directly to assertion methods.
+  - Example: `expect(element).withContext('Button should be visible').toBeTruthy()`
+  - This is preferred over the deprecated form: `expect(element).toBeTruthy('Button should be visible')`
+  - Provides clearer error messages when tests fail, with proper context.
 - **Mock HTTP requests and services.**
 
 ---
