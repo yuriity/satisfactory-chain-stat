@@ -37,7 +37,6 @@ export class LocationCardComponent {
 
   // Handle edit button click
   protected onEditClick(): void {
-    console.log(`Editing location: ${this.location().id}`);
     this.locationsService.editLocation(this.location());
   }
 }

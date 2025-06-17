@@ -1,16 +1,12 @@
-// Import Bootstrap in the correct order with a single import
-@use "bootstrap/scss/bootstrap" as bootstrap;
-@use "sass:color";
-
 .location-card {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid bootstrap.$border-color;
+  border: 2px solid var(--bs-border-color);
 
   .card-header {
-    background-color: bootstrap.$white;
-    border-bottom: 1px solid bootstrap.$border-color;
+    background-color: var(--bs-white);
+      border-bottom: 1px solid var(--bs-border-color);
     padding: 1rem;
   }
 
@@ -21,13 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bd-pre-bg);
+    background-color: var(--bs-light);
       border: 0;
-      color: bootstrap.$primary;
+    color: var(--bs-primary);
 
     &:hover {
-      background-color: bootstrap.tint-color(bootstrap.$primary, 60%);
-        border-color: bootstrap.tint-color(bootstrap.$primary, 60%);
+      background-color: var(--bs-primary-bg-subtle);
+        border-color: var(--bs-primary-border-subtle);
     }
 
     i {
@@ -62,6 +58,6 @@
   }
 
   hr {
-    border-color: color.adjust(bootstrap.$border-color, $lightness: -5%);
+    border-color: var(--bs-border-color);
   }
 }

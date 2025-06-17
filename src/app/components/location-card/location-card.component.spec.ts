@@ -5,6 +5,7 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { LocationCardComponent } from './location-card.component';
 import { Resource } from '../../models/resource';
 import { Location } from '../../models/location';
+import { LocationsService } from '../../services/locations.service';
 
 describe('LocationCardComponent', () => {
   let component: LocationCardComponent;
@@ -12,8 +13,14 @@ describe('LocationCardComponent', () => {
   let mockResource1: Resource;
   let mockResource2: Resource;
   let mockLocation: Location;
+  let locationsServiceSpy: jasmine.SpyObj<LocationsService>;
 
   beforeEach(async () => {
+    // Create mock LocationsService
+    locationsServiceSpy = jasmine.createSpyObj('LocationsService', [
+      'editLocation',
+    ]);
+
     // Create mock resources
     mockResource1 = new Resource(
       'Desc_IronIngot_C',
@@ -37,7 +44,10 @@ describe('LocationCardComponent', () => {
 
     await TestBed.configureTestingModule({
       imports: [LocationCardComponent],
-      providers: [provideZonelessChangeDetection()],
+      providers: [
+        provideZonelessChangeDetection(),
+        { provide: LocationsService, useValue: locationsServiceSpy },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LocationCardComponent);
@@ -122,13 +132,11 @@ describe('LocationCardComponent', () => {
     );
   });
 
-  it('should log edit message when edit button is clicked', () => {
-    spyOn(console, 'log');
-
+  it('should call editLocation service when edit button is clicked', () => {
     const editButton = fixture.debugElement.query(By.css('.edit-button'));
     editButton.triggerEventHandler('click');
 
-    expect(console.log).toHaveBeenCalledWith('Editing location: loc-123');
+    expect(locationsServiceSpy.editLocation).toHaveBeenCalledWith(mockLocation);
   });
 
   it('should update display when location input changes', () => {
