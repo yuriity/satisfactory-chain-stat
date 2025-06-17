@@ -6,6 +6,8 @@ import {
   createComponent,
   EnvironmentInjector,
   Type,
+  signal,
+  computed,
 } from '@angular/core';
 import { OffcanvasConfig, OffcanvasRef } from './offcanvas-config';
 import { BootstrapService } from './bootstrap.service';
@@ -18,7 +20,15 @@ export class OffcanvasService {
   private readonly appRef = inject(ApplicationRef);
   private readonly injector = inject(EnvironmentInjector);
   private readonly bootstrapService = inject(BootstrapService);
-  private readonly openOffcanvases = new Map<string, OffcanvasRef>();
+  private readonly openOffcanvasesSignal = signal(
+    new Map<string, OffcanvasRef>()
+  );
+
+  // Computed signals for derived state
+  protected openCount = computed(() => this.openOffcanvasesSignal().size);
+  protected hasOpenOffcanvasSignal = computed(
+    () => this.openOffcanvasesSignal().size > 0
+  );
 
   /**
    * Open an offcanvas component programmatically
@@ -58,12 +68,16 @@ export class OffcanvasService {
     );
 
     // Store the reference
-    this.openOffcanvases.set(id, offcanvasRef);
+    this.openOffcanvasesSignal.update((map) => {
+      const newMap = new Map(map);
+      newMap.set(id, offcanvasRef);
+      return newMap;
+    });
 
     // Inject the offcanvas reference into the component
     this.injectOffcanvasRef(componentRef, offcanvasRef);
 
-    // Initialize and show the offcanvas
+    // Initialize and show the offcanvas (this will create the Bootstrap instance)
     this.initializeAndShowOffcanvas(id, offcanvasElement, offcanvasRef);
 
     return offcanvasRef;
@@ -73,21 +87,21 @@ export class OffcanvasService {
    * Close all open offcanvases
    */
   closeAll(): void {
-    this.openOffcanvases.forEach((ref) => ref.dismiss('close_all'));
+    this.openOffcanvasesSignal().forEach((ref) => ref.dismiss('close_all'));
   }
 
   /**
    * Get the number of currently open offcanvases
    */
   getOpenCount(): number {
-    return this.openOffcanvases.size;
+    return this.openCount();
   }
 
   /**
    * Check if any offcanvas is currently open
    */
   hasOpenOffcanvas(): boolean {
-    return this.openOffcanvases.size > 0;
+    return this.hasOpenOffcanvasSignal();
   }
 
   private injectDataIntoComponent<T, D>(
@@ -130,9 +144,8 @@ export class OffcanvasService {
     componentRef: ComponentRef<any>,
     offcanvasElement: HTMLElement
   ): OffcanvasRef<R> {
-    // Create Bootstrap offcanvas instance
-    const bootstrapOffcanvas =
-      this.bootstrapService.createOffcanvas(offcanvasElement);
+    // We'll create the Bootstrap instance later in initializeAndShowOffcanvas
+    let bootstrapOffcanvas: any = null;
 
     let closeResolve!: (value: R | undefined) => void;
     let dismissResolve!: (reason: any) => void;
@@ -198,6 +211,9 @@ export class OffcanvasService {
     (offcanvasRef as any)._setDisposed = () => {
       isDisposed = true;
     };
+    (offcanvasRef as any)._setBootstrapInstance = (instance: any) => {
+      bootstrapOffcanvas = instance;
+    };
 
     return offcanvasRef;
   }
@@ -229,6 +245,9 @@ export class OffcanvasService {
       return;
     }
 
+    // Store the Bootstrap instance in the offcanvas ref so close/dismiss can use it
+    (offcanvasRef as any)._setBootstrapInstance(bootstrapOffcanvas);
+
     // Set up event listeners before showing
     this.setupOffcanvasEventListeners(id, offcanvasElement, offcanvasRef);
 
@@ -242,7 +261,7 @@ export class OffcanvasService {
     offcanvasRef: OffcanvasRef<R>
   ): void {
     const handleHidden = () => {
-      if (!this.openOffcanvases.has(id)) {
+      if (!this.openOffcanvasesSignal().has(id)) {
         return; // Already cleaned up
       }
 
@@ -339,7 +358,11 @@ export class OffcanvasService {
     componentRef: ComponentRef<any>
   ): void {
     // Remove from our tracking
-    this.openOffcanvases.delete(id);
+    this.openOffcanvasesSignal.update((map) => {
+      const newMap = new Map(map);
+      newMap.delete(id);
+      return newMap;
+    });
 
     // Detach from Angular
     this.appRef.detachView(componentRef.hostView);

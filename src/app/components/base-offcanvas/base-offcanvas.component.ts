@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, computed } from '@angular/core';
 import { OffcanvasRef } from '../../services/offcanvas-config';
 
 @Component({
@@ -9,6 +9,9 @@ import { OffcanvasRef } from '../../services/offcanvas-config';
 export abstract class BaseOffcanvasComponent<T = any, R = any> {
   protected data = signal<T | undefined>(undefined);
 
+  // Computed signal for data availability check
+  protected hasData = computed(() => this.data() !== undefined);
+
   offcanvasRef?: OffcanvasRef<R>;
 
   /**
@@ -16,6 +19,13 @@ export abstract class BaseOffcanvasComponent<T = any, R = any> {
    */
   setData(data: T): void {
     this.data.set(data);
+  }
+
+  /**
+   * Clear the data for this offcanvas component
+   */
+  protected clearData(): void {
+    this.data.set(undefined);
   }
 
   protected close(result?: R): void {

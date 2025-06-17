@@ -1,4 +1,4 @@
-import { Component, inject, computed, signal, effect } from '@angular/core';
+import { Component, inject, signal, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BaseOffcanvasComponent } from '../base-offcanvas/base-offcanvas.component';
@@ -25,7 +25,7 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
   EditLocationResult
 > {
   // Dependency injection
-  protected locationsService = inject(LocationsService);
+  protected readonly locationsService = inject(LocationsService);
 
   // Signal for the editable location (mutable copy)
   private editableLocationSignal = signal<Location | null>(null);
