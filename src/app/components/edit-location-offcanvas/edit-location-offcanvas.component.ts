@@ -1,70 +1,71 @@
-import { Component, ElementRef, inject, effect } from '@angular/core';
+import { Component, inject, computed, signal, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Offcanvas } from 'bootstrap';
-import { OffcanvasService } from '../../services/offcanvas.service';
-import { BootstrapService } from '../../services/bootstrap.service';
+import { FormsModule } from '@angular/forms';
+import { BaseOffcanvasComponent } from '../base-offcanvas/base-offcanvas.component';
 import { LocationsService } from '../../services/locations.service';
+import { Location } from '../../models/location';
+
+export interface EditLocationData {
+  location: Location;
+}
+
+export interface EditLocationResult {
+  action: 'save' | 'cancel';
+  location?: Location;
+}
 
 @Component({
   selector: 'scs-edit-location-offcanvas',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './edit-location-offcanvas.component.html',
-  styleUrls: ['./edit-location-offcanvas.component.scss'],
+  imports: [CommonModule, FormsModule],
 })
-export class EditLocationOffcanvasComponent {
-  protected locationService = inject(LocationsService);
-  private offcanvasService = inject(OffcanvasService);
-  private bootstrapService = inject(BootstrapService);
-  private elementRef = inject(ElementRef);
-  private offcanvasInstance: Offcanvas | null = null;
-  private readonly offcanvasId = 'editLocationOffcanvas';
+export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
+  EditLocationData,
+  EditLocationResult
+> {
+  // Dependency injection
+  protected locationsService = inject(LocationsService);
+
+  // Signal for the editable location (mutable copy)
+  private editableLocationSignal = signal<Location | null>(null);
+
+  // Public getter for the editable location
+  public editableLocation = this.editableLocationSignal.asReadonly();
 
   constructor() {
-    // Setup effect to handle offcanvas toggling
+    super();
+
+    // Effect to watch for data changes and update editable location
     effect(() => {
-      // Get the latest toggle action - this is our trigger
-      const toggleCount = this.offcanvasService.toggleAction();
-
-      // Only proceed if we have a toggle action
-      if (toggleCount > 0) {
-        const activeOffcanvasId = this.offcanvasService.activeOffcanvasId();
-
-        // If our offcanvas is the active one, toggle it
-        if (activeOffcanvasId === this.offcanvasId) {
-          this.getOffcanvasInstance()?.toggle();
-        }
-        // If it's not the active one, hide it
-        else if (activeOffcanvasId === null) {
-          this.getOffcanvasInstance()?.hide();
-        }
+      const data = this.data();
+      if (data?.location) {
+        // Create a mutable copy when data is available
+        this.editableLocationSignal.set({ ...data.location });
       }
     });
   }
 
-  protected closeOffcanvas(): void {
-    this.locationService.resetLocationEdit();
-    this.offcanvasService.toggle(this.offcanvasId);
+  public updateLocationName(newName: string): void {
+    const location = this.editableLocationSignal();
+    if (location) {
+      this.editableLocationSignal.set({ ...location, name: newName });
+    }
   }
 
   protected saveLocation(): void {
-    this.locationService.editableLocation()!.name = 'qwerty';
-    this.locationService.saveEditableLocation();
-    this.offcanvasService.toggle(this.offcanvasId);
+    const location = this.editableLocationSignal();
+    if (location) {
+      this.close({
+        action: 'save',
+        location,
+      });
+    }
   }
 
-  /**
-   * Get or create a Bootstrap Offcanvas instance for this component
-   */
-  private getOffcanvasInstance(): Offcanvas | null {
-    if (!this.offcanvasInstance) {
-      const element = this.elementRef.nativeElement.querySelector(
-        `#${this.offcanvasId}`
-      );
-      if (element) {
-        this.offcanvasInstance = this.bootstrapService.createOffcanvas(element);
-      }
-    }
-    return this.offcanvasInstance;
+  protected closeOffcanvas(): void {
+    this.close({
+      action: 'cancel',
+    });
   }
 }

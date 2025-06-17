@@ -1,29 +1,37 @@
-<div
-  class="offcanvas offcanvas-end"
-  data-bs-backdrop="static"
-  tabindex="-1"
-  id="editLocationOffcanvas"
-  aria-labelledby="offcanvasRightLabel"
->
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasRightLabel">Edit location</h5>
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title">Edit Location</h5>
+  <button
+    type="button"
+    class="btn-close"
+    (click)="closeOffcanvas()"
+    aria-label="Close"
+  ></button>
+</div>
+<div class="offcanvas-body">
+  @if (editableLocation()) {
+  <div class="mb-3">
+    <label for="locationName" class="form-label">Location Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="locationName"
+      [ngModel]="editableLocation()!.name"
+      (ngModelChange)="updateLocationName($event)"
+    />
+  </div>
+  <div class="d-flex gap-2">
+    <button type="button" class="btn btn-primary" (click)="saveLocation()">
+      Save
+    </button>
     <button
       type="button"
-      class="btn-close"
+      class="btn btn-secondary"
       (click)="closeOffcanvas()"
-      aria-label="Close"
-    ></button>
+    >
+      Cancel
+    </button>
   </div>
-  <div class="offcanvas-body">
-    @if (locationService.editableLocation()) {
-      Location: {{ locationService.editableLocation()?.name }}
-      <button
-        type="button"
-        (click)="saveLocation()"
-        aria-label="Save"
-      >Save</button>
-    } @else {
-      <p>Nothing to edit.</p>
-    }
-  </div>
+  } @else {
+  <p>No location to edit.</p>
+  }
 </div>

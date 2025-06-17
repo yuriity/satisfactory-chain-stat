@@ -2,7 +2,6 @@ import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LocationCardComponent } from './components/location-card/location-card.component';
 import { LocationsService } from './services/locations.service';
-import { EditLocationOffcanvasComponent } from './components/edit-location-offcanvas/edit-location-offcanvas.component';
 import { ResourceSelectorComponent } from './components/resource-selector/resource-selector.component';
 import { Resource } from './models/resource';
 import { ResourcesService } from './services/resources.service';
@@ -10,12 +9,7 @@ import { ResourcesService } from './services/resources.service';
 @Component({
   selector: 'scs-root',
   standalone: true,
-  imports: [
-    CommonModule,
-    LocationCardComponent,
-    EditLocationOffcanvasComponent,
-    ResourceSelectorComponent,
-  ],
+  imports: [CommonModule, LocationCardComponent, ResourceSelectorComponent],
   templateUrl: './app.html',
   styles: [],
 })
