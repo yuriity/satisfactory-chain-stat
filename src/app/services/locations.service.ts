@@ -1,6 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { Location } from '../models/location';
-import { Resource } from '../models/resource';
 import { LOCATIONS } from './mock-locations';
 import { calculateConsumption } from '../utils/calculate-consupmtion';
 import { OffcanvasService } from './offcanvas.service';
@@ -9,11 +8,11 @@ import { OffcanvasService } from './offcanvas.service';
   providedIn: 'root',
 })
 export class LocationsService {
-  // private _editableLocation = signal<Location | undefined>(undefined);
+  private _editableLocation = signal<Location | undefined>(undefined);
   private locationsSignal = signal<Location[]>([]);
   private offcanvasService = inject(OffcanvasService);
 
-  // public readonly editableLocation = this._editableLocation.asReadonly();
+  public readonly editableLocation = this._editableLocation.asReadonly();
   public readonly locations = this.locationsSignal.asReadonly();
 
   constructor() {
@@ -22,18 +21,36 @@ export class LocationsService {
     this.locationsSignal.set(LOCATIONS);
   }
 
-  // public selectLocationForEditing(location: Location): void {}
-
   /**
    * Open the location editor offcanvas for a specific location
-   * @param locationId The ID of the location to edit
+   * @param location The location to edit
    */
-  public editLocation(locationId: string): void {
-    // Set any state needed for editing
-    // ...
-
-    // Then open the offcanvas
+  public editLocation(location: Location): void {
+    this._editableLocation.set({ ...location });
     this.offcanvasService.show('editLocationOffcanvas');
+  }
+
+  public resetLocationEdit(): void {
+    this._editableLocation.set(undefined);
+  }
+
+  public saveEditableLocation(): void {
+    const updatedLocations = [...this.locations()];
+    const updatedLocation = updatedLocations.find(
+      (location) => location.id === this._editableLocation()!.id
+    );
+
+    if (updatedLocation) {
+      updatedLocation.name = this._editableLocation()!.name;
+      updatedLocation.consumption = this._editableLocation()!.consumption;
+      updatedLocation.production = this._editableLocation()!.production;
+      updatedLocation.resourceSources =
+        this._editableLocation()!.resourceSources;
+    } else {
+      updatedLocations.push(this._editableLocation()!);
+    }
+
+    this.locationsSignal.set(updatedLocations);
   }
 
   /**

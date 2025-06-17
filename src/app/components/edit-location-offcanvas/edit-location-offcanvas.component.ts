@@ -1,8 +1,9 @@
 import { Component, ElementRef, inject, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Offcanvas } from 'bootstrap';
 import { OffcanvasService } from '../../services/offcanvas.service';
 import { BootstrapService } from '../../services/bootstrap.service';
-import { Offcanvas } from 'bootstrap';
+import { LocationsService } from '../../services/locations.service';
 
 @Component({
   selector: 'scs-edit-location-offcanvas',
@@ -12,6 +13,7 @@ import { Offcanvas } from 'bootstrap';
   styleUrls: ['./edit-location-offcanvas.component.scss'],
 })
 export class EditLocationOffcanvasComponent {
+  protected locationService = inject(LocationsService);
   private offcanvasService = inject(OffcanvasService);
   private bootstrapService = inject(BootstrapService);
   private elementRef = inject(ElementRef);
@@ -32,11 +34,22 @@ export class EditLocationOffcanvasComponent {
         if (activeOffcanvasId === this.offcanvasId) {
           this.getOffcanvasInstance()?.toggle();
         }
+        // If it's not the active one, hide it
+        else if (activeOffcanvasId === null) {
+          this.getOffcanvasInstance()?.hide();
+        }
       }
     });
   }
 
-  closeOffcanvas(): void {
+  protected closeOffcanvas(): void {
+    this.locationService.resetLocationEdit();
+    this.offcanvasService.toggle(this.offcanvasId);
+  }
+
+  protected saveLocation(): void {
+    this.locationService.editableLocation()!.name = 'qwerty';
+    this.locationService.saveEditableLocation();
     this.offcanvasService.toggle(this.offcanvasId);
   }
 
