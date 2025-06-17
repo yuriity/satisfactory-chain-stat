@@ -1,15 +1,15 @@
 import { Component, ElementRef, inject, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OffcanvasService } from '../../services/offcanvas.service';
-import { BootstrapService } from '../../services/bootstrap-service';
+import { BootstrapService } from '../../services/bootstrap.service';
 import { Offcanvas } from 'bootstrap';
 
 @Component({
   selector: 'scs-edit-location-offcanvas',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './edit-location-offcanvas.html',
-  styleUrls: ['./edit-location-offcanvas.scss'],
+  templateUrl: './edit-location-offcanvas.component.html',
+  styleUrls: ['./edit-location-offcanvas.component.scss'],
 })
 export class EditLocationOffcanvasComponent {
   private offcanvasService = inject(OffcanvasService);

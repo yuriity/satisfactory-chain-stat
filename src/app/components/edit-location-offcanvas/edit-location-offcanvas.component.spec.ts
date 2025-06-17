@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EditLocationOffcanvasComponent } from './edit-location-offcanvas';
+import { EditLocationOffcanvasComponent } from './edit-location-offcanvas.component';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { OffcanvasService } from '../../services/offcanvas.service';
-import { BootstrapService } from '../../services/bootstrap-service';
+import { BootstrapService } from '../../services/bootstrap.service';
 import { ElementRef } from '@angular/core';
 
 describe('EditLocationOffcanvasComponent', () => {

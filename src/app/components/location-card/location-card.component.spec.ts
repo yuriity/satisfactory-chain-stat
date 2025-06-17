@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { provideZonelessChangeDetection } from '@angular/core';
 
-import { LocationCardComponent } from './location-card';
+import { LocationCardComponent } from './location-card.component';
 import { Resource } from '../../models/resource';
 import { Location } from '../../models/location';
 

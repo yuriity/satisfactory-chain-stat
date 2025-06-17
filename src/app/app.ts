@@ -1,8 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LocationCardComponent } from './components/location-card/location-card';
+import { LocationCardComponent } from './components/location-card/location-card.component';
 import { LocationsService } from './services/locations.service';
-import { EditLocationOffcanvasComponent } from './components/edit-location-offcanvas/edit-location-offcanvas';
+import { EditLocationOffcanvasComponent } from './components/edit-location-offcanvas/edit-location-offcanvas.component';
 import { ResourceSelectorComponent } from './components/resource-selector/resource-selector.component';
 import { Resource } from './models/resource';
 import { ResourcesService } from './services/resources.service';

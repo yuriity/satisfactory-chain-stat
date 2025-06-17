@@ -12,8 +12,8 @@ import { LocationsService } from '../../services/locations.service';
   selector: 'scs-location-card',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './location-card.html',
-  styleUrl: './location-card.scss',
+  templateUrl: './location-card.component.html',
+  styleUrl: './location-card.component.scss',
 })
 export class LocationCardComponent {
   private locationsService = inject(LocationsService);
