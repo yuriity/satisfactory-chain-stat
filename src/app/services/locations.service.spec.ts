@@ -288,4 +288,81 @@ describe('LocationsService', () => {
       .find((loc) => loc.id === 'silica-plant-1');
     expect(silicaPlant?.production?.[0]?.consumption).toBe(240);
   });
+
+  it('should delete a location from the locations list', () => {
+    // Get initial count
+    const initialCount = service.locations().length;
+    expect(initialCount).toBe(3);
+
+    // Get the first location to delete
+    const locationToDelete = service.locations()[0];
+    expect(locationToDelete.name).toBe('Silica Plant');
+
+    // Delete the location
+    service.deleteLocation(locationToDelete);
+
+    // Verify the location was removed
+    const finalCount = service.locations().length;
+    expect(finalCount).toBe(2);
+
+    // Verify the specific location is no longer in the list
+    const deletedLocationExists = service
+      .locations()
+      .some((loc) => loc.id === locationToDelete.id);
+    expect(deletedLocationExists).toBeFalse();
+  });
+
+  it('should recalculate consumption after deleting a location', () => {
+    // Get the Circuit Board Plant (which consumes from Silica Plant and Plastic Plant)
+    const circuitBoardPlant = service
+      .locations()
+      .find((loc) => loc.id === 'circuit-board-plant1');
+    expect(circuitBoardPlant).toBeDefined();
+
+    // Get the Silica Plant (which produces Silica that Circuit Board Plant consumes)
+    const silicaPlant = service
+      .locations()
+      .find((loc) => loc.id === 'silica-plant-1');
+    expect(silicaPlant).toBeDefined();
+
+    // Initially, Silica Plant should have consumption > 0 because Circuit Board Plant uses it
+    const initialSilicaConsumption =
+      silicaPlant?.production?.[0]?.consumption ?? 0;
+    expect(initialSilicaConsumption).toBeGreaterThan(0);
+
+    // Delete the Circuit Board Plant
+    service.deleteLocation(circuitBoardPlant!);
+
+    // After deleting Circuit Board Plant, Silica Plant should have consumption = 0
+    const updatedSilicaPlant = service
+      .locations()
+      .find((loc) => loc.id === 'silica-plant-1');
+    const finalSilicaConsumption =
+      updatedSilicaPlant?.production?.[0]?.consumption ?? 0;
+    expect(finalSilicaConsumption).toBe(0);
+
+    // Verify Circuit Board Plant was actually deleted
+    const deletedPlantExists = service
+      .locations()
+      .some((loc) => loc.id === 'circuit-board-plant1');
+    expect(deletedPlantExists).toBeFalse();
+  });
+
+  it('should handle deleting a non-existent location gracefully', () => {
+    const initialCount = service.locations().length;
+
+    // Create a fake location that doesn't exist in the service
+    const fakeLocation: Location = {
+      id: 'non-existent-id',
+      name: 'Fake Location',
+      resourceSources: [],
+    };
+
+    // Try to delete the non-existent location
+    service.deleteLocation(fakeLocation);
+
+    // Count should remain the same
+    const finalCount = service.locations().length;
+    expect(finalCount).toBe(initialCount);
+  });
 });

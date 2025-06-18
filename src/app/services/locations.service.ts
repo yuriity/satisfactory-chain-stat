@@ -50,6 +50,22 @@ export class LocationsService {
     }
   }
 
+  /**
+   * Delete a location from the locations list
+   * @param location The location to delete
+   */
+  public deleteLocation(location: Location): void {
+    this.locationsSignal.update((locations) => {
+      const updatedLocations = locations.filter(
+        (loc) => loc.id !== location.id
+      );
+
+      calculateConsumption(updatedLocations);
+
+      return updatedLocations;
+    });
+  }
+
   private updateLocation(updatedLocation: Location): void {
     this.locationsSignal.update((locations) => {
       const updatedLocations = locations.map((loc) =>

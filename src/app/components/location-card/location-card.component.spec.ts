@@ -19,6 +19,7 @@ describe('LocationCardComponent', () => {
     // Create mock LocationsService
     locationsServiceSpy = jasmine.createSpyObj('LocationsService', [
       'editLocation',
+      'deleteLocation',
     ]);
 
     // Create mock resources
@@ -137,6 +138,51 @@ describe('LocationCardComponent', () => {
     editButton.triggerEventHandler('click');
 
     expect(locationsServiceSpy.editLocation).toHaveBeenCalledWith(mockLocation);
+  });
+
+  it('should call deleteLocation service when delete button is clicked and confirmed', () => {
+    // Mock window.confirm to return true
+    spyOn(window, 'confirm').and.returnValue(true);
+    locationsServiceSpy.deleteLocation = jasmine.createSpy('deleteLocation');
+
+    const deleteButton = fixture.debugElement.query(By.css('.delete-button'));
+    deleteButton.triggerEventHandler('click');
+
+    expect(window.confirm).toHaveBeenCalledWith(
+      'Are you sure you want to delete "Iron Factory"? This action cannot be undone.'
+    );
+    expect(locationsServiceSpy.deleteLocation).toHaveBeenCalledWith(
+      mockLocation
+    );
+  });
+
+  it('should not call deleteLocation service when delete button is clicked and cancelled', () => {
+    // Mock window.confirm to return false
+    spyOn(window, 'confirm').and.returnValue(false);
+    locationsServiceSpy.deleteLocation = jasmine.createSpy('deleteLocation');
+
+    const deleteButton = fixture.debugElement.query(By.css('.delete-button'));
+    deleteButton.triggerEventHandler('click');
+
+    expect(window.confirm).toHaveBeenCalledWith(
+      'Are you sure you want to delete "Iron Factory"? This action cannot be undone.'
+    );
+    expect(locationsServiceSpy.deleteLocation).not.toHaveBeenCalled();
+  });
+
+  it('should display both edit and delete buttons', () => {
+    const editButton = fixture.debugElement.query(By.css('.edit-button'));
+    const deleteButton = fixture.debugElement.query(By.css('.delete-button'));
+
+    expect(editButton).toBeTruthy();
+    expect(deleteButton).toBeTruthy();
+
+    expect(editButton.nativeElement.getAttribute('aria-label')).toBe(
+      'Edit location'
+    );
+    expect(deleteButton.nativeElement.getAttribute('aria-label')).toBe(
+      'Delete location'
+    );
   });
 
   it('should update display when location input changes', () => {

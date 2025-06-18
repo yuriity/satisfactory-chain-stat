@@ -10,24 +10,38 @@
     padding: 1rem;
   }
 
-  .edit-button {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bs-light);
+    .action-buttons {
+      .btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       border: 0;
+i {
+    font-size: 1.25rem;
+  }
+}
+}
+
+.edit-button {
+  background-color: transparent;
     color: var(--bs-primary);
 
     &:hover {
       background-color: var(--bs-primary-bg-subtle);
-        border-color: var(--bs-primary-border-subtle);
-    }
+      color: var(--bs-primary);
+      }
+      }
 
-    i {
-      font-size: 1.25rem;
+    .delete-button {
+      background-color: transparent;
+      color: var(--bs-danger);
+
+      &:hover {
+        background-color: var(--bs-danger-bg-subtle);
+        color: var(--bs-danger);
     }
   }
 

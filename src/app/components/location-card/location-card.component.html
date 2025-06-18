@@ -1,14 +1,23 @@
 <div class="location-card card">
-  <!-- Card Header with Title and Edit Button -->
+  <!-- Card Header with Title and Action Buttons -->
   <div class="card-header d-flex justify-content-between align-items-center">
     <h2 class="fs-4 mb-0">{{ location().name }}</h2>
-    <button
-      class="btn btn-sm rounded-circle edit-button"
-      (click)="onEditClick()"
-      aria-label="Edit location"
-    >
-      <i class="bi bi-pencil-fill"></i>
-    </button>
+    <div class="action-buttons d-flex gap-2">
+      <button
+        class="btn btn-sm rounded-circle edit-button"
+        (click)="onEditClick()"
+        aria-label="Edit location"
+      >
+        <i class="bi bi-pencil-fill"></i>
+      </button>
+      <button
+        class="btn btn-sm rounded-circle delete-button"
+        (click)="onDeleteClick()"
+        aria-label="Delete location"
+      >
+        <i class="bi bi-trash-fill"></i>
+      </button>
+    </div>
   </div>
 
   <!-- Card Body -->

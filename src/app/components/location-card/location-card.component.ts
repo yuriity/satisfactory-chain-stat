@@ -1,11 +1,7 @@
 import { Component, input, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Resource } from '../../models/resource';
-import {
-  Location,
-  ConsumptionRecord,
-  ProductionRecord,
-} from '../../models/location';
+import { Location } from '../../models/location';
 import { LocationsService } from '../../services/locations.service';
 
 @Component({
@@ -38,5 +34,17 @@ export class LocationCardComponent {
   // Handle edit button click
   protected onEditClick(): void {
     this.locationsService.editLocation(this.location());
+  }
+
+  // Handle delete button click with confirmation
+  protected onDeleteClick(): void {
+    const location = this.location();
+    const confirmed = confirm(
+      `Are you sure you want to delete "${location.name}"? This action cannot be undone.`
+    );
+
+    if (confirmed) {
+      this.locationsService.deleteLocation(location);
+    }
   }
 }
