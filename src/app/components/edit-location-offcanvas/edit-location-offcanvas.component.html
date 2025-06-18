@@ -17,7 +17,13 @@
       id="locationName"
       [ngModel]="editableLocation()!.name"
       (ngModelChange)="updateLocationName($event)"
+      [class.is-invalid]="!isFormValid() && editableLocation()!.name !== null"
     />
+    @if (!isFormValid() && editableLocation()!.name !== null) {
+    <div class="invalid-feedback">
+      Location name is required and cannot be empty.
+    </div>
+    }
   </div>
 
   <!-- Inbound Sources Section -->
@@ -153,7 +159,12 @@
     <button type="button" class="btn btn-secondary" (click)="closeOffcanvas()">
       Cancel
     </button>
-    <button type="button" class="btn btn-primary" (click)="saveLocation()">
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="saveLocation()"
+      [disabled]="!isFormValid()"
+    >
       Save
     </button>
   </div>

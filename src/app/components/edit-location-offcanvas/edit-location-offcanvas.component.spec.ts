@@ -345,4 +345,138 @@ describe('EditLocationOffcanvasComponent', () => {
       )
       .toContain('No other locations available as sources');
   });
+
+  // Validation Tests
+  describe('Location Name Validation', () => {
+    it('should be invalid when location name is empty', () => {
+      component.updateLocationName('');
+      fixture.detectChanges();
+
+      expect(component['isFormValid']())
+        .withContext('Form should be invalid for empty name')
+        .toBe(false);
+    });
+
+    it('should be invalid when location name is only whitespace', () => {
+      component.updateLocationName('   ');
+      fixture.detectChanges();
+
+      expect(component['isFormValid']())
+        .withContext('Form should be invalid for whitespace-only name')
+        .toBe(false);
+    });
+
+    it('should be valid when location name has valid content', () => {
+      component.updateLocationName('Valid Location Name');
+      fixture.detectChanges();
+
+      expect(component['isFormValid']())
+        .withContext('Form should be valid for non-empty name')
+        .toBe(true);
+    });
+    it('should disable save button when form is invalid', () => {
+      component.updateLocationName('');
+      fixture.detectChanges();
+
+      const buttons = fixture.debugElement.queryAll(
+        By.css('button.btn-primary')
+      );
+      const saveButton = buttons.find(
+        (btn) => btn.nativeElement.textContent.trim() === 'Save'
+      );
+
+      expect(saveButton).toBeTruthy();
+      expect(saveButton!.nativeElement.disabled)
+        .withContext('Save button should be disabled when form is invalid')
+        .toBe(true);
+    });
+
+    it('should enable save button when form is valid', () => {
+      component.updateLocationName('Valid Name');
+      fixture.detectChanges();
+
+      const buttons = fixture.debugElement.queryAll(
+        By.css('button.btn-primary')
+      );
+      const saveButton = buttons.find(
+        (btn) => btn.nativeElement.textContent.trim() === 'Save'
+      );
+
+      expect(saveButton).toBeTruthy();
+      expect(saveButton!.nativeElement.disabled)
+        .withContext('Save button should be enabled when form is valid')
+        .toBe(false);
+    });
+
+    it('should show validation error message for empty name', () => {
+      component.updateLocationName('');
+      fixture.detectChanges();
+
+      const errorMessage = fixture.debugElement.query(
+        By.css('.invalid-feedback')
+      );
+
+      expect(errorMessage)
+        .withContext('Error message should be present for invalid name')
+        .toBeTruthy();
+
+      expect(errorMessage.nativeElement.textContent)
+        .withContext('Error message should contain appropriate text')
+        .toContain('Location name is required and cannot be empty');
+    });
+
+    it('should add is-invalid class to input when name is invalid', () => {
+      component.updateLocationName('');
+      fixture.detectChanges();
+
+      const nameInput = fixture.debugElement.query(By.css('#locationName'));
+
+      expect(nameInput.nativeElement.classList.contains('is-invalid'))
+        .withContext('Input should have is-invalid class when form is invalid')
+        .toBe(true);
+    });
+
+    it('should not show validation error initially for new locations', () => {
+      // Test with a new location that has null name
+      const newLocation: Location = {
+        id: 'new-location',
+        name: 'New Location',
+        resourceSources: [],
+      };
+
+      component.setData({ location: newLocation });
+      fixture.detectChanges();
+
+      const errorMessage = fixture.debugElement.query(
+        By.css('.invalid-feedback')
+      );
+
+      expect(errorMessage)
+        .withContext(
+          'Error message should not be shown initially for new locations'
+        )
+        .toBeFalsy();
+    });
+
+    it('should trim location name when saving', () => {
+      component.updateLocationName('  Trimmed Name  ');
+      component['saveLocation']();
+
+      expect(mockOffcanvasRef.close).toHaveBeenCalledWith({
+        action: 'save',
+        location: jasmine.objectContaining({
+          name: 'Trimmed Name',
+        }),
+      });
+    });
+
+    it('should not save when form is invalid', () => {
+      component.updateLocationName('');
+      component['saveLocation']();
+
+      expect(mockOffcanvasRef.close)
+        .withContext('Should not call close when form is invalid')
+        .not.toHaveBeenCalled();
+    });
+  });
 });

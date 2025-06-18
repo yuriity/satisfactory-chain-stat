@@ -38,9 +38,19 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
   // Computed signal for available locations (excluding the current one)
   protected availableLocations = computed(() => {
     const currentLocationId = this.editableLocation()?.id;
-    return this.locationsService.locations().filter(
-      (location) => location.id !== currentLocationId
-    );
+    return this.locationsService
+      .locations()
+      .filter((location) => location.id !== currentLocationId);
+  });
+
+  // Computed signal for form validation
+  protected isFormValid = computed(() => {
+    const location = this.editableLocation();
+    if (!location) return false;
+
+    // Location name validation: can't be empty, null, or just whitespace
+    const name = location.name?.trim();
+    return !!(name && name.length > 0);
   });
 
   constructor() {
@@ -221,10 +231,16 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
 
   protected saveLocation(): void {
     const location = this.editableLocationSignal();
-    if (location) {
+    if (location && this.isFormValid()) {
+      // Trim the location name before saving
+      const locationToSave = {
+        ...location,
+        name: location.name.trim(),
+      };
+
       this.close({
         action: 'save',
-        location,
+        location: locationToSave,
       });
     }
   }
