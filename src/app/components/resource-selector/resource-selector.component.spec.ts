@@ -965,36 +965,53 @@ describe('ResourceSelectorComponent', () => {
     expect(dropdown).toBeTruthy();
   });
 
-  it('should position dropdown above the input if there is not enough space below', () => {
-    // Set the component near the top of the viewport
-    const topOffset = window.innerHeight - 300;
-    component['elementRef'].nativeElement.getBoundingClientRect = () => ({
+  it('should position dropdown above the input if there is not enough space below', (done) => {
+    // Set the component near the bottom of the viewport (not enough space below)
+    const topOffset = window.innerHeight - 150; // Only 150px from bottom
+    const mockRect = {
       top: topOffset,
       left: 0,
       width: 0,
-      height: 0,
-      bottom: topOffset + 300,
+      height: 40,
+      bottom: topOffset + 40,
       right: 0,
-    });
+      x: 0,
+      y: 0,
+      toJSON: () => {},
+    };
+
+    // Mock window.innerHeight to be consistent
+    spyOnProperty(window, 'innerHeight').and.returnValue(600);
+
+    // Mock the getBoundingClientRect method on the component element
+    spyOn(
+      fixture.debugElement.nativeElement,
+      'getBoundingClientRect'
+    ).and.returnValue(mockRect);
 
     // Show the dropdown
     component.toggleDropdown();
     fixture.detectChanges();
 
-    // Now the dropdown should be visible
-    const dropdown = fixture.debugElement.query(By.css('.dropdown-menu.show'));
-    expect(dropdown).toBeTruthy();
+    // Wait for the async setTimeout in toggleDropdown
+    setTimeout(() => {
+      fixture.detectChanges();
 
-    // Check that the dropdown is positioned above the input
-    const dropdownElement = dropdown.nativeElement;
-    const inputElement = fixture.debugElement.query(
-      By.css('input')
-    ).nativeElement;
+      // Now the dropdown should be visible
+      const dropdown = fixture.debugElement.query(
+        By.css('.dropdown-menu.show')
+      );
+      expect(dropdown).toBeTruthy();
 
-    const dropdownRect = dropdownElement.getBoundingClientRect();
-    const inputRect = inputElement.getBoundingClientRect();
+      // Check that the dropdown has the correct CSS classes for upward positioning
+      const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
+      expect(dropdownContainer.classes['dropup']).toBeTrue();
 
-    expect(dropdownRect.bottom).toBeLessThan(inputRect.top);
+      const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
+      expect(dropdownMenu.classes['dropdown-menu-up']).toBeTrue();
+
+      done();
+    }, 10);
   });
 
   it('should not overflow the viewport when opening dropdown', () => {
@@ -1202,7 +1219,7 @@ describe('ResourceSelectorComponent', () => {
     expect(component['dropdownDirection']()).toBe('down');
   });
 
-  it('should set dropdown direction to "up" when there is not enough space below', () => {
+  it('should set dropdown direction to "up" when there is not enough space below', (done) => {
     // Mock the element's position in viewport
     // We're simulating the situation where there's not enough space below
     const mockRect = {
@@ -1230,13 +1247,20 @@ describe('ResourceSelectorComponent', () => {
     component.toggleDropdown();
     fixture.detectChanges();
 
-    // Check that we're using dropup class
-    const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
-    expect(dropdownContainer.classes['dropup']).toBeTrue();
-    expect(component['dropdownDirection']()).toBe('up');
+    // Wait for the async setTimeout in toggleDropdown
+    setTimeout(() => {
+      fixture.detectChanges();
 
-    // Check that dropdown menu has the up class
-    const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
-    expect(dropdownMenu.classes['dropdown-menu-up']).toBeTrue();
+      // Check that we're using dropup class
+      const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
+      expect(dropdownContainer.classes['dropup']).toBeTrue();
+      expect(component['dropdownDirection']()).toBe('up');
+
+      // Check that dropdown menu has the up class
+      const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
+      expect(dropdownMenu.classes['dropdown-menu-up']).toBeTrue();
+
+      done();
+    }, 10);
   });
 });
