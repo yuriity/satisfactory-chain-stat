@@ -51,10 +51,14 @@ export class LocationsService {
   }
 
   private updateLocation(updatedLocation: Location): void {
-    this.locationsSignal.update((locations) =>
-      locations.map((loc) =>
+    this.locationsSignal.update((locations) => {
+      const updatedLocations = locations.map((loc) =>
         loc.id === updatedLocation.id ? updatedLocation : loc
-      )
-    );
+      );
+
+      calculateConsumption(updatedLocations);
+
+      return updatedLocations;
+    });
   }
 }
