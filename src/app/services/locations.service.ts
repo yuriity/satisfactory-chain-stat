@@ -36,6 +36,7 @@ export class LocationsService {
       data: { location },
       backdrop: 'static',
       position: 'end',
+      width: '450px',
     });
 
     try {
