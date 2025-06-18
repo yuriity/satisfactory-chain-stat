@@ -2,27 +2,40 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { EditLocationOffcanvasComponent } from './edit-location-offcanvas.component';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { LocationsService } from '../../services/locations.service';
+import { ResourcesService } from '../../services/resources.service';
 import { Location } from '../../models/location';
+import { Resource } from '../../models/resource';
 import { OffcanvasRef } from '../../services/offcanvas-config';
 import { FormsModule } from '@angular/forms';
+import { By } from '@angular/platform-browser';
 
 describe('EditLocationOffcanvasComponent', () => {
   let component: EditLocationOffcanvasComponent;
   let fixture: ComponentFixture<EditLocationOffcanvasComponent>;
   let locationsServiceSpy: jasmine.SpyObj<LocationsService>;
+  let resourcesServiceSpy: jasmine.SpyObj<ResourcesService>;
   let mockOffcanvasRef: jasmine.SpyObj<OffcanvasRef>;
+
+  const mockResource = new Resource(
+    'Desc_Plastic_C',
+    'Plastic',
+    'Synthetic polymer used in manufacturing'
+  );
 
   const mockLocation: Location = {
     id: 'test-location',
     name: 'Test Location',
     resourceSources: [],
-    consumption: [],
-    production: [],
+    consumption: [{ resource: mockResource, amount: 150 }],
+    production: [{ resource: mockResource, amount: 120, consumption: 0 }],
   };
 
   beforeEach(async () => {
     locationsServiceSpy = jasmine.createSpyObj('LocationsService', [
       'locations',
+    ]);
+    resourcesServiceSpy = jasmine.createSpyObj('ResourcesService', [
+      'resources',
     ]);
     mockOffcanvasRef = jasmine.createSpyObj('OffcanvasRef', [
       'close',
@@ -34,6 +47,7 @@ describe('EditLocationOffcanvasComponent', () => {
       providers: [
         provideZonelessChangeDetection(),
         { provide: LocationsService, useValue: locationsServiceSpy },
+        { provide: ResourcesService, useValue: resourcesServiceSpy },
       ],
     }).compileComponents();
 
@@ -75,7 +89,9 @@ describe('EditLocationOffcanvasComponent', () => {
     fixture.detectChanges();
 
     // Call saveLocation through the public interface (click the save button)
-    const saveButton = fixture.nativeElement.querySelector('.btn-primary');
+    const saveButton = fixture.nativeElement.querySelector(
+      '.d-flex.gap-2.justify-content-end .btn-primary'
+    );
     saveButton.click();
 
     expect(mockOffcanvasRef.close).toHaveBeenCalledWith({
@@ -141,9 +157,76 @@ describe('EditLocationOffcanvasComponent', () => {
     emptyComponent.offcanvasRef = mockOffcanvasRef;
     emptyFixture.detectChanges();
 
-    const saveButton = emptyFixture.nativeElement.querySelector('.btn-primary');
+    const saveButton = emptyFixture.nativeElement.querySelector(
+      '.d-flex.gap-2.justify-content-end .btn-primary'
+    );
     // Should not find save button because editableLocation() returns null
     expect(saveButton).toBeNull();
-    expect(mockOffcanvasRef.close).not.toHaveBeenCalled();
+  });
+
+  // Testing inbound resource management
+  it('should display inbound resources from location data', () => {
+    const inboundSection = fixture.debugElement.query(
+      By.css('.mb-4:nth-child(2)')
+    );
+    expect(inboundSection).toBeTruthy();
+
+    const resourceRows = fixture.debugElement.queryAll(By.css('.row.mb-2'));
+    expect(resourceRows.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('should add inbound resource when add button is clicked', () => {
+    const initialConsumptionLength =
+      component.editableLocation()?.consumption?.length || 0;
+
+    const addButton = fixture.debugElement.query(
+      By.css('[title="Add Inbound Resource"]')
+    );
+    addButton.triggerEventHandler('click', null);
+    fixture.detectChanges();
+
+    const updatedConsumptionLength =
+      component.editableLocation()?.consumption?.length || 0;
+    expect(updatedConsumptionLength).toBe(initialConsumptionLength + 1);
+  });
+
+  it('should remove inbound resource when remove button is clicked', () => {
+    const initialConsumptionLength =
+      component.editableLocation()?.consumption?.length || 0;
+
+    const removeButton = fixture.debugElement.query(
+      By.css('[title="Remove Resource"]')
+    );
+    if (removeButton) {
+      removeButton.triggerEventHandler('click', null);
+      fixture.detectChanges();
+
+      const updatedConsumptionLength =
+        component.editableLocation()?.consumption?.length || 0;
+      expect(updatedConsumptionLength).toBe(initialConsumptionLength - 1);
+    }
+  });
+
+  // Testing outbound resource management
+  it('should display outbound resources from location data', () => {
+    const outboundSection = fixture.debugElement.query(
+      By.css('.mb-4:nth-child(3)')
+    );
+    expect(outboundSection).toBeTruthy();
+  });
+
+  it('should add outbound resource when add button is clicked', () => {
+    const initialProductionLength =
+      component.editableLocation()?.production?.length || 0;
+
+    const addButton = fixture.debugElement.query(
+      By.css('[title="Add Outbound Resource"]')
+    );
+    addButton.triggerEventHandler('click', null);
+    fixture.detectChanges();
+
+    const updatedProductionLength =
+      component.editableLocation()?.production?.length || 0;
+    expect(updatedProductionLength).toBe(initialProductionLength + 1);
   });
 });

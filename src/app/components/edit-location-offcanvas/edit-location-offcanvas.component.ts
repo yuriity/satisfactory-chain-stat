@@ -2,8 +2,14 @@ import { Component, inject, signal, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BaseOffcanvasComponent } from '../base-offcanvas/base-offcanvas.component';
+import { ResourceSelectorComponent } from '../resource-selector/resource-selector.component';
 import { LocationsService } from '../../services/locations.service';
-import { Location } from '../../models/location';
+import {
+  Location,
+  ConsumptionRecord,
+  ProductionRecord,
+} from '../../models/location';
+import { Resource } from '../../models/resource';
 
 export interface EditLocationData {
   location: Location;
@@ -18,7 +24,7 @@ export interface EditLocationResult {
   selector: 'scs-edit-location-offcanvas',
   standalone: true,
   templateUrl: './edit-location-offcanvas.component.html',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ResourceSelectorComponent],
 })
 export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
   EditLocationData,
@@ -40,8 +46,12 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
     effect(() => {
       const data = this.data();
       if (data?.location) {
-        // Create a mutable copy when data is available
-        this.editableLocationSignal.set({ ...data.location });
+        // Create a deep copy with default arrays if they don't exist
+        this.editableLocationSignal.set({
+          ...data.location,
+          consumption: [...(data.location.consumption || [])],
+          production: [...(data.location.production || [])],
+        });
       }
     });
   }
@@ -50,6 +60,129 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
     const location = this.editableLocationSignal();
     if (location) {
       this.editableLocationSignal.set({ ...location, name: newName });
+    }
+  }
+
+  // Inbound (Consumption) Management
+  protected addInboundResource(): void {
+    const location = this.editableLocationSignal();
+    if (location) {
+      const consumption = [...(location.consumption || [])];
+      consumption.push({
+        resource: null as any, // Will be set when user selects a resource
+        amount: 0,
+      });
+      this.editableLocationSignal.set({
+        ...location,
+        consumption,
+      });
+    }
+  }
+
+  protected removeInboundResource(index: number): void {
+    const location = this.editableLocationSignal();
+    if (location && location.consumption) {
+      const consumption = [...location.consumption];
+      consumption.splice(index, 1);
+      this.editableLocationSignal.set({
+        ...location,
+        consumption,
+      });
+    }
+  }
+
+  protected updateInboundResource(
+    index: number,
+    resource: Resource | null
+  ): void {
+    const location = this.editableLocationSignal();
+    if (location && location.consumption && resource) {
+      const consumption = [...location.consumption];
+      consumption[index] = {
+        ...consumption[index],
+        resource,
+      };
+      this.editableLocationSignal.set({
+        ...location,
+        consumption,
+      });
+    }
+  }
+
+  protected updateInboundAmount(index: number, amount: number): void {
+    const location = this.editableLocationSignal();
+    if (location && location.consumption) {
+      const consumption = [...location.consumption];
+      consumption[index] = {
+        ...consumption[index],
+        amount,
+      };
+      this.editableLocationSignal.set({
+        ...location,
+        consumption,
+      });
+    }
+  }
+
+  // Outbound (Production) Management
+  protected addOutboundResource(): void {
+    const location = this.editableLocationSignal();
+    if (location) {
+      const production = [...(location.production || [])];
+      production.push({
+        resource: null as any, // Will be set when user selects a resource
+        amount: 0,
+        consumption: 0,
+      });
+      this.editableLocationSignal.set({
+        ...location,
+        production,
+      });
+    }
+  }
+
+  protected removeOutboundResource(index: number): void {
+    const location = this.editableLocationSignal();
+    if (location && location.production) {
+      const production = [...location.production];
+      production.splice(index, 1);
+      this.editableLocationSignal.set({
+        ...location,
+        production,
+      });
+    }
+  }
+
+  protected updateOutboundResource(
+    index: number,
+    resource: Resource | null
+  ): void {
+    const location = this.editableLocationSignal();
+    if (location && location.production && resource) {
+      const production = [...location.production];
+      production[index] = {
+        ...production[index],
+        resource,
+      };
+      this.editableLocationSignal.set({
+        ...location,
+        production,
+      });
+    }
+  }
+
+  protected updateOutboundAmount(index: number, amount: number): void {
+    const location = this.editableLocationSignal();
+    if (location && location.production) {
+      const production = [...location.production];
+      production[index] = {
+        ...production[index],
+        amount,
+      };
+      this.editableLocationSignal.set({
+        ...location,
+        production,
+      });
     }
   }
 

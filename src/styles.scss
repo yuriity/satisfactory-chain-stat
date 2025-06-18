@@ -3,3 +3,8 @@
 
 // Import Bootstrap Icons
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Global button icon size override
+.btn-sm i {
+  font-size: 1.25rem !important;
+}
