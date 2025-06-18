@@ -25,15 +25,32 @@ describe('EditLocationOffcanvasComponent', () => {
   const mockLocation: Location = {
     id: 'test-location',
     name: 'Test Location',
-    resourceSources: [],
+    resourceSources: ['other-location-1'],
     consumption: [{ resource: mockResource, amount: 150 }],
     production: [{ resource: mockResource, amount: 120, consumption: 0 }],
   };
+
+  const mockLocations: Location[] = [
+    mockLocation,
+    {
+      id: 'other-location-1',
+      name: 'Other Location 1',
+      resourceSources: [],
+    },
+    {
+      id: 'other-location-2',
+      name: 'Other Location 2',
+      resourceSources: [],
+    },
+  ];
 
   beforeEach(async () => {
     locationsServiceSpy = jasmine.createSpyObj('LocationsService', [
       'locations',
     ]);
+    // Mock the locations signal
+    locationsServiceSpy.locations.and.returnValue(mockLocations);
+
     resourcesServiceSpy = jasmine.createSpyObj('ResourcesService', [
       'resources',
     ]);
@@ -228,5 +245,104 @@ describe('EditLocationOffcanvasComponent', () => {
     const updatedProductionLength =
       component.editableLocation()?.production?.length || 0;
     expect(updatedProductionLength).toBe(initialProductionLength + 1);
+  });
+
+  // Testing resource sources management
+  it('should display available locations as resource sources', () => {
+    const inboundSourcesSection = fixture.debugElement.query(
+      By.css('.mb-4:nth-child(3)')
+    );
+    expect(inboundSourcesSection).toBeTruthy();
+
+    const checkboxes = fixture.debugElement.queryAll(
+      By.css('.list-group-item input[type="checkbox"]')
+    );
+    // Should show 2 available locations (excluding the current one)
+    expect(checkboxes.length).toBe(2);
+  });
+
+  it('should show checked state for selected resource sources', () => {
+    const firstCheckbox = fixture.debugElement.query(
+      By.css('.list-group-item input[type="checkbox"]')
+    );
+    expect(firstCheckbox.nativeElement.checked).toBe(true); // other-location-1 is selected
+  });
+
+  it('should toggle resource source when checkbox is clicked', () => {
+    const initialSourcesLength =
+      component.editableLocation()?.resourceSources?.length || 0;
+
+    // Find a checkbox that is currently unchecked
+    const checkboxes = fixture.debugElement.queryAll(
+      By.css('.list-group-item input[type="checkbox"]')
+    );
+    const uncheckedCheckbox = checkboxes.find(
+      (cb) => !cb.nativeElement.checked
+    );
+
+    if (uncheckedCheckbox) {
+      uncheckedCheckbox.triggerEventHandler('change', {
+        target: { checked: true },
+      });
+      fixture.detectChanges();
+
+      const updatedSourcesLength =
+        component.editableLocation()?.resourceSources?.length || 0;
+      expect(updatedSourcesLength).toBe(initialSourcesLength + 1);
+    }
+  });
+
+  it('should remove resource source when checkbox is unchecked', () => {
+    const initialSourcesLength =
+      component.editableLocation()?.resourceSources?.length || 0;
+
+    // Find a checkbox that is currently checked
+    const checkboxes = fixture.debugElement.queryAll(
+      By.css('.list-group-item input[type="checkbox"]')
+    );
+    const checkedCheckbox = checkboxes.find((cb) => cb.nativeElement.checked);
+
+    if (checkedCheckbox) {
+      checkedCheckbox.triggerEventHandler('change', {
+        target: { checked: false },
+      });
+      fixture.detectChanges();
+
+      const updatedSourcesLength =
+        component.editableLocation()?.resourceSources?.length || 0;
+      expect(updatedSourcesLength).toBe(initialSourcesLength - 1);
+    }
+  });
+
+  it('should exclude current location from available sources', () => {
+    const availableLocations = component['availableLocations']();
+    const currentLocationId = component.editableLocation()?.id;
+
+    expect(availableLocations.every((loc) => loc.id !== currentLocationId))
+      .withContext('Available locations should not include current location')
+      .toBe(true);
+  });
+
+  it('should show message when no other locations are available', () => {
+    // Mock service to return only the current location
+    locationsServiceSpy.locations.and.returnValue([mockLocation]);
+
+    // Create a new component instance to pick up the new mock data
+    const noLocationFixture = TestBed.createComponent(
+      EditLocationOffcanvasComponent
+    );
+    const noLocationComponent = noLocationFixture.componentInstance;
+    noLocationComponent.offcanvasRef = mockOffcanvasRef;
+    noLocationComponent.setData({ location: mockLocation });
+    noLocationFixture.detectChanges();
+
+    const noLocationsMessage = noLocationFixture.debugElement.query(
+      By.css('.text-muted.small')
+    );
+    expect(noLocationsMessage?.nativeElement.textContent)
+      .withContext(
+        'Should show no locations message when only current location exists'
+      )
+      .toContain('No other locations available as sources');
   });
 });

@@ -20,6 +20,32 @@
     />
   </div>
 
+  <!-- Inbound Sources Section -->
+  <div class="mb-4">
+    <h6 class="mb-3">Inbound sources</h6>
+
+    @if (availableLocations().length > 0) {
+    <ul class="list-group">
+      @for (location of availableLocations(); track location.id) {
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          [id]="'source-' + location.id"
+          [checked]="isResourceSourceSelected(location.id)"
+          (change)="toggleResourceSource(location.id, $any($event.target).checked)"
+        />
+        <label class="form-check-label" [for]="'source-' + location.id">
+          {{ location.name }}
+        </label>
+      </li>
+      }
+    </ul>
+    } @else {
+    <p class="text-muted small">No other locations available as sources</p>
+    }
+  </div>
+
   <!-- Inbound Section -->
   <div class="mb-4">
     <div class="d-flex justify-content-between align-items-center mb-3">

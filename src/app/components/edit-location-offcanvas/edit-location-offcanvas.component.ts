@@ -1,4 +1,4 @@
-import { Component, inject, signal, effect } from '@angular/core';
+import { Component, inject, signal, effect, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BaseOffcanvasComponent } from '../base-offcanvas/base-offcanvas.component';
@@ -35,6 +35,14 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
   // Public getter for the editable location
   public editableLocation = this.editableLocationSignal.asReadonly();
 
+  // Computed signal for available locations (excluding the current one)
+  protected availableLocations = computed(() => {
+    const currentLocationId = this.editableLocation()?.id;
+    return this.locationsService.locations().filter(
+      (location) => location.id !== currentLocationId
+    );
+  });
+
   constructor() {
     super();
 
@@ -47,6 +55,7 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
           ...data.location,
           consumption: [...(data.location.consumption || [])],
           production: [...(data.location.production || [])],
+          resourceSources: [...(data.location.resourceSources || [])],
         });
       }
     });
@@ -56,6 +65,34 @@ export class EditLocationOffcanvasComponent extends BaseOffcanvasComponent<
     const location = this.editableLocationSignal();
     if (location) {
       this.editableLocationSignal.set({ ...location, name: newName });
+    }
+  }
+
+  // Resource Sources Management
+  protected isResourceSourceSelected(locationId: string): boolean {
+    const location = this.editableLocation();
+    return location?.resourceSources?.includes(locationId) || false;
+  }
+
+  protected toggleResourceSource(locationId: string, isChecked: boolean): void {
+    const location = this.editableLocationSignal();
+    if (location) {
+      let resourceSources = [...(location.resourceSources || [])];
+
+      if (isChecked) {
+        // Add the location ID if not already present
+        if (!resourceSources.includes(locationId)) {
+          resourceSources.push(locationId);
+        }
+      } else {
+        // Remove the location ID
+        resourceSources = resourceSources.filter((id) => id !== locationId);
+      }
+
+      this.editableLocationSignal.set({
+        ...location,
+        resourceSources,
+      });
     }
   }
 

@@ -77,6 +77,7 @@ describe('LocationsService', () => {
         data: { location: testLocation },
         backdrop: 'static',
         position: 'end',
+        width: '450px',
       }
     );
   });
