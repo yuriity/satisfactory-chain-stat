@@ -4,11 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BaseOffcanvasComponent } from '../base-offcanvas/base-offcanvas.component';
 import { ResourceSelectorComponent } from '../resource-selector/resource-selector.component';
 import { LocationsService } from '../../services/locations.service';
-import {
-  Location,
-  ConsumptionRecord,
-  ProductionRecord,
-} from '../../models/location';
+import { Location } from '../../models/location';
 import { Resource } from '../../models/resource';
 
 export interface EditLocationData {
@@ -21,7 +17,7 @@ export interface EditLocationResult {
 }
 
 @Component({
-  selector: 'scs-edit-location-offcanvas',
+  selector: '[scs-edit-location-offcanvas]',
   standalone: true,
   templateUrl: './edit-location-offcanvas.component.html',
   imports: [CommonModule, FormsModule, ResourceSelectorComponent],

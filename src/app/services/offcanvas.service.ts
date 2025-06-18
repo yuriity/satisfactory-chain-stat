@@ -38,6 +38,9 @@ export class OffcanvasService {
     component: Type<T>,
     config: OffcanvasConfig<D> = {}
   ): OffcanvasRef<R> {
+    // Close any existing offcanvas to prevent multiples
+    this.closeAll();
+
     const id = this.generateId();
 
     // Create the component dynamically
@@ -127,16 +130,38 @@ export class OffcanvasService {
     componentRef: ComponentRef<T>,
     offcanvasElement: HTMLElement
   ): void {
-    const contentElement = offcanvasElement.querySelector('.offcanvas-content');
-    if (!contentElement) {
-      throw new Error('Offcanvas content element not found');
-    }
-
     if (!componentRef.location.nativeElement) {
       throw new Error('Component native element not found');
     }
 
-    contentElement.appendChild(componentRef.location.nativeElement);
+    // Determine the component selector attribute
+    const componentElement = componentRef.location.nativeElement;
+    const selector = this.getComponentSelectorAttribute(componentRef);
+
+    if (selector) {
+      // Add the component selector as attribute to the offcanvas element
+      offcanvasElement.setAttribute(selector, '');
+    }
+
+    // Copy component content directly to offcanvas (no wrapper div)
+    while (componentElement.firstChild) {
+      offcanvasElement.appendChild(componentElement.firstChild);
+    }
+  }
+
+  private getComponentSelectorAttribute<T>(
+    componentRef: ComponentRef<T>
+  ): string | null {
+    // Extract selector from component metadata
+    const componentType = componentRef.componentType as any;
+    const selector = componentType.ɵcmp?.selectors?.[0]?.[0];
+
+    if (selector && selector.startsWith('[') && selector.endsWith(']')) {
+      // Remove brackets from attribute selector
+      return selector.slice(1, -1);
+    }
+
+    return null;
   }
 
   private createOffcanvasRef<R>(
@@ -317,9 +342,6 @@ export class OffcanvasService {
 
     // Apply configuration attributes
     this.applyOffcanvasConfig(element, config);
-
-    // Create minimal structure - let components define their own content
-    element.innerHTML = '<div class="offcanvas-content"></div>';
 
     return element;
   }

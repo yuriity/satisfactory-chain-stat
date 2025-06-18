@@ -7,14 +7,24 @@ import { BaseOffcanvasComponent } from '../components/base-offcanvas/base-offcan
 
 // Test component that extends BaseOffcanvasComponent
 @Component({
-  selector: 'test-offcanvas',
+  selector: '[test-offcanvas-component]',
   standalone: true,
   template: `
-    <div class="test-content">
-      <h5>Test Offcanvas</h5>
-      <p>Data: {{ data()?.message || 'No data' }}</p>
-      <button (click)="close('test-result')">Close with result</button>
-      <button (click)="dismiss('dismissed')">Dismiss</button>
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Test Offcanvas</h5>
+      <button
+        type="button"
+        class="btn-close"
+        (click)="dismiss('close-button')"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="test-content">
+        <p>Data: {{ data()?.message || 'No data' }}</p>
+        <button (click)="close('test-result')">Close with result</button>
+        <button (click)="dismiss('dismissed')">Dismiss</button>
+      </div>
     </div>
   `,
 })
@@ -144,7 +154,10 @@ describe('OffcanvasService', () => {
     expect(lastElement.getAttribute('data-bs-keyboard')).toBe('false');
     expect(lastElement.style.width).toBe('400px');
     expect(lastElement.classList.contains('custom-class')).toBe(true);
-    expect(lastElement.querySelector('.offcanvas-content')).toBeTruthy();
+    // Check that the component content was properly moved into the offcanvas
+    expect(lastElement.querySelector('.offcanvas-header')).toBeTruthy();
+    expect(lastElement.querySelector('.offcanvas-body')).toBeTruthy();
+    expect(lastElement.querySelector('.test-content')).toBeTruthy();
   });
 
   it('should close all open offcanvases', () => {
