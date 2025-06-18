@@ -51,6 +51,19 @@ export class LocationsService {
   }
 
   /**
+   * Create a new location and open the editor offcanvas
+   */
+  public async newLocation(): Promise<void> {
+    const newLocation: Location = {
+      id: crypto.randomUUID(),
+      name: 'New Location',
+      resourceSources: [],
+    };
+
+    await this.editLocation(newLocation);
+  }
+
+  /**
    * Delete a location from the locations list
    * @param location The location to delete
    */
@@ -68,9 +81,20 @@ export class LocationsService {
 
   private updateLocation(updatedLocation: Location): void {
     this.locationsSignal.update((locations) => {
-      const updatedLocations = locations.map((loc) =>
-        loc.id === updatedLocation.id ? updatedLocation : loc
+      const existingLocationIndex = locations.findIndex(
+        (loc) => loc.id === updatedLocation.id
       );
+
+      let updatedLocations: Location[];
+      if (existingLocationIndex >= 0) {
+        // Update existing location
+        updatedLocations = locations.map((loc) =>
+          loc.id === updatedLocation.id ? updatedLocation : loc
+        );
+      } else {
+        // Add new location
+        updatedLocations = [...locations, updatedLocation];
+      }
 
       calculateConsumption(updatedLocations);
 

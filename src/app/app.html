@@ -67,6 +67,14 @@
       </div>
     </div>
 
+    <div class="row mb-4">
+      <div class="col-12">
+        <button class="btn btn-success" (click)="createNewLocation()">
+          <i class="bi bi-plus-circle me-2"></i>Create Location
+        </button>
+      </div>
+    </div>
+
     @for (location of locationsService.locations(); track location.id) {
       <scs-location-card [location]="location" />
     }

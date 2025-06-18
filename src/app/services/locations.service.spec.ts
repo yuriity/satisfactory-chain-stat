@@ -365,4 +365,127 @@ describe('LocationsService', () => {
     const finalCount = service.locations().length;
     expect(finalCount).toBe(initialCount);
   });
+
+  it('should create a new location and open edit offcanvas when newLocation is called', async () => {
+    const mockOffcanvasRef = {
+      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
+        Promise.resolve({
+          action: 'save',
+          location: {
+            id: 'new-location-id',
+            name: 'My New Location',
+            resourceSources: ['silica-plant-1'],
+          },
+        })
+      ),
+      afterDismissed: jasmine
+        .createSpy('afterDismissed')
+        .and.returnValue(Promise.resolve()),
+      close: jasmine.createSpy('close'),
+      dismiss: jasmine.createSpy('dismiss'),
+      componentInstance: {},
+      componentRef: {} as any,
+    };
+
+    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+
+    const initialCount = service.locations().length;
+
+    await service.newLocation();
+
+    // Verify offcanvas was opened with a new location
+    expect(offcanvasService.open).toHaveBeenCalledWith(
+      EditLocationOffcanvasComponent,
+      {
+        data: {
+          location: jasmine.objectContaining({
+            name: 'New Location',
+            resourceSources: [],
+          }),
+        },
+        backdrop: 'static',
+        position: 'end',
+        width: '450px',
+      }
+    );
+
+    // Verify new location was added to the list
+    expect(service.locations().length).toBe(initialCount + 1);
+    const newLocation = service
+      .locations()
+      .find((loc) => loc.name === 'My New Location');
+    expect(newLocation).toBeDefined();
+    expect(newLocation?.resourceSources).toEqual(['silica-plant-1']);
+  });
+
+  it('should not add location when newLocation edit is cancelled', async () => {
+    const mockOffcanvasRef = {
+      afterClosed: jasmine
+        .createSpy('afterClosed')
+        .and.returnValue(Promise.resolve({ action: 'cancel' })),
+      afterDismissed: jasmine
+        .createSpy('afterDismissed')
+        .and.returnValue(Promise.resolve()),
+      close: jasmine.createSpy('close'),
+      dismiss: jasmine.createSpy('dismiss'),
+      componentInstance: {},
+      componentRef: {} as any,
+    };
+
+    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+
+    const initialCount = service.locations().length;
+
+    await service.newLocation();
+
+    // Verify no new location was added
+    expect(service.locations().length).toBe(initialCount);
+  });
+
+  it('should generate unique IDs for new locations', async () => {
+    // Mock crypto.randomUUID to return predictable values
+    const originalRandomUUID = crypto.randomUUID;
+    let callCount = 0;
+    spyOn(crypto, 'randomUUID').and.callFake(() => {
+      callCount++;
+      return `test-uuid-${callCount}-1234-5678-9abc` as `${string}-${string}-${string}-${string}-${string}`;
+    });
+
+    const mockOffcanvasRef = {
+      afterClosed: jasmine
+        .createSpy('afterClosed')
+        .and.returnValue(Promise.resolve({ action: 'cancel' })),
+      afterDismissed: jasmine
+        .createSpy('afterDismissed')
+        .and.returnValue(Promise.resolve()),
+      close: jasmine.createSpy('close'),
+      dismiss: jasmine.createSpy('dismiss'),
+      componentInstance: {},
+      componentRef: {} as any,
+    };
+
+    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+
+    await service.newLocation();
+    await service.newLocation();
+
+    expect(crypto.randomUUID).toHaveBeenCalledTimes(2);
+    expect(offcanvasService.open).toHaveBeenCalledWith(
+      EditLocationOffcanvasComponent,
+      {
+        data: {
+          location: jasmine.objectContaining({
+            id: 'test-uuid-1-1234-5678-9abc',
+            name: 'New Location',
+          }),
+        },
+        backdrop: 'static',
+        position: 'end',
+        width: '450px',
+      }
+    );
+
+    // Restore original function
+    crypto.randomUUID = originalRandomUUID;
+  });
 });

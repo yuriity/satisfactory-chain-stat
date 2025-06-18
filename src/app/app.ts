@@ -35,4 +35,8 @@ export class App {
   clearResource(): void {
     this.selectedResource.set(null);
   }
+
+  protected createNewLocation(): void {
+    this.locationsService.newLocation();
+  }
 }
