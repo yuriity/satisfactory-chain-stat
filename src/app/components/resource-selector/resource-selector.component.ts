@@ -8,6 +8,8 @@ import {
   effect,
   computed,
   OnDestroy,
+  ElementRef,
+  HostListener,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -23,17 +25,21 @@ import { debounce } from '../../utils/debounce';
   styleUrl: './resource-selector.component.scss',
 })
 export class ResourceSelectorComponent implements OnDestroy {
+  // Input signals
   placeholder = input<string>('Search resources...');
   selectedResourceInput = input<Resource | null>(null);
 
   @Output() resourceSelected = new EventEmitter<Resource | null>();
 
+  // Protected signals for component state
   protected searchTerm = signal('');
   protected showDropdown = signal(false);
   protected filteredResources = signal<Resource[]>([]);
   protected selectedResource = signal<Resource | null>(null);
   protected activeIndex = signal(-1); // Track active index for keyboard navigation
+  protected dropdownDirection = signal<'down' | 'up'>('down');
 
+  // Computed signals
   protected isSearching = computed(() => {
     const resource = this.selectedResource();
     const term = this.searchTerm();
@@ -42,10 +48,16 @@ export class ResourceSelectorComponent implements OnDestroy {
     return term !== resource.displayName && term.length > 0;
   });
 
+  // Dependency injections
   private readonly resourcesService = inject(ResourcesService);
+  private readonly elementRef = inject(ElementRef);
 
+  // Private properties
   private hideDropdownTimeout?: number;
   private debouncedUpdateFilteredResources: () => void;
+  // Space needed below the input for the dropdown to appear (in pixels)
+  // This should match the max-height in CSS (170px) plus some padding
+  private dropdownSpaceNeeded = 200;
 
   constructor() {
     // React to changes to the selectedResourceInput using effect
@@ -67,6 +79,16 @@ export class ResourceSelectorComponent implements OnDestroy {
   }
 
   /**
+   * Listen for window resize events to recalculate dropdown positioning
+   */
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    if (this.showDropdown()) {
+      this.determineDropdownDirection();
+    }
+  }
+
+  /**
    * Clean up resources when the component is destroyed
    */
   ngOnDestroy(): void {
@@ -84,6 +106,37 @@ export class ResourceSelectorComponent implements OnDestroy {
     this.showDropdown.update((current) => !current);
     if (this.showDropdown()) {
       this.updateFilteredResources();
+      // Use setTimeout to ensure DOM is updated before calculating position
+      setTimeout(() => {
+        this.determineDropdownDirection();
+      }, 0);
+    }
+  }
+
+  /**
+   * Determines whether the dropdown should open upward or downward
+   * based on available space in the viewport
+   */
+  private determineDropdownDirection(): void {
+    // Get component element
+    const el = this.elementRef.nativeElement;
+
+    // Get the component's position and dimensions
+    const rect = el.getBoundingClientRect();
+
+    // Check if there's enough space below for the dropdown
+    const viewportHeight = window.innerHeight;
+    const spaceBelow = viewportHeight - rect.bottom;
+
+    // If there's not enough space below but enough space above, open upward
+    if (
+      spaceBelow < this.dropdownSpaceNeeded &&
+      rect.top > this.dropdownSpaceNeeded
+    ) {
+      this.dropdownDirection.set('up');
+    } else {
+      // Default to opening downward
+      this.dropdownDirection.set('down');
     }
   }
 
@@ -142,6 +195,10 @@ export class ResourceSelectorComponent implements OnDestroy {
     this.searchTerm.set(value);
     this.debouncedUpdateFilteredResources();
     this.showDropdown.set(true);
+    // Use setTimeout to ensure DOM is updated before calculating position
+    setTimeout(() => {
+      this.determineDropdownDirection();
+    }, 0);
   }
 
   /**
@@ -154,6 +211,10 @@ export class ResourceSelectorComponent implements OnDestroy {
       this.searchTerm.set('');
       this.showDropdown.set(true);
       this.updateFilteredResources();
+      // Use setTimeout to ensure DOM is updated before calculating position
+      setTimeout(() => {
+        this.determineDropdownDirection();
+      }, 0);
     }
   }
 

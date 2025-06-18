@@ -1,4 +1,4 @@
-<div class="dropdown">
+<div class="dropdown" [class.dropup]="dropdownDirection() === 'up'">
   <div class="input-group">
     @if (selectedResource()) {
     <div class="input-group-prepend">
@@ -59,6 +59,7 @@
   @if (showDropdown() && filteredResources().length > 0) {
   <div
     class="dropdown-menu show w-100 resource-list"
+    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
     role="listbox"
     aria-label="Resource options"
   >
@@ -85,7 +86,10 @@
     }
   </div>
   } @else if (showDropdown() && searchTerm().length > 0) {
-  <div class="dropdown-menu show w-100">
+  <div
+    class="dropdown-menu show w-100"
+    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
+  >
     <div class="dropdown-item">No resources found</div>
   </div>
   }

@@ -7,7 +7,7 @@
 }
 
 .resource-list {
-  max-height: 300px;
+  max-height: 170px;
   overflow-y: auto;
 }
 
@@ -18,4 +18,12 @@
 
 .input-group-text + .form-control {
   border-left: none;
+}
+
+/* Custom styles for upward dropdown */
+.dropdown-menu-up {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.125rem;
 }
