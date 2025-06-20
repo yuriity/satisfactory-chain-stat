@@ -6,6 +6,8 @@ export interface Location {
   resourceSources: Array<string>;
   consumption?: ConsumptionRecord[];
   production?: ProductionRecord[];
+  cardPositionX?: number;
+  cardPositionY?: number;
 }
 
 export interface ConsumptionRecord {
