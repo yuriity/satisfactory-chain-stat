@@ -72,26 +72,38 @@ Keep a **logical and predictable** folder structure:
 
 ### ✅ Component Structure and Organization
 
-1. **Use standalone components when possible.**
+1. **Always use standalone components (don't use explicit `standalone: true` as it's implied by default).**
 2. **Keep components focused on a single responsibility.**
 3. **Use signals for component state management.**
-4. **Follow a consistent order for class members.**
+4. **Use `input()` and `output()` functions instead of decorators.**
+5. **Set `changeDetection: ChangeDetectionStrategy.OnPush` in `@Component` decorator.**
+6. **Follow a consistent order for class members.**
 
 ```ts
-// ✅ GOOD: Clean, focused component with signals
-import { Component, signal } from '@angular/core';
+// ✅ GOOD: Clean, focused component with signals and modern Angular 20 patterns
+import { Component, signal, input, output, ChangeDetectionStrategy } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'scs-resource-card',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './resource-card.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ResourceCardComponent {
-  protected resourceAmount = signal(0);
+  // Input signals
+  resourceName = input.required<string>();
+  resourceAmount = input<number>(0);
+
+  // Output signals
+  amountChanged = output<number>();
+
+  // Protected signals (component state)
+  protected internalAmount = signal(0);
 
   incrementAmount(): void {
-    this.resourceAmount.update(current => current + 1);
+    this.internalAmount.update(current => current + 1);
+    this.amountChanged.emit(this.internalAmount());
   }
 }
 ```
@@ -102,15 +114,13 @@ Organize class members in this consistent order to improve readability:
 
 1. **Input Signals and Inputs**
    ```typescript
-   placeholder = input.required<string>({
-     alias: 'placeholder',
-     transform: (v: unknown) => (v as string) || 'Search resources...'
-   });
+   resourceName = input.required<string>();
+   placeholder = input<string>('Search resources...');
    ```
 
-2. **Output Event Emitters**
+2. **Output Signals**
    ```typescript
-   @Output() resourceSelected = new EventEmitter<Resource | null>();
+   resourceSelected = output<Resource | null>();
    ```
 
 3. **Protected/Public Signals** (component state)
@@ -167,17 +177,21 @@ Organize class members in this consistent order to improve readability:
 ### ✅ Component Templates
 
 1. **Keep templates clean and readable.**
-2. **Use structural directives appropriately.**
+2. **Use native control flow (`@if`, `@for`, `@switch`) instead of `*ngIf`, `*ngFor`, `*ngSwitch`.**
 3. **Handle null/undefined values gracefully.**
+4. **Do NOT use `ngClass`, use `class` bindings instead.**
+5. **DO NOT use `ngStyle`, use `style` bindings instead.**
 
 ```html
-<!-- ✅ GOOD: Clean template with null checks -->
-<div class="card" *ngIf="resource()">
-  <div class="card-header">{{ resource()?.name }}</div>
-  <div class="card-body">
-    <p>{{ resource()?.description || 'No description available' }}</p>
+<!-- ✅ GOOD: Clean template with null checks and modern control flow -->
+@if (resource()) {
+  <div class="card">
+    <div class="card-header">{{ resource()?.name }}</div>
+    <div class="card-body">
+      <p>{{ resource()?.description || 'No description available' }}</p>
+    </div>
   </div>
-</div>
+}
 ```
 
 📌 **Rules:**
@@ -185,6 +199,11 @@ Organize class members in this consistent order to improve readability:
 - **Keep components small and focused.**
 - **Prefer signals over subjects for reactive state.**
 - **Use OnPush change detection strategy.**
+- **Use strict type checking.**
+- **Prefer type inference when the type is obvious.**
+- **Avoid the `any` type; use `unknown` when type is uncertain.**
+- **Use `NgOptimizedImage` for all static images.**
+- **Prefer Reactive forms instead of Template-driven ones.**
 
 ---
 
@@ -354,7 +373,9 @@ export class ResourcesService {
   // Expose a read-only signal
   public resources = this.resourcesSignal.asReadonly();
 
-  constructor(private http: HttpClient) {
+  private http = inject(HttpClient);
+
+  constructor() {
     this.loadResources();
   }
 
@@ -370,6 +391,9 @@ export class ResourcesService {
 - **Keep state management simple.**
 - **Use signals for reactive state.**
 - **Expose read-only signals when possible.**
+- **Design services around a single responsibility.**
+- **Use the `providedIn: 'root'` option for singleton services.**
+- **Use the `inject()` function instead of constructor injection.**
 
 ---
 
