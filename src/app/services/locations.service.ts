@@ -79,6 +79,28 @@ export class LocationsService {
     });
   }
 
+  /**
+   * Update the card position for a specific location
+   * @param locationId The ID of the location to update
+   * @param x The X coordinate position
+   * @param y The Y coordinate position
+   */
+  public updateCardPosition(locationId: string, x: number, y: number): void {
+    console.log(`Updating position for ${locationId}: (${x}, ${y})`);
+    this.locationsSignal.update((locations) => {
+      return locations.map((location) => {
+        if (location.id === locationId) {
+          return {
+            ...location,
+            cardPositionX: x,
+            cardPositionY: y,
+          };
+        }
+        return location;
+      });
+    });
+  }
+
   private updateLocation(updatedLocation: Location): void {
     this.locationsSignal.update((locations) => {
       const existingLocationIndex = locations.findIndex(

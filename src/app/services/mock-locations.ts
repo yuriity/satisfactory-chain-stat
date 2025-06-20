@@ -41,6 +41,8 @@ export const LOCATIONS: Location[] = [
   {
     id: 'silica-plant-1',
     name: 'Silica Plant',
+    cardPositionX: 15,
+    cardPositionY: 15,
     resourceSources: [],
     consumption: [
       { resource: RawQuartzResource, amount: 300 },
@@ -51,6 +53,8 @@ export const LOCATIONS: Location[] = [
   {
     id: 'plastic-plant-1',
     name: 'Plastic Plant',
+    cardPositionX: 15,
+    cardPositionY: 415,
     resourceSources: [],
     consumption: [{ resource: CrudeOilResource, amount: 500 }],
     production: [{ resource: PlasticResource, amount: 300, consumption: 0 }],
@@ -58,6 +62,8 @@ export const LOCATIONS: Location[] = [
   {
     id: 'circuit-board-plant1',
     name: 'Circuit Board Plant',
+    cardPositionX: 740,
+    cardPositionY: 160,
     resourceSources: ['silica-plant-1', 'plastic-plant-1'],
     consumption: [
       { resource: SilicaResource, amount: 240 },
