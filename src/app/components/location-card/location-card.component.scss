@@ -1,0 +1,77 @@
+.location-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--bs-border-color);
+
+  .card-header {
+    background-color: var(--bs-white);
+      border-bottom: 1px solid var(--bs-border-color);
+    padding: 1rem;
+  }
+
+    .action-buttons {
+      .btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      border: 0;
+i {
+    font-size: 1.25rem;
+  }
+}
+}
+
+.edit-button {
+  background-color: transparent;
+    color: var(--bs-primary);
+
+    &:hover {
+      background-color: var(--bs-primary-bg-subtle);
+      color: var(--bs-primary);
+      }
+      }
+
+    .delete-button {
+      background-color: transparent;
+      color: var(--bs-danger);
+
+      &:hover {
+        background-color: var(--bs-danger-bg-subtle);
+        color: var(--bs-danger);
+    }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .resource-item {
+    font-size: 1rem;
+
+    .resource-name {
+      font-weight: 500;
+    }
+
+    .resource-amount {
+      font-weight: 600;
+    }
+  }
+
+  .resource-icon {
+    object-fit: contain;
+  }
+
+  hr {
+    border-color: var(--bs-border-color);
+  }
+}

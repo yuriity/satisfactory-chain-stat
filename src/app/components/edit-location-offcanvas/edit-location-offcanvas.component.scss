@@ -1,0 +1,21 @@
+// Styling for resource rows to ensure proper alignment
+.resource-row {
+  margin-bottom: 0.5rem;
+}
+
+// Ensure delete buttons are properly sized
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  // font-size removed - now handled globally in styles.scss
+}
+
+// Style for section headers
+h6 {
+  color: var(--bs-gray-700);
+  font-weight: 600;
+}
+
+// Spacing for action buttons
+.d-flex.gap-2 {
+  margin-top: 1.5rem;
+}

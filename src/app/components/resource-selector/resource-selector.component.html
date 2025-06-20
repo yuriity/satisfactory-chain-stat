@@ -1,0 +1,96 @@
+<div class="dropdown" [class.dropup]="dropdownDirection() === 'up'">
+  <div class="input-group">
+    @if (selectedResource()) {
+    <div class="input-group-prepend">
+      <span class="input-group-text p-1">
+        <img
+          [src]="selectedResource()!.getSmallIconUrl()"
+          [alt]="selectedResource()!.displayName"
+          width="32"
+          height="32"
+        />
+      </span>
+    </div>
+    }
+    <input
+      type="text"
+      class="form-control"
+      [placeholder]="placeholder()"
+      [value]="searchTerm()"
+      (input)="onSearchChange($event)"
+      (focus)="toggleDropdown()"
+      (blur)="hideDropdown()"
+      (keydown)="onKeyDown($event)"
+      aria-label="Search resources"
+      [attr.aria-expanded]="showDropdown()"
+      aria-autocomplete="list"
+      role="combobox"
+    />
+    @if (isSearching()) {
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="clearSearchText()"
+      title="Clear search text"
+    >
+      <i class="bi bi-x"></i>
+    </button>
+    } @else if (showDropdown()) {
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="closeDropdown()"
+      title="Close dropdown"
+    >
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    } @else {
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="toggleDropdown()"
+      title="Open dropdown"
+    >
+      <i class="bi bi-chevron-down"></i>
+    </button>
+    }
+  </div>
+
+  @if (showDropdown() && filteredResources().length > 0) {
+  <div
+    class="dropdown-menu show w-100 resource-list"
+    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
+    role="listbox"
+    aria-label="Resource options"
+  >
+    @for (resource of filteredResources(); track resource.className) {
+    <div
+      class="dropdown-item d-flex align-items-center resource-item"
+      (click)="selectResource(resource)"
+      role="option"
+      [attr.aria-selected]="
+        selectedResource()?.className === resource.className
+      "
+      [class.active]="activeIndex() === filteredResources().indexOf(resource)"
+    >
+      <img
+        [src]="resource.getSmallIconUrl()"
+        [alt]="resource.displayName"
+        width="32"
+        height="32"
+        class="me-2"
+        loading="lazy"
+      />
+      <span>{{ resource.displayName }}</span>
+    </div>
+    }
+  </div>
+  } @else if (showDropdown() && searchTerm().length > 0) {
+  <div
+    class="dropdown-menu show w-100"
+    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
+  >
+    <div class="dropdown-item">No resources found</div>
+  </div>
+  }
+</div>

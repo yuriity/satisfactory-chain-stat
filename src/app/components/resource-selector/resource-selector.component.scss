@@ -1,0 +1,29 @@
+.resource-item {
+  cursor: pointer;
+}
+
+.resource-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.resource-list {
+  max-height: 170px;
+  overflow-y: auto;
+}
+
+.input-group-text {
+  background-color: #fff;
+  border-right: none;
+}
+
+.input-group-text + .form-control {
+  border-left: none;
+}
+
+/* Custom styles for upward dropdown */
+.dropdown-menu-up {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}

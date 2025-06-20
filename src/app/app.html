@@ -1,7 +1,15 @@
 <header class="bg-light">
   <nav class="navbar navbar-expand-lg navbar-light bg-light container">
     <a class="navbar-brand" href="#">{{ title }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,8 +31,69 @@
 <main role="main" class="container mt-4 mb-4">
   <div class="starter-template">
     <h1>Main Content Section</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <p class="lead">
+      Use this document as a way to quickly start any new project.<br />
+      All you get is this text and a mostly barebones HTML document.
+    </p>
     <scs-board></scs-board>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Resource Selector Example</div>
+          <div class="card-body">
+            <h5 class="card-title">Select a resource</h5>
+            <scs-resource-selector
+              placeholder="Search for a resource..."
+              [selectedResourceInput]="selectedResource()"
+              (resourceSelected)="onResourceSelected($event)"
+            ></scs-resource-selector>
+
+            @if (selectedResource()) {
+            <div class="mt-4">
+              <h6>Selected Resource:</h6>
+              <div class="d-flex align-items-center mt-2">
+                <img
+                  [src]="selectedResource()?.getLargeIconUrl()"
+                  [alt]="selectedResource()?.displayName"
+                  width="64"
+                  height="64"
+                  class="me-3"
+                />
+                <div>
+                  <h5>{{ selectedResource()?.displayName }}</h5>
+                  <p class="text-muted">
+                    {{ selectedResource()?.description }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            }
+
+            <div class="mt-4">
+              <button class="btn btn-primary me-2" (click)="selectIronOre()">
+                Select Iron Ore
+              </button>
+              <button class="btn btn-secondary" (click)="clearResource()">
+                Clear Selection
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <button class="btn btn-success" (click)="createNewLocation()">
+          <i class="bi bi-plus-circle me-2"></i>Create Location
+        </button>
+      </div>
+    </div>
+
+    @for (location of locationsService.locations(); track location.id) {
+    <scs-location-card [location]="location" />
+    }
   </div>
 </main>
 
