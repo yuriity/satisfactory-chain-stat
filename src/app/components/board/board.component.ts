@@ -38,7 +38,12 @@ export class BoardComponent implements AfterViewInit {
 
   constructor() {
     effect(() => {
-      this.updateConnections();
+      // Explicitly depend on locations signal
+      const locations = this.locations();
+      // Only update connections if jsPlumbInstance is initialized
+      if (this.jsPlumbInstance) {
+        this.updateConnections();
+      }
     });
   }
 

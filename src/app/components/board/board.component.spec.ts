@@ -467,4 +467,52 @@ describe('BoardComponent', () => {
       }).not.toThrow();
     });
   });
+
+  describe('reactivity to locations changes', () => {
+    beforeEach(() => {
+      component['jsPlumbInstance'] = mockJsPlumbInstance;
+      spyOn(component, 'updateConnections' as any).and.callThrough();
+    });
+
+    it('should react to insert (add location)', () => {
+      const newLocation = {
+        id: 'location-4',
+        name: 'New Factory',
+        resourceSources: [],
+        cardPositionX: 700,
+        cardPositionY: 800,
+        consumption: [],
+        production: [],
+      };
+      (locationsService as any)._locationsSignal.set([
+        ...mockLocations,
+        newLocation,
+      ]);
+      fixture.detectChanges();
+      expect(component['updateConnections']).toHaveBeenCalled();
+      expect(component['locations']().length).toBe(4);
+    });
+
+    it('should react to update (modify location)', () => {
+      const updated = { ...mockLocations[0], name: 'Updated Name' };
+      (locationsService as any)._locationsSignal.set([
+        updated,
+        mockLocations[1],
+        mockLocations[2],
+      ]);
+      fixture.detectChanges();
+      expect(component['updateConnections']).toHaveBeenCalled();
+      expect(component['locations']()[0].name).toBe('Updated Name');
+    });
+
+    it('should react to delete (remove location)', () => {
+      (locationsService as any)._locationsSignal.set([
+        mockLocations[1],
+        mockLocations[2],
+      ]);
+      fixture.detectChanges();
+      expect(component['updateConnections']).toHaveBeenCalled();
+      expect(component['locations']().length).toBe(2);
+    });
+  });
 });
