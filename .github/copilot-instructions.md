@@ -516,6 +516,33 @@ describe("YourComponent", () => {
   - Provides clearer error messages when tests fail, with proper context.
 - **Mock HTTP requests and services.**
 
+### ✅ Test Execution Best Practices
+
+```bash
+# Run all tests once (no watch mode)
+ng test --watch=false
+
+# Run tests in watch mode (default)
+ng test
+
+# Run specific test file once
+ng test --include="**/component-name.spec.ts" --watch=false
+
+# Run tests with code coverage
+ng test --code-coverage --watch=false
+
+# Stop running tests in watch mode
+# Use Ctrl+C in terminal or kill the process:
+pkill -f "ng test"
+```
+
+📌 **Test Execution Rules:**
+
+- **Use `--watch=false` for CI/CD pipelines and one-time test runs.**
+- **Use watch mode during development for immediate feedback.**
+- **Always stop watch mode before switching tasks or closing terminals.**
+- **Run tests without watch mode before committing code.**
+
 ---
 
 ## 🛠 Development Workflow Best Practices
@@ -534,6 +561,18 @@ ng build --configuration production
 
 # Run tests
 ng test
+
+# Run tests without watch mode (single run)
+ng test --watch=false
+
+# Run specific test file
+ng test --include="**/component-name.spec.ts"
+
+# Run specific test file without watch mode
+ng test --include="**/component-name.spec.ts" --watch=false
+
+# Stop running tests in watch mode
+# Use Ctrl+C in the terminal or pkill -f "ng test"
 
 # Lint code
 ng lint
