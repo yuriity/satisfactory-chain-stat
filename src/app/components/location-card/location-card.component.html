@@ -60,7 +60,7 @@
 
       <div class="resource-list">
         @for (record of production(); track record.resource.className) {
-        <div
+        <!-- <div
           class="resource-item d-flex align-items-center justify-content-between mb-2"
         >
           <div class="d-flex align-items-center">
@@ -76,7 +76,8 @@
             >
           </div>
           <span class="resource-amount">{{ record.amount }} /min - Consumption {{ record.consumption }} /min</span>
-        </div>
+        </div> -->
+        <scs-prodaction-statistics [productionRecord]="record"></scs-prodaction-statistics>
         }
       </div>
     </div>

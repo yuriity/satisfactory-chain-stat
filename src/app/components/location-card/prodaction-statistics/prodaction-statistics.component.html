@@ -1,0 +1,58 @@
+<div class="production-statistics">
+  <!-- Resource Icon (spans 2 rows) -->
+  <div class="resource-icon">
+    <img
+      [src]="productionRecord().resource.getSmallIconUrl()"
+      [alt]="productionRecord().resource.displayName"
+      class="img-fluid"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Resource Name -->
+  <div class="resource-name">
+    @if (isShortage()) {
+    <span class="bi bi-hand-thumbs-down-fill me-1"></span>
+    } @else {
+    <span class="bi bi-hand-thumbs-up-fill me-1"></span>
+    }
+    <span class="fw-medium">{{ productionRecord().resource.displayName }}</span>
+  </div>
+
+  <!-- Production and Consumption Rates -->
+  <div class="rates-container d-flex gap-3 justify-content-end">
+    <!-- Production Rate -->
+    <div class="production-rate text-end">
+      <span class="bi bi-box-arrow-down me-1"></span>
+      <span class="text-muted small">{{ displayProduction() }}</span>
+    </div>
+
+    <!-- Consumption Rate -->
+    <div class="consumption-rate text-end">
+      <span class="bi bi-box-arrow-in-up me-1"></span>
+      <span class="text-muted small">{{ displayConsumption() }}</span>
+    </div>
+  </div>
+
+  <!-- Progress bar (spans full width) -->
+  <div class="progress-container">
+    <div class="progress" [class]="'progress-' + barState()">
+      @if (barState() === 'production-only') {
+      <div class="progress-bar bg-success" style="width: 100%"></div>
+      } @else if (barState() === 'consumption-only') {
+      <div class="progress-bar bg-danger" style="width: 100%"></div>
+      } @else {
+      <div
+        class="progress-bar bg-success"
+        [style.width.%]="productionPercentage()"
+      ></div>
+      <div
+        class="progress-bar bg-danger"
+        [style.width.%]="consumptionPercentage()"
+      ></div>
+      }
+      <!-- Vertical divider line in the middle -->
+      <div class="progress-divider"></div>
+    </div>
+  </div>
+</div>

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Resource } from '../../models/resource';
 import { Location } from '../../models/location';
 import { LocationsService } from '../../services/locations.service';
+import { ProdactionStatisticsComponent } from './prodaction-statistics/prodaction-statistics.component';
 
 @Component({
   selector: 'scs-location-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProdactionStatisticsComponent],
   templateUrl: './location-card.component.html',
   styleUrl: './location-card.component.scss',
 })

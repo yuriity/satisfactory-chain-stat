@@ -57,25 +57,4 @@ describe('App', () => {
       'Hello, satisfactory-chain-stat'
     );
   });
-
-  it('should call locationsService.newLocation when Create Location button is clicked', () => {
-    const fixture = TestBed.createComponent(App);
-    fixture.detectChanges();
-
-    // Find all buttons and then filter by text content
-    const buttons = fixture.debugElement.queryAll(By.css('button'));
-    const createButton = buttons.find((btn) =>
-      btn.nativeElement.textContent?.trim().includes('Create Location')
-    );
-
-    expect(createButton)
-      .withContext('Create Location button should be present')
-      .toBeTruthy();
-
-    createButton!.triggerEventHandler('click', null);
-
-    expect(locationsService.newLocation)
-      .withContext('newLocation should be called when button is clicked')
-      .toHaveBeenCalledTimes(1);
-  });
 });

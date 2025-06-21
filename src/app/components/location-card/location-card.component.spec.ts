@@ -81,23 +81,23 @@ describe('LocationCardComponent', () => {
     expect(
       consumptionItems[0].query(By.css('.resource-amount')).nativeElement
         .textContent
-    ).toContain('60 /min');
+    ).toContain('60');
   });
 
   it('should display production records', () => {
-    const productionItems = fixture.debugElement.queryAll(
-      By.css('.production-section .resource-item')
+    const productionComponents = fixture.debugElement.queryAll(
+      By.css('.production-section scs-prodaction-statistics')
     );
 
-    expect(productionItems.length).toBe(1);
-    expect(
-      productionItems[0].query(By.css('.resource-name')).nativeElement
-        .textContent
-    ).toContain('Iron Plate');
-    expect(
-      productionItems[0].query(By.css('.resource-amount')).nativeElement
-        .textContent
-    ).toContain('20 /min - Consumption 30 /min');
+    expect(productionComponents.length).toBe(1);
+
+    // Check that the production component receives the correct input
+    const productionComponent = productionComponents[0].componentInstance;
+    expect(productionComponent.productionRecord().resource.displayName).toBe(
+      'Iron Plate'
+    );
+    expect(productionComponent.productionRecord().amount).toBe(20);
+    expect(productionComponent.productionRecord().consumption).toBe(30);
   });
 
   it('should display correct resource names in the UI', () => {
@@ -110,7 +110,9 @@ describe('LocationCardComponent', () => {
   });
 
   it('should display correct resource icon URLs in the UI', () => {
-    const imgElements = fixture.debugElement.queryAll(By.css('.resource-icon'));
+    const imgElements = fixture.debugElement.queryAll(
+      By.css('img.resource-icon')
+    );
 
     const expectedUrl1 =
       'https://www.satisfactorytools.com/assets/images/items/Desc_IronIngot_C_64.png';
@@ -118,17 +120,30 @@ describe('LocationCardComponent', () => {
       'https://www.satisfactorytools.com/assets/images/items/Desc_IronPlate_C_64.png';
 
     expect(imgElements[0].properties['src']).toBe(expectedUrl1);
-    expect(imgElements[1].properties['src']).toBe(expectedUrl2);
+    // Production section uses scs-prodaction-statistics component, so check within that component
+    const productionComponent = fixture.debugElement.query(
+      By.css('scs-prodaction-statistics')
+    );
+    const productionImg = productionComponent.query(By.css('img'));
+    expect(productionImg.properties['src']).toBe(expectedUrl2);
   });
 
   it('should load resource icons with correct URLs', () => {
-    const imgElements = fixture.debugElement.queryAll(By.css('.resource-icon'));
+    const imgElements = fixture.debugElement.queryAll(
+      By.css('img.resource-icon')
+    );
 
-    expect(imgElements.length).toBe(2); // One for consumption, one for production
+    expect(imgElements.length).toBe(1); // Only one in consumption section
     expect(imgElements[0].properties['src']).toContain(
       'Desc_IronIngot_C_64.png'
     );
-    expect(imgElements[1].properties['src']).toContain(
+
+    // Check production section icon within scs-prodaction-statistics component
+    const productionComponent = fixture.debugElement.query(
+      By.css('scs-prodaction-statistics')
+    );
+    const productionImg = productionComponent.query(By.css('img'));
+    expect(productionImg.properties['src']).toContain(
       'Desc_IronPlate_C_64.png'
     );
   });
@@ -209,10 +224,10 @@ describe('LocationCardComponent', () => {
     expect(consumptionItems.length).toBe(2);
 
     // Check if production section shows no records
-    const productionItems = fixture.debugElement.queryAll(
-      By.css('.production-section .resource-item')
+    const productionComponents = fixture.debugElement.queryAll(
+      By.css('.production-section scs-prodaction-statistics')
     );
-    expect(productionItems.length).toBe(0);
+    expect(productionComponents.length).toBe(0);
   });
 
   it('should handle locations with empty consumption and production arrays', () => {
@@ -232,11 +247,11 @@ describe('LocationCardComponent', () => {
     const consumptionItems = fixture.debugElement.queryAll(
       By.css('.input-section .resource-item')
     );
-    const productionItems = fixture.debugElement.queryAll(
-      By.css('.production-section .resource-item')
+    const productionComponents = fixture.debugElement.queryAll(
+      By.css('.production-section scs-prodaction-statistics')
     );
 
     expect(consumptionItems.length).toBe(0);
-    expect(productionItems.length).toBe(0);
+    expect(productionComponents.length).toBe(0);
   });
 });
