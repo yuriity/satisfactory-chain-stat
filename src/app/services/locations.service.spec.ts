@@ -3,6 +3,7 @@ import { provideZonelessChangeDetection } from '@angular/core';
 
 import { LocationsService } from './locations.service';
 import { OffcanvasService } from './offcanvas.service';
+import { LocationStorageService } from './location-storage.service';
 import { LOCATIONS, PlasticResource, SilicaResource } from './mock-locations';
 import { Location } from '../models/location';
 import { EditLocationOffcanvasComponent } from '../components/edit-location-offcanvas/edit-location-offcanvas.component';
@@ -10,14 +11,26 @@ import { EditLocationOffcanvasComponent } from '../components/edit-location-offc
 describe('LocationsService', () => {
   let service: LocationsService;
   let offcanvasService: jasmine.SpyObj<OffcanvasService>;
+  let storageService: jasmine.SpyObj<LocationStorageService>;
 
   beforeEach(() => {
     const offcanvasSpy = jasmine.createSpyObj('OffcanvasService', ['open']);
+    const storageSpy = jasmine.createSpyObj('LocationStorageService', [
+      'loadFromStorage',
+      'saveToStorage',
+      'clearStorage',
+      'exportToJson',
+      'importFromJson',
+    ]);
+
+    // Mock empty storage by default
+    storageSpy.loadFromStorage.and.returnValue(null);
 
     TestBed.configureTestingModule({
       providers: [
         provideZonelessChangeDetection(),
         { provide: OffcanvasService, useValue: offcanvasSpy },
+        { provide: LocationStorageService, useValue: storageSpy },
       ],
     });
 
@@ -25,21 +38,65 @@ describe('LocationsService', () => {
     offcanvasService = TestBed.inject(
       OffcanvasService
     ) as jasmine.SpyObj<OffcanvasService>;
+    storageService = TestBed.inject(
+      LocationStorageService
+    ) as jasmine.SpyObj<LocationStorageService>;
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should have a read-only locations signal', () => {
-    // Access the locations read-only signal
-    expect(service.locations).toBeDefined();
-
-    // Since we're using mock data from LOCATIONS, we should expect that data
+  it('should initialize with mock data when storage is empty', () => {
+    // Verify the service was initialized correctly with mock data
     expect(service.locations().length).toBe(3);
     expect(service.locations()[0].name).toBe('Silica Plant');
     expect(service.locations()[1].name).toBe('Plastic Plant');
     expect(service.locations()[2].name).toBe('Circuit Board Plant');
+    expect(storageService.saveToStorage).toHaveBeenCalled();
+  });
+
+  it('should initialize with stored data when available', () => {
+    const storedLocations: Location[] = [
+      {
+        id: 'stored-1',
+        name: 'Stored Location 1',
+        resourceSources: [],
+      },
+      {
+        id: 'stored-2',
+        name: 'Stored Location 2',
+        resourceSources: [],
+      },
+    ];
+
+    // Reset the test bed with different mock data
+    const offcanvasSpy = jasmine.createSpyObj('OffcanvasService', ['open']);
+    const storageSpy = jasmine.createSpyObj('LocationStorageService', [
+      'loadFromStorage',
+      'saveToStorage',
+      'clearStorage',
+      'exportToJson',
+      'importFromJson',
+    ]);
+
+    storageSpy.loadFromStorage.and.returnValue(storedLocations);
+
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({
+      providers: [
+        provideZonelessChangeDetection(),
+        { provide: OffcanvasService, useValue: offcanvasSpy },
+        { provide: LocationStorageService, useValue: storageSpy },
+      ],
+    });
+
+    // Create a new service instance to test initialization
+    const newService = TestBed.inject(LocationsService);
+
+    expect(newService.locations().length).toBe(2);
+    expect(newService.locations()[0].name).toBe('Stored Location 1');
+    expect(newService.locations()[1].name).toBe('Stored Location 2');
   });
 
   it('should open edit location offcanvas when editLocation is called', async () => {
@@ -50,14 +107,12 @@ describe('LocationsService', () => {
     };
 
     const mockOffcanvasRef = {
-      afterClosed: jasmine
-        .createSpy('afterClosed')
-        .and.returnValue(
-          Promise.resolve({
-            action: 'save',
-            location: { ...testLocation, name: 'Updated Name' },
-          })
-        ),
+      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
+        Promise.resolve({
+          action: 'save',
+          location: { ...testLocation, name: 'Updated Name' },
+        })
+      ),
       afterDismissed: jasmine
         .createSpy('afterDismissed')
         .and.returnValue(Promise.resolve()),
@@ -487,5 +542,100 @@ describe('LocationsService', () => {
 
     // Restore original function
     crypto.randomUUID = originalRandomUUID;
+  });
+
+  describe('Storage operations', () => {
+    it('should export locations to JSON', () => {
+      const filename = 'test-export.json';
+
+      service.exportLocations(filename);
+
+      expect(storageService.exportToJson).toHaveBeenCalledWith(
+        service.locations(),
+        filename
+      );
+    });
+
+    it('should export locations with default filename when none provided', () => {
+      service.exportLocations();
+
+      expect(storageService.exportToJson).toHaveBeenCalledWith(
+        service.locations(),
+        undefined
+      );
+    });
+
+    it('should import locations from JSON file', async () => {
+      const importedLocations: Location[] = [
+        {
+          id: 'imported-1',
+          name: 'Imported Location',
+          resourceSources: [],
+        },
+      ];
+
+      const file = new File(['test'], 'test.json', {
+        type: 'application/json',
+      });
+      storageService.importFromJson.and.returnValue(
+        Promise.resolve(importedLocations)
+      );
+
+      await service.importLocations(file);
+
+      expect(storageService.importFromJson).toHaveBeenCalledWith(file);
+      expect(service.locations()).toEqual(importedLocations);
+      expect(storageService.saveToStorage).toHaveBeenCalledWith(
+        importedLocations
+      );
+    });
+
+    it('should handle import errors', async () => {
+      const file = new File(['invalid'], 'test.json', {
+        type: 'application/json',
+      });
+      const error = new Error('Invalid JSON');
+      storageService.importFromJson.and.returnValue(Promise.reject(error));
+
+      await expectAsync(service.importLocations(file)).toBeRejectedWith(error);
+      expect(storageService.importFromJson).toHaveBeenCalledWith(file);
+    });
+
+    it('should reset to mock data', () => {
+      service.resetToMockData();
+
+      expect(service.locations().length).toBe(3);
+      expect(service.locations()[0].name).toBe('Silica Plant');
+      expect(storageService.saveToStorage).toHaveBeenCalled();
+    });
+
+    it('should clear all locations', () => {
+      service.clearAllLocations();
+
+      expect(service.locations().length).toBe(0);
+      expect(storageService.clearStorage).toHaveBeenCalled();
+    });
+
+    it('should save to storage when deleting a location', () => {
+      const locationToDelete = service.locations()[0];
+
+      service.deleteLocation(locationToDelete);
+
+      expect(storageService.saveToStorage).toHaveBeenCalled();
+    });
+
+    it('should save to storage when updating card position', () => {
+      const locationId = service.locations()[0].id;
+
+      service.updateCardPosition(locationId, 100, 200);
+
+      expect(storageService.saveToStorage).toHaveBeenCalled();
+
+      const updatedLocation = service
+        .locations()
+        .find((loc) => loc.id === locationId);
+      expect(updatedLocation?.cardPositionX).toBe(100);
+      expect(updatedLocation?.cardPositionY).toBe(200);
+    });
   });
 });

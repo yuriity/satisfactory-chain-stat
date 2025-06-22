@@ -3,6 +3,7 @@ import { Location } from '../models/location';
 import { LOCATIONS } from './mock-locations';
 import { calculateConsumption } from '../utils/calculate-consupmtion';
 import { OffcanvasService } from './offcanvas.service';
+import { LocationStorageService } from './location-storage.service';
 import {
   EditLocationOffcanvasComponent,
   EditLocationData,
@@ -15,12 +16,35 @@ import {
 export class LocationsService {
   private locationsSignal = signal<Location[]>([]);
   private offcanvasService = inject(OffcanvasService);
+  private storageService = inject(LocationStorageService);
 
   public readonly locations = this.locationsSignal.asReadonly();
 
   constructor() {
-    calculateConsumption(LOCATIONS);
-    this.locationsSignal.set(LOCATIONS);
+    this.initializeLocations();
+  }
+
+  /**
+   * Initialize locations from storage or use mock data
+   */
+  private initializeLocations(): void {
+    const storedLocations = this.storageService.loadFromStorage();
+
+    if (storedLocations && storedLocations.length > 0) {
+      this.locationsSignal.set(storedLocations);
+    } else {
+      calculateConsumption(LOCATIONS);
+      this.locationsSignal.set(LOCATIONS);
+      // Save initial mock data to storage
+      this.saveToStorage();
+    }
+  }
+
+  /**
+   * Save current locations to local storage
+   */
+  private saveToStorage(): void {
+    this.storageService.saveToStorage(this.locationsSignal());
   }
 
   /**
@@ -77,6 +101,8 @@ export class LocationsService {
 
       return updatedLocations;
     });
+
+    this.saveToStorage();
   }
 
   /**
@@ -86,7 +112,7 @@ export class LocationsService {
    * @param y The Y coordinate position
    */
   public updateCardPosition(locationId: string, x: number, y: number): void {
-    console.log(`Updating position for ${locationId}: (${x}, ${y})`);
+    // console.log(`Updating position for ${locationId}: (${x}, ${y})`);
     this.locationsSignal.update((locations) => {
       return locations.map((location) => {
         if (location.id === locationId) {
@@ -99,6 +125,49 @@ export class LocationsService {
         return location;
       });
     });
+
+    this.saveToStorage();
+  }
+
+  /**
+   * Export current locations to JSON file
+   * @param filename Optional filename for the export
+   */
+  public exportLocations(filename?: string): void {
+    this.storageService.exportToJson(this.locationsSignal(), filename);
+  }
+
+  /**
+   * Import locations from JSON file
+   * @param file The JSON file to import
+   * @returns Promise that resolves when import is complete
+   */
+  public async importLocations(file: File): Promise<void> {
+    try {
+      const importedLocations = await this.storageService.importFromJson(file);
+      this.locationsSignal.set(importedLocations);
+      this.saveToStorage();
+    } catch (error) {
+      console.error('Error importing locations:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Reset locations to initial mock data
+   */
+  public resetToMockData(): void {
+    calculateConsumption(LOCATIONS);
+    this.locationsSignal.set([...LOCATIONS]);
+    this.saveToStorage();
+  }
+
+  /**
+   * Clear all locations
+   */
+  public clearAllLocations(): void {
+    this.locationsSignal.set([]);
+    this.storageService.clearStorage();
   }
 
   private updateLocation(updatedLocation: Location): void {
@@ -122,5 +191,7 @@ export class LocationsService {
 
       return updatedLocations;
     });
+
+    this.saveToStorage();
   }
 }
