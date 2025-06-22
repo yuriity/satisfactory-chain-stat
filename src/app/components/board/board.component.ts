@@ -42,7 +42,10 @@ export class BoardComponent implements AfterViewInit {
       const locations = this.locations();
       // Only update connections if jsPlumbInstance is initialized
       if (this.jsPlumbInstance) {
-        this.updateConnections();
+        // Use setTimeout to ensure DOM elements are rendered before creating connections
+        setTimeout(() => {
+          this.updateConnections();
+        }, 0);
       }
     });
   }
