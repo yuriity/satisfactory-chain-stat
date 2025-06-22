@@ -69,6 +69,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 42625
+          },
           "configurations": {
             "production": {
               "buildTarget": "satisfactory-chain-stat:build:production"
