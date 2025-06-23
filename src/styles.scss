@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Bootstrap CSS
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Import Bootstrap Icons
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Global button icon size override
+.btn-sm i {
+  font-size: 1.25rem !important;
+}

@@ -1,30 +1,38 @@
 <header class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-    <a class="navbar-brand" href="#">{{ title }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">{{ title }}</a>
+
+      <button class="btn btn-success me-auto" (click)="createNewLocation()">
+        <i class="bi bi-plus-circle me-2"></i>Create Location
+      </button>
+
+      <div class="dropdown">
+        <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <button class="dropdown-item" type="button" (click)="importData()">
+              <i class="bi bi-file-earmark-arrow-down me-2"></i>
+              Import data ...
+            </button></li>
+          <li>
+            <button class="dropdown-item" type="button" (click)="exportData()">
+              <i class="bi bi-file-earmark-arrow-up me-2"></i>
+              Export data ...
+            </button>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </nav>
 </header>
 
-<main role="main" class="container mt-4 mb-4">
-  <div class="starter-template">
-    <h1>Main Content Section</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
+<main role="main" class="container-fluid mt-4 mb-4">
+  <scs-board></scs-board>
 </main>
 
 <footer class="footer mt-auto py-3 bg-light">

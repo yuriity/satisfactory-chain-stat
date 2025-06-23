@@ -1,29 +1,76 @@
-import { Component, signal } from '@angular/core';
-import { ResourcesService } from './services/resources.service';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+import { Component, inject, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LocationsService } from './services/locations.service';
 import { Resource } from './models/resource';
+import { ResourcesService } from './services/resources.service';
+import { BoardComponent } from './components/board/board.component';
 
 @Component({
   selector: 'scs-root',
-  imports: [],
+  standalone: true,
+  imports: [BoardComponent, CommonModule],
   templateUrl: './app.html',
-  styles: [],
+  styleUrl: './app.scss',
 })
 export class App {
   protected title = 'Satisfactory Chain Stat';
-  protected resource = signal<Resource | null>(
-    new Resource(
-      'desc-nuclearwaste-c',
-      'Uranium Waste',
-      'Highly radioactive waste material'
-    )
-  );
+  protected locationsService = inject(LocationsService);
+  protected resourcesService = inject(ResourcesService);
+  protected selectedResource = signal<Resource | null>(null);
 
-  constructor(private resourcesService: ResourcesService) {}
+  protected createNewLocation(): void {
+    this.locationsService.newLocation();
+  }
 
-  ngOnInit() {
-    this.resourcesService.getResources().subscribe((resources: Resource[]) => {
-      console.log('Resources loaded:', resources[0]);
-      this.resource.set(resources[1]);
-    });
+  protected exportData(): void {
+    try {
+      this.locationsService.exportLocations();
+    } catch (error) {
+      console.error('Export failed:', error);
+      alert('Failed to export data. Please try again.');
+    }
+  }
+
+  protected importData(): void {
+    // Create a hidden file input element
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = '.json';
+    fileInput.style.display = 'none';
+
+    fileInput.onchange = async (event) => {
+      const target = event.target as HTMLInputElement;
+      const file = target.files?.[0];
+
+      if (!file) {
+        return;
+      }
+
+      try {
+        // Confirm before replacing existing data
+        const currentLocations = this.locationsService.locations();
+        const confirmMessage = `This will replace all current locations (${currentLocations.length}). Are you sure?`;
+
+        if (confirm(confirmMessage)) {
+          await this.locationsService.importLocations(file);
+          const newLocations = this.locationsService.locations();
+          alert(`Successfully imported ${newLocations.length} location(s).`);
+        }
+      } catch (error) {
+        console.error('Import failed:', error);
+        alert(
+          'Failed to import data. Please check the file format and try again.'
+        );
+      } finally {
+        // Clean up
+        document.body.removeChild(fileInput);
+      }
+    };
+
+    // Trigger file selection
+    document.body.appendChild(fileInput);
+    fileInput.click();
   }
 }

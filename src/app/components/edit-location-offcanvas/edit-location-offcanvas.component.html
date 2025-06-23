@@ -1,0 +1,174 @@
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title">Edit Location</h5>
+  <button
+    type="button"
+    class="btn-close"
+    (click)="closeOffcanvas()"
+    aria-label="Close"
+  ></button>
+</div>
+<div class="offcanvas-body">
+  @if (editableLocation()) {
+  <div class="mb-4">
+    <label for="locationName" class="form-label">Location name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="locationName"
+      [ngModel]="editableLocation()!.name"
+      (ngModelChange)="updateLocationName($event)"
+      [class.is-invalid]="!isFormValid() && editableLocation()!.name !== null"
+    />
+    @if (!isFormValid() && editableLocation()!.name !== null) {
+    <div class="invalid-feedback">
+      Location name is required and cannot be empty.
+    </div>
+    }
+  </div>
+
+  <!-- Inbound Sources Section -->
+  <div class="mb-4">
+    <h6 class="mb-3">Inbound sources</h6>
+
+    @if (availableLocations().length > 0) {
+    <ul class="list-group">
+      @for (location of availableLocations(); track location.id) {
+      <li class="list-group-item">
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          [id]="'source-' + location.id"
+          [checked]="isResourceSourceSelected(location.id)"
+          (change)="toggleResourceSource(location.id, $any($event.target).checked)"
+        />
+        <label class="form-check-label" [for]="'source-' + location.id">
+          {{ location.name }}
+        </label>
+      </li>
+      }
+    </ul>
+    } @else {
+    <p class="text-muted small">No other locations available as sources</p>
+    }
+  </div>
+
+  <!-- Inbound Section -->
+  <div class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h6 class="mb-0">Inbound</h6>
+      <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        (click)="addInboundResource()"
+        title="Add Inbound Resource"
+      >
+        <i class="bi bi-plus"></i>
+      </button>
+    </div>
+
+    @for (consumptionRecord of editableLocation()!.consumption || []; track $index) {
+    <div class="row mb-2 align-items-center">
+      <div class="col-7">
+        <scs-resource-selector
+          [selectedResourceInput]="consumptionRecord.resource"
+          (resourceSelected)="updateInboundResource($index, $event)"
+          placeholder="Select resource..."
+        ></scs-resource-selector>
+      </div>
+      <div class="col-3">
+        <input
+          type="number"
+          class="form-control"
+          [ngModel]="consumptionRecord.amount"
+          (ngModelChange)="updateInboundAmount($index, $event)"
+          min="0"
+          step="10"
+        />
+      </div>
+      <div class="col-2 text-end">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          (click)="removeInboundResource($index)"
+          title="Remove Resource"
+        >
+          <i class="bi bi-trash"></i>
+        </button>
+      </div>
+    </div>
+    }
+
+    @if ((editableLocation()!.consumption || []).length === 0) {
+    <p class="text-muted small">No inbound resources</p>
+    }
+  </div>
+
+  <!-- Outbound Section -->
+  <div class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h6 class="mb-0">Outbound</h6>
+      <button
+        type="button"
+        class="btn btn-primary btn-sm"
+        (click)="addOutboundResource()"
+        title="Add Outbound Resource"
+      >
+        <i class="bi bi-plus"></i>
+      </button>
+    </div>
+
+    @for (productionRecord of editableLocation()!.production || []; track $index) {
+    <div class="row mb-2 align-items-center">
+      <div class="col-7">
+        <scs-resource-selector
+          [selectedResourceInput]="productionRecord.resource"
+          (resourceSelected)="updateOutboundResource($index, $event)"
+          placeholder="Select resource..."
+        ></scs-resource-selector>
+      </div>
+      <div class="col-3">
+        <input
+          type="number"
+          class="form-control"
+          [ngModel]="productionRecord.amount"
+          (ngModelChange)="updateOutboundAmount($index, $event)"
+          min="0"
+          step="0.1"
+        />
+      </div>
+      <div class="col-2 text-end">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          (click)="removeOutboundResource($index)"
+          title="Remove Resource"
+        >
+          <i class="bi bi-trash"></i>
+        </button>
+      </div>
+    </div>
+    }
+
+    @if ((editableLocation()!.production || []).length === 0) {
+    <p class="text-muted small">No outbound resources</p>
+    }
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="d-flex gap-2 justify-content-end">
+    <button type="button" class="btn btn-secondary" (click)="closeOffcanvas()">
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="saveLocation()"
+      [disabled]="!isFormValid()"
+    >
+      Save
+    </button>
+  </div>
+  } @else {
+  <p>No location to edit.</p>
+  }
+</div>

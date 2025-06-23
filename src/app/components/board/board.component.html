@@ -1,0 +1,15 @@
+<div #board class="board-container">
+  @for (location of locations(); track location.id; let i = $index) {
+    <div
+      id="loc-{{location.id}}"
+      scsDraggable
+      class="position-absolute"
+      [style.left.px]="location.cardPositionX ?? getDefaultX(i)"
+      [style.top.px]="location.cardPositionY ?? getDefaultY(i)"
+      style="width: 280px; z-index: 1000;"
+      (scsDragEnd)="onCardDragEnd(location, $event)"
+    >
+      <scs-location-card [location]="location"></scs-location-card>
+    </div>
+  }
+</div>
