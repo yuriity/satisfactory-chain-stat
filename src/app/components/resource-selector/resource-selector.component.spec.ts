@@ -810,7 +810,9 @@ describe('ResourceSelectorComponent', () => {
 
     // Verify the dropdown doesn't have the dropup class
     const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
-    expect(dropdownContainer.classes['dropup']).toBeFalsy();
+    expect(dropdownContainer.nativeElement.classList.contains('dropup'))
+      .withContext('Dropdown container should not have dropup class by default')
+      .toBeFalse();
   });
 
   it('should reposition dropdown on window resize', () => {
@@ -1005,10 +1007,14 @@ describe('ResourceSelectorComponent', () => {
 
       // Check that the dropdown has the correct CSS classes for upward positioning
       const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
-      expect(dropdownContainer.classes['dropup']).toBeTrue();
+      expect(dropdownContainer.nativeElement.classList.contains('dropup'))
+        .withContext('Dropdown container should have dropup class')
+        .toBeTrue();
 
       const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
-      expect(dropdownMenu.classes['dropdown-menu-up']).toBeTrue();
+      expect(dropdownMenu.nativeElement.classList.contains('dropdown-menu-up'))
+        .withContext('Dropdown menu should have dropdown-menu-up class')
+        .toBeTrue();
 
       done();
     }, 10);
@@ -1215,7 +1221,9 @@ describe('ResourceSelectorComponent', () => {
 
     // Using ComponentFixture detectChanges to reflect DOM state
     const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
-    expect(dropdownContainer.classes['dropup']).toBeFalsy();
+    expect(dropdownContainer.nativeElement.classList.contains('dropup'))
+      .withContext('Dropdown container should not have dropup class by default')
+      .toBeFalse();
     expect(component['dropdownDirection']()).toBe('down');
   });
 
@@ -1253,12 +1261,20 @@ describe('ResourceSelectorComponent', () => {
 
       // Check that we're using dropup class
       const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
-      expect(dropdownContainer.classes['dropup']).toBeTrue();
+      expect(dropdownContainer.nativeElement.classList.contains('dropup'))
+        .withContext(
+          'Dropdown container should have dropup class when space is limited below'
+        )
+        .toBeTrue();
       expect(component['dropdownDirection']()).toBe('up');
 
       // Check that dropdown menu has the up class
       const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
-      expect(dropdownMenu.classes['dropdown-menu-up']).toBeTrue();
+      expect(dropdownMenu.nativeElement.classList.contains('dropdown-menu-up'))
+        .withContext(
+          'Dropdown menu should have dropdown-menu-up class when positioned above'
+        )
+        .toBeTrue();
 
       done();
     }, 10);
