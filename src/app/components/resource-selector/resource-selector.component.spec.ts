@@ -969,24 +969,24 @@ describe('ResourceSelectorComponent', () => {
 
   it('should position dropdown above the input if there is not enough space below', (done) => {
     // Set the component near the bottom of the viewport (not enough space below)
-    const topOffset = window.innerHeight - 150; // Only 150px from bottom
+    const topOffset = 450; // Position closer to bottom with less space
     const mockRect = {
       top: topOffset,
       left: 0,
-      width: 0,
+      width: 200,
       height: 40,
-      bottom: topOffset + 40,
-      right: 0,
+      bottom: topOffset + 40, // bottom at 490px
+      right: 200,
       x: 0,
-      y: 0,
+      y: topOffset,
       toJSON: () => {},
     };
 
-    // Mock window.innerHeight to be consistent
+    // Mock window.innerHeight to be consistent - dropdown needs ~200px space
     spyOnProperty(window, 'innerHeight').and.returnValue(600);
 
     // Mock the getBoundingClientRect method on the component element
-    spyOn(
+    const getBoundingClientRectSpy = spyOn(
       fixture.debugElement.nativeElement,
       'getBoundingClientRect'
     ).and.returnValue(mockRect);
@@ -999,25 +999,49 @@ describe('ResourceSelectorComponent', () => {
     setTimeout(() => {
       fixture.detectChanges();
 
+      // Verify getBoundingClientRect was called
+      expect(getBoundingClientRectSpy)
+        .withContext('getBoundingClientRect should be called')
+        .toHaveBeenCalled();
+
       // Now the dropdown should be visible
       const dropdown = fixture.debugElement.query(
         By.css('.dropdown-menu.show')
       );
-      expect(dropdown).toBeTruthy();
+      expect(dropdown).withContext('Dropdown should be visible').toBeTruthy();
 
-      // Check that the dropdown has the correct CSS classes for upward positioning
+      // Debug: Check what the dropdown direction signal actually contains
+      console.log('Dropdown direction:', component['dropdownDirection']());
+
+      // Debug: Check the actual classes on the elements
       const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
+      console.log(
+        'Dropdown container classes:',
+        dropdownContainer.nativeElement.className
+      );
+
+      const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
+      console.log(
+        'Dropdown menu classes:',
+        dropdownMenu.nativeElement.className
+      );
+
+      // Check the dropdown direction signal first
+      expect(component['dropdownDirection']())
+        .withContext('Component should determine direction as "up"')
+        .toBe('up');
+
+      // Only then check the DOM classes
       expect(dropdownContainer.nativeElement.classList.contains('dropup'))
         .withContext('Dropdown container should have dropup class')
         .toBeTrue();
 
-      const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
       expect(dropdownMenu.nativeElement.classList.contains('dropdown-menu-up'))
         .withContext('Dropdown menu should have dropdown-menu-up class')
         .toBeTrue();
 
       done();
-    }, 10);
+    }, 15); // Slightly longer timeout to ensure async operations complete
   });
 
   it('should not overflow the viewport when opening dropdown', () => {
@@ -1231,22 +1255,22 @@ describe('ResourceSelectorComponent', () => {
     // Mock the element's position in viewport
     // We're simulating the situation where there's not enough space below
     const mockRect = {
-      top: 500,
-      bottom: 530,
+      top: 450, // Position that leaves only 150px below (not enough for dropdown)
+      bottom: 490,
       left: 0,
-      right: 0,
-      width: 0,
-      height: 0,
+      right: 200,
+      width: 200,
+      height: 40,
       x: 0,
-      y: 0,
+      y: 450,
       toJSON: () => {},
     };
 
-    // Mock window.innerHeight
+    // Mock window.innerHeight - dropdown needs more than 110px space
     spyOnProperty(window, 'innerHeight').and.returnValue(600);
 
     // Mock the getBoundingClientRect method
-    spyOn(
+    const getBoundingClientRectSpy = spyOn(
       fixture.debugElement.nativeElement,
       'getBoundingClientRect'
     ).and.returnValue(mockRect);
@@ -1259,14 +1283,36 @@ describe('ResourceSelectorComponent', () => {
     setTimeout(() => {
       fixture.detectChanges();
 
-      // Check that we're using dropup class
+      // Debug output
+      console.log('Mock rect:', mockRect);
+      console.log('Window height:', window.innerHeight);
+      console.log('Space below:', window.innerHeight - mockRect.bottom);
+      console.log(
+        'Dropdown direction signal:',
+        component['dropdownDirection']()
+      );
+
+      // Verify the method was called
+      expect(getBoundingClientRectSpy)
+        .withContext(
+          'getBoundingClientRect should be called during dropdown positioning'
+        )
+        .toHaveBeenCalled();
+
+      // Check that we're using dropup direction first
+      expect(component['dropdownDirection']())
+        .withContext(
+          'Component should set dropdown direction to "up" when space is limited below'
+        )
+        .toBe('up');
+
+      // Check that dropdown container has the dropup class
       const dropdownContainer = fixture.debugElement.query(By.css('.dropdown'));
       expect(dropdownContainer.nativeElement.classList.contains('dropup'))
         .withContext(
           'Dropdown container should have dropup class when space is limited below'
         )
         .toBeTrue();
-      expect(component['dropdownDirection']()).toBe('up');
 
       // Check that dropdown menu has the up class
       const dropdownMenu = fixture.debugElement.query(By.css('.dropdown-menu'));
@@ -1277,6 +1323,6 @@ describe('ResourceSelectorComponent', () => {
         .toBeTrue();
 
       done();
-    }, 10);
+    }, 15);
   });
 });
