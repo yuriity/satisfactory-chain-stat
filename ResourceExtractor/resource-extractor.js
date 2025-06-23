@@ -36,13 +36,13 @@ try {
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
       if (
-        (typeof topLevelItem.NativeClass === "string" &&
+        typeof topLevelItem.NativeClass === "string" &&
+        (topLevelItem.NativeClass.startsWith(
+          "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
+        ) ||
           topLevelItem.NativeClass.startsWith(
-            "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"
-          )) ||
-        topLevelItem.NativeClass.startsWith(
-          "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
-        )
+            "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
+          ))
       ) {
         // "/Script/CoreUObject.Class'/Script/FactoryGame.FGItemDescriptor'"
         for (const classItem of topLevelItem.Classes) {
@@ -91,6 +91,3 @@ try {
 } catch (error) {
   console.error("Error processing the file:", error);
 }
-
-// "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
-// "/Script/CoreUObject.Class'/Script/FactoryGame.FGItem"

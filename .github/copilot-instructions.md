@@ -1,6 +1,6 @@
 # Satisfactory Chain Stat
 
-An application for analyzing p---
+An Angular application for analyzing and optimizing production chains in the game Satisfactory. Plan your factories, track resource flows, and visualize complex production networks.
 
 ## 📚 Detailed Guides
 
