@@ -1,4 +1,4 @@
-<div class="dropdown" [class.dropup]="dropdownDirection() === 'up'">
+<div class="dropdown" ngbDropdown #dropdown="ngbDropdown" (openChange)="onDropdownOpenChange($event)">
   <div class="input-group">
     @if (selectedResource()) {
     <div class="input-group-prepend">
@@ -18,13 +18,12 @@
       [placeholder]="placeholder()"
       [value]="searchTerm()"
       (input)="onSearchChange($event)"
-      (focus)="toggleDropdown()"
-      (blur)="hideDropdown()"
+      (focus)="openDropdown()"
       (keydown)="onKeyDown($event)"
       aria-label="Search resources"
-      [attr.aria-expanded]="showDropdown()"
       aria-autocomplete="list"
       role="combobox"
+      #searchInput
     />
     @if (isSearching()) {
     <button
@@ -35,62 +34,43 @@
     >
       <i class="bi bi-x"></i>
     </button>
-    } @else if (showDropdown()) {
-    <button
-      class="btn btn-outline-secondary"
-      type="button"
-      (click)="closeDropdown()"
-      title="Close dropdown"
-    >
-      <i class="bi bi-chevron-up"></i>
-    </button>
     } @else {
     <button
       class="btn btn-outline-secondary"
       type="button"
       (click)="toggleDropdown()"
-      title="Open dropdown"
+      title="Toggle dropdown"
     >
       <i class="bi bi-chevron-down"></i>
     </button>
     }
   </div>
 
-  @if (showDropdown() && filteredResources().length > 0) {
-  <div
-    class="dropdown-menu show w-100 resource-list"
-    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
-    role="listbox"
-    aria-label="Resource options"
-  >
-    @for (resource of filteredResources(); track resource.className) {
-    <div
-      class="dropdown-item d-flex align-items-center resource-item"
-      (click)="selectResource(resource)"
-      role="option"
-      [attr.aria-selected]="
-        selectedResource()?.className === resource.className
-      "
-      [class.active]="activeIndex() === filteredResources().indexOf(resource)"
-    >
-      <img
-        [src]="resource.getSmallIconUrl()"
-        [alt]="resource.displayName"
-        width="32"
-        height="32"
-        class="me-2"
-        loading="lazy"
-      />
-      <span>{{ resource.displayName }}</span>
-    </div>
+  <div class="dropdown-menu w-100 resource-list" ngbDropdownMenu #dropdownMenu>
+    @if (filteredResources().length > 0) {
+      @for (resource of filteredResources(); track resource.className; let i = $index) {
+      <button
+        type="button"
+        class="dropdown-item d-flex align-items-center resource-item"
+        (click)="selectResource(resource)"
+        [class.active]="selectedResource()?.className === resource.className || activeIndex() === i"
+        [attr.data-resource-id]="resource.className"
+      >
+        <img
+          [src]="resource.getSmallIconUrl()"
+          [alt]="resource.displayName"
+          width="32"
+          height="32"
+          class="me-2"
+          loading="lazy"
+        />
+        <span>{{ resource.displayName }}</span>
+      </button>
+      }
+    } @else if (searchTerm().length > 0) {
+      <div class="dropdown-item-text text-muted">No resources found</div>
+    } @else {
+      <div class="dropdown-item-text text-muted">Start typing to search resources</div>
     }
   </div>
-  } @else if (showDropdown() && searchTerm().length > 0) {
-  <div
-    class="dropdown-menu show w-100"
-    [class.dropdown-menu-up]="dropdownDirection() === 'up'"
-  >
-    <div class="dropdown-item">No resources found</div>
-  </div>
-  }
 </div>

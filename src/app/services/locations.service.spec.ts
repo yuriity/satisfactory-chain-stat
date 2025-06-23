@@ -2,19 +2,18 @@ import { TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
 
 import { LocationsService } from './locations.service';
-import { OffcanvasService } from './offcanvas.service';
+import { ModalService } from './modal.service';
 import { LocationStorageService } from './location-storage.service';
 import { LOCATIONS, PlasticResource, SilicaResource } from './mock-locations';
 import { Location } from '../models/location';
-import { EditLocationOffcanvasComponent } from '../components/edit-location-offcanvas/edit-location-offcanvas.component';
 
 describe('LocationsService', () => {
   let service: LocationsService;
-  let offcanvasService: jasmine.SpyObj<OffcanvasService>;
+  let modalService: jasmine.SpyObj<ModalService>;
   let storageService: jasmine.SpyObj<LocationStorageService>;
 
   beforeEach(() => {
-    const offcanvasSpy = jasmine.createSpyObj('OffcanvasService', ['open']);
+    const modalSpy = jasmine.createSpyObj('ModalService', ['editLocation']);
     const storageSpy = jasmine.createSpyObj('LocationStorageService', [
       'loadFromStorage',
       'saveToStorage',
@@ -29,15 +28,13 @@ describe('LocationsService', () => {
     TestBed.configureTestingModule({
       providers: [
         provideZonelessChangeDetection(),
-        { provide: OffcanvasService, useValue: offcanvasSpy },
+        { provide: ModalService, useValue: modalSpy },
         { provide: LocationStorageService, useValue: storageSpy },
       ],
     });
 
     service = TestBed.inject(LocationsService);
-    offcanvasService = TestBed.inject(
-      OffcanvasService
-    ) as jasmine.SpyObj<OffcanvasService>;
+    modalService = TestBed.inject(ModalService) as jasmine.SpyObj<ModalService>;
     storageService = TestBed.inject(
       LocationStorageService
     ) as jasmine.SpyObj<LocationStorageService>;
@@ -71,7 +68,7 @@ describe('LocationsService', () => {
     ];
 
     // Reset the test bed with different mock data
-    const offcanvasSpy = jasmine.createSpyObj('OffcanvasService', ['open']);
+    const modalSpy = jasmine.createSpyObj('ModalService', ['editLocation']);
     const storageSpy = jasmine.createSpyObj('LocationStorageService', [
       'loadFromStorage',
       'saveToStorage',
@@ -86,7 +83,7 @@ describe('LocationsService', () => {
     TestBed.configureTestingModule({
       providers: [
         provideZonelessChangeDetection(),
-        { provide: OffcanvasService, useValue: offcanvasSpy },
+        { provide: ModalService, useValue: modalSpy },
         { provide: LocationStorageService, useValue: storageSpy },
       ],
     });
@@ -99,42 +96,19 @@ describe('LocationsService', () => {
     expect(newService.locations()[1].name).toBe('Stored Location 2');
   });
 
-  it('should open edit location offcanvas when editLocation is called', async () => {
+  it('should open edit location modal when editLocation is called', async () => {
     const testLocation: Location = {
       id: 'test-id',
       name: 'Test Location',
       resourceSources: [],
     };
 
-    const mockOffcanvasRef = {
-      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
-        Promise.resolve({
-          action: 'save',
-          location: { ...testLocation, name: 'Updated Name' },
-        })
-      ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    const updatedLocation = { ...testLocation, name: 'Updated Name' };
+    modalService.editLocation.and.returnValue(Promise.resolve(updatedLocation));
 
     await service.editLocation(testLocation);
 
-    expect(offcanvasService.open).toHaveBeenCalledWith(
-      EditLocationOffcanvasComponent,
-      {
-        data: { location: testLocation },
-        backdrop: 'static',
-        position: 'end',
-        width: '450px',
-      }
-    );
+    expect(modalService.editLocation).toHaveBeenCalledWith(testLocation);
   });
 
   it('should update location when edit returns save result', async () => {
@@ -144,22 +118,7 @@ describe('LocationsService', () => {
       name: 'Updated Name',
     };
 
-    const mockOffcanvasRef = {
-      afterClosed: jasmine
-        .createSpy('afterClosed')
-        .and.returnValue(
-          Promise.resolve({ action: 'save', location: updatedLocation })
-        ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(Promise.resolve(updatedLocation));
 
     await service.editLocation(originalLocation);
 
@@ -175,20 +134,7 @@ describe('LocationsService', () => {
     const originalLocation: Location = service.locations()[0];
     const originalName = originalLocation.name;
 
-    const mockOffcanvasRef = {
-      afterClosed: jasmine
-        .createSpy('afterClosed')
-        .and.returnValue(Promise.resolve({ action: 'cancel' })),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(Promise.resolve(null));
 
     await service.editLocation(originalLocation);
 
@@ -228,23 +174,9 @@ describe('LocationsService', () => {
       ],
     };
 
-    const mockOffcanvasRef = {
-      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
-        Promise.resolve({
-          action: 'save',
-          location: updatedCircuitBoardPlant,
-        })
-      ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(
+      Promise.resolve(updatedCircuitBoardPlant)
+    );
 
     await service.editLocation(circuitBoardPlant!);
 
@@ -280,23 +212,9 @@ describe('LocationsService', () => {
       consumption: [{ resource: PlasticResource, amount: 140 }],
     };
 
-    let mockOffcanvasRef = {
-      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
-        Promise.resolve({
-          action: 'save',
-          location: updatedCircuitBoardPlant,
-        })
-      ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(
+      Promise.resolve(updatedCircuitBoardPlant)
+    );
     await service.editLocation(circuitBoardPlant!);
 
     // Verify Silica Plant consumption is 0
@@ -315,23 +233,9 @@ describe('LocationsService', () => {
       ],
     };
 
-    mockOffcanvasRef = {
-      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
-        Promise.resolve({
-          action: 'save',
-          location: readdedCircuitBoardPlant,
-        })
-      ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(
+      Promise.resolve(readdedCircuitBoardPlant)
+    );
     const currentCircuitBoard = service
       .locations()
       .find((loc) => loc.id === 'circuit-board-plant1');
@@ -421,47 +325,25 @@ describe('LocationsService', () => {
     expect(finalCount).toBe(initialCount);
   });
 
-  it('should create a new location and open edit offcanvas when newLocation is called', async () => {
-    const mockOffcanvasRef = {
-      afterClosed: jasmine.createSpy('afterClosed').and.returnValue(
-        Promise.resolve({
-          action: 'save',
-          location: {
-            id: 'new-location-id',
-            name: 'My New Location',
-            resourceSources: ['silica-plant-1'],
-          },
-        })
-      ),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+  it('should create a new location and open edit modal when newLocation is called', async () => {
+    modalService.editLocation.and.returnValue(
+      Promise.resolve({
+        id: 'new-location-id',
+        name: 'My New Location',
+        resourceSources: ['silica-plant-1'],
+      })
+    );
 
     const initialCount = service.locations().length;
 
     await service.newLocation();
 
-    // Verify offcanvas was opened with a new location
-    expect(offcanvasService.open).toHaveBeenCalledWith(
-      EditLocationOffcanvasComponent,
-      {
-        data: {
-          location: jasmine.objectContaining({
-            name: 'New Location',
-            resourceSources: [],
-          }),
-        },
-        backdrop: 'static',
-        position: 'end',
-        width: '450px',
-      }
+    // Verify modal was opened with a new location
+    expect(modalService.editLocation).toHaveBeenCalledWith(
+      jasmine.objectContaining({
+        name: 'New Location',
+        resourceSources: [],
+      })
     );
 
     // Verify new location was added to the list
@@ -474,20 +356,7 @@ describe('LocationsService', () => {
   });
 
   it('should not add location when newLocation edit is cancelled', async () => {
-    const mockOffcanvasRef = {
-      afterClosed: jasmine
-        .createSpy('afterClosed')
-        .and.returnValue(Promise.resolve({ action: 'cancel' })),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(Promise.resolve(null));
 
     const initialCount = service.locations().length;
 
@@ -506,38 +375,17 @@ describe('LocationsService', () => {
       return `test-uuid-${callCount}-1234-5678-9abc` as `${string}-${string}-${string}-${string}-${string}`;
     });
 
-    const mockOffcanvasRef = {
-      afterClosed: jasmine
-        .createSpy('afterClosed')
-        .and.returnValue(Promise.resolve({ action: 'cancel' })),
-      afterDismissed: jasmine
-        .createSpy('afterDismissed')
-        .and.returnValue(Promise.resolve()),
-      close: jasmine.createSpy('close'),
-      dismiss: jasmine.createSpy('dismiss'),
-      componentInstance: {},
-      componentRef: {} as any,
-    };
-
-    offcanvasService.open.and.returnValue(mockOffcanvasRef);
+    modalService.editLocation.and.returnValue(Promise.resolve(null));
 
     await service.newLocation();
     await service.newLocation();
 
     expect(crypto.randomUUID).toHaveBeenCalledTimes(2);
-    expect(offcanvasService.open).toHaveBeenCalledWith(
-      EditLocationOffcanvasComponent,
-      {
-        data: {
-          location: jasmine.objectContaining({
-            id: 'test-uuid-1-1234-5678-9abc',
-            name: 'New Location',
-          }),
-        },
-        backdrop: 'static',
-        position: 'end',
-        width: '450px',
-      }
+    expect(modalService.editLocation).toHaveBeenCalledWith(
+      jasmine.objectContaining({
+        id: 'test-uuid-1-1234-5678-9abc',
+        name: 'New Location',
+      })
     );
 
     // Restore original function
