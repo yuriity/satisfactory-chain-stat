@@ -474,7 +474,7 @@ describe('BoardComponent', () => {
       spyOn(component, 'updateConnections' as any).and.callThrough();
     });
 
-    it('should react to insert (add location)', () => {
+    it('should react to insert (add location)', async () => {
       const newLocation = {
         id: 'location-4',
         name: 'New Factory',
@@ -489,11 +489,15 @@ describe('BoardComponent', () => {
         newLocation,
       ]);
       fixture.detectChanges();
+
+      // Wait for the setTimeout in the effect to complete
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
       expect(component['updateConnections']).toHaveBeenCalled();
       expect(component['locations']().length).toBe(4);
     });
 
-    it('should react to update (modify location)', () => {
+    it('should react to update (modify location)', async () => {
       const updated = { ...mockLocations[0], name: 'Updated Name' };
       (locationsService as any)._locationsSignal.set([
         updated,
@@ -501,16 +505,24 @@ describe('BoardComponent', () => {
         mockLocations[2],
       ]);
       fixture.detectChanges();
+
+      // Wait for the setTimeout in the effect to complete
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
       expect(component['updateConnections']).toHaveBeenCalled();
       expect(component['locations']()[0].name).toBe('Updated Name');
     });
 
-    it('should react to delete (remove location)', () => {
+    it('should react to delete (remove location)', async () => {
       (locationsService as any)._locationsSignal.set([
         mockLocations[1],
         mockLocations[2],
       ]);
       fixture.detectChanges();
+
+      // Wait for the setTimeout in the effect to complete
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
       expect(component['updateConnections']).toHaveBeenCalled();
       expect(component['locations']().length).toBe(2);
     });
