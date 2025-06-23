@@ -16,7 +16,7 @@
     } @else {
     <span class="bi bi-hand-thumbs-up-fill me-1"></span>
     }
-    <span class="fw-medium">{{ productionRecord().resource.displayName }}</span>
+    <span>{{ productionRecord().resource.displayName }}</span>
   </div>
 
   <!-- Production and Consumption Rates -->
@@ -24,13 +24,15 @@
     <!-- Production Rate -->
     <div class="production-rate text-end">
       <span class="bi bi-box-arrow-down me-1"></span>
-      <span class="text-muted small">{{ displayProduction() }}</span>
+      <span>{{ this.productionRecord().amount }}</span>
+      <span class="text-muted small">/min</span>
     </div>
 
     <!-- Consumption Rate -->
     <div class="consumption-rate text-end">
       <span class="bi bi-box-arrow-in-up me-1"></span>
-      <span class="text-muted small">{{ displayConsumption() }}</span>
+      <span>{{ this.productionRecord().consumption }}</span>
+      <span class="text-muted small">/min</span>
     </div>
   </div>
 

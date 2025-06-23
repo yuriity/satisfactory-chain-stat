@@ -1,5 +1,5 @@
 .production-statistics {
-  padding: 0.75rem;
+  padding: 0.75rem 0;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto auto;
@@ -24,8 +24,6 @@
   .resource-name {
     grid-row: 1;
     grid-column: 2;
-    font-size: 1rem;
-    font-weight: 500;
     align-self: center;
 
     .bi-hand-thumbs-down-fill {
@@ -47,8 +45,6 @@
   .production-rate,
   .consumption-rate {
     min-width: 70px;
-    font-size: 0.875rem;
-    font-weight: 500;
   }
 
   .production-rate .bi {

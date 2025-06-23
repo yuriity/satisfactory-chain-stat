@@ -47,16 +47,6 @@ export class ProdactionStatisticsComponent {
     }
   });
 
-  protected displayProduction = computed(() => {
-    const amount = this.productionRecord().amount;
-    return `${amount}/min`;
-  });
-
-  protected displayConsumption = computed(() => {
-    const consumption = this.productionRecord().consumption;
-    return `${consumption}/min`;
-  });
-
   protected isShortage = computed(
     () => this.productionRecord().consumption > this.productionRecord().amount
   );

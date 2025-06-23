@@ -62,25 +62,6 @@
     letter-spacing: 0.03em;
   }
 
-  .resource-item {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-
-    .resource-name {
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .resource-amount {
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .resource-amount-inmin {
-      font-size: 0.7rem;
-    }
-  }
-
   .resource-icon {
     object-fit: contain;
     margin-right: 0.5rem;
