@@ -1,59 +1,141 @@
-# SatisfactoryChainStat
+# Satisfactory Chain Stat
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+An Angular application for analyzing and optimizing production chains in the game Satisfactory. Plan your factories, track resource flows, and visualize complex production networks.
 
-## Development server
+## 🎮 Features
 
-To start a local development server, run:
+- **Interactive Production Chain Planning** - Design and visualize complex factory layouts
+- **Resource Flow Analysis** - Track inputs, outputs, and efficiency metrics
+- **Location Management** - Organize production facilities by geographic locations
+- **Data Import/Export** - Save and share your factory configurations
+- **Real-time Calculations** - Instant feedback on production rates and bottlenecks
 
-```bash
-ng serve
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Node.js** (version 18 or higher)
+- **npm** (comes with Node.js)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yuriity/satisfactory-chain-stat.git
+   cd satisfactory-chain-stat
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   ng serve
+   ```
+
+4. **Open your browser** and navigate to `http://localhost:42625/`
+
+## 🛠 Technology Stack
+
+- **Angular 20** with ZonelessChangeDetection
+- **Bootstrap 5** for responsive UI components
+- **TypeScript** for type-safe development
+- **RxJS** for reactive programming
+- **Signals** for modern state management
+
+## 📁 Project Structure
+
+``` bash
+src/app/
+├── components/     # Reusable UI components
+├── pages/         # Main page components
+├── services/      # Angular services for business logic
+├── models/        # TypeScript interfaces and classes
+├── pipes/         # Custom pipes for data transformation
+├── guards/        # Route guards for navigation protection
+└── utils/         # Utility functions and helpers
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:42625/`. The application will automatically reload whenever you modify any of the source files.
+## 🧪 Development
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Running Tests
 
 ```bash
-ng generate component component-name
-```
+# Run all tests once
+ng test --watch=false
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+# Run tests in watch mode (development)
 ng test
+
+# Run specific test file
+ng test --include="**/component-name.spec.ts" --watch=false
+
+# Run tests with coverage report
+ng test --code-coverage --watch=false
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Code Generation
 
 ```bash
-ng e2e
+# Generate a new component
+ng generate component components/resource-card
+
+# Generate a new service
+ng generate service services/production-calculator
+
+# Generate a new page
+ng generate component pages/factory-planner
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Building for Production
 
-## Additional Resources
+```bash
+# Build optimized production bundle
+ng build --configuration production
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Serve production build locally
+npx http-server dist/satisfactory-chain-stat -p 8080
+```
+
+## 📋 Development Guidelines
+
+This project follows strict coding standards for maintainability:
+
+- **Use signals** for component state management
+- **Prefer `inject()`** over constructor dependency injection
+- **Use standalone components** with OnPush change detection
+- **Follow Bootstrap 5** utility classes over custom CSS
+- **Write comprehensive tests** with proper mocking
+- **Use modern Angular patterns** (control flow, input/output functions)
+
+## 🤝 Contributing
+
+1. **Fork the repository**
+2. **Create a feature branch:** `git checkout -b feature/new-calculator`
+3. **Follow the coding guidelines** outlined in the project
+4. **Write tests** for new functionality
+5. **Run tests:** `ng test --watch=false`
+6. **Submit a pull request**
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🎯 Roadmap
+
+- [ ] Advanced recipe optimization algorithms
+- [ ] Multi-floor factory planning
+- [ ] Power consumption analysis
+- [ ] Integration with Satisfactory game saves
+- [ ] Community sharing platform
+
+## 🐛 Issues
+
+Found a bug or have a feature request? Please open an issue on [GitHub Issues](https://github.com/yuriity/satisfactory-chain-stat/issues).
+
+---
