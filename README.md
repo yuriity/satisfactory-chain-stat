@@ -1,5 +1,7 @@
 # Satisfactory Chain Stat
 
+[![Unit Tests](https://github.com/yuriity/satisfactory-chain-stat/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/yuriity/satisfactory-chain-stat/actions/workflows/unit-tests.yml) [![Deploy to GitHub Pages](https://github.com/yuriity/satisfactory-chain-stat/actions/workflows/deploy.yml/badge.svg)](https://github.com/yuriity/satisfactory-chain-stat/actions/workflows/deploy.yml)
+
 An Angular application for analyzing and optimizing production chains in the game Satisfactory. Plan your factories, track resource flows, and visualize complex production networks.
 
 ## 🎮 Features
