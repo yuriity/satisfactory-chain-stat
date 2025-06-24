@@ -1,25 +1,26 @@
-<div class="offcanvas-header">
-  <h5 class="offcanvas-title">Edit Location</h5>
+<div class="modal-header">
+  <h5 class="modal-title">Edit Location</h5>
   <button
     type="button"
     class="btn-close"
-    (click)="closeOffcanvas()"
     aria-label="Close"
+    (click)="cancel()"
   ></button>
 </div>
-<div class="offcanvas-body">
-  @if (editableLocation()) {
+
+<div class="modal-body">
+  @if (editableLocation(); as location) {
   <div class="mb-4">
     <label for="locationName" class="form-label">Location name</label>
     <input
       type="text"
       class="form-control"
       id="locationName"
-      [ngModel]="editableLocation()!.name"
-      (ngModelChange)="updateLocationName($event)"
-      [class.is-invalid]="!isFormValid() && editableLocation()!.name !== null"
+      [value]="location.name"
+      (input)="updateLocationName($any($event.target).value)"
+      [class.is-invalid]="!isFormValid() && location.name !== null"
     />
-    @if (!isFormValid() && editableLocation()!.name !== null) {
+    @if (!isFormValid() && location.name !== null) {
     <div class="invalid-feedback">
       Location name is required and cannot be empty.
     </div>
@@ -32,17 +33,26 @@
 
     @if (availableLocations().length > 0) {
     <ul class="list-group">
-      @for (location of availableLocations(); track location.id) {
+      @for (availableLocation of availableLocations(); track
+      availableLocation.id) {
       <li class="list-group-item">
         <input
           class="form-check-input me-2"
           type="checkbox"
-          [id]="'source-' + location.id"
-          [checked]="isResourceSourceSelected(location.id)"
-          (change)="toggleResourceSource(location.id, $any($event.target).checked)"
+          [id]="'source-' + availableLocation.id"
+          [checked]="isResourceSourceSelected(availableLocation.id)"
+          (change)="
+            toggleResourceSource(
+              availableLocation.id,
+              $any($event.target).checked
+            )
+          "
         />
-        <label class="form-check-label" [for]="'source-' + location.id">
-          {{ location.name }}
+        <label
+          class="form-check-label"
+          [for]="'source-' + availableLocation.id"
+        >
+          {{ availableLocation.name }}
         </label>
       </li>
       }
@@ -66,7 +76,7 @@
       </button>
     </div>
 
-    @for (consumptionRecord of editableLocation()!.consumption || []; track $index) {
+    @for (consumptionRecord of location.consumption || []; track $index) {
     <div class="row mb-2 align-items-center">
       <div class="col-7">
         <scs-resource-selector
@@ -79,8 +89,8 @@
         <input
           type="number"
           class="form-control"
-          [ngModel]="consumptionRecord.amount"
-          (ngModelChange)="updateInboundAmount($index, $event)"
+          [value]="consumptionRecord.amount"
+          (input)="updateInboundAmount($index, +$any($event.target).value)"
           min="0"
           step="10"
         />
@@ -96,9 +106,7 @@
         </button>
       </div>
     </div>
-    }
-
-    @if ((editableLocation()!.consumption || []).length === 0) {
+    } @if ((location.consumption || []).length === 0) {
     <p class="text-muted small">No inbound resources</p>
     }
   </div>
@@ -117,7 +125,7 @@
       </button>
     </div>
 
-    @for (productionRecord of editableLocation()!.production || []; track $index) {
+    @for (productionRecord of location.production || []; track $index) {
     <div class="row mb-2 align-items-center">
       <div class="col-7">
         <scs-resource-selector
@@ -130,10 +138,10 @@
         <input
           type="number"
           class="form-control"
-          [ngModel]="productionRecord.amount"
-          (ngModelChange)="updateOutboundAmount($index, $event)"
+          [value]="productionRecord.amount"
+          (input)="updateOutboundAmount($index, +$any($event.target).value)"
           min="0"
-          step="0.1"
+          step="10"
         />
       </div>
       <div class="col-2 text-end">
@@ -147,28 +155,23 @@
         </button>
       </div>
     </div>
-    }
-
-    @if ((editableLocation()!.production || []).length === 0) {
+    } @if ((location.production || []).length === 0) {
     <p class="text-muted small">No outbound resources</p>
     }
   </div>
-
-  <!-- Action Buttons -->
-  <div class="d-flex gap-2 justify-content-end">
-    <button type="button" class="btn btn-secondary" (click)="closeOffcanvas()">
-      Cancel
-    </button>
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="saveLocation()"
-      [disabled]="!isFormValid()"
-    >
-      Save
-    </button>
-  </div>
-  } @else {
-  <p>No location to edit.</p>
   }
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">
+    Cancel
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary"
+    [disabled]="!isFormValid()"
+    (click)="saveLocation()"
+  >
+    Save Changes
+  </button>
 </div>

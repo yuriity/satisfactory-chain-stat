@@ -120,6 +120,30 @@ describe('App', () => {
     expect(exportButton.nativeElement.textContent).toContain('Export data');
   });
 
+  it('should open the dropdown menu when toggle button is clicked', () => {
+    const toggleButton = fixture.debugElement.query(
+      By.css('[ngbDropdownToggle]')
+    );
+    expect(toggleButton)
+      .withContext('Dropdown toggle button should exist')
+      .toBeTruthy();
+
+    // Before click, menu should not be shown
+    let menuEl = fixture.nativeElement.querySelector('[ngbDropdownMenu]');
+    expect(menuEl.classList)
+      .withContext('Dropdown menu should be hidden initially')
+      .not.toContain('show');
+
+    // Click toggle to open
+    toggleButton.nativeElement.click();
+    fixture.detectChanges();
+
+    menuEl = fixture.nativeElement.querySelector('[ngbDropdownMenu]');
+    expect(menuEl.classList)
+      .withContext('Dropdown menu should be shown after toggle click')
+      .toContain('show');
+  });
+
   it('should call exportLocations when export button is clicked', () => {
     const exportButton = fixture.debugElement.queryAll(
       By.css('.dropdown-item')

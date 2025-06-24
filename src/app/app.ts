@@ -1,7 +1,6 @@
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { LocationsService } from './services/locations.service';
 import { Resource } from './models/resource';
 import { ResourcesService } from './services/resources.service';
@@ -10,7 +9,7 @@ import { BoardComponent } from './components/board/board.component';
 @Component({
   selector: 'scs-root',
   standalone: true,
-  imports: [BoardComponent, CommonModule],
+  imports: [BoardComponent, CommonModule, NgbDropdownModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
