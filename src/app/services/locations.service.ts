@@ -2,20 +2,15 @@ import { inject, Injectable, signal } from '@angular/core';
 import { Location } from '../models/location';
 import { LOCATIONS } from './mock-locations';
 import { calculateConsumption } from '../utils/calculate-consupmtion';
-import { OffcanvasService } from './offcanvas.service';
+import { ModalService } from './modal.service';
 import { LocationStorageService } from './location-storage.service';
-import {
-  EditLocationOffcanvasComponent,
-  EditLocationData,
-  EditLocationResult,
-} from '../components/edit-location-offcanvas/edit-location-offcanvas.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class LocationsService {
   private locationsSignal = signal<Location[]>([]);
-  private offcanvasService = inject(OffcanvasService);
+  private modalService = inject(ModalService);
   private storageService = inject(LocationStorageService);
 
   public readonly locations = this.locationsSignal.asReadonly();
@@ -48,34 +43,23 @@ export class LocationsService {
   }
 
   /**
-   * Open the location editor offcanvas for a specific location
+   * Open the location editor modal for a specific location
    * @param location The location to edit
    */
   public async editLocation(location: Location): Promise<void> {
-    const offcanvasRef = this.offcanvasService.open<
-      EditLocationOffcanvasComponent,
-      EditLocationData,
-      EditLocationResult
-    >(EditLocationOffcanvasComponent, {
-      data: { location },
-      backdrop: 'static',
-      position: 'end',
-      width: '450px',
-    });
-
     try {
-      const result = await offcanvasRef.afterClosed();
+      const result = await this.modalService.editLocation(location);
 
-      if (result?.action === 'save' && result.location) {
-        this.updateLocation(result.location);
+      if (result) {
+        this.updateLocation(result);
       }
-    } catch (dismissReason) {
-      console.log('Edit location offcanvas was dismissed:', dismissReason);
+    } catch (error) {
+      console.log('Edit location modal error:', error);
     }
   }
 
   /**
-   * Create a new location and open the editor offcanvas
+   * Create a new location and open the editor modal
    */
   public async newLocation(): Promise<void> {
     const newLocation: Location = {
