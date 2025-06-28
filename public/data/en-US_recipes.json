@@ -2,6 +2,7 @@
   {
     "displayName": "Iron Plate",
     "alternate": false,
+    "shortName": "Recipe_IronPlate_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -18,6 +19,7 @@
   {
     "displayName": "Iron Rod",
     "alternate": false,
+    "shortName": "Recipe_IronRod_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -34,6 +36,7 @@
   {
     "displayName": "Iron Ingot",
     "alternate": false,
+    "shortName": "Recipe_IngotIron_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -50,6 +53,7 @@
   {
     "displayName": "Nitro Rocket Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_RocketFuel_Nitro_C",
     "ingredients": [
       {
         "className": "desc-liquidfuel-c",
@@ -78,6 +82,7 @@
   {
     "displayName": "Rocket Fuel",
     "alternate": false,
+    "shortName": "Recipe_RocketFuel_C",
     "ingredients": [
       {
         "className": "desc-liquidturbofuel-c",
@@ -98,6 +103,7 @@
   {
     "displayName": "Packaged Rocket Fuel",
     "alternate": false,
+    "shortName": "Recipe_PackagedRocketFuel_C",
     "ingredients": [
       {
         "className": "desc-rocketfuel-c",
@@ -118,6 +124,7 @@
   {
     "displayName": "Unpackage Rocket Fuel",
     "alternate": false,
+    "shortName": "Recipe_UnpackageRocketFuel_C",
     "ingredients": [
       {
         "className": "desc-packagedrocketfuel-c",
@@ -134,6 +141,7 @@
   {
     "displayName": "Dark-Ion Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IonizedFuel_Dark_C",
     "ingredients": [
       {
         "className": "desc-packagedrocketfuel-c",
@@ -154,6 +162,7 @@
   {
     "displayName": "Dark Matter Residue",
     "alternate": false,
+    "shortName": "Recipe_DarkEnergy_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -170,6 +179,7 @@
   {
     "displayName": "Excited Photonic Matter",
     "alternate": false,
+    "shortName": "Recipe_QuantumEnergy_C",
     "ingredients": [
       ""
     ],
@@ -183,6 +193,7 @@
   {
     "displayName": "Dark Matter Crystal",
     "alternate": false,
+    "shortName": "Recipe_DarkMatter_C",
     "ingredients": [
       {
         "className": "desc-diamond-c",
@@ -203,6 +214,7 @@
   {
     "displayName": "Superposition Oscillator",
     "alternate": false,
+    "shortName": "Recipe_SuperpositionOscillator_C",
     "ingredients": [
       {
         "className": "desc-darkmatter-c",
@@ -231,6 +243,7 @@
   {
     "displayName": "Neural-Quantum Processor",
     "alternate": false,
+    "shortName": "Recipe_TemporalProcessor_C",
     "ingredients": [
       {
         "className": "desc-timecrystal-c",
@@ -259,6 +272,7 @@
   {
     "displayName": "AI Expansion Server",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_12_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-6-c",
@@ -287,6 +301,7 @@
   {
     "displayName": "Ionized Fuel",
     "alternate": false,
+    "shortName": "Recipe_IonizedFuel_C",
     "ingredients": [
       {
         "className": "desc-rocketfuel-c",
@@ -307,6 +322,7 @@
   {
     "displayName": "Packaged Ionized Fuel",
     "alternate": false,
+    "shortName": "Recipe_PackagedIonizedFuel_C",
     "ingredients": [
       {
         "className": "desc-ionizedfuel-c",
@@ -327,6 +343,7 @@
   {
     "displayName": "Unpackage Ionized Fuel",
     "alternate": false,
+    "shortName": "Recipe_UnpackageIonizedFuel_C",
     "ingredients": [
       {
         "className": "desc-packagedionizedfuel-c",
@@ -343,6 +360,7 @@
   {
     "displayName": "Turbo Diamonds",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Diamond_Turbo_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -363,6 +381,7 @@
   {
     "displayName": "SAM Fluctuator",
     "alternate": false,
+    "shortName": "Recipe_SAMFluctuator_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -387,6 +406,7 @@
   {
     "displayName": "Ficsite Trigon",
     "alternate": false,
+    "shortName": "Recipe_FicsiteMesh_C",
     "ingredients": [
       {
         "className": "desc-ficsiteingot-c",
@@ -403,6 +423,7 @@
   {
     "displayName": "Ficsite Ingot (Iron)",
     "alternate": false,
+    "shortName": "Recipe_FicsiteIngot_Iron_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -423,6 +444,7 @@
   {
     "displayName": "Time Crystal",
     "alternate": false,
+    "shortName": "Recipe_TimeCrystal_C",
     "ingredients": [
       {
         "className": "desc-diamond-c",
@@ -439,6 +461,7 @@
   {
     "displayName": "Diamonds",
     "alternate": false,
+    "shortName": "Recipe_Diamond_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -455,6 +478,7 @@
   {
     "displayName": "Reanimated SAM",
     "alternate": false,
+    "shortName": "Recipe_IngotSAM_C",
     "ingredients": [
       {
         "className": "desc-sam-c",
@@ -471,6 +495,7 @@
   {
     "displayName": "Biochemical Sculptor",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_10_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-7-c",
@@ -495,6 +520,7 @@
   {
     "displayName": "Ficsite Ingot (Aluminum)",
     "alternate": false,
+    "shortName": "Recipe_FicsiteIngot_AL_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -515,6 +541,7 @@
   {
     "displayName": "Ficsite Ingot (Caterium)",
     "alternate": false,
+    "shortName": "Recipe_FicsiteIngot_CAT_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -535,6 +562,7 @@
   {
     "displayName": "Bauxite (Caterium)",
     "alternate": false,
+    "shortName": "Recipe_Bauxite_Caterium_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -555,6 +583,7 @@
   {
     "displayName": "Bauxite (Copper)",
     "alternate": false,
+    "shortName": "Recipe_Bauxite_Copper_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -575,6 +604,7 @@
   {
     "displayName": "Caterium Ore (Copper)",
     "alternate": false,
+    "shortName": "Recipe_Caterium_Copper_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -595,6 +625,7 @@
   {
     "displayName": "Caterium Ore (Quartz)",
     "alternate": false,
+    "shortName": "Recipe_Caterium_Quartz_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -615,6 +646,7 @@
   {
     "displayName": "Coal (Iron)",
     "alternate": false,
+    "shortName": "Recipe_Coal_Iron_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -635,6 +667,7 @@
   {
     "displayName": "Coal (Limestone)",
     "alternate": false,
+    "shortName": "Recipe_Coal_Limestone_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -655,6 +688,7 @@
   {
     "displayName": "Copper Ore (Quartz)",
     "alternate": false,
+    "shortName": "Recipe_Copper_Quartz_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -675,6 +709,7 @@
   {
     "displayName": "Copper Ore (Sulfur)",
     "alternate": false,
+    "shortName": "Recipe_Copper_Sulfur_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -695,6 +730,7 @@
   {
     "displayName": "Iron Ore (Limestone)",
     "alternate": false,
+    "shortName": "Recipe_Iron_Limestone_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -715,6 +751,7 @@
   {
     "displayName": "Limestone (Sulfur)",
     "alternate": false,
+    "shortName": "Recipe_Limestone_Sulfur_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -735,6 +772,7 @@
   {
     "displayName": "Nitrogen Gas (Bauxite)",
     "alternate": false,
+    "shortName": "Recipe_Nitrogen_Bauxite_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -755,6 +793,7 @@
   {
     "displayName": "Nitrogen Gas (Caterium)",
     "alternate": false,
+    "shortName": "Recipe_Nitrogen_Caterium_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -775,6 +814,7 @@
   {
     "displayName": "Raw Quartz (Bauxite)",
     "alternate": false,
+    "shortName": "Recipe_Quartz_Bauxite_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -795,6 +835,7 @@
   {
     "displayName": "Raw Quartz (Coal)",
     "alternate": false,
+    "shortName": "Recipe_Quartz_Coal_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -815,6 +856,7 @@
   {
     "displayName": "Sulfur (Coal)",
     "alternate": false,
+    "shortName": "Recipe_Sulfur_Coal_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -835,6 +877,7 @@
   {
     "displayName": "Sulfur (Iron)",
     "alternate": false,
+    "shortName": "Recipe_Sulfur_Iron_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -855,6 +898,7 @@
   {
     "displayName": "Uranium Ore (Bauxite)",
     "alternate": false,
+    "shortName": "Recipe_Uranium_Bauxite_C",
     "ingredients": [
       {
         "className": "desc-samingot-c",
@@ -875,6 +919,7 @@
   {
     "displayName": "Turbofuel",
     "alternate": false,
+    "shortName": "Recipe_Alternate_Turbofuel_C",
     "ingredients": [
       {
         "className": "desc-liquidfuel-c",
@@ -895,6 +940,7 @@
   {
     "displayName": "Packaged Turbofuel",
     "alternate": false,
+    "shortName": "Recipe_PackagedTurboFuel_C",
     "ingredients": [
       {
         "className": "desc-liquidturbofuel-c",
@@ -915,6 +961,7 @@
   {
     "displayName": "Unpackage Turbofuel",
     "alternate": false,
+    "shortName": "Recipe_UnpackageTurboFuel_C",
     "ingredients": [
       {
         "className": "desc-turbofuel-c",
@@ -931,6 +978,7 @@
   {
     "displayName": "Charcoal",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Coal_1_C",
     "ingredients": [
       {
         "className": "desc-wood-c",
@@ -947,6 +995,7 @@
   {
     "displayName": "Biocoal",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Coal_2_C",
     "ingredients": [
       {
         "className": "desc-genericbiomass-c",
@@ -963,6 +1012,7 @@
   {
     "displayName": "Compacted Coal",
     "alternate": true,
+    "shortName": "Recipe_Alternate_EnrichedCoal_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -983,6 +1033,7 @@
   {
     "displayName": "Circuit Board",
     "alternate": false,
+    "shortName": "Recipe_CircuitBoard_C",
     "ingredients": [
       {
         "className": "desc-coppersheet-c",
@@ -1003,6 +1054,7 @@
   {
     "displayName": "Fuel",
     "alternate": false,
+    "shortName": "Recipe_LiquidFuel_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1019,6 +1071,7 @@
   {
     "displayName": "Petroleum Coke",
     "alternate": false,
+    "shortName": "Recipe_PetroleumCoke_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -1035,6 +1088,7 @@
   {
     "displayName": "Plastic",
     "alternate": false,
+    "shortName": "Recipe_Plastic_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1051,6 +1105,7 @@
   {
     "displayName": "Rubber",
     "alternate": false,
+    "shortName": "Recipe_Rubber_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1067,6 +1122,7 @@
   {
     "displayName": "Residual Fuel",
     "alternate": false,
+    "shortName": "Recipe_ResidualFuel_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -1083,6 +1139,7 @@
   {
     "displayName": "Residual Plastic",
     "alternate": false,
+    "shortName": "Recipe_ResidualPlastic_C",
     "ingredients": [
       {
         "className": "desc-polymerresin-c",
@@ -1103,6 +1160,7 @@
   {
     "displayName": "Residual Rubber",
     "alternate": false,
+    "shortName": "Recipe_ResidualRubber_C",
     "ingredients": [
       {
         "className": "desc-polymerresin-c",
@@ -1123,6 +1181,7 @@
   {
     "displayName": "Pink Diamonds",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Diamond_Pink_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -1143,6 +1202,7 @@
   {
     "displayName": "Petroleum Diamonds",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Diamond_Petroleum_C",
     "ingredients": [
       {
         "className": "desc-petroleumcoke-c",
@@ -1159,6 +1219,7 @@
   {
     "displayName": "Oil-Based Diamonds",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Diamond_OilBased_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1175,6 +1236,7 @@
   {
     "displayName": "Cloudy Diamonds",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Diamond_Cloudy_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -1195,6 +1257,7 @@
   {
     "displayName": "Dark Matter Trap",
     "alternate": true,
+    "shortName": "Recipe_Alternate_DarkMatter_Trap_C",
     "ingredients": [
       {
         "className": "desc-timecrystal-c",
@@ -1215,6 +1278,7 @@
   {
     "displayName": "Dark Matter Crystallization",
     "alternate": true,
+    "shortName": "Recipe_Alternate_DarkMatter_Crystallization_C",
     "ingredients": [
       {
         "className": "desc-darkenergy-c",
@@ -1231,6 +1295,7 @@
   {
     "displayName": "Wet Concrete",
     "alternate": true,
+    "shortName": "Recipe_Alternate_WetConcrete_C",
     "ingredients": [
       {
         "className": "desc-stone-c",
@@ -1251,6 +1316,7 @@
   {
     "displayName": "Turbo Heavy Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_TurboHeavyFuel_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -1271,6 +1337,7 @@
   {
     "displayName": "Steel Rod",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelRod_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -1287,6 +1354,7 @@
   {
     "displayName": "Steel Beam",
     "alternate": false,
+    "shortName": "Recipe_SteelBeam_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -1303,6 +1371,7 @@
   {
     "displayName": "Steel Pipe",
     "alternate": false,
+    "shortName": "Recipe_SteelPipe_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -1319,6 +1388,7 @@
   {
     "displayName": "Steel Ingot",
     "alternate": false,
+    "shortName": "Recipe_IngotSteel_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -1339,6 +1409,7 @@
   {
     "displayName": "Versatile Framework",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_2_C",
     "ingredients": [
       {
         "className": "desc-modularframe-c",
@@ -1359,6 +1430,7 @@
   {
     "displayName": "Steel Canister",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelCanister_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -1375,6 +1447,7 @@
   {
     "displayName": "Empty Canister",
     "alternate": false,
+    "shortName": "Recipe_FluidCanister_C",
     "ingredients": [
       {
         "className": "desc-plastic-c",
@@ -1391,6 +1464,7 @@
   {
     "displayName": "Packaged Fuel",
     "alternate": false,
+    "shortName": "Recipe_Fuel_C",
     "ingredients": [
       {
         "className": "desc-liquidfuel-c",
@@ -1411,6 +1485,7 @@
   {
     "displayName": "Liquid Biofuel",
     "alternate": false,
+    "shortName": "Recipe_LiquidBiofuel_C",
     "ingredients": [
       {
         "className": "desc-biofuel-c",
@@ -1431,6 +1506,7 @@
   {
     "displayName": "Packaged Liquid Biofuel",
     "alternate": false,
+    "shortName": "Recipe_PackagedBiofuel_C",
     "ingredients": [
       {
         "className": "desc-liquidbiofuel-c",
@@ -1451,6 +1527,7 @@
   {
     "displayName": "Packaged Oil",
     "alternate": false,
+    "shortName": "Recipe_PackagedCrudeOil_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1471,6 +1548,7 @@
   {
     "displayName": "Packaged Heavy Oil Residue",
     "alternate": false,
+    "shortName": "Recipe_PackagedOilResidue_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -1491,6 +1569,7 @@
   {
     "displayName": "Packaged Water",
     "alternate": false,
+    "shortName": "Recipe_PackagedWater_C",
     "ingredients": [
       {
         "className": "desc-water-c",
@@ -1511,6 +1590,7 @@
   {
     "displayName": "Unpackage Liquid Biofuel",
     "alternate": false,
+    "shortName": "Recipe_UnpackageBioFuel_C",
     "ingredients": [
       {
         "className": "desc-packagedbiofuel-c",
@@ -1527,6 +1607,7 @@
   {
     "displayName": "Unpackage Fuel",
     "alternate": false,
+    "shortName": "Recipe_UnpackageFuel_C",
     "ingredients": [
       {
         "className": "desc-fuel-c",
@@ -1543,6 +1624,7 @@
   {
     "displayName": "Unpackage Oil",
     "alternate": false,
+    "shortName": "Recipe_UnpackageOil_C",
     "ingredients": [
       {
         "className": "desc-packagedoil-c",
@@ -1559,6 +1641,7 @@
   {
     "displayName": "Unpackage Heavy Oil Residue",
     "alternate": false,
+    "shortName": "Recipe_UnpackageOilResidue_C",
     "ingredients": [
       {
         "className": "desc-packagedoilresidue-c",
@@ -1575,6 +1658,7 @@
   {
     "displayName": "Unpackage Water",
     "alternate": false,
+    "shortName": "Recipe_UnpackageWater_C",
     "ingredients": [
       {
         "className": "desc-packagedwater-c",
@@ -1591,6 +1675,7 @@
   {
     "displayName": "Steamed Copper Sheet",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteamedCopperSheet_C",
     "ingredients": [
       {
         "className": "desc-copperingot-c",
@@ -1611,6 +1696,7 @@
   {
     "displayName": "Rubber Concrete",
     "alternate": true,
+    "shortName": "Recipe_Alternate_RubberConcrete_C",
     "ingredients": [
       {
         "className": "desc-stone-c",
@@ -1631,6 +1717,7 @@
   {
     "displayName": "Recycled Rubber",
     "alternate": true,
+    "shortName": "Recipe_Alternate_RecycledRubber_C",
     "ingredients": [
       {
         "className": "desc-plastic-c",
@@ -1651,6 +1738,7 @@
   {
     "displayName": "Pure Quartz Crystal",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PureQuartzCrystal_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -1671,6 +1759,7 @@
   {
     "displayName": "Quartz Crystal",
     "alternate": false,
+    "shortName": "Recipe_QuartzCrystal_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -1687,6 +1776,7 @@
   {
     "displayName": "Pure Iron Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PureIronIngot_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -1707,6 +1797,7 @@
   {
     "displayName": "Pure Copper Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PureCopperIngot_C",
     "ingredients": [
       {
         "className": "desc-orecopper-c",
@@ -1727,6 +1818,7 @@
   {
     "displayName": "Pure Caterium Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PureCateriumIngot_C",
     "ingredients": [
       {
         "className": "desc-oregold-c",
@@ -1747,6 +1839,7 @@
   {
     "displayName": "Pure Aluminum Ingot",
     "alternate": true,
+    "shortName": "Recipe_PureAluminumIngot_C",
     "ingredients": [
       {
         "className": "desc-aluminumscrap-c",
@@ -1763,6 +1856,7 @@
   {
     "displayName": "Aluminum Casing",
     "alternate": false,
+    "shortName": "Recipe_AluminumCasing_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -1779,6 +1873,7 @@
   {
     "displayName": "Alclad Aluminum Sheet",
     "alternate": false,
+    "shortName": "Recipe_AluminumSheet_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -1799,6 +1894,7 @@
   {
     "displayName": "Alumina Solution",
     "alternate": false,
+    "shortName": "Recipe_AluminaSolution_C",
     "ingredients": [
       {
         "className": "desc-orebauxite-c",
@@ -1819,6 +1915,7 @@
   {
     "displayName": "Aluminum Scrap",
     "alternate": false,
+    "shortName": "Recipe_AluminumScrap_C",
     "ingredients": [
       {
         "className": "desc-aluminasolution-c",
@@ -1839,6 +1936,7 @@
   {
     "displayName": "Packaged Alumina Solution",
     "alternate": false,
+    "shortName": "Recipe_PackagedAlumina_C",
     "ingredients": [
       {
         "className": "desc-aluminasolution-c",
@@ -1859,6 +1957,7 @@
   {
     "displayName": "Aluminum Ingot",
     "alternate": false,
+    "shortName": "Recipe_IngotAluminum_C",
     "ingredients": [
       {
         "className": "desc-aluminumscrap-c",
@@ -1879,6 +1978,7 @@
   {
     "displayName": "Silica",
     "alternate": false,
+    "shortName": "Recipe_Silica_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -1895,6 +1995,7 @@
   {
     "displayName": "Crystal Oscillator",
     "alternate": false,
+    "shortName": "Recipe_CrystalOscillator_C",
     "ingredients": [
       {
         "className": "desc-quartzcrystal-c",
@@ -1919,6 +2020,7 @@
   {
     "displayName": "Unpackage Alumina Solution",
     "alternate": false,
+    "shortName": "Recipe_UnpackageAlumina_C",
     "ingredients": [
       {
         "className": "desc-packagedalumina-c",
@@ -1935,6 +2037,7 @@
   {
     "displayName": "Polymer Resin",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PolymerResin_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -1951,6 +2054,7 @@
   {
     "displayName": "Plastic Smart Plating",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PlasticSmartPlating_C",
     "ingredients": [
       {
         "className": "desc-ironplatereinforced-c",
@@ -1975,6 +2079,7 @@
   {
     "displayName": "Automated Speed Wiring",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HighSpeedWiring_C",
     "ingredients": [
       {
         "className": "desc-stator-c",
@@ -1999,6 +2104,7 @@
   {
     "displayName": "Encased Industrial Beam",
     "alternate": false,
+    "shortName": "Recipe_EncasedIndustrialBeam_C",
     "ingredients": [
       {
         "className": "desc-steelplate-c",
@@ -2019,6 +2125,7 @@
   {
     "displayName": "Motor",
     "alternate": false,
+    "shortName": "Recipe_Motor_C",
     "ingredients": [
       {
         "className": "desc-rotor-c",
@@ -2039,6 +2146,7 @@
   {
     "displayName": "Stator",
     "alternate": false,
+    "shortName": "Recipe_Stator_C",
     "ingredients": [
       {
         "className": "desc-steelpipe-c",
@@ -2059,6 +2167,7 @@
   {
     "displayName": "Automated Wiring",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_3_C",
     "ingredients": [
       {
         "className": "desc-stator-c",
@@ -2079,6 +2188,7 @@
   {
     "displayName": "AI Limiter",
     "alternate": false,
+    "shortName": "Recipe_AILimiter_C",
     "ingredients": [
       {
         "className": "desc-coppersheet-c",
@@ -2099,6 +2209,7 @@
   {
     "displayName": "Heavy Oil Residue",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HeavyOilResidue_C",
     "ingredients": [
       {
         "className": "desc-liquidoil-c",
@@ -2115,6 +2226,7 @@
   {
     "displayName": "Heavy Flexible Frame",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HeavyFlexibleFrame_C",
     "ingredients": [
       {
         "className": "desc-modularframe-c",
@@ -2143,6 +2255,7 @@
   {
     "displayName": "Computer",
     "alternate": false,
+    "shortName": "Recipe_Computer_C",
     "ingredients": [
       {
         "className": "desc-circuitboard-c",
@@ -2167,6 +2280,7 @@
   {
     "displayName": "Heavy Modular Frame",
     "alternate": false,
+    "shortName": "Recipe_ModularFrameHeavy_C",
     "ingredients": [
       {
         "className": "desc-modularframe-c",
@@ -2195,6 +2309,7 @@
   {
     "displayName": "Modular Engine",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_4_C",
     "ingredients": [
       {
         "className": "desc-motor-c",
@@ -2219,6 +2334,7 @@
   {
     "displayName": "Adaptive Control Unit",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_5_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-3-c",
@@ -2247,6 +2363,7 @@
   {
     "displayName": "Fused Wire",
     "alternate": true,
+    "shortName": "Recipe_Alternate_FusedWire_C",
     "ingredients": [
       {
         "className": "desc-copperingot-c",
@@ -2267,6 +2384,7 @@
   {
     "displayName": "Flexible Framework",
     "alternate": true,
+    "shortName": "Recipe_Alternate_FlexibleFramework_C",
     "ingredients": [
       {
         "className": "desc-modularframe-c",
@@ -2291,6 +2409,7 @@
   {
     "displayName": "Electrode Circuit Board",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ElectrodeCircuitBoard_C",
     "ingredients": [
       {
         "className": "desc-rubber-c",
@@ -2311,6 +2430,7 @@
   {
     "displayName": "Electrode Aluminum Scrap",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ElectroAluminumScrap_C",
     "ingredients": [
       {
         "className": "desc-aluminasolution-c",
@@ -2331,6 +2451,7 @@
   {
     "displayName": "Diluted Packaged Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_DilutedPackagedFuel_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -2351,6 +2472,7 @@
   {
     "displayName": "Copper Rotor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CopperRotor_C",
     "ingredients": [
       {
         "className": "desc-coppersheet-c",
@@ -2371,6 +2493,7 @@
   {
     "displayName": "Modular Frame",
     "alternate": false,
+    "shortName": "Recipe_ModularFrame_C",
     "ingredients": [
       {
         "className": "desc-ironplatereinforced-c",
@@ -2391,6 +2514,7 @@
   {
     "displayName": "Rotor",
     "alternate": false,
+    "shortName": "Recipe_Rotor_C",
     "ingredients": [
       {
         "className": "desc-ironrod-c",
@@ -2411,6 +2535,7 @@
   {
     "displayName": "Copper Sheet",
     "alternate": false,
+    "shortName": "Recipe_CopperSheet_C",
     "ingredients": [
       {
         "className": "desc-copperingot-c",
@@ -2427,6 +2552,7 @@
   {
     "displayName": "Smart Plating",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_1_C",
     "ingredients": [
       {
         "className": "desc-ironplatereinforced-c",
@@ -2447,6 +2573,7 @@
   {
     "displayName": "Copper Alloy Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CopperAlloyIngot_C",
     "ingredients": [
       {
         "className": "desc-orecopper-c",
@@ -2467,6 +2594,7 @@
   {
     "displayName": "Coke Steel Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CokeSteelIngot_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -2487,6 +2615,7 @@
   {
     "displayName": "Coated Iron Plate",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CoatedIronPlate_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -2507,6 +2636,7 @@
   {
     "displayName": "Coated Iron Canister",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CoatedIronCanister_C",
     "ingredients": [
       {
         "className": "desc-ironplate-c",
@@ -2527,6 +2657,7 @@
   {
     "displayName": "Coated Cable",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CoatedCable_C",
     "ingredients": [
       {
         "className": "desc-wire-c",
@@ -2547,6 +2678,7 @@
   {
     "displayName": "Bolted Frame",
     "alternate": true,
+    "shortName": "Recipe_Alternate_BoltedFrame_C",
     "ingredients": [
       {
         "className": "desc-ironplatereinforced-c",
@@ -2567,6 +2699,7 @@
   {
     "displayName": "Adhered Iron Plate",
     "alternate": true,
+    "shortName": "Recipe_Alternate_AdheredIronPlate_C",
     "ingredients": [
       {
         "className": "desc-ironplate-c",
@@ -2587,6 +2720,7 @@
   {
     "displayName": "Turbo Pressure Motor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_TurboPressureMotor_C",
     "ingredients": [
       {
         "className": "desc-motor-c",
@@ -2615,6 +2749,7 @@
   {
     "displayName": "Encased Plutonium Cell",
     "alternate": false,
+    "shortName": "Recipe_PlutoniumCell_C",
     "ingredients": [
       {
         "className": "desc-plutoniumpellet-c",
@@ -2635,6 +2770,7 @@
   {
     "displayName": "Pressure Conversion Cube",
     "alternate": false,
+    "shortName": "Recipe_PressureConversionCube_C",
     "ingredients": [
       {
         "className": "desc-modularframefused-c",
@@ -2655,6 +2791,7 @@
   {
     "displayName": "Nitric Acid",
     "alternate": false,
+    "shortName": "Recipe_NitricAcid_C",
     "ingredients": [
       {
         "className": "desc-nitrogengas-c",
@@ -2679,6 +2816,7 @@
   {
     "displayName": "Non-Fissile Uranium",
     "alternate": false,
+    "shortName": "Recipe_NonFissileUranium_C",
     "ingredients": [
       {
         "className": "desc-nuclearwaste-c",
@@ -2707,6 +2845,7 @@
   {
     "displayName": "Copper Powder",
     "alternate": false,
+    "shortName": "Recipe_CopperDust_C",
     "ingredients": [
       {
         "className": "desc-copperingot-c",
@@ -2723,6 +2862,7 @@
   {
     "displayName": "Plutonium Pellet",
     "alternate": false,
+    "shortName": "Recipe_Plutonium_C",
     "ingredients": [
       {
         "className": "desc-nonfissibleuranium-c",
@@ -2743,6 +2883,7 @@
   {
     "displayName": "Plutonium Fuel Rod",
     "alternate": false,
+    "shortName": "Recipe_PlutoniumFuelRod_C",
     "ingredients": [
       {
         "className": "desc-plutoniumcell-c",
@@ -2771,6 +2912,7 @@
   {
     "displayName": "Packaged Nitric Acid",
     "alternate": false,
+    "shortName": "Recipe_PackagedNitricAcid_C",
     "ingredients": [
       {
         "className": "desc-nitricacid-c",
@@ -2791,6 +2933,7 @@
   {
     "displayName": "Nuclear Pasta",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_9_C",
     "ingredients": [
       {
         "className": "desc-copperdust-c",
@@ -2811,6 +2954,7 @@
   {
     "displayName": "Unpackage Nitric Acid",
     "alternate": false,
+    "shortName": "Recipe_UnpackageNitricAcid_C",
     "ingredients": [
       {
         "className": "desc-packagednitricacid-c",
@@ -2827,6 +2971,7 @@
   {
     "displayName": "Turbo Blend Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_TurboBlendFuel_C",
     "ingredients": [
       {
         "className": "desc-liquidfuel-c",
@@ -2855,6 +3000,7 @@
   {
     "displayName": "Encased Uranium Cell",
     "alternate": false,
+    "shortName": "Recipe_UraniumCell_C",
     "ingredients": [
       {
         "className": "desc-oreuranium-c",
@@ -2879,6 +3025,7 @@
   {
     "displayName": "Cooling System",
     "alternate": false,
+    "shortName": "Recipe_CoolingSystem_C",
     "ingredients": [
       {
         "className": "desc-aluminumplatereinforced-c",
@@ -2907,6 +3054,7 @@
   {
     "displayName": "Battery",
     "alternate": false,
+    "shortName": "Recipe_Battery_C",
     "ingredients": [
       {
         "className": "desc-sulfuricacid-c",
@@ -2931,6 +3079,7 @@
   {
     "displayName": "Supercomputer",
     "alternate": false,
+    "shortName": "Recipe_ComputerSuper_C",
     "ingredients": [
       {
         "className": "desc-computer-c",
@@ -2959,6 +3108,7 @@
   {
     "displayName": "Radio Control Unit",
     "alternate": false,
+    "shortName": "Recipe_RadioControlUnit_C",
     "ingredients": [
       {
         "className": "desc-aluminumcasing-c",
@@ -2983,6 +3133,7 @@
   {
     "displayName": "Sulfuric Acid",
     "alternate": false,
+    "shortName": "Recipe_SulfuricAcid_C",
     "ingredients": [
       {
         "className": "desc-sulfur-c",
@@ -3003,6 +3154,7 @@
   {
     "displayName": "Packaged Sulfuric Acid",
     "alternate": false,
+    "shortName": "Recipe_PackagedSulfuricAcid_C",
     "ingredients": [
       {
         "className": "desc-sulfuricacid-c",
@@ -3023,6 +3175,7 @@
   {
     "displayName": "Assembly Director System",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_7_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-5-c",
@@ -3043,6 +3196,7 @@
   {
     "displayName": "High-Speed Connector",
     "alternate": false,
+    "shortName": "Recipe_HighSpeedConnector_C",
     "ingredients": [
       {
         "className": "desc-highspeedwire-c",
@@ -3067,6 +3221,7 @@
   {
     "displayName": "Unpackage Sulfuric Acid",
     "alternate": false,
+    "shortName": "Recipe_UnpackageSulfuricAcid_C",
     "ingredients": [
       {
         "className": "desc-packagedsulfuricacid-c",
@@ -3083,6 +3238,7 @@
   {
     "displayName": "Super-State Computer",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SuperStateComputer_C",
     "ingredients": [
       {
         "className": "desc-computer-c",
@@ -3111,6 +3267,7 @@
   {
     "displayName": "Electromagnetic Control Rod",
     "alternate": false,
+    "shortName": "Recipe_ElectromagneticControlRod_C",
     "ingredients": [
       {
         "className": "desc-stator-c",
@@ -3131,6 +3288,7 @@
   {
     "displayName": "Uranium Fuel Rod",
     "alternate": false,
+    "shortName": "Recipe_NuclearFuelRod_C",
     "ingredients": [
       {
         "className": "desc-uraniumcell-c",
@@ -3155,6 +3313,7 @@
   {
     "displayName": "Magnetic Field Generator",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_6_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-2-c",
@@ -3175,6 +3334,7 @@
   {
     "displayName": "Sloppy Alumina",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SloppyAlumina_C",
     "ingredients": [
       {
         "className": "desc-orebauxite-c",
@@ -3195,6 +3355,7 @@
   {
     "displayName": "Radio Control System",
     "alternate": true,
+    "shortName": "Recipe_Alternate_RadioControlSystem_C",
     "ingredients": [
       {
         "className": "desc-crystaloscillator-c",
@@ -3223,6 +3384,7 @@
   {
     "displayName": "Plutonium Fuel Unit",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PlutoniumFuelUnit_C",
     "ingredients": [
       {
         "className": "desc-plutoniumcell-c",
@@ -3243,6 +3405,7 @@
   {
     "displayName": "OC Supercomputer",
     "alternate": true,
+    "shortName": "Recipe_Alternate_OCSupercomputer_C",
     "ingredients": [
       {
         "className": "desc-modularframelightweight-c",
@@ -3263,6 +3426,7 @@
   {
     "displayName": "Heat Sink",
     "alternate": false,
+    "shortName": "Recipe_HeatSink_C",
     "ingredients": [
       {
         "className": "desc-aluminumplate-c",
@@ -3283,6 +3447,7 @@
   {
     "displayName": "Fused Modular Frame",
     "alternate": false,
+    "shortName": "Recipe_FusedModularFrame_C",
     "ingredients": [
       {
         "className": "desc-modularframeheavy-c",
@@ -3307,6 +3472,7 @@
   {
     "displayName": "Empty Fluid Tank",
     "alternate": false,
+    "shortName": "Recipe_GasTank_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -3323,6 +3489,7 @@
   {
     "displayName": "Packaged Nitrogen Gas",
     "alternate": false,
+    "shortName": "Recipe_PackagedNitrogen_C",
     "ingredients": [
       {
         "className": "desc-nitrogengas-c",
@@ -3343,6 +3510,7 @@
   {
     "displayName": "Unpackage Nitrogen Gas",
     "alternate": false,
+    "shortName": "Recipe_UnpackageNitrogen_C",
     "ingredients": [
       {
         "className": "desc-packagednitrogengas-c",
@@ -3359,6 +3527,7 @@
   {
     "displayName": "Instant Scrap",
     "alternate": true,
+    "shortName": "Recipe_Alternate_InstantScrap_C",
     "ingredients": [
       {
         "className": "desc-orebauxite-c",
@@ -3387,6 +3556,7 @@
   {
     "displayName": "Instant Plutonium Cell",
     "alternate": true,
+    "shortName": "Recipe_Alternate_InstantPlutoniumCell_C",
     "ingredients": [
       {
         "className": "desc-nonfissibleuranium-c",
@@ -3407,6 +3577,7 @@
   {
     "displayName": "Heat-Fused Frame",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HeatFusedFrame_C",
     "ingredients": [
       {
         "className": "desc-modularframeheavy-c",
@@ -3435,6 +3606,7 @@
   {
     "displayName": "Fertile Uranium",
     "alternate": true,
+    "shortName": "Recipe_Alternate_FertileUranium_C",
     "ingredients": [
       {
         "className": "desc-oreuranium-c",
@@ -3463,6 +3635,7 @@
   {
     "displayName": "Electric Motor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ElectricMotor_C",
     "ingredients": [
       {
         "className": "desc-electromagneticcontrolrod-c",
@@ -3483,6 +3656,7 @@
   {
     "displayName": "Diluted Fuel",
     "alternate": true,
+    "shortName": "Recipe_Alternate_DilutedFuel_C",
     "ingredients": [
       {
         "className": "desc-heavyoilresidue-c",
@@ -3503,6 +3677,7 @@
   {
     "displayName": "Cooling Device",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CoolingDevice_C",
     "ingredients": [
       {
         "className": "desc-aluminumplatereinforced-c",
@@ -3527,6 +3702,7 @@
   {
     "displayName": "Classic Battery",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ClassicBattery_C",
     "ingredients": [
       {
         "className": "desc-sulfur-c",
@@ -3555,6 +3731,7 @@
   {
     "displayName": "Automated Miner",
     "alternate": true,
+    "shortName": "Recipe_Alternate_AutomatedMiner_C",
     "ingredients": [
       {
         "className": "desc-steelpipe-c",
@@ -3575,6 +3752,7 @@
   {
     "displayName": "Alclad Casing",
     "alternate": true,
+    "shortName": "Recipe_Alternate_AlcladCasing_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -3595,6 +3773,7 @@
   {
     "displayName": "Molded Steel Pipe",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelPipe_Molded_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -3615,6 +3794,7 @@
   {
     "displayName": "Iron Pipe",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelPipe_Iron_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -3631,6 +3811,7 @@
   {
     "displayName": "Steel Cast Plate",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelCastedPlate_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -3651,6 +3832,7 @@
   {
     "displayName": "Molded Beam",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelBeam_Molded_C",
     "ingredients": [
       {
         "className": "desc-steelingot-c",
@@ -3671,6 +3853,7 @@
   {
     "displayName": "Aluminum Beam",
     "alternate": true,
+    "shortName": "Recipe_Alternate_SteelBeam_Aluminum_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -3687,6 +3870,7 @@
   {
     "displayName": "Aluminum Rod",
     "alternate": true,
+    "shortName": "Recipe_Alternate_AluminumRod_C",
     "ingredients": [
       {
         "className": "desc-aluminumingot-c",
@@ -3703,6 +3887,7 @@
   {
     "displayName": "Plastic AI Limiter",
     "alternate": true,
+    "shortName": "Recipe_Alternate_AILimiter_Plastic_C",
     "ingredients": [
       {
         "className": "desc-highspeedwire-c",
@@ -3723,6 +3908,7 @@
   {
     "displayName": "Distilled Silica",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Silica_Distilled_C",
     "ingredients": [
       {
         "className": "desc-dissolvedsilica-c",
@@ -3747,6 +3933,7 @@
   {
     "displayName": "Quartz Purification",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Quartz_Purified_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -3767,6 +3954,7 @@
   {
     "displayName": "Fused Quartz Crystal",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Quartz_Fused_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -3787,6 +3975,7 @@
   {
     "displayName": "Leached Iron Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IronIngot_Leached_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -3807,6 +3996,7 @@
   {
     "displayName": "Basic Iron Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IronIngot_Basic_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -3827,6 +4017,7 @@
   {
     "displayName": "Tempered Copper Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CopperIngot_Tempered_C",
     "ingredients": [
       {
         "className": "desc-orecopper-c",
@@ -3847,6 +4038,7 @@
   {
     "displayName": "Leached Copper Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CopperIngot_Leached_C",
     "ingredients": [
       {
         "className": "desc-orecopper-c",
@@ -3867,6 +4059,7 @@
   {
     "displayName": "Tempered Caterium Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CateriumIngot_Tempered_C",
     "ingredients": [
       {
         "className": "desc-oregold-c",
@@ -3887,6 +4080,7 @@
   {
     "displayName": "Leached Caterium Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CateriumIngot_Leached_C",
     "ingredients": [
       {
         "className": "desc-oregold-c",
@@ -3907,6 +4101,7 @@
   {
     "displayName": "Caterium Wire",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Wire_2_C",
     "ingredients": [
       {
         "className": "desc-goldingot-c",
@@ -3923,6 +4118,7 @@
   {
     "displayName": "Iron Wire",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Wire_1_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -3939,6 +4135,7 @@
   {
     "displayName": "Infused Uranium Cell",
     "alternate": true,
+    "shortName": "Recipe_Alternate_UraniumCell_1_C",
     "ingredients": [
       {
         "className": "desc-oreuranium-c",
@@ -3967,6 +4164,7 @@
   {
     "displayName": "Caterium Ingot",
     "alternate": false,
+    "shortName": "Recipe_IngotCaterium_C",
     "ingredients": [
       {
         "className": "desc-oregold-c",
@@ -3983,6 +4181,7 @@
   {
     "displayName": "Turbo Electric Motor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_TurboMotor_1_C",
     "ingredients": [
       {
         "className": "desc-motor-c",
@@ -4011,6 +4210,7 @@
   {
     "displayName": "Turbo Motor",
     "alternate": false,
+    "shortName": "Recipe_MotorTurbo_C",
     "ingredients": [
       {
         "className": "desc-coolingsystem-c",
@@ -4039,6 +4239,7 @@
   {
     "displayName": "Thermal Propulsion Rocket",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_8_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-4-c",
@@ -4067,6 +4268,7 @@
   {
     "displayName": "Quickwire Stator",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Stator_C",
     "ingredients": [
       {
         "className": "desc-steelpipe-c",
@@ -4087,6 +4289,7 @@
   {
     "displayName": "Cheap Silica",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Silica_C",
     "ingredients": [
       {
         "className": "desc-rawquartz-c",
@@ -4107,6 +4310,7 @@
   {
     "displayName": "Steel Screws",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Screw_2_C",
     "ingredients": [
       {
         "className": "desc-steelplate-c",
@@ -4123,6 +4327,7 @@
   {
     "displayName": "Cast Screws",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Screw_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -4139,6 +4344,7 @@
   {
     "displayName": "Steel Rotor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Rotor_C",
     "ingredients": [
       {
         "className": "desc-steelpipe-c",
@@ -4159,6 +4365,7 @@
   {
     "displayName": "Encased Industrial Pipe",
     "alternate": true,
+    "shortName": "Recipe_Alternate_EncasedIndustrialBeam_C",
     "ingredients": [
       {
         "className": "desc-steelpipe-c",
@@ -4179,6 +4386,7 @@
   {
     "displayName": "Stitched Iron Plate",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ReinforcedIronPlate_2_C",
     "ingredients": [
       {
         "className": "desc-ironplate-c",
@@ -4199,6 +4407,7 @@
   {
     "displayName": "Bolted Iron Plate",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ReinforcedIronPlate_1_C",
     "ingredients": [
       {
         "className": "desc-ironplate-c",
@@ -4219,6 +4428,7 @@
   {
     "displayName": "Radio Connection Unit",
     "alternate": true,
+    "shortName": "Recipe_Alternate_RadioControlUnit_1_C",
     "ingredients": [
       {
         "className": "desc-aluminumplatereinforced-c",
@@ -4243,6 +4453,7 @@
   {
     "displayName": "Fused Quickwire",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Quickwire_C",
     "ingredients": [
       {
         "className": "desc-goldingot-c",
@@ -4263,6 +4474,7 @@
   {
     "displayName": "Recycled Plastic",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Plastic_1_C",
     "ingredients": [
       {
         "className": "desc-rubber-c",
@@ -4283,6 +4495,7 @@
   {
     "displayName": "Uranium Fuel Unit",
     "alternate": true,
+    "shortName": "Recipe_Alternate_NuclearFuelRod_1_C",
     "ingredients": [
       {
         "className": "desc-uraniumcell-c",
@@ -4311,6 +4524,7 @@
   {
     "displayName": "Rigor Motor",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Motor_1_C",
     "ingredients": [
       {
         "className": "desc-rotor-c",
@@ -4335,6 +4549,7 @@
   {
     "displayName": "Steeled Frame",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ModularFrame_C",
     "ingredients": [
       {
         "className": "desc-ironplatereinforced-c",
@@ -4355,6 +4570,7 @@
   {
     "displayName": "Compacted Steel Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IngotSteel_2_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -4375,6 +4591,7 @@
   {
     "displayName": "Solid Steel Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IngotSteel_1_C",
     "ingredients": [
       {
         "className": "desc-ironingot-c",
@@ -4395,6 +4612,7 @@
   {
     "displayName": "Iron Alloy Ingot",
     "alternate": true,
+    "shortName": "Recipe_Alternate_IngotIron_C",
     "ingredients": [
       {
         "className": "desc-oreiron-c",
@@ -4415,6 +4633,7 @@
   {
     "displayName": "Silicon High-Speed Connector",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HighSpeedConnector_C",
     "ingredients": [
       {
         "className": "desc-highspeedwire-c",
@@ -4439,6 +4658,7 @@
   {
     "displayName": "Heavy Encased Frame",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ModularFrameHeavy_C",
     "ingredients": [
       {
         "className": "desc-modularframe-c",
@@ -4467,6 +4687,7 @@
   {
     "displayName": "Heat Exchanger",
     "alternate": true,
+    "shortName": "Recipe_Alternate_HeatSink_1_C",
     "ingredients": [
       {
         "className": "desc-aluminumcasing-c",
@@ -4487,6 +4708,7 @@
   {
     "displayName": "Fine Black Powder",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Gunpowder_1_C",
     "ingredients": [
       {
         "className": "desc-sulfur-c",
@@ -4507,6 +4729,7 @@
   {
     "displayName": "Electromagnetic Connection Rod",
     "alternate": true,
+    "shortName": "Recipe_Alternate_ElectromagneticControlRod_1_C",
     "ingredients": [
       {
         "className": "desc-stator-c",
@@ -4527,6 +4750,7 @@
   {
     "displayName": "Insulated Crystal Oscillator",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CrystalOscillator_C",
     "ingredients": [
       {
         "className": "desc-quartzcrystal-c",
@@ -4551,6 +4775,7 @@
   {
     "displayName": "Fine Concrete",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Concrete_C",
     "ingredients": [
       {
         "className": "desc-silica-c",
@@ -4571,6 +4796,7 @@
   {
     "displayName": "Crystal Computer",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Computer_2_C",
     "ingredients": [
       {
         "className": "desc-circuitboard-c",
@@ -4591,6 +4817,7 @@
   {
     "displayName": "Caterium Computer",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Computer_1_C",
     "ingredients": [
       {
         "className": "desc-circuitboard-c",
@@ -4615,6 +4842,7 @@
   {
     "displayName": "Caterium Circuit Board",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CircuitBoard_2_C",
     "ingredients": [
       {
         "className": "desc-plastic-c",
@@ -4635,6 +4863,7 @@
   {
     "displayName": "Silicon Circuit Board",
     "alternate": true,
+    "shortName": "Recipe_Alternate_CircuitBoard_1_C",
     "ingredients": [
       {
         "className": "desc-coppersheet-c",
@@ -4655,6 +4884,7 @@
   {
     "displayName": "Quickwire Cable",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Cable_2_C",
     "ingredients": [
       {
         "className": "desc-highspeedwire-c",
@@ -4675,6 +4905,7 @@
   {
     "displayName": "Insulated Cable",
     "alternate": true,
+    "shortName": "Recipe_Alternate_Cable_1_C",
     "ingredients": [
       {
         "className": "desc-wire-c",
@@ -4695,6 +4926,7 @@
   {
     "displayName": "Ficsonium",
     "alternate": false,
+    "shortName": "Recipe_Ficsonium_C",
     "ingredients": [
       {
         "className": "desc-plutoniumwaste-c",
@@ -4719,6 +4951,7 @@
   {
     "displayName": "Ficsonium Fuel Rod",
     "alternate": false,
+    "shortName": "Recipe_FicsoniumFuelRod_C",
     "ingredients": [
       {
         "className": "desc-ficsonium-c",
@@ -4747,6 +4980,7 @@
   {
     "displayName": "Singularity Cell",
     "alternate": false,
+    "shortName": "Recipe_SingularityCell_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-9-c",
@@ -4775,6 +5009,7 @@
   {
     "displayName": "Ballistic Warp Drive",
     "alternate": false,
+    "shortName": "Recipe_SpaceElevatorPart_11_C",
     "ingredients": [
       {
         "className": "desc-spaceelevatorpart-8-c",
@@ -4803,6 +5038,7 @@
   {
     "displayName": "Iodine-Infused Filter",
     "alternate": false,
+    "shortName": "Recipe_FilterHazmat_C",
     "ingredients": [
       {
         "className": "desc-filter-c",
@@ -4827,6 +5063,7 @@
   {
     "displayName": "Quickwire",
     "alternate": false,
+    "shortName": "Recipe_Quickwire_C",
     "ingredients": [
       {
         "className": "desc-goldingot-c",
@@ -4843,6 +5080,7 @@
   {
     "displayName": "Solid Biofuel",
     "alternate": false,
+    "shortName": "Recipe_Biofuel_C",
     "ingredients": [
       {
         "className": "desc-genericbiomass-c",
@@ -4859,6 +5097,7 @@
   {
     "displayName": "Hog Protein",
     "alternate": false,
+    "shortName": "Recipe_Protein_Hog_C",
     "ingredients": [
       {
         "className": "desc-hogparts-c",
@@ -4875,6 +5114,7 @@
   {
     "displayName": "Spitter Protein",
     "alternate": false,
+    "shortName": "Recipe_Protein_Spitter_C",
     "ingredients": [
       {
         "className": "desc-spitterparts-c",
@@ -4891,6 +5131,7 @@
   {
     "displayName": "Biomass (Mycelia)",
     "alternate": false,
+    "shortName": "Recipe_Biomass_Mycelia_C",
     "ingredients": [
       {
         "className": "desc-mycelia-c",
@@ -4907,6 +5148,7 @@
   {
     "displayName": "Power Shard (1)",
     "alternate": false,
+    "shortName": "Recipe_PowerCrystalShard_1_C",
     "ingredients": [
       {
         "className": "desc-crystal-c",
@@ -4923,6 +5165,7 @@
   {
     "displayName": "Black Powder",
     "alternate": false,
+    "shortName": "Recipe_Gunpowder_C",
     "ingredients": [
       {
         "className": "desc-coal-c",
@@ -4943,6 +5186,7 @@
   {
     "displayName": "Stinger Protein",
     "alternate": false,
+    "shortName": "Recipe_Protein_Stinger_C",
     "ingredients": [
       {
         "className": "desc-stingerparts-c",
@@ -4959,6 +5203,7 @@
   {
     "displayName": "Hatcher Protein",
     "alternate": false,
+    "shortName": "Recipe_Protein_Crab_C",
     "ingredients": [
       {
         "className": "desc-hatcherparts-c",
@@ -4975,6 +5220,7 @@
   {
     "displayName": "Alien DNA Capsule",
     "alternate": false,
+    "shortName": "Recipe_AlienDNACapsule_C",
     "ingredients": [
       {
         "className": "desc-alienprotein-c",
@@ -4991,6 +5237,7 @@
   {
     "displayName": "Biomass (Alien Protein)",
     "alternate": false,
+    "shortName": "Recipe_Biomass_AlienProtein_C",
     "ingredients": [
       {
         "className": "desc-alienprotein-c",
@@ -5007,6 +5254,7 @@
   {
     "displayName": "Iron Rebar",
     "alternate": false,
+    "shortName": "Recipe_SpikedRebar_C",
     "ingredients": [
       {
         "className": "desc-ironrod-c",
@@ -5023,6 +5271,7 @@
   {
     "displayName": "Alien Power Matrix",
     "alternate": false,
+    "shortName": "Recipe_AlienPowerFuel_C",
     "ingredients": [
       {
         "className": "desc-samfluctuator-c",
@@ -5051,6 +5300,7 @@
   {
     "displayName": "Homing Rifle Ammo",
     "alternate": false,
+    "shortName": "Recipe_CartridgeSmart_C",
     "ingredients": [
       {
         "className": "desc-cartridgestandard-c",
@@ -5071,6 +5321,7 @@
   {
     "displayName": "Stun Rebar",
     "alternate": false,
+    "shortName": "Recipe_Rebar_Stunshot_C",
     "ingredients": [
       {
         "className": "desc-spikedrebar-c",
@@ -5091,6 +5342,7 @@
   {
     "displayName": "Gas Filter",
     "alternate": false,
+    "shortName": "Recipe_FilterGasMask_C",
     "ingredients": [
       {
         "className": "desc-fabric-c",
@@ -5115,6 +5367,7 @@
   {
     "displayName": "Gas Nobelisk",
     "alternate": false,
+    "shortName": "Recipe_NobeliskGas_C",
     "ingredients": [
       {
         "className": "desc-nobeliskexplosive-c",
@@ -5135,6 +5388,7 @@
   {
     "displayName": "Polyester Fabric",
     "alternate": true,
+    "shortName": "Recipe_Alternate_PolyesterFabric_C",
     "ingredients": [
       {
         "className": "desc-polymerresin-c",
@@ -5155,6 +5409,7 @@
   {
     "displayName": "Fabric",
     "alternate": false,
+    "shortName": "Recipe_Fabric_C",
     "ingredients": [
       {
         "className": "desc-mycelia-c",
@@ -5175,6 +5430,7 @@
   {
     "displayName": "Synthetic Power Shard",
     "alternate": false,
+    "shortName": "Recipe_SyntheticPowerShard_C",
     "ingredients": [
       {
         "className": "desc-timecrystal-c",
@@ -5203,6 +5459,7 @@
   {
     "displayName": "Power Shard (5)",
     "alternate": false,
+    "shortName": "Recipe_PowerCrystalShard_3_C",
     "ingredients": [
       {
         "className": "desc-crystal-mk3-c",
@@ -5219,6 +5476,7 @@
   {
     "displayName": "Power Shard (2)",
     "alternate": false,
+    "shortName": "Recipe_PowerCrystalShard_2_C",
     "ingredients": [
       {
         "className": "desc-crystal-mk2-c",
@@ -5235,6 +5493,7 @@
   {
     "displayName": "Pulse Nobelisk",
     "alternate": false,
+    "shortName": "Recipe_NobeliskShockwave_C",
     "ingredients": [
       {
         "className": "desc-nobeliskexplosive-c",
@@ -5255,6 +5514,7 @@
   {
     "displayName": "Shatter Rebar",
     "alternate": false,
+    "shortName": "Recipe_Rebar_Spreadshot_C",
     "ingredients": [
       {
         "className": "desc-spikedrebar-c",
@@ -5275,6 +5535,7 @@
   {
     "displayName": "Turbo Rifle Ammo",
     "alternate": false,
+    "shortName": "Recipe_CartridgeChaos_Packaged_C",
     "ingredients": [
       {
         "className": "desc-cartridgestandard-c",
@@ -5299,6 +5560,7 @@
   {
     "displayName": "Turbo Rifle Ammo",
     "alternate": false,
+    "shortName": "Recipe_CartridgeChaos_C",
     "ingredients": [
       {
         "className": "desc-cartridgestandard-c",
@@ -5323,6 +5585,7 @@
   {
     "displayName": "Nuke Nobelisk",
     "alternate": false,
+    "shortName": "Recipe_NobeliskNuke_C",
     "ingredients": [
       {
         "className": "desc-nobeliskexplosive-c",
@@ -5351,6 +5614,7 @@
   {
     "displayName": "Rifle Ammo",
     "alternate": false,
+    "shortName": "Recipe_Cartridge_C",
     "ingredients": [
       {
         "className": "desc-coppersheet-c",
@@ -5371,6 +5635,7 @@
   {
     "displayName": "Explosive Rebar",
     "alternate": false,
+    "shortName": "Recipe_Rebar_Explosive_C",
     "ingredients": [
       {
         "className": "desc-spikedrebar-c",
@@ -5395,6 +5660,7 @@
   {
     "displayName": "Cluster Nobelisk",
     "alternate": false,
+    "shortName": "Recipe_NobeliskCluster_C",
     "ingredients": [
       {
         "className": "desc-nobeliskexplosive-c",
@@ -5415,6 +5681,7 @@
   {
     "displayName": "Nobelisk",
     "alternate": false,
+    "shortName": "Recipe_Nobelisk_C",
     "ingredients": [
       {
         "className": "desc-gunpowder-c",
@@ -5435,6 +5702,7 @@
   {
     "displayName": "Smokeless Powder",
     "alternate": false,
+    "shortName": "Recipe_GunpowderMK2_C",
     "ingredients": [
       {
         "className": "desc-gunpowder-c",
@@ -5455,6 +5723,7 @@
   {
     "displayName": "Biomass (Leaves)",
     "alternate": false,
+    "shortName": "Recipe_Biomass_Leaves_C",
     "ingredients": [
       {
         "className": "desc-leaves-c",
@@ -5471,6 +5740,7 @@
   {
     "displayName": "Biomass (Wood)",
     "alternate": false,
+    "shortName": "Recipe_Biomass_Wood_C",
     "ingredients": [
       {
         "className": "desc-wood-c",
@@ -5487,6 +5757,7 @@
   {
     "displayName": "Reinforced Iron Plate",
     "alternate": false,
+    "shortName": "Recipe_IronPlateReinforced_C",
     "ingredients": [
       {
         "className": "desc-ironplate-c",
@@ -5507,6 +5778,7 @@
   {
     "displayName": "Concrete",
     "alternate": false,
+    "shortName": "Recipe_Concrete_C",
     "ingredients": [
       {
         "className": "desc-stone-c",
@@ -5523,6 +5795,7 @@
   {
     "displayName": "Screws",
     "alternate": false,
+    "shortName": "Recipe_Screw_C",
     "ingredients": [
       {
         "className": "desc-ironrod-c",
@@ -5539,6 +5812,7 @@
   {
     "displayName": "Cable",
     "alternate": false,
+    "shortName": "Recipe_Cable_C",
     "ingredients": [
       {
         "className": "desc-wire-c",
@@ -5555,6 +5829,7 @@
   {
     "displayName": "Wire",
     "alternate": false,
+    "shortName": "Recipe_Wire_C",
     "ingredients": [
       {
         "className": "desc-copperingot-c",
@@ -5571,6 +5846,7 @@
   {
     "displayName": "Copper Ingot",
     "alternate": false,
+    "shortName": "Recipe_IngotCopper_C",
     "ingredients": [
       {
         "className": "desc-orecopper-c",

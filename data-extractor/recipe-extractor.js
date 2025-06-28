@@ -51,6 +51,7 @@ try {
             extractedRecipes.push(recipe);
 
             // console.log(`\nFullName: ${classItem.FullName}`);
+            // console.log(`shortName: ${recipe.shortName}`);
             // console.log(JSON.stringify(recipe));
           }
         }
@@ -100,6 +101,7 @@ function processRecipe(classItem) {
     result.displayName = classItem.mDisplayName;
     result.alternate = false;
   }
+  result.shortName = processShortName(classItem.FullName);
   result.ingredients = processIngradients(classItem.mIngredients);
   result.product = processIngradients(classItem.mProduct)[0];
   result.manufactoringDuration = Number.parseInt(
@@ -110,6 +112,11 @@ function processRecipe(classItem) {
   // console.log(`\nFullName: ${classItem.FullName}`);
   // console.log(JSON.stringify(result));
   return result;
+}
+
+function processShortName(fullNameStr) {
+  const start = fullNameStr.lastIndexOf(".");
+  return fullNameStr.slice(start + 1);
 }
 
 function processIngradients(ingredientsStr) {
