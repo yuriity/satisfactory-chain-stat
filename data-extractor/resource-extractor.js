@@ -38,6 +38,7 @@ try {
   // Iterate through the top-level array
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
+      console.log(topLevelItem.NativeClass);
       if (
         typeof topLevelItem.NativeClass === "string" &&
         (topLevelItem.NativeClass.startsWith(
@@ -59,6 +60,10 @@ try {
                     .replace(/\s+/g, " ")
                     .trim()
                 : "",
+              stackSize: classItem.mStackSize,
+              sinkPoints: classItem.mResourceSinkPoints
+                ? Number(classItem.mResourceSinkPoints)
+                : undefined,
             };
             if (
               resource.className &&
