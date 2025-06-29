@@ -14,7 +14,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Iron Rod",
@@ -31,7 +32,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Iron Ingot",
@@ -48,7 +50,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-smeltermk1-c"
+    "producedIn": "desc-smeltermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Nitro Rocket Fuel",
@@ -77,7 +80,8 @@
       "amount": 6000
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Rocket Fuel",
@@ -98,7 +102,8 @@
       "amount": 10000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 3
   },
   {
     "displayName": "Packaged Rocket Fuel",
@@ -119,7 +124,8 @@
       "amount": 1
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 3
   },
   {
     "displayName": "Unpackage Rocket Fuel",
@@ -136,7 +142,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 3
   },
   {
     "displayName": "Dark-Ion Fuel",
@@ -157,7 +164,8 @@
       "amount": 10000
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 0
   },
   {
     "displayName": "Dark Matter Residue",
@@ -174,7 +182,8 @@
       "amount": 10000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Excited Photonic Matter",
@@ -188,7 +197,8 @@
       "amount": 10000
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Dark Matter Crystal",
@@ -209,7 +219,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 9
   },
   {
     "displayName": "Superposition Oscillator",
@@ -238,7 +249,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 9
   },
   {
     "displayName": "Neural-Quantum Processor",
@@ -267,7 +279,8 @@
       "amount": 1
     },
     "manufactoringDuration": 20,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 9
   },
   {
     "displayName": "AI Expansion Server",
@@ -296,7 +309,8 @@
       "amount": 1
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 9
   },
   {
     "displayName": "Ionized Fuel",
@@ -317,7 +331,8 @@
       "amount": 16000
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 3
   },
   {
     "displayName": "Packaged Ionized Fuel",
@@ -338,7 +353,8 @@
       "amount": 2
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 3
   },
   {
     "displayName": "Unpackage Ionized Fuel",
@@ -355,7 +371,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 3
   },
   {
     "displayName": "Turbo Diamonds",
@@ -376,7 +393,8 @@
       "amount": 3
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "SAM Fluctuator",
@@ -401,7 +419,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Ficsite Trigon",
@@ -418,7 +437,8 @@
       "amount": 3
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 9
   },
   {
     "displayName": "Ficsite Ingot (Iron)",
@@ -439,7 +459,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Time Crystal",
@@ -456,7 +477,8 @@
       "amount": 1
     },
     "manufactoringDuration": 10,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Diamonds",
@@ -473,7 +495,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 9
   },
   {
     "displayName": "Reanimated SAM",
@@ -490,7 +513,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Biochemical Sculptor",
@@ -515,7 +539,8 @@
       "amount": 4
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 9
   },
   {
     "displayName": "Ficsite Ingot (Aluminum)",
@@ -536,7 +561,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Ficsite Ingot (Caterium)",
@@ -557,7 +583,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Bauxite (Caterium)",
@@ -578,7 +605,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Bauxite (Copper)",
@@ -599,7 +627,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Caterium Ore (Copper)",
@@ -620,7 +649,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Caterium Ore (Quartz)",
@@ -641,7 +671,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Coal (Iron)",
@@ -662,7 +693,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Coal (Limestone)",
@@ -683,7 +715,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Copper Ore (Quartz)",
@@ -704,7 +737,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Copper Ore (Sulfur)",
@@ -725,7 +759,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Iron Ore (Limestone)",
@@ -746,7 +781,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Limestone (Sulfur)",
@@ -767,7 +803,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Nitrogen Gas (Bauxite)",
@@ -788,7 +825,8 @@
       "amount": 12000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Nitrogen Gas (Caterium)",
@@ -809,7 +847,8 @@
       "amount": 12000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Raw Quartz (Bauxite)",
@@ -830,7 +869,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Raw Quartz (Coal)",
@@ -851,7 +891,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Sulfur (Coal)",
@@ -872,7 +913,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Sulfur (Iron)",
@@ -893,7 +935,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Uranium Ore (Bauxite)",
@@ -914,7 +957,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 9
   },
   {
     "displayName": "Turbofuel",
@@ -935,7 +979,8 @@
       "amount": 5000
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 3
   },
   {
     "displayName": "Packaged Turbofuel",
@@ -956,7 +1001,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 0
   },
   {
     "displayName": "Unpackage Turbofuel",
@@ -973,7 +1019,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 0
   },
   {
     "displayName": "Charcoal",
@@ -990,7 +1037,8 @@
       "amount": 10
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Biocoal",
@@ -1007,7 +1055,8 @@
       "amount": 6
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Compacted Coal",
@@ -1028,7 +1077,8 @@
       "amount": 5
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Circuit Board",
@@ -1049,7 +1099,8 @@
       "amount": 1
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Fuel",
@@ -1066,7 +1117,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Petroleum Coke",
@@ -1083,7 +1135,8 @@
       "amount": 12
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Plastic",
@@ -1100,7 +1153,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Rubber",
@@ -1117,7 +1171,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Residual Fuel",
@@ -1134,7 +1189,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Residual Plastic",
@@ -1155,7 +1211,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Residual Rubber",
@@ -1176,7 +1233,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Pink Diamonds",
@@ -1197,7 +1255,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-converter-c"
+    "producedIn": "desc-converter-c",
+    "techTier": 0
   },
   {
     "displayName": "Petroleum Diamonds",
@@ -1214,7 +1273,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Oil-Based Diamonds",
@@ -1231,7 +1291,8 @@
       "amount": 2
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Cloudy Diamonds",
@@ -1252,7 +1313,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Dark Matter Trap",
@@ -1273,7 +1335,8 @@
       "amount": 2
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Dark Matter Crystallization",
@@ -1290,7 +1353,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Wet Concrete",
@@ -1311,7 +1375,8 @@
       "amount": 4
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Turbo Heavy Fuel",
@@ -1332,7 +1397,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Steel Rod",
@@ -1349,7 +1415,8 @@
       "amount": 4
     },
     "manufactoringDuration": 5,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Steel Beam",
@@ -1366,7 +1433,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Steel Pipe",
@@ -1383,7 +1451,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Steel Ingot",
@@ -1404,7 +1473,8 @@
       "amount": 3
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Versatile Framework",
@@ -1425,7 +1495,8 @@
       "amount": 2
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Steel Canister",
@@ -1442,7 +1513,8 @@
       "amount": 4
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Empty Canister",
@@ -1459,7 +1531,8 @@
       "amount": 4
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Packaged Fuel",
@@ -1480,7 +1553,8 @@
       "amount": 2
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Liquid Biofuel",
@@ -1501,7 +1575,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Packaged Liquid Biofuel",
@@ -1522,7 +1597,8 @@
       "amount": 2
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Packaged Oil",
@@ -1543,7 +1619,8 @@
       "amount": 2
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Packaged Heavy Oil Residue",
@@ -1564,7 +1641,8 @@
       "amount": 2
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Packaged Water",
@@ -1585,7 +1663,8 @@
       "amount": 2
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Unpackage Liquid Biofuel",
@@ -1602,7 +1681,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Unpackage Fuel",
@@ -1619,7 +1699,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Unpackage Oil",
@@ -1636,7 +1717,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Unpackage Heavy Oil Residue",
@@ -1653,7 +1735,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Unpackage Water",
@@ -1670,7 +1753,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 5
   },
   {
     "displayName": "Steamed Copper Sheet",
@@ -1691,7 +1775,8 @@
       "amount": 3
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Rubber Concrete",
@@ -1712,7 +1797,8 @@
       "amount": 9
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Recycled Rubber",
@@ -1733,7 +1819,8 @@
       "amount": 12
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Pure Quartz Crystal",
@@ -1754,7 +1841,8 @@
       "amount": 7
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Quartz Crystal",
@@ -1771,7 +1859,8 @@
       "amount": 3
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Pure Iron Ingot",
@@ -1792,7 +1881,8 @@
       "amount": 13
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Pure Copper Ingot",
@@ -1813,7 +1903,8 @@
       "amount": 15
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Pure Caterium Ingot",
@@ -1834,7 +1925,8 @@
       "amount": 1
     },
     "manufactoringDuration": 5,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Pure Aluminum Ingot",
@@ -1851,7 +1943,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-smeltermk1-c"
+    "producedIn": "desc-smeltermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Aluminum Casing",
@@ -1868,7 +1961,8 @@
       "amount": 2
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Alclad Aluminum Sheet",
@@ -1889,7 +1983,8 @@
       "amount": 3
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Alumina Solution",
@@ -1910,7 +2005,8 @@
       "amount": 12000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 7
   },
   {
     "displayName": "Aluminum Scrap",
@@ -1931,7 +2027,8 @@
       "amount": 6
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 7
   },
   {
     "displayName": "Packaged Alumina Solution",
@@ -1952,7 +2049,8 @@
       "amount": 2
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 7
   },
   {
     "displayName": "Aluminum Ingot",
@@ -1973,7 +2071,8 @@
       "amount": 4
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Silica",
@@ -1990,7 +2089,8 @@
       "amount": 5
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Crystal Oscillator",
@@ -2015,7 +2115,8 @@
       "amount": 2
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Unpackage Alumina Solution",
@@ -2032,7 +2133,8 @@
       "amount": 2000
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 7
   },
   {
     "displayName": "Polymer Resin",
@@ -2049,7 +2151,8 @@
       "amount": 13
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Plastic Smart Plating",
@@ -2074,7 +2177,8 @@
       "amount": 2
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Automated Speed Wiring",
@@ -2099,7 +2203,8 @@
       "amount": 4
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Encased Industrial Beam",
@@ -2120,7 +2225,8 @@
       "amount": 1
     },
     "manufactoringDuration": 10,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Motor",
@@ -2141,7 +2247,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Stator",
@@ -2162,7 +2269,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Automated Wiring",
@@ -2183,7 +2291,8 @@
       "amount": 1
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "AI Limiter",
@@ -2204,7 +2313,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Heavy Oil Residue",
@@ -2221,7 +2331,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Heavy Flexible Frame",
@@ -2250,7 +2361,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Computer",
@@ -2275,7 +2387,8 @@
       "amount": 1
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 6
   },
   {
     "displayName": "Heavy Modular Frame",
@@ -2304,7 +2417,8 @@
       "amount": 1
     },
     "manufactoringDuration": 30,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 6
   },
   {
     "displayName": "Modular Engine",
@@ -2329,7 +2443,8 @@
       "amount": 1
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 6
   },
   {
     "displayName": "Adaptive Control Unit",
@@ -2358,7 +2473,8 @@
       "amount": 1
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 6
   },
   {
     "displayName": "Fused Wire",
@@ -2379,7 +2495,8 @@
       "amount": 30
     },
     "manufactoringDuration": 20,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Flexible Framework",
@@ -2404,7 +2521,8 @@
       "amount": 2
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Electrode Circuit Board",
@@ -2425,7 +2543,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Electrode Aluminum Scrap",
@@ -2446,7 +2565,8 @@
       "amount": 20
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Diluted Packaged Fuel",
@@ -2467,7 +2587,8 @@
       "amount": 2
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Copper Rotor",
@@ -2488,7 +2609,8 @@
       "amount": 3
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Modular Frame",
@@ -2509,7 +2631,8 @@
       "amount": 2
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Rotor",
@@ -2530,7 +2653,8 @@
       "amount": 1
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Copper Sheet",
@@ -2547,7 +2671,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Smart Plating",
@@ -2568,7 +2693,8 @@
       "amount": 1
     },
     "manufactoringDuration": 30,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Copper Alloy Ingot",
@@ -2589,7 +2715,8 @@
       "amount": 10
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Coke Steel Ingot",
@@ -2610,7 +2737,8 @@
       "amount": 20
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Coated Iron Plate",
@@ -2631,7 +2759,8 @@
       "amount": 10
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Coated Iron Canister",
@@ -2652,7 +2781,8 @@
       "amount": 4
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Coated Cable",
@@ -2673,7 +2803,8 @@
       "amount": 9
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Bolted Frame",
@@ -2694,7 +2825,8 @@
       "amount": 2
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Adhered Iron Plate",
@@ -2715,7 +2847,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Turbo Pressure Motor",
@@ -2744,7 +2877,8 @@
       "amount": 2
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Encased Plutonium Cell",
@@ -2765,7 +2899,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Pressure Conversion Cube",
@@ -2786,7 +2921,8 @@
       "amount": 1
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Nitric Acid",
@@ -2811,7 +2947,8 @@
       "amount": 3000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 8
   },
   {
     "displayName": "Non-Fissile Uranium",
@@ -2840,7 +2977,8 @@
       "amount": 20
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 8
   },
   {
     "displayName": "Copper Powder",
@@ -2857,7 +2995,8 @@
       "amount": 5
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Plutonium Pellet",
@@ -2878,7 +3017,8 @@
       "amount": 30
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 8
   },
   {
     "displayName": "Plutonium Fuel Rod",
@@ -2907,7 +3047,8 @@
       "amount": 1
     },
     "manufactoringDuration": 240,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Packaged Nitric Acid",
@@ -2928,7 +3069,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 8
   },
   {
     "displayName": "Nuclear Pasta",
@@ -2949,7 +3091,8 @@
       "amount": 1
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 8
   },
   {
     "displayName": "Unpackage Nitric Acid",
@@ -2966,7 +3109,8 @@
       "amount": 1000
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 8
   },
   {
     "displayName": "Turbo Blend Fuel",
@@ -2995,7 +3139,8 @@
       "amount": 6000
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Encased Uranium Cell",
@@ -3020,7 +3165,8 @@
       "amount": 5
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 8
   },
   {
     "displayName": "Cooling System",
@@ -3049,7 +3195,8 @@
       "amount": 1
     },
     "manufactoringDuration": 10,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 8
   },
   {
     "displayName": "Battery",
@@ -3074,7 +3221,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 7
   },
   {
     "displayName": "Supercomputer",
@@ -3103,7 +3251,8 @@
       "amount": 1
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Radio Control Unit",
@@ -3128,7 +3277,8 @@
       "amount": 2
     },
     "manufactoringDuration": 48,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Sulfuric Acid",
@@ -3149,7 +3299,8 @@
       "amount": 5000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 7
   },
   {
     "displayName": "Packaged Sulfuric Acid",
@@ -3170,7 +3321,8 @@
       "amount": 2
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 7
   },
   {
     "displayName": "Assembly Director System",
@@ -3191,7 +3343,8 @@
       "amount": 1
     },
     "manufactoringDuration": 80,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "High-Speed Connector",
@@ -3216,7 +3369,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Unpackage Sulfuric Acid",
@@ -3233,7 +3387,8 @@
       "amount": 1000
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 7
   },
   {
     "displayName": "Super-State Computer",
@@ -3262,7 +3417,8 @@
       "amount": 1
     },
     "manufactoringDuration": 25,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Electromagnetic Control Rod",
@@ -3283,7 +3439,8 @@
       "amount": 2
     },
     "manufactoringDuration": 30,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Uranium Fuel Rod",
@@ -3308,7 +3465,8 @@
       "amount": 1
     },
     "manufactoringDuration": 150,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Magnetic Field Generator",
@@ -3329,7 +3487,8 @@
       "amount": 2
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Sloppy Alumina",
@@ -3350,7 +3509,8 @@
       "amount": 12000
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Radio Control System",
@@ -3379,7 +3539,8 @@
       "amount": 3
     },
     "manufactoringDuration": 40,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Plutonium Fuel Unit",
@@ -3400,7 +3561,8 @@
       "amount": 1
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "OC Supercomputer",
@@ -3421,7 +3583,8 @@
       "amount": 1
     },
     "manufactoringDuration": 20,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Heat Sink",
@@ -3442,7 +3605,8 @@
       "amount": 1
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Fused Modular Frame",
@@ -3467,7 +3631,8 @@
       "amount": 1
     },
     "manufactoringDuration": 40,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 8
   },
   {
     "displayName": "Empty Fluid Tank",
@@ -3484,7 +3649,8 @@
       "amount": 1
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Packaged Nitrogen Gas",
@@ -3505,7 +3671,8 @@
       "amount": 1
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 8
   },
   {
     "displayName": "Unpackage Nitrogen Gas",
@@ -3522,7 +3689,8 @@
       "amount": 4000
     },
     "manufactoringDuration": 1,
-    "producedIn": "desc-packager-c"
+    "producedIn": "desc-packager-c",
+    "techTier": 8
   },
   {
     "displayName": "Instant Scrap",
@@ -3551,7 +3719,8 @@
       "amount": 30
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Instant Plutonium Cell",
@@ -3572,7 +3741,8 @@
       "amount": 20
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 0
   },
   {
     "displayName": "Heat-Fused Frame",
@@ -3601,7 +3771,8 @@
       "amount": 1
     },
     "manufactoringDuration": 20,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Fertile Uranium",
@@ -3630,7 +3801,8 @@
       "amount": 20
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Electric Motor",
@@ -3651,7 +3823,8 @@
       "amount": 2
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Diluted Fuel",
@@ -3672,7 +3845,8 @@
       "amount": 10000
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Cooling Device",
@@ -3697,7 +3871,8 @@
       "amount": 2
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Classic Battery",
@@ -3726,7 +3901,8 @@
       "amount": 4
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Automated Miner",
@@ -3747,7 +3923,8 @@
       "amount": 1
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Alclad Casing",
@@ -3768,7 +3945,8 @@
       "amount": 15
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Molded Steel Pipe",
@@ -3789,7 +3967,8 @@
       "amount": 5
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Iron Pipe",
@@ -3806,7 +3985,8 @@
       "amount": 5
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Steel Cast Plate",
@@ -3827,7 +4007,8 @@
       "amount": 3
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Molded Beam",
@@ -3848,7 +4029,8 @@
       "amount": 9
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Aluminum Beam",
@@ -3865,7 +4047,8 @@
       "amount": 3
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Aluminum Rod",
@@ -3882,7 +4065,8 @@
       "amount": 7
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Plastic AI Limiter",
@@ -3903,7 +4087,8 @@
       "amount": 2
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Distilled Silica",
@@ -3928,7 +4113,8 @@
       "amount": 27
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 0
   },
   {
     "displayName": "Quartz Purification",
@@ -3949,7 +4135,8 @@
       "amount": 15
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Fused Quartz Crystal",
@@ -3970,7 +4157,8 @@
       "amount": 18
     },
     "manufactoringDuration": 20,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Leached Iron Ingot",
@@ -3991,7 +4179,8 @@
       "amount": 10
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Basic Iron Ingot",
@@ -4012,7 +4201,8 @@
       "amount": 10
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Tempered Copper Ingot",
@@ -4033,7 +4223,8 @@
       "amount": 12
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Leached Copper Ingot",
@@ -4054,7 +4245,8 @@
       "amount": 22
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Tempered Caterium Ingot",
@@ -4075,7 +4267,8 @@
       "amount": 3
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Leached Caterium Ingot",
@@ -4096,7 +4289,8 @@
       "amount": 6
     },
     "manufactoringDuration": 10,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 0
   },
   {
     "displayName": "Caterium Wire",
@@ -4113,7 +4307,8 @@
       "amount": 8
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Iron Wire",
@@ -4130,7 +4325,8 @@
       "amount": 9
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 1
   },
   {
     "displayName": "Infused Uranium Cell",
@@ -4159,7 +4355,8 @@
       "amount": 4
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Caterium Ingot",
@@ -4176,7 +4373,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-smeltermk1-c"
+    "producedIn": "desc-smeltermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Turbo Electric Motor",
@@ -4205,7 +4403,8 @@
       "amount": 3
     },
     "manufactoringDuration": 64,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Turbo Motor",
@@ -4234,7 +4433,8 @@
       "amount": 1
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Thermal Propulsion Rocket",
@@ -4263,7 +4463,8 @@
       "amount": 2
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 8
   },
   {
     "displayName": "Quickwire Stator",
@@ -4284,7 +4485,8 @@
       "amount": 2
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Cheap Silica",
@@ -4305,7 +4507,8 @@
       "amount": 7
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Steel Screws",
@@ -4322,7 +4525,8 @@
       "amount": 52
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Cast Screws",
@@ -4339,7 +4543,8 @@
       "amount": 20
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 1
   },
   {
     "displayName": "Steel Rotor",
@@ -4360,7 +4565,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Encased Industrial Pipe",
@@ -4381,7 +4587,8 @@
       "amount": 1
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Stitched Iron Plate",
@@ -4402,7 +4609,8 @@
       "amount": 3
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Bolted Iron Plate",
@@ -4423,7 +4631,8 @@
       "amount": 3
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Radio Connection Unit",
@@ -4448,7 +4657,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Fused Quickwire",
@@ -4469,7 +4679,8 @@
       "amount": 12
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Recycled Plastic",
@@ -4490,7 +4701,8 @@
       "amount": 12
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 5
   },
   {
     "displayName": "Uranium Fuel Unit",
@@ -4519,7 +4731,8 @@
       "amount": 3
     },
     "manufactoringDuration": 300,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Rigor Motor",
@@ -4544,7 +4757,8 @@
       "amount": 6
     },
     "manufactoringDuration": 48,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Steeled Frame",
@@ -4565,7 +4779,8 @@
       "amount": 3
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Compacted Steel Ingot",
@@ -4586,7 +4801,8 @@
       "amount": 4
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Solid Steel Ingot",
@@ -4607,7 +4823,8 @@
       "amount": 3
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Iron Alloy Ingot",
@@ -4628,7 +4845,8 @@
       "amount": 15
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-foundrymk1-c"
+    "producedIn": "desc-foundrymk1-c",
+    "techTier": 1
   },
   {
     "displayName": "Silicon High-Speed Connector",
@@ -4653,7 +4871,8 @@
       "amount": 2
     },
     "manufactoringDuration": 40,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Heavy Encased Frame",
@@ -4682,7 +4901,8 @@
       "amount": 3
     },
     "manufactoringDuration": 64,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Heat Exchanger",
@@ -4703,7 +4923,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Fine Black Powder",
@@ -4724,7 +4945,8 @@
       "amount": 6
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Electromagnetic Connection Rod",
@@ -4745,7 +4967,8 @@
       "amount": 2
     },
     "manufactoringDuration": 15,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Insulated Crystal Oscillator",
@@ -4770,7 +4993,8 @@
       "amount": 1
     },
     "manufactoringDuration": 32,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Fine Concrete",
@@ -4791,7 +5015,8 @@
       "amount": 10
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 4
   },
   {
     "displayName": "Crystal Computer",
@@ -4812,7 +5037,8 @@
       "amount": 2
     },
     "manufactoringDuration": 36,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Caterium Computer",
@@ -4837,7 +5063,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Caterium Circuit Board",
@@ -4858,7 +5085,8 @@
       "amount": 7
     },
     "manufactoringDuration": 48,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Silicon Circuit Board",
@@ -4879,7 +5107,8 @@
       "amount": 5
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Quickwire Cable",
@@ -4900,7 +5129,8 @@
       "amount": 11
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Insulated Cable",
@@ -4921,7 +5151,8 @@
       "amount": 20
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 5
   },
   {
     "displayName": "Ficsonium",
@@ -4946,7 +5177,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-hadroncollider-c"
+    "producedIn": "desc-hadroncollider-c",
+    "techTier": 9
   },
   {
     "displayName": "Ficsonium Fuel Rod",
@@ -4975,7 +5207,8 @@
       "amount": 1
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 9
   },
   {
     "displayName": "Singularity Cell",
@@ -5004,7 +5237,8 @@
       "amount": 10
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 9
   },
   {
     "displayName": "Ballistic Warp Drive",
@@ -5033,7 +5267,8 @@
       "amount": 1
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 9
   },
   {
     "displayName": "Iodine-Infused Filter",
@@ -5058,7 +5293,8 @@
       "amount": 1
     },
     "manufactoringDuration": 16,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 7
   },
   {
     "displayName": "Quickwire",
@@ -5075,7 +5311,8 @@
       "amount": 5
     },
     "manufactoringDuration": 5,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Solid Biofuel",
@@ -5092,7 +5329,8 @@
       "amount": 4
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 2
   },
   {
     "displayName": "Hog Protein",
@@ -5109,7 +5347,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Spitter Protein",
@@ -5126,7 +5365,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Biomass (Mycelia)",
@@ -5143,7 +5383,8 @@
       "amount": 10
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Power Shard (1)",
@@ -5160,7 +5401,8 @@
       "amount": 1
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Black Powder",
@@ -5181,7 +5423,8 @@
       "amount": 2
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Stinger Protein",
@@ -5198,7 +5441,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Hatcher Protein",
@@ -5215,7 +5459,8 @@
       "amount": 1
     },
     "manufactoringDuration": 3,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Alien DNA Capsule",
@@ -5232,7 +5477,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Biomass (Alien Protein)",
@@ -5249,7 +5495,8 @@
       "amount": 100
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Iron Rebar",
@@ -5266,7 +5513,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Alien Power Matrix",
@@ -5295,7 +5543,8 @@
       "amount": 1
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 0
   },
   {
     "displayName": "Homing Rifle Ammo",
@@ -5316,7 +5565,8 @@
       "amount": 10
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Stun Rebar",
@@ -5337,7 +5587,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Gas Filter",
@@ -5362,7 +5613,8 @@
       "amount": 1
     },
     "manufactoringDuration": 8,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Gas Nobelisk",
@@ -5383,7 +5635,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Polyester Fabric",
@@ -5404,7 +5657,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 3
   },
   {
     "displayName": "Fabric",
@@ -5425,7 +5679,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Synthetic Power Shard",
@@ -5454,7 +5709,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-quantumencoder-c"
+    "producedIn": "desc-quantumencoder-c",
+    "techTier": 3
   },
   {
     "displayName": "Power Shard (5)",
@@ -5471,7 +5727,8 @@
       "amount": 5
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Power Shard (2)",
@@ -5488,7 +5745,8 @@
       "amount": 2
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Pulse Nobelisk",
@@ -5509,7 +5767,8 @@
       "amount": 5
     },
     "manufactoringDuration": 60,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Shatter Rebar",
@@ -5530,7 +5789,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Turbo Rifle Ammo",
@@ -5555,7 +5815,8 @@
       "amount": 50
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Turbo Rifle Ammo",
@@ -5580,7 +5841,8 @@
       "amount": 50
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-blender-c"
+    "producedIn": "desc-blender-c",
+    "techTier": 3
   },
   {
     "displayName": "Nuke Nobelisk",
@@ -5609,7 +5871,8 @@
       "amount": 1
     },
     "manufactoringDuration": 120,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Rifle Ammo",
@@ -5630,7 +5893,8 @@
       "amount": 15
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Explosive Rebar",
@@ -5655,7 +5919,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-manufacturermk1-c"
+    "producedIn": "desc-manufacturermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Cluster Nobelisk",
@@ -5676,7 +5941,8 @@
       "amount": 1
     },
     "manufactoringDuration": 24,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Nobelisk",
@@ -5697,7 +5963,8 @@
       "amount": 1
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 3
   },
   {
     "displayName": "Smokeless Powder",
@@ -5718,7 +5985,8 @@
       "amount": 2
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-oilrefinery-c"
+    "producedIn": "desc-oilrefinery-c",
+    "techTier": 3
   },
   {
     "displayName": "Biomass (Leaves)",
@@ -5735,7 +6003,8 @@
       "amount": 5
     },
     "manufactoringDuration": 5,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Biomass (Wood)",
@@ -5752,7 +6021,8 @@
       "amount": 20
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Reinforced Iron Plate",
@@ -5773,7 +6043,8 @@
       "amount": 1
     },
     "manufactoringDuration": 12,
-    "producedIn": "desc-assemblermk1-c"
+    "producedIn": "desc-assemblermk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Concrete",
@@ -5790,7 +6061,8 @@
       "amount": 1
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Screws",
@@ -5807,7 +6079,8 @@
       "amount": 4
     },
     "manufactoringDuration": 6,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Cable",
@@ -5824,7 +6097,8 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Wire",
@@ -5841,7 +6115,8 @@
       "amount": 2
     },
     "manufactoringDuration": 4,
-    "producedIn": "desc-constructormk1-c"
+    "producedIn": "desc-constructormk1-c",
+    "techTier": 0
   },
   {
     "displayName": "Copper Ingot",
@@ -5858,6 +6133,7 @@
       "amount": 1
     },
     "manufactoringDuration": 2,
-    "producedIn": "desc-smeltermk1-c"
+    "producedIn": "desc-smeltermk1-c",
+    "techTier": 0
   }
 ]

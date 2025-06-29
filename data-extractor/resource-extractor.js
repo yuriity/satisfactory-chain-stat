@@ -38,7 +38,7 @@ try {
   // Iterate through the top-level array
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
-      console.log(topLevelItem.NativeClass);
+      // console.log(topLevelItem.NativeClass);
       if (
         typeof topLevelItem.NativeClass === "string" &&
         (topLevelItem.NativeClass.startsWith(

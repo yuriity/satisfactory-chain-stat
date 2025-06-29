@@ -11,6 +11,31 @@ const inputFile = path.join(__dirname, "en-US_v1.1.1.0.json");
 // const inputFile = path.join(__dirname, "en-US_v1.1.1.0_shorted.json");
 const outputFile = path.join(__dirname, "../public/data/en-US_recipes.json");
 
+const producedInMap = {
+  "/Game/FactoryGame/Buildable/Factory/ConstructorMk1/Build_ConstructorMk1.Build_ConstructorMk1_C":
+    "desc-constructormk1-c",
+  "/Game/FactoryGame/Buildable/Factory/SmelterMk1/Build_SmelterMk1.Build_SmelterMk1_C":
+    "desc-smeltermk1-c",
+  "/Game/FactoryGame/Buildable/Factory/Blender/Build_Blender.Build_Blender_C":
+    "desc-blender-c",
+  "/Game/FactoryGame/Buildable/Factory/Packager/Build_Packager.Build_Packager_C":
+    "desc-packager-c",
+  "/Game/FactoryGame/Buildable/Factory/Converter/Build_Converter.Build_Converter_C":
+    "desc-converter-c",
+  "/Game/FactoryGame/Buildable/Factory/HadronCollider/Build_HadronCollider.Build_HadronCollider_C":
+    "desc-hadroncollider-c",
+  "/Game/FactoryGame/Buildable/Factory/QuantumEncoder/Build_QuantumEncoder.Build_QuantumEncoder_C":
+    "desc-quantumencoder-c",
+  "/Game/FactoryGame/Buildable/Factory/ManufacturerMk1/Build_ManufacturerMk1.Build_ManufacturerMk1_C":
+    "desc-manufacturermk1-c",
+  "/Game/FactoryGame/Buildable/Factory/AssemblerMk1/Build_AssemblerMk1.Build_AssemblerMk1_C":
+    "desc-assemblermk1-c",
+  "/Game/FactoryGame/Buildable/Factory/OilRefinery/Build_OilRefinery.Build_OilRefinery_C":
+    "desc-oilrefinery-c",
+  "/Game/FactoryGame/Buildable/Factory/FoundryMk1/Build_FoundryMk1.Build_FoundryMk1_C":
+    "desc-foundrymk1-c",
+};
+
 try {
   // Read the input JSON file, trying utf16le encoding
   let rawData = fs.readFileSync(inputFile, "utf16le");
@@ -35,9 +60,9 @@ try {
 
   const jsonData = JSON.parse(rawData);
 
-  const extractedRecipes = [];
+  const recipesTechTier = processSchematics(jsonData);
 
-  // Iterate through the top-level array
+  const extractedRecipes = [];
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
       if (
@@ -45,21 +70,17 @@ try {
         "/Script/CoreUObject.Class'/Script/FactoryGame.FGRecipe'"
       ) {
         for (const classItem of topLevelItem.Classes) {
-          if (validClassItem(classItem)) {
+          if (validBlueprintClassItem(classItem)) {
             const recipe = processRecipe(classItem);
+            recipe.techTier = recipesTechTier.get(recipe.shortName);
 
             extractedRecipes.push(recipe);
-
-            // console.log(`\nFullName: ${classItem.FullName}`);
-            // console.log(`shortName: ${recipe.shortName}`);
-            // console.log(JSON.stringify(recipe));
           }
         }
       }
     }
   }
 
-  // Write the extracted resources to the output file
   fs.writeFileSync(
     outputFile,
     JSON.stringify(extractedRecipes, null, 2),
@@ -73,7 +94,39 @@ try {
   console.error("Error processing the file:", error);
 }
 
-function validClassItem(classItem) {
+function processSchematics(jsonData) {
+  const recipesTechTier = new Map();
+  for (const topLevelItem of jsonData) {
+    if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
+      if (
+        topLevelItem.NativeClass ===
+        "/Script/CoreUObject.Class'/Script/FactoryGame.FGSchematic'"
+      ) {
+        for (const classItem of topLevelItem.Classes) {
+          processRecipesTechTier(classItem, recipesTechTier);
+        }
+      }
+    }
+  }
+
+  return recipesTechTier;
+}
+
+function processRecipesTechTier(classItem, recipesTechTier) {
+  for (const mUnlock of classItem.mUnlocks) {
+    if (mUnlock.Class === "BP_UnlockRecipe_C") {
+      const recipes = extractStringArray(mUnlock.mRecipes);
+      for (const recipeFullName of recipes) {
+        recipesTechTier.set(
+          processShortName(recipeFullName),
+          classItem.mTechTier ? Number(classItem.mTechTier) : -1
+        );
+      }
+    }
+  }
+}
+
+function validBlueprintClassItem(classItem) {
   return (
     classItem &&
     classItem.FullName.indexOf(
@@ -144,85 +197,31 @@ function processClassName(className) {
 }
 
 function processProducedIn(mProducedInStr) {
-  substrings = mProducedInStr
+  const substrings = extractStringArray(mProducedInStr);
+  let producedIn;
+
+  for (const substring of substrings) {
+    producedIn = producedInMap[substring];
+    if (producedIn) break;
+  }
+  if (producedIn) {
+    return producedIn;
+  }
+
+  console.warn(`\nUnknown producedIn:`);
+  for (const substring of substrings) {
+    console.warn(substring);
+  }
+  return "desc-unknown";
+}
+
+function extractStringArray(stringToProcess) {
+  return stringToProcess
     .replaceAll("(", "")
     .replaceAll(")", "")
     .replaceAll('"', "")
+    .replaceAll("'", "")
     .split(",");
-
-  if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/ConstructorMk1/Build_ConstructorMk1.Build_ConstructorMk1_C"
-    )
-  ) {
-    return "desc-constructormk1-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/SmelterMk1/Build_SmelterMk1.Build_SmelterMk1_C"
-    )
-  ) {
-    return "desc-smeltermk1-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/Blender/Build_Blender.Build_Blender_C"
-    )
-  ) {
-    return "desc-blender-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/Packager/Build_Packager.Build_Packager_C"
-    )
-  ) {
-    return "desc-packager-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/Converter/Build_Converter.Build_Converter_C"
-    )
-  ) {
-    return "desc-converter-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/HadronCollider/Build_HadronCollider.Build_HadronCollider_C"
-    )
-  ) {
-    return "desc-hadroncollider-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/QuantumEncoder/Build_QuantumEncoder.Build_QuantumEncoder_C"
-    )
-  ) {
-    return "desc-quantumencoder-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/ManufacturerMk1/Build_ManufacturerMk1.Build_ManufacturerMk1_C"
-    )
-  ) {
-    return "desc-manufacturermk1-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/AssemblerMk1/Build_AssemblerMk1.Build_AssemblerMk1_C"
-    )
-  ) {
-    return "desc-assemblermk1-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/OilRefinery/Build_OilRefinery.Build_OilRefinery_C"
-    )
-  ) {
-    return "desc-oilrefinery-c";
-  } else if (
-    substrings.includes(
-      "/Game/FactoryGame/Buildable/Factory/FoundryMk1/Build_FoundryMk1.Build_FoundryMk1_C"
-    )
-  ) {
-    return "desc-foundrymk1-c";
-  } else {
-    console.warn(`\nUnknown producedIn:`);
-    for (const substring of substrings) {
-      console.warn(substring);
-    }
-    return "desc-unknown";
-  }
 }
 
 function transformString(input) {
