@@ -13,6 +13,8 @@ describe('ProdactionStatisticsComponent', () => {
     className: 'Desc_CircuitBoard_C',
     displayName: 'Circuit Board',
     description: 'Advanced electronics component',
+    stackSize: 'SS_MEDIUM',
+    sinkPoints: 2,
   };
 
   beforeEach(async () => {

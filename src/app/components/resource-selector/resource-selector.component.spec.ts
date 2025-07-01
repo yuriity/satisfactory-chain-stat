@@ -18,16 +18,22 @@ describe('ResourceSelectorComponent', () => {
       className: 'Desc_IronOre_C',
       displayName: 'Iron Ore',
       description: 'Raw material for iron production.',
+      stackSize: 'SS_MEDIUM',
+      sinkPoints: 2,
     },
     {
       className: 'Desc_CopperOre_C',
       displayName: 'Copper Ore',
       description: 'Raw material for copper production.',
+      stackSize: 'SS_MEDIUM',
+      sinkPoints: 3,
     },
     {
       className: 'Desc_Coal_C',
       displayName: 'Coal',
       description: 'Raw material for steel production.',
+      stackSize: 'SS_MEDIUM',
+      sinkPoints: 4,
     },
   ];
 

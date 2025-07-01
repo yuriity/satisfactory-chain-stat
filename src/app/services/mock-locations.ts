@@ -1,4 +1,4 @@
-import { Resource, getSmallIconUrl, getLargeIconUrl } from '../models/resource';
+import { Resource } from '../models/resource';
 import { Location } from '../models/location';
 
 export const RawQuartzResource: Resource = {
@@ -6,6 +6,8 @@ export const RawQuartzResource: Resource = {
   displayName: 'Raw Quartz',
   description:
     'Can be processed into Quartz Crystals and Silica, which both offer a variety of applications.',
+  stackSize: 'SS_MEDIUM',
+  sinkPoints: 15,
 };
 
 export const LimestoneResource: Resource = {
@@ -13,6 +15,8 @@ export const LimestoneResource: Resource = {
   displayName: 'Limestone',
   description:
     'Used for crafting. A basic resource primarily used for stable Foundations.',
+  stackSize: 'SS_MEDIUM',
+  sinkPoints: 2,
 };
 
 export const SilicaResource: Resource = {
@@ -20,6 +24,8 @@ export const SilicaResource: Resource = {
   displayName: 'Silica',
   description:
     'Derived from Raw Quartz, Silica is a key component in electronics and construction materials.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 20,
 };
 
 export const CrudeOilResource: Resource = {
@@ -27,6 +33,8 @@ export const CrudeOilResource: Resource = {
   displayName: 'Crude Oil',
   description:
     'Refined into all kinds of Oil-based resources, like Fuel and Plastic.',
+  stackSize: 'SS_FLUID',
+  sinkPoints: 30,
 };
 
 export const PlasticResource: Resource = {
@@ -34,6 +42,8 @@ export const PlasticResource: Resource = {
   displayName: 'Plastic',
   description:
     'Versatile and easy to manufacture, Plastic is used in a wide range of products from packaging to electronics.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 75,
 };
 
 export const CircuitBoardResource: Resource = {
@@ -41,6 +51,8 @@ export const CircuitBoardResource: Resource = {
   displayName: 'Circuit Board',
   description:
     'Advanced electronics component used in various devices, essential for modern technology.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 696,
 };
 
 export const LOCATIONS: Location[] = [

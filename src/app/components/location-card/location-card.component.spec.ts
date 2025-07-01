@@ -27,11 +27,15 @@ describe('LocationCardComponent', () => {
       className: 'Desc_IronIngot_C',
       displayName: 'Iron Ingot',
       description: 'Iron in bar form. Valuable for crafting.',
+      stackSize: 'SS_MEDIUM',
+      sinkPoints: 2,
     };
     mockResource2 = {
       className: 'Desc_IronPlate_C',
       displayName: 'Iron Plate',
       description: 'Iron Plates are used for crafting.',
+      stackSize: 'SS_MEDIUM',
+      sinkPoints: 2,
     };
 
     // Create mock location

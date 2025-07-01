@@ -2,6 +2,8 @@ export interface Resource {
   readonly className: string;
   readonly displayName: string;
   readonly description: string;
+  readonly stackSize: string;
+  readonly sinkPoints: number;
 }
 
 export function getSmallIconUrl(resource: Resource): string {
