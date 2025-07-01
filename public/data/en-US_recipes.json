@@ -9,10 +9,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-ironplate-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-ironplate-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -27,10 +29,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironrod-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ironrod-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -45,10 +49,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ironingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-smeltermk1-c",
     "techTier": 0
@@ -75,10 +81,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-rocketfuel-c",
-      "amount": 6000
-    },
+    "products": [
+      {
+        "className": "desc-rocketfuel-c",
+        "amount": 6000
+      },
+      {
+        "className": "desc-compactedcoal-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -97,10 +109,16 @@
         "amount": 1000
       }
     ],
-    "product": {
-      "className": "desc-rocketfuel-c",
-      "amount": 10000
-    },
+    "products": [
+      {
+        "className": "desc-rocketfuel-c",
+        "amount": 10000
+      },
+      {
+        "className": "desc-compactedcoal-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-blender-c",
     "techTier": 3
@@ -119,10 +137,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-packagedrocketfuel-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-packagedrocketfuel-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 3
@@ -137,10 +157,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-rocketfuel-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-rocketfuel-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-gastank-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 3
@@ -159,10 +185,16 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-ionizedfuel-c",
-      "amount": 10000
-    },
+    "products": [
+      {
+        "className": "desc-ionizedfuel-c",
+        "amount": 10000
+      },
+      {
+        "className": "desc-compactedcoal-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-converter-c",
     "techTier": 0
@@ -177,10 +209,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-darkenergy-c",
-      "amount": 10000
-    },
+    "products": [
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 10000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -192,10 +226,12 @@
     "ingredients": [
       ""
     ],
-    "product": {
-      "className": "desc-quantumenergy-c",
-      "amount": 10000
-    },
+    "products": [
+      {
+        "className": "desc-quantumenergy-c",
+        "amount": 10000
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -214,10 +250,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-darkmatter-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-darkmatter-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 9
@@ -244,10 +282,16 @@
         "amount": 25000
       }
     ],
-    "product": {
-      "className": "desc-quantumoscillator-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-quantumoscillator-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 25000
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 9
@@ -274,10 +318,16 @@
         "amount": 25000
       }
     ],
-    "product": {
-      "className": "desc-temporalprocessor-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-temporalprocessor-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 25000
+      }
+    ],
     "manufactoringDuration": 20,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 9
@@ -304,10 +354,16 @@
         "amount": 25000
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-12-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-12-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 25000
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 9
@@ -326,10 +382,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ionizedfuel-c",
-      "amount": 16000
-    },
+    "products": [
+      {
+        "className": "desc-ionizedfuel-c",
+        "amount": 16000
+      },
+      {
+        "className": "desc-compactedcoal-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 3
@@ -348,10 +410,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedionizedfuel-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedionizedfuel-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 3
@@ -366,10 +430,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-ionizedfuel-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-ionizedfuel-c",
+        "amount": 4000
+      },
+      {
+        "className": "desc-gastank-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 3
@@ -388,10 +458,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -414,10 +486,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-samfluctuator-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-samfluctuator-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -432,10 +506,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ficsitemesh-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-ficsitemesh-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 9
@@ -454,10 +530,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-ficsiteingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ficsiteingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -472,10 +550,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-timecrystal-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-timecrystal-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 10,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -490,10 +570,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 9
@@ -508,10 +590,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-samingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-samingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -534,10 +618,12 @@
         "amount": 20000
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-10-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-10-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-blender-c",
     "techTier": 9
@@ -556,10 +642,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-ficsiteingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ficsiteingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -578,10 +666,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-ficsiteingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ficsiteingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -600,10 +690,12 @@
         "amount": 15
       }
     ],
-    "product": {
-      "className": "desc-orebauxite-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-orebauxite-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -622,10 +714,12 @@
         "amount": 18
       }
     ],
-    "product": {
-      "className": "desc-orebauxite-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-orebauxite-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -644,10 +738,12 @@
         "amount": 15
       }
     ],
-    "product": {
-      "className": "desc-oregold-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-oregold-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -666,10 +762,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-oregold-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-oregold-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -688,10 +786,12 @@
         "amount": 18
       }
     ],
-    "product": {
-      "className": "desc-coal-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-coal-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -710,10 +810,12 @@
         "amount": 36
       }
     ],
-    "product": {
-      "className": "desc-coal-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-coal-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -732,10 +834,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-orecopper-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-orecopper-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -754,10 +858,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-orecopper-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-orecopper-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -776,10 +882,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-oreiron-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-oreiron-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -798,10 +906,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-stone-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-stone-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -820,10 +930,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-nitrogengas-c",
-      "amount": 12000
-    },
+    "products": [
+      {
+        "className": "desc-nitrogengas-c",
+        "amount": 12000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -842,10 +954,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-nitrogengas-c",
-      "amount": 12000
-    },
+    "products": [
+      {
+        "className": "desc-nitrogengas-c",
+        "amount": 12000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -864,10 +978,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-rawquartz-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-rawquartz-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -886,10 +1002,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-rawquartz-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-rawquartz-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -908,10 +1026,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-sulfur-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-sulfur-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -930,10 +1050,12 @@
         "amount": 30
       }
     ],
-    "product": {
-      "className": "desc-sulfur-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-sulfur-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -952,10 +1074,12 @@
         "amount": 48
       }
     ],
-    "product": {
-      "className": "desc-oreuranium-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-oreuranium-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-converter-c",
     "techTier": 9
@@ -974,10 +1098,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-liquidturbofuel-c",
-      "amount": 5000
-    },
+    "products": [
+      {
+        "className": "desc-liquidturbofuel-c",
+        "amount": 5000
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 3
@@ -996,10 +1122,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-turbofuel-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-turbofuel-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-packager-c",
     "techTier": 0
@@ -1014,10 +1142,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-liquidturbofuel-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-liquidturbofuel-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-packager-c",
     "techTier": 0
@@ -1032,10 +1166,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-coal-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-coal-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -1050,10 +1186,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-coal-c",
-      "amount": 6
-    },
+    "products": [
+      {
+        "className": "desc-coal-c",
+        "amount": 6
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -1072,10 +1210,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-compactedcoal-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-compactedcoal-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -1094,10 +1234,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-circuitboard-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-circuitboard-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -1112,10 +1254,16 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-liquidfuel-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-liquidfuel-c",
+        "amount": 4000
+      },
+      {
+        "className": "desc-polymerresin-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1130,10 +1278,12 @@
         "amount": 4000
       }
     ],
-    "product": {
-      "className": "desc-petroleumcoke-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-petroleumcoke-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1148,10 +1298,16 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-plastic-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-plastic-c",
+        "amount": 2
+      },
+      {
+        "className": "desc-heavyoilresidue-c",
+        "amount": 1000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1166,10 +1322,16 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-rubber-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-rubber-c",
+        "amount": 2
+      },
+      {
+        "className": "desc-heavyoilresidue-c",
+        "amount": 2000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1184,10 +1346,12 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-liquidfuel-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-liquidfuel-c",
+        "amount": 4000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1206,10 +1370,12 @@
         "amount": 2000
       }
     ],
-    "product": {
-      "className": "desc-plastic-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-plastic-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1228,10 +1394,12 @@
         "amount": 4000
       }
     ],
-    "product": {
-      "className": "desc-rubber-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-rubber-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1250,10 +1418,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-converter-c",
     "techTier": 0
@@ -1268,10 +1438,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -1286,10 +1458,12 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -1308,10 +1482,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-diamond-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-diamond-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -1330,10 +1506,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-darkmatter-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-darkmatter-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -1348,10 +1526,12 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-darkmatter-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-darkmatter-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -1370,10 +1550,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-cement-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-cement-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1392,10 +1574,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-liquidturbofuel-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-liquidturbofuel-c",
+        "amount": 4000
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1410,10 +1594,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironrod-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-ironrod-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 5,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -1428,10 +1614,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-steelplate-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-steelplate-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -1446,10 +1634,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-steelpipe-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-steelpipe-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -1468,10 +1658,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-steelingot-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-steelingot-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 3
@@ -1490,10 +1682,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-2-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-2-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -1508,10 +1702,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-fluidcanister-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -1526,10 +1722,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-fluidcanister-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 5
@@ -1548,10 +1746,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-fuel-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-fuel-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1570,10 +1770,12 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-liquidbiofuel-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-liquidbiofuel-c",
+        "amount": 4000
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -1592,10 +1794,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedbiofuel-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedbiofuel-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1614,10 +1818,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedoil-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedoil-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1636,10 +1842,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedoilresidue-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedoilresidue-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1658,10 +1866,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedwater-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedwater-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1676,10 +1886,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-liquidbiofuel-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-liquidbiofuel-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1694,10 +1910,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-liquidfuel-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-liquidfuel-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1712,10 +1934,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-liquidoil-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-liquidoil-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1730,10 +1958,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-heavyoilresidue-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-heavyoilresidue-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1748,10 +1982,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-water-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-water-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 5
@@ -1770,10 +2010,12 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-coppersheet-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-coppersheet-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1792,10 +2034,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-cement-c",
-      "amount": 9
-    },
+    "products": [
+      {
+        "className": "desc-cement-c",
+        "amount": 9
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -1814,10 +2058,12 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-rubber-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-rubber-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1836,10 +2082,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-quartzcrystal-c",
-      "amount": 7
-    },
+    "products": [
+      {
+        "className": "desc-quartzcrystal-c",
+        "amount": 7
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1854,10 +2102,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-quartzcrystal-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-quartzcrystal-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 7
@@ -1876,10 +2126,12 @@
         "amount": 4000
       }
     ],
-    "product": {
-      "className": "desc-ironingot-c",
-      "amount": 13
-    },
+    "products": [
+      {
+        "className": "desc-ironingot-c",
+        "amount": 13
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1898,10 +2150,12 @@
         "amount": 4000
       }
     ],
-    "product": {
-      "className": "desc-copperingot-c",
-      "amount": 15
-    },
+    "products": [
+      {
+        "className": "desc-copperingot-c",
+        "amount": 15
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1920,10 +2174,12 @@
         "amount": 2000
       }
     ],
-    "product": {
-      "className": "desc-goldingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-goldingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 5,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -1938,10 +2194,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-aluminumingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-aluminumingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-smeltermk1-c",
     "techTier": 0
@@ -1956,10 +2214,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-aluminumcasing-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-aluminumcasing-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-constructormk1-c",
     "techTier": 7
@@ -1978,10 +2238,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-aluminumplate-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-aluminumplate-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 7
@@ -2000,10 +2262,16 @@
         "amount": 18000
       }
     ],
-    "product": {
-      "className": "desc-aluminasolution-c",
-      "amount": 12000
-    },
+    "products": [
+      {
+        "className": "desc-aluminasolution-c",
+        "amount": 12000
+      },
+      {
+        "className": "desc-silica-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 7
@@ -2022,10 +2290,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-aluminumscrap-c",
-      "amount": 6
-    },
+    "products": [
+      {
+        "className": "desc-aluminumscrap-c",
+        "amount": 6
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 2000
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 7
@@ -2044,10 +2318,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedalumina-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedalumina-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 7
@@ -2066,10 +2342,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-aluminumingot-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-aluminumingot-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 7
@@ -2084,10 +2362,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-silica-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-silica-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -2110,10 +2390,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-crystaloscillator-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-crystaloscillator-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -2128,10 +2410,16 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-aluminasolution-c",
-      "amount": 2000
-    },
+    "products": [
+      {
+        "className": "desc-aluminasolution-c",
+        "amount": 2000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 7
@@ -2146,10 +2434,16 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-polymerresin-c",
-      "amount": 13
-    },
+    "products": [
+      {
+        "className": "desc-polymerresin-c",
+        "amount": 13
+      },
+      {
+        "className": "desc-heavyoilresidue-c",
+        "amount": 2000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -2172,10 +2466,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-1-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-1-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -2198,10 +2494,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-3-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-3-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -2220,10 +2518,12 @@
         "amount": 6
       }
     ],
-    "product": {
-      "className": "desc-steelplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-steelplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 10,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -2242,10 +2542,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-motor-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-motor-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -2264,10 +2566,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-stator-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-stator-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -2286,10 +2590,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-3-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-3-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -2308,10 +2614,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-circuitboardhighspeed-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-circuitboardhighspeed-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 7
@@ -2326,10 +2634,16 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-heavyoilresidue-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-heavyoilresidue-c",
+        "amount": 4000
+      },
+      {
+        "className": "desc-polymerresin-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -2356,10 +2670,12 @@
         "amount": 104
       }
     ],
-    "product": {
-      "className": "desc-modularframeheavy-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-modularframeheavy-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -2382,10 +2698,12 @@
         "amount": 16
       }
     ],
-    "product": {
-      "className": "desc-computer-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-computer-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 6
@@ -2412,10 +2730,12 @@
         "amount": 120
       }
     ],
-    "product": {
-      "className": "desc-modularframeheavy-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-modularframeheavy-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 30,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 6
@@ -2438,10 +2758,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-4-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-4-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 6
@@ -2468,10 +2790,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-5-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-5-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 6
@@ -2490,10 +2814,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-wire-c",
-      "amount": 30
-    },
+    "products": [
+      {
+        "className": "desc-wire-c",
+        "amount": 30
+      }
+    ],
     "manufactoringDuration": 20,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2516,10 +2842,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-2-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-2-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -2538,10 +2866,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-circuitboard-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-circuitboard-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2560,10 +2890,16 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-aluminumscrap-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-aluminumscrap-c",
+        "amount": 20
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 7000
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -2582,10 +2918,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-fuel-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-fuel-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -2604,10 +2942,12 @@
         "amount": 52
       }
     ],
-    "product": {
-      "className": "desc-rotor-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-rotor-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2626,10 +2966,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-modularframe-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-modularframe-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 2
@@ -2648,10 +2990,12 @@
         "amount": 25
       }
     ],
-    "product": {
-      "className": "desc-rotor-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-rotor-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 2
@@ -2666,10 +3010,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-coppersheet-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-coppersheet-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 2
@@ -2688,10 +3034,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-1-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-1-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 30,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 2
@@ -2710,10 +3058,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-copperingot-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-copperingot-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -2732,10 +3082,12 @@
         "amount": 15
       }
     ],
-    "product": {
-      "className": "desc-steelingot-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-steelingot-c",
+        "amount": 20
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -2754,10 +3106,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironplate-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-ironplate-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2776,10 +3130,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-fluidcanister-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2798,10 +3154,12 @@
         "amount": 2000
       }
     ],
-    "product": {
-      "className": "desc-cable-c",
-      "amount": 9
-    },
+    "products": [
+      {
+        "className": "desc-cable-c",
+        "amount": 9
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -2820,10 +3178,12 @@
         "amount": 56
       }
     ],
-    "product": {
-      "className": "desc-modularframe-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-modularframe-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2842,10 +3202,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ironplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -2872,10 +3234,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-motorlightweight-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-motorlightweight-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -2894,10 +3258,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-plutoniumcell-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-plutoniumcell-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 8
@@ -2916,10 +3282,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-pressureconversioncube-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-pressureconversioncube-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 8
@@ -2942,10 +3310,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-nitricacid-c",
-      "amount": 3000
-    },
+    "products": [
+      {
+        "className": "desc-nitricacid-c",
+        "amount": 3000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-blender-c",
     "techTier": 8
@@ -2972,10 +3342,16 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-nonfissibleuranium-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-nonfissibleuranium-c",
+        "amount": 20
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 6000
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-blender-c",
     "techTier": 8
@@ -2990,10 +3366,12 @@
         "amount": 30
       }
     ],
-    "product": {
-      "className": "desc-copperdust-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-copperdust-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 8
@@ -3012,10 +3390,12 @@
         "amount": 25
       }
     ],
-    "product": {
-      "className": "desc-plutoniumpellet-c",
-      "amount": 30
-    },
+    "products": [
+      {
+        "className": "desc-plutoniumpellet-c",
+        "amount": 30
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 8
@@ -3042,10 +3422,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-plutoniumfuelrod-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-plutoniumfuelrod-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 240,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 8
@@ -3064,10 +3446,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-packagednitricacid-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-packagednitricacid-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-packager-c",
     "techTier": 8
@@ -3086,10 +3470,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-9-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-9-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 8
@@ -3104,10 +3490,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-nitricacid-c",
-      "amount": 1000
-    },
+    "products": [
+      {
+        "className": "desc-nitricacid-c",
+        "amount": 1000
+      },
+      {
+        "className": "desc-gastank-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 8
@@ -3134,10 +3526,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-liquidturbofuel-c",
-      "amount": 6000
-    },
+    "products": [
+      {
+        "className": "desc-liquidturbofuel-c",
+        "amount": 6000
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3160,10 +3554,16 @@
         "amount": 8000
       }
     ],
-    "product": {
-      "className": "desc-uraniumcell-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-uraniumcell-c",
+        "amount": 5
+      },
+      {
+        "className": "desc-sulfuricacid-c",
+        "amount": 2000
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-blender-c",
     "techTier": 8
@@ -3190,10 +3590,12 @@
         "amount": 25000
       }
     ],
-    "product": {
-      "className": "desc-coolingsystem-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-coolingsystem-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 10,
     "producedIn": "desc-blender-c",
     "techTier": 8
@@ -3216,10 +3618,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-battery-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-battery-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 1500
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-blender-c",
     "techTier": 7
@@ -3246,10 +3654,12 @@
         "amount": 28
       }
     ],
-    "product": {
-      "className": "desc-computersuper-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-computersuper-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -3272,10 +3682,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-modularframelightweight-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-modularframelightweight-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 48,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -3294,10 +3706,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-sulfuricacid-c",
-      "amount": 5000
-    },
+    "products": [
+      {
+        "className": "desc-sulfuricacid-c",
+        "amount": 5000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 7
@@ -3316,10 +3730,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-packagedsulfuricacid-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-packagedsulfuricacid-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-packager-c",
     "techTier": 7
@@ -3338,10 +3754,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-7-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-7-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 80,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 7
@@ -3364,10 +3782,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-highspeedconnector-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-highspeedconnector-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -3382,10 +3802,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-sulfuricacid-c",
-      "amount": 1000
-    },
+    "products": [
+      {
+        "className": "desc-sulfuricacid-c",
+        "amount": 1000
+      },
+      {
+        "className": "desc-fluidcanister-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 7
@@ -3412,10 +3838,12 @@
         "amount": 25
       }
     ],
-    "product": {
-      "className": "desc-computersuper-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-computersuper-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 25,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -3434,10 +3862,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-electromagneticcontrolrod-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-electromagneticcontrolrod-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 30,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 8
@@ -3460,10 +3890,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-nuclearfuelrod-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-nuclearfuelrod-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 150,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 8
@@ -3482,10 +3914,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-6-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-6-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 8
@@ -3504,10 +3938,12 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-aluminasolution-c",
-      "amount": 12000
-    },
+    "products": [
+      {
+        "className": "desc-aluminasolution-c",
+        "amount": 12000
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -3534,10 +3970,12 @@
         "amount": 30
       }
     ],
-    "product": {
-      "className": "desc-modularframelightweight-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-modularframelightweight-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 40,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -3556,10 +3994,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-plutoniumfuelrod-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-plutoniumfuelrod-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -3578,10 +4018,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-computersuper-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-computersuper-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 20,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -3600,10 +4042,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-aluminumplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-aluminumplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 8
@@ -3626,10 +4070,12 @@
         "amount": 25000
       }
     ],
-    "product": {
-      "className": "desc-modularframefused-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-modularframefused-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 40,
     "producedIn": "desc-blender-c",
     "techTier": 8
@@ -3644,10 +4090,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-gastank-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-gastank-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-constructormk1-c",
     "techTier": 8
@@ -3666,10 +4114,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-packagednitrogengas-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-packagednitrogengas-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 8
@@ -3684,10 +4134,16 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-nitrogengas-c",
-      "amount": 4000
-    },
+    "products": [
+      {
+        "className": "desc-nitrogengas-c",
+        "amount": 4000
+      },
+      {
+        "className": "desc-gastank-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 1,
     "producedIn": "desc-packager-c",
     "techTier": 8
@@ -3714,10 +4170,16 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-aluminumscrap-c",
-      "amount": 30
-    },
+    "products": [
+      {
+        "className": "desc-aluminumscrap-c",
+        "amount": 30
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 5000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3736,10 +4198,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-plutoniumcell-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-plutoniumcell-c",
+        "amount": 20
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 0
@@ -3766,10 +4230,12 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-modularframefused-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-modularframefused-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 20,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3796,10 +4262,16 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-nonfissibleuranium-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-nonfissibleuranium-c",
+        "amount": 20
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 8000
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3818,10 +4290,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-motor-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-motor-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -3840,10 +4314,12 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-liquidfuel-c",
-      "amount": 10000
-    },
+    "products": [
+      {
+        "className": "desc-liquidfuel-c",
+        "amount": 10000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3866,10 +4342,12 @@
         "amount": 24000
       }
     ],
-    "product": {
-      "className": "desc-coolingsystem-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-coolingsystem-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -3896,10 +4374,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-battery-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-battery-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 0
@@ -3918,10 +4398,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "bp-itemdescriptorportableminer-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "bp-itemdescriptorportableminer-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -3940,10 +4422,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-aluminumcasing-c",
-      "amount": 15
-    },
+    "products": [
+      {
+        "className": "desc-aluminumcasing-c",
+        "amount": 15
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -3962,10 +4446,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-steelpipe-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-steelpipe-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -3980,10 +4466,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-steelpipe-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-steelpipe-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -4002,10 +4490,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironplate-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-ironplate-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4024,10 +4514,12 @@
         "amount": 16
       }
     ],
-    "product": {
-      "className": "desc-steelplate-c",
-      "amount": 9
-    },
+    "products": [
+      {
+        "className": "desc-steelplate-c",
+        "amount": 9
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4042,10 +4534,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-steelplate-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-steelplate-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -4060,10 +4554,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironrod-c",
-      "amount": 7
-    },
+    "products": [
+      {
+        "className": "desc-ironrod-c",
+        "amount": 7
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -4082,10 +4578,12 @@
         "amount": 7
       }
     ],
-    "product": {
-      "className": "desc-circuitboardhighspeed-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-circuitboardhighspeed-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -4108,10 +4606,16 @@
         "amount": 10000
       }
     ],
-    "product": {
-      "className": "desc-silica-c",
-      "amount": 27
-    },
+    "products": [
+      {
+        "className": "desc-silica-c",
+        "amount": 27
+      },
+      {
+        "className": "desc-water-c",
+        "amount": 8000
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-blender-c",
     "techTier": 0
@@ -4130,10 +4634,16 @@
         "amount": 2000
       }
     ],
-    "product": {
-      "className": "desc-quartzcrystal-c",
-      "amount": 15
-    },
+    "products": [
+      {
+        "className": "desc-quartzcrystal-c",
+        "amount": 15
+      },
+      {
+        "className": "desc-dissolvedsilica-c",
+        "amount": 12000
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -4152,10 +4662,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-quartzcrystal-c",
-      "amount": 18
-    },
+    "products": [
+      {
+        "className": "desc-quartzcrystal-c",
+        "amount": 18
+      }
+    ],
     "manufactoringDuration": 20,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4174,10 +4686,12 @@
         "amount": 1000
       }
     ],
-    "product": {
-      "className": "desc-ironingot-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-ironingot-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -4196,10 +4710,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-ironingot-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-ironingot-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4218,10 +4734,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-copperingot-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-copperingot-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4240,10 +4758,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-copperingot-c",
-      "amount": 22
-    },
+    "products": [
+      {
+        "className": "desc-copperingot-c",
+        "amount": 22
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -4262,10 +4782,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-goldingot-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-goldingot-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 0
@@ -4284,10 +4806,12 @@
         "amount": 5000
       }
     ],
-    "product": {
-      "className": "desc-goldingot-c",
-      "amount": 6
-    },
+    "products": [
+      {
+        "className": "desc-goldingot-c",
+        "amount": 6
+      }
+    ],
     "manufactoringDuration": 10,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 0
@@ -4302,10 +4826,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-wire-c",
-      "amount": 8
-    },
+    "products": [
+      {
+        "className": "desc-wire-c",
+        "amount": 8
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -4320,10 +4846,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-wire-c",
-      "amount": 9
-    },
+    "products": [
+      {
+        "className": "desc-wire-c",
+        "amount": 9
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-constructormk1-c",
     "techTier": 1
@@ -4350,10 +4878,12 @@
         "amount": 15
       }
     ],
-    "product": {
-      "className": "desc-uraniumcell-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-uraniumcell-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -4368,10 +4898,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-goldingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-goldingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-smeltermk1-c",
     "techTier": 5
@@ -4398,10 +4930,12 @@
         "amount": 7
       }
     ],
-    "product": {
-      "className": "desc-motorlightweight-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-motorlightweight-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 64,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -4428,10 +4962,12 @@
         "amount": 24
       }
     ],
-    "product": {
-      "className": "desc-motorlightweight-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-motorlightweight-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 8
@@ -4458,10 +4994,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-8-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-8-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 8
@@ -4480,10 +5018,12 @@
         "amount": 15
       }
     ],
-    "product": {
-      "className": "desc-stator-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-stator-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4502,10 +5042,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-silica-c",
-      "amount": 7
-    },
+    "products": [
+      {
+        "className": "desc-silica-c",
+        "amount": 7
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4520,10 +5062,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironscrew-c",
-      "amount": 52
-    },
+    "products": [
+      {
+        "className": "desc-ironscrew-c",
+        "amount": 52
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-constructormk1-c",
     "techTier": 4
@@ -4538,10 +5082,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-ironscrew-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-ironscrew-c",
+        "amount": 20
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-constructormk1-c",
     "techTier": 1
@@ -4560,10 +5106,12 @@
         "amount": 6
       }
     ],
-    "product": {
-      "className": "desc-rotor-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-rotor-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4582,10 +5130,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-steelplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-steelplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4604,10 +5154,12 @@
         "amount": 20
       }
     ],
-    "product": {
-      "className": "desc-ironplatereinforced-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-ironplatereinforced-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 2
@@ -4626,10 +5178,12 @@
         "amount": 50
       }
     ],
-    "product": {
-      "className": "desc-ironplatereinforced-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-ironplatereinforced-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 2
@@ -4652,10 +5206,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-modularframelightweight-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-modularframelightweight-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -4674,10 +5230,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-highspeedwire-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-highspeedwire-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -4696,10 +5254,12 @@
         "amount": 6000
       }
     ],
-    "product": {
-      "className": "desc-plastic-c",
-      "amount": 12
-    },
+    "products": [
+      {
+        "className": "desc-plastic-c",
+        "amount": 12
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 5
@@ -4726,10 +5286,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-nuclearfuelrod-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-nuclearfuelrod-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 300,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -4752,10 +5314,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-motor-c",
-      "amount": 6
-    },
+    "products": [
+      {
+        "className": "desc-motor-c",
+        "amount": 6
+      }
+    ],
     "manufactoringDuration": 48,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 4
@@ -4774,10 +5338,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-modularframe-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-modularframe-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4796,10 +5362,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-steelingot-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-steelingot-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 4
@@ -4818,10 +5386,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-steelingot-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-steelingot-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 4
@@ -4840,10 +5410,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-ironingot-c",
-      "amount": 15
-    },
+    "products": [
+      {
+        "className": "desc-ironingot-c",
+        "amount": 15
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-foundrymk1-c",
     "techTier": 1
@@ -4866,10 +5438,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-highspeedconnector-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-highspeedconnector-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 40,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 5
@@ -4896,10 +5470,12 @@
         "amount": 22
       }
     ],
-    "product": {
-      "className": "desc-modularframeheavy-c",
-      "amount": 3
-    },
+    "products": [
+      {
+        "className": "desc-modularframeheavy-c",
+        "amount": 3
+      }
+    ],
     "manufactoringDuration": 64,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 4
@@ -4918,10 +5494,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-aluminumplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-aluminumplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 7
@@ -4940,10 +5518,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-gunpowder-c",
-      "amount": 6
-    },
+    "products": [
+      {
+        "className": "desc-gunpowder-c",
+        "amount": 6
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -4962,10 +5542,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-electromagneticcontrolrod-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-electromagneticcontrolrod-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 15,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 7
@@ -4988,10 +5570,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-crystaloscillator-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-crystaloscillator-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 32,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 5
@@ -5010,10 +5594,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-cement-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-cement-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 4
@@ -5032,10 +5618,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-computer-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-computer-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 36,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -5058,10 +5646,12 @@
         "amount": 6
       }
     ],
-    "product": {
-      "className": "desc-computer-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-computer-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 5
@@ -5080,10 +5670,12 @@
         "amount": 30
       }
     ],
-    "product": {
-      "className": "desc-circuitboard-c",
-      "amount": 7
-    },
+    "products": [
+      {
+        "className": "desc-circuitboard-c",
+        "amount": 7
+      }
+    ],
     "manufactoringDuration": 48,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -5102,10 +5694,12 @@
         "amount": 11
       }
     ],
-    "product": {
-      "className": "desc-circuitboard-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-circuitboard-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -5124,10 +5718,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-cable-c",
-      "amount": 11
-    },
+    "products": [
+      {
+        "className": "desc-cable-c",
+        "amount": 11
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -5146,10 +5742,12 @@
         "amount": 6
       }
     ],
-    "product": {
-      "className": "desc-cable-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-cable-c",
+        "amount": 20
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 5
@@ -5172,10 +5770,12 @@
         "amount": 20000
       }
     ],
-    "product": {
-      "className": "desc-ficsonium-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ficsonium-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-hadroncollider-c",
     "techTier": 9
@@ -5202,10 +5802,16 @@
         "amount": 20000
       }
     ],
-    "product": {
-      "className": "desc-ficsoniumfuelrod-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ficsoniumfuelrod-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 20000
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 9
@@ -5232,10 +5838,12 @@
         "amount": 200
       }
     ],
-    "product": {
-      "className": "desc-singularitycell-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-singularitycell-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 9
@@ -5262,10 +5870,12 @@
         "amount": 40
       }
     ],
-    "product": {
-      "className": "desc-spaceelevatorpart-11-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spaceelevatorpart-11-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 9
@@ -5288,10 +5898,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-hazmatfilter-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-hazmatfilter-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 16,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 7
@@ -5306,10 +5918,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-highspeedwire-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-highspeedwire-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 5,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5324,10 +5938,12 @@
         "amount": 8
       }
     ],
-    "product": {
-      "className": "desc-biofuel-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-biofuel-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 2
@@ -5342,10 +5958,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-alienprotein-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-alienprotein-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5360,10 +5978,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-alienprotein-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-alienprotein-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5378,10 +5998,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-genericbiomass-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-genericbiomass-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5396,10 +6018,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-crystalshard-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-crystalshard-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5418,10 +6042,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-gunpowder-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-gunpowder-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5436,10 +6062,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-alienprotein-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-alienprotein-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5454,10 +6082,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-alienprotein-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-alienprotein-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 3,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5472,10 +6102,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-aliendnacapsule-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-aliendnacapsule-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5490,10 +6122,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-genericbiomass-c",
-      "amount": 100
-    },
+    "products": [
+      {
+        "className": "desc-genericbiomass-c",
+        "amount": 100
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5508,10 +6142,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-spikedrebar-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-spikedrebar-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5538,10 +6174,16 @@
         "amount": 24000
       }
     ],
-    "product": {
-      "className": "desc-alienpowerfuel-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-alienpowerfuel-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 24000
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 0
@@ -5560,10 +6202,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-cartridgesmartprojectile-c",
-      "amount": 10
-    },
+    "products": [
+      {
+        "className": "desc-cartridgesmartprojectile-c",
+        "amount": 10
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5582,10 +6226,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-rebar-stunshot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-rebar-stunshot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5608,10 +6254,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-filter-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-filter-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 8,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -5630,10 +6278,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-nobeliskgas-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-nobeliskgas-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5652,10 +6302,12 @@
         "amount": 1000
       }
     ],
-    "product": {
-      "className": "desc-fabric-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-fabric-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 3
@@ -5674,10 +6326,12 @@
         "amount": 5
       }
     ],
-    "product": {
-      "className": "desc-fabric-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-fabric-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5704,10 +6358,16 @@
         "amount": 12000
       }
     ],
-    "product": {
-      "className": "desc-crystalshard-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-crystalshard-c",
+        "amount": 1
+      },
+      {
+        "className": "desc-darkenergy-c",
+        "amount": 12000
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-quantumencoder-c",
     "techTier": 3
@@ -5722,10 +6382,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-crystalshard-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-crystalshard-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5740,10 +6402,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-crystalshard-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-crystalshard-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-constructormk1-c",
     "techTier": 3
@@ -5762,10 +6426,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-nobeliskshockwave-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-nobeliskshockwave-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 60,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5784,10 +6450,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-rebar-spreadshot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-rebar-spreadshot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5810,10 +6478,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-cartridgechaos-c",
-      "amount": 50
-    },
+    "products": [
+      {
+        "className": "desc-cartridgechaos-c",
+        "amount": 50
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -5836,10 +6506,12 @@
         "amount": 3000
       }
     ],
-    "product": {
-      "className": "desc-cartridgechaos-c",
-      "amount": 50
-    },
+    "products": [
+      {
+        "className": "desc-cartridgechaos-c",
+        "amount": 50
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-blender-c",
     "techTier": 3
@@ -5866,10 +6538,12 @@
         "amount": 6
       }
     ],
-    "product": {
-      "className": "desc-nobelisknuke-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-nobelisknuke-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 120,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -5888,10 +6562,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-cartridgestandard-c",
-      "amount": 15
-    },
+    "products": [
+      {
+        "className": "desc-cartridgestandard-c",
+        "amount": 15
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5914,10 +6590,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-rebar-explosive-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-rebar-explosive-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-manufacturermk1-c",
     "techTier": 3
@@ -5936,10 +6614,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-nobeliskcluster-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-nobeliskcluster-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 24,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5958,10 +6638,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-nobeliskexplosive-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-nobeliskexplosive-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 3
@@ -5980,10 +6662,12 @@
         "amount": 1000
       }
     ],
-    "product": {
-      "className": "desc-gunpowdermk2-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-gunpowdermk2-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-oilrefinery-c",
     "techTier": 3
@@ -5998,10 +6682,12 @@
         "amount": 10
       }
     ],
-    "product": {
-      "className": "desc-genericbiomass-c",
-      "amount": 5
-    },
+    "products": [
+      {
+        "className": "desc-genericbiomass-c",
+        "amount": 5
+      }
+    ],
     "manufactoringDuration": 5,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6016,10 +6702,12 @@
         "amount": 4
       }
     ],
-    "product": {
-      "className": "desc-genericbiomass-c",
-      "amount": 20
-    },
+    "products": [
+      {
+        "className": "desc-genericbiomass-c",
+        "amount": 20
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6038,10 +6726,12 @@
         "amount": 12
       }
     ],
-    "product": {
-      "className": "desc-ironplatereinforced-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-ironplatereinforced-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 12,
     "producedIn": "desc-assemblermk1-c",
     "techTier": 0
@@ -6056,10 +6746,12 @@
         "amount": 3
       }
     ],
-    "product": {
-      "className": "desc-cement-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-cement-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6074,10 +6766,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-ironscrew-c",
-      "amount": 4
-    },
+    "products": [
+      {
+        "className": "desc-ironscrew-c",
+        "amount": 4
+      }
+    ],
     "manufactoringDuration": 6,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6092,10 +6786,12 @@
         "amount": 2
       }
     ],
-    "product": {
-      "className": "desc-cable-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-cable-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6110,10 +6806,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-wire-c",
-      "amount": 2
-    },
+    "products": [
+      {
+        "className": "desc-wire-c",
+        "amount": 2
+      }
+    ],
     "manufactoringDuration": 4,
     "producedIn": "desc-constructormk1-c",
     "techTier": 0
@@ -6128,10 +6826,12 @@
         "amount": 1
       }
     ],
-    "product": {
-      "className": "desc-copperingot-c",
-      "amount": 1
-    },
+    "products": [
+      {
+        "className": "desc-copperingot-c",
+        "amount": 1
+      }
+    ],
     "manufactoringDuration": 2,
     "producedIn": "desc-smeltermk1-c",
     "techTier": 0

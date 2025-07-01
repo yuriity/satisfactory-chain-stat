@@ -156,7 +156,7 @@ function processRecipe(classItem) {
   }
   result.shortName = processShortName(classItem.FullName);
   result.ingredients = processIngradients(classItem.mIngredients);
-  result.product = processIngradients(classItem.mProduct)[0];
+  result.products = processIngradients(classItem.mProduct);
   result.manufactoringDuration = Number.parseInt(
     classItem.mManufactoringDuration
   );
