@@ -81,9 +81,20 @@ try {
     }
   }
 
+  const groupedRecipes = {};
+  for (const recipe of extractedRecipes) {
+    if (!Array.isArray(recipe.products) || recipe.products.length === 0)
+      continue;
+    const firstProduct = recipe.products[0].className;
+    if (!groupedRecipes[firstProduct]) {
+      groupedRecipes[firstProduct] = [];
+    }
+    groupedRecipes[firstProduct].push(recipe);
+  }
+
   fs.writeFileSync(
     outputFile,
-    JSON.stringify(extractedRecipes, null, 2),
+    JSON.stringify(groupedRecipes, null, 2),
     "utf-8"
   );
 
