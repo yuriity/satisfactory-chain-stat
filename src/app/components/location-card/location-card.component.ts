@@ -1,6 +1,6 @@
 import { Component, input, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Resource } from '../../models/resource';
+import { Resource, getSmallIconUrl } from '../../models/resource';
 import { Location } from '../../models/location';
 import { LocationsService } from '../../services/locations.service';
 import { ProdactionStatisticsComponent } from './prodaction-statistics/prodaction-statistics.component';
@@ -29,7 +29,7 @@ export class LocationCardComponent {
 
   // Helper method to get resource icon URL
   protected getResourceIconUrl(resource: Resource): string {
-    return resource?.getSmallIconUrl() || '';
+    return resource ? getSmallIconUrl(resource) : '';
   }
 
   // Handle edit button click

@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResourcesService } from '../../services/resources.service';
-import { Resource } from '../../models/resource';
+import { Resource, getSmallIconUrl } from '../../models/resource';
 import { debounce } from '../../utils/debounce';
 
 @Component({
@@ -47,11 +47,17 @@ export class ResourceSelectorComponent {
 
   // Computed signals
   protected isSearching = computed(() => {
-    const resource = this.selectedResource();
-    const term = this.searchTerm();
+    const searchTerm = this.searchTerm();
+    const selectedResource = this.selectedResource();
 
-    if (!resource) return term.length > 0;
-    return term !== resource.displayName && term.length > 0;
+    // Show clear button when there's a search term that doesn't match the selected resource
+    if (selectedResource) {
+      return (
+        searchTerm.length > 0 && searchTerm !== selectedResource.displayName
+      );
+    } else {
+      return searchTerm.length > 0;
+    }
   });
 
   protected showDropdown = computed(() => {
@@ -277,5 +283,10 @@ export class ResourceSelectorComponent {
 
       menuElement.scrollTop = Math.max(0, scrollTop);
     }
+  }
+
+  // Helper method to get resource icon URL
+  protected getResourceIconUrl(resource: Resource): string {
+    return getSmallIconUrl(resource);
   }
 }

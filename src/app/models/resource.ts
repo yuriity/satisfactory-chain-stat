@@ -1,19 +1,13 @@
-export class Resource {
+export interface Resource {
   readonly className: string;
   readonly displayName: string;
   readonly description: string;
+}
 
-  constructor(className: string, displayName: string, description: string) {
-    this.className = className;
-    this.displayName = displayName;
-    this.description = description;
-  }
+export function getSmallIconUrl(resource: Resource): string {
+  return `https://www.satisfactorytools.com/assets/images/items/${resource.className}_64.png`;
+}
 
-  getSmallIconUrl(): string {
-    return `https://www.satisfactorytools.com/assets/images/items/${this.className}_64.png`;
-  }
-
-  getLargeIconUrl(): string {
-    return `https://www.satisfactorytools.com/assets/images/items/${this.className}_256.png`;
-  }
+export function getLargeIconUrl(resource: Resource): string {
+  return `https://www.satisfactorytools.com/assets/images/items/${resource.className}_256.png`;
 }

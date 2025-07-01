@@ -4,7 +4,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text p-1">
         <img
-          [src]="selectedResource()!.getSmallIconUrl()"
+          [src]="getResourceIconUrl(selectedResource()!)"
           [alt]="selectedResource()!.displayName"
           width="32"
           height="32"
@@ -57,7 +57,7 @@
         [attr.data-resource-id]="resource.className"
       >
         <img
-          [src]="resource.getSmallIconUrl()"
+          [src]="getResourceIconUrl(resource)"
           [alt]="resource.displayName"
           width="32"
           height="32"

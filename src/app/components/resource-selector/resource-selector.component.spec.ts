@@ -14,17 +14,21 @@ describe('ResourceSelectorComponent', () => {
 
   // Mock resources for testing
   const mockResources: Resource[] = [
-    new Resource(
-      'Desc_IronOre_C',
-      'Iron Ore',
-      'Raw material for iron production.'
-    ),
-    new Resource(
-      'Desc_CopperOre_C',
-      'Copper Ore',
-      'Raw material for copper production.'
-    ),
-    new Resource('Desc_Coal_C', 'Coal', 'Raw material for steel production.'),
+    {
+      className: 'Desc_IronOre_C',
+      displayName: 'Iron Ore',
+      description: 'Raw material for iron production.',
+    },
+    {
+      className: 'Desc_CopperOre_C',
+      displayName: 'Copper Ore',
+      description: 'Raw material for copper production.',
+    },
+    {
+      className: 'Desc_Coal_C',
+      displayName: 'Coal',
+      description: 'Raw material for steel production.',
+    },
   ];
 
   beforeEach(async () => {

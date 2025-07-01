@@ -3,7 +3,7 @@ import { By } from '@angular/platform-browser';
 import { provideZonelessChangeDetection } from '@angular/core';
 
 import { LocationCardComponent } from './location-card.component';
-import { Resource } from '../../models/resource';
+import { Resource, getSmallIconUrl } from '../../models/resource';
 import { Location } from '../../models/location';
 import { LocationsService } from '../../services/locations.service';
 
@@ -23,16 +23,16 @@ describe('LocationCardComponent', () => {
     ]);
 
     // Create mock resources
-    mockResource1 = new Resource(
-      'Desc_IronIngot_C',
-      'Iron Ingot',
-      'Iron in bar form. Valuable for crafting.'
-    );
-    mockResource2 = new Resource(
-      'Desc_IronPlate_C',
-      'Iron Plate',
-      'Iron Plates are used for crafting.'
-    );
+    mockResource1 = {
+      className: 'Desc_IronIngot_C',
+      displayName: 'Iron Ingot',
+      description: 'Iron in bar form. Valuable for crafting.',
+    };
+    mockResource2 = {
+      className: 'Desc_IronPlate_C',
+      displayName: 'Iron Plate',
+      description: 'Iron Plates are used for crafting.',
+    };
 
     // Create mock location
     mockLocation = {
@@ -143,8 +143,7 @@ describe('LocationCardComponent', () => {
       By.css('img.resource-icon')
     );
 
-    const expectedUrl1 =
-      'https://www.satisfactorytools.com/assets/images/items/Desc_IronIngot_C_64.png';
+    const expectedUrl1 = getSmallIconUrl(mockResource1);
 
     expect(imgElements.length)
       .withContext('Should have at least 1 resource icon')

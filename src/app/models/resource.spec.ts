@@ -1,4 +1,4 @@
-import { Resource } from './resource';
+import { Resource, getSmallIconUrl, getLargeIconUrl } from './resource';
 
 describe('Resource Model', () => {
   it('should create a resource with provided values', () => {
@@ -6,7 +6,7 @@ describe('Resource Model', () => {
     const displayName = 'Iron Ore';
     const description = 'Basic building material';
 
-    const resource = new Resource(className, displayName, description);
+    const resource: Resource = { className, displayName, description };
 
     expect(resource.className).toBe(className);
     expect(resource.displayName).toBe(displayName);
@@ -14,17 +14,25 @@ describe('Resource Model', () => {
   });
 
   it('should generate correct small icon URL', () => {
-    const resource = new Resource('desc-ironore-c', 'Iron Ore', 'Description');
+    const resource: Resource = {
+      className: 'desc-ironore-c',
+      displayName: 'Iron Ore',
+      description: 'Description',
+    };
 
-    expect(resource.getSmallIconUrl()).toBe(
+    expect(getSmallIconUrl(resource)).toBe(
       'https://www.satisfactorytools.com/assets/images/items/desc-ironore-c_64.png'
     );
   });
 
   it('should generate correct large icon URL', () => {
-    const resource = new Resource('desc-ironore-c', 'Iron Ore', 'Description');
+    const resource: Resource = {
+      className: 'desc-ironore-c',
+      displayName: 'Iron Ore',
+      description: 'Description',
+    };
 
-    expect(resource.getLargeIconUrl()).toBe(
+    expect(getLargeIconUrl(resource)).toBe(
       'https://www.satisfactorytools.com/assets/images/items/desc-ironore-c_256.png'
     );
   });

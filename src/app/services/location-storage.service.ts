@@ -210,9 +210,9 @@ export class LocationStorageService {
   }
 
   /**
-   * Reconstruct Resource instances from plain objects
+   * Reconstruct Resource objects from plain objects (no longer needed, but keep for compatibility)
    * @param locations Array of locations with plain resource objects
-   * @returns Array of locations with proper Resource instances
+   * @returns Array of locations with Resource objects
    */
   private reconstructResourceInstances(locations: any[]): Location[] {
     return locations.map((location) => ({
@@ -233,10 +233,9 @@ export class LocationStorageService {
     if (!records || !Array.isArray(records)) {
       return records;
     }
-
     return records.map((record) => ({
       ...record,
-      resource: this.reconstructResource(record.resource),
+      resource: record.resource as Resource,
     }));
   }
 
@@ -251,29 +250,10 @@ export class LocationStorageService {
     if (!records || !Array.isArray(records)) {
       return records;
     }
-
     return records.map((record) => ({
       ...record,
-      resource: this.reconstructResource(record.resource),
+      resource: record.resource as Resource,
     }));
-  }
-
-  /**
-   * Reconstruct a single Resource instance from a plain object
-   * @param resourceData Plain object with resource data
-   * @returns Resource instance
-   */
-  private reconstructResource(resourceData: any): Resource {
-    if (resourceData instanceof Resource) {
-      return resourceData;
-    }
-
-    // Create new Resource instance from plain object data
-    return new Resource(
-      resourceData.className,
-      resourceData.displayName,
-      resourceData.description
-    );
   }
 
   /**

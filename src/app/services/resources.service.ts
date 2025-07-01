@@ -66,7 +66,11 @@ export class ResourcesService {
       next: (data) => {
         const resources = data.map(
           (item) =>
-            new Resource(item.className, item.displayName, item.description)
+            ({
+              className: item.className,
+              displayName: item.displayName,
+              description: item.description,
+            } as Resource)
         );
         this.resourcesSignal.set(resources);
         this.isLoading.set(false);

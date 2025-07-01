@@ -9,11 +9,11 @@ describe('ProdactionStatisticsComponent', () => {
   let component: ProdactionStatisticsComponent;
   let fixture: ComponentFixture<ProdactionStatisticsComponent>;
 
-  const mockResource = new Resource(
-    'Desc_CircuitBoard_C',
-    'Circuit Board',
-    'Advanced electronics component'
-  );
+  const mockResource: Resource = {
+    className: 'Desc_CircuitBoard_C',
+    displayName: 'Circuit Board',
+    description: 'Advanced electronics component',
+  };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
