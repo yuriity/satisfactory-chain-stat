@@ -6,13 +6,13 @@
       "shortName": "Recipe_IronPlate_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 2
         }
       ],
@@ -26,17 +26,17 @@
       "shortName": "Recipe_Alternate_CoatedIronPlate_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 5
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 10
         }
       ],
@@ -50,17 +50,17 @@
       "shortName": "Recipe_Alternate_SteelCastedPlate_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 1
         },
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 3
         }
       ],
@@ -76,13 +76,13 @@
       "shortName": "Recipe_IronRod_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 1
         }
       ],
@@ -96,13 +96,13 @@
       "shortName": "Recipe_Alternate_SteelRod_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 4
         }
       ],
@@ -116,13 +116,13 @@
       "shortName": "Recipe_Alternate_AluminumRod_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 7
         }
       ],
@@ -138,13 +138,13 @@
       "shortName": "Recipe_IngotIron_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 1
         }
       ],
@@ -158,17 +158,17 @@
       "shortName": "Recipe_Alternate_PureIronIngot_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 7
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 4000
         }
       ],
       "products": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 13
         }
       ],
@@ -182,17 +182,17 @@
       "shortName": "Recipe_Alternate_IronIngot_Leached_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 5
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 1000
         }
       ],
       "products": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 10
         }
       ],
@@ -206,17 +206,17 @@
       "shortName": "Recipe_Alternate_IronIngot_Basic_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 5
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 10
         }
       ],
@@ -230,17 +230,17 @@
       "shortName": "Recipe_Alternate_IngotIron_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 8
         },
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 15
         }
       ],
@@ -256,29 +256,29 @@
       "shortName": "Recipe_Alternate_RocketFuel_Nitro_C",
       "ingredients": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 4000
         },
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 3000
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 4
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-rocketfuel-c",
+          "resourceClassName": "desc-rocketfuel-c",
           "amount": 6000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 1
         }
       ],
@@ -292,21 +292,21 @@
       "shortName": "Recipe_RocketFuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 6000
         },
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 1000
         }
       ],
       "products": [
         {
-          "className": "desc-rocketfuel-c",
+          "resourceClassName": "desc-rocketfuel-c",
           "amount": 10000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 1
         }
       ],
@@ -320,17 +320,17 @@
       "shortName": "Recipe_UnpackageRocketFuel_C",
       "ingredients": [
         {
-          "className": "desc-packagedrocketfuel-c",
+          "resourceClassName": "desc-packagedrocketfuel-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-rocketfuel-c",
+          "resourceClassName": "desc-rocketfuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
@@ -346,17 +346,17 @@
       "shortName": "Recipe_PackagedRocketFuel_C",
       "ingredients": [
         {
-          "className": "desc-rocketfuel-c",
+          "resourceClassName": "desc-rocketfuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-packagedrocketfuel-c",
+          "resourceClassName": "desc-packagedrocketfuel-c",
           "amount": 1
         }
       ],
@@ -372,21 +372,21 @@
       "shortName": "Recipe_Alternate_IonizedFuel_Dark_C",
       "ingredients": [
         {
-          "className": "desc-packagedrocketfuel-c",
+          "resourceClassName": "desc-packagedrocketfuel-c",
           "amount": 12
         },
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-ionizedfuel-c",
+          "resourceClassName": "desc-ionizedfuel-c",
           "amount": 10000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 2
         }
       ],
@@ -400,21 +400,21 @@
       "shortName": "Recipe_IonizedFuel_C",
       "ingredients": [
         {
-          "className": "desc-rocketfuel-c",
+          "resourceClassName": "desc-rocketfuel-c",
           "amount": 16000
         },
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ionizedfuel-c",
+          "resourceClassName": "desc-ionizedfuel-c",
           "amount": 16000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 2
         }
       ],
@@ -428,17 +428,17 @@
       "shortName": "Recipe_UnpackageIonizedFuel_C",
       "ingredients": [
         {
-          "className": "desc-packagedionizedfuel-c",
+          "resourceClassName": "desc-packagedionizedfuel-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-ionizedfuel-c",
+          "resourceClassName": "desc-ionizedfuel-c",
           "amount": 4000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 2
         }
       ],
@@ -454,13 +454,13 @@
       "shortName": "Recipe_DarkEnergy_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 10000
         }
       ],
@@ -479,7 +479,7 @@
       ],
       "products": [
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 10000
         }
       ],
@@ -495,17 +495,17 @@
       "shortName": "Recipe_DarkMatter_C",
       "ingredients": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 1
         }
       ],
@@ -519,17 +519,17 @@
       "shortName": "Recipe_Alternate_DarkMatter_Trap_C",
       "ingredients": [
         {
-          "className": "desc-timecrystal-c",
+          "resourceClassName": "desc-timecrystal-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 2
         }
       ],
@@ -543,13 +543,13 @@
       "shortName": "Recipe_Alternate_DarkMatter_Crystallization_C",
       "ingredients": [
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 1
         }
       ],
@@ -565,29 +565,29 @@
       "shortName": "Recipe_SuperpositionOscillator_C",
       "ingredients": [
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 6
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         },
         {
-          "className": "desc-aluminumplate-c",
+          "resourceClassName": "desc-aluminumplate-c",
           "amount": 9
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 25000
         }
       ],
       "products": [
         {
-          "className": "desc-quantumoscillator-c",
+          "resourceClassName": "desc-quantumoscillator-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 25000
         }
       ],
@@ -603,29 +603,29 @@
       "shortName": "Recipe_TemporalProcessor_C",
       "ingredients": [
         {
-          "className": "desc-timecrystal-c",
+          "resourceClassName": "desc-timecrystal-c",
           "amount": 5
         },
         {
-          "className": "desc-computersuper-c",
+          "resourceClassName": "desc-computersuper-c",
           "amount": 1
         },
         {
-          "className": "desc-ficsitemesh-c",
+          "resourceClassName": "desc-ficsitemesh-c",
           "amount": 15
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 25000
         }
       ],
       "products": [
         {
-          "className": "desc-temporalprocessor-c",
+          "resourceClassName": "desc-temporalprocessor-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 25000
         }
       ],
@@ -641,29 +641,29 @@
       "shortName": "Recipe_SpaceElevatorPart_12_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-6-c",
+          "resourceClassName": "desc-spaceelevatorpart-6-c",
           "amount": 1
         },
         {
-          "className": "desc-temporalprocessor-c",
+          "resourceClassName": "desc-temporalprocessor-c",
           "amount": 1
         },
         {
-          "className": "desc-quantumoscillator-c",
+          "resourceClassName": "desc-quantumoscillator-c",
           "amount": 1
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 25000
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-12-c",
+          "resourceClassName": "desc-spaceelevatorpart-12-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 25000
         }
       ],
@@ -679,17 +679,17 @@
       "shortName": "Recipe_PackagedIonizedFuel_C",
       "ingredients": [
         {
-          "className": "desc-ionizedfuel-c",
+          "resourceClassName": "desc-ionizedfuel-c",
           "amount": 4000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedionizedfuel-c",
+          "resourceClassName": "desc-packagedionizedfuel-c",
           "amount": 2
         }
       ],
@@ -705,17 +705,17 @@
       "shortName": "Recipe_Alternate_Diamond_Turbo_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 30
         },
         {
-          "className": "desc-turbofuel-c",
+          "resourceClassName": "desc-turbofuel-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 3
         }
       ],
@@ -729,13 +729,13 @@
       "shortName": "Recipe_Diamond_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 1
         }
       ],
@@ -749,17 +749,17 @@
       "shortName": "Recipe_Alternate_Diamond_Pink_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 8
         },
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 1
         }
       ],
@@ -773,13 +773,13 @@
       "shortName": "Recipe_Alternate_Diamond_Petroleum_C",
       "ingredients": [
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 1
         }
       ],
@@ -793,13 +793,13 @@
       "shortName": "Recipe_Alternate_Diamond_OilBased_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 2
         }
       ],
@@ -813,17 +813,17 @@
       "shortName": "Recipe_Alternate_Diamond_Cloudy_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 12
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 1
         }
       ],
@@ -839,21 +839,21 @@
       "shortName": "Recipe_SAMFluctuator_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 6
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 5
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-samfluctuator-c",
+          "resourceClassName": "desc-samfluctuator-c",
           "amount": 1
         }
       ],
@@ -869,13 +869,13 @@
       "shortName": "Recipe_FicsiteMesh_C",
       "ingredients": [
         {
-          "className": "desc-ficsiteingot-c",
+          "resourceClassName": "desc-ficsiteingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ficsitemesh-c",
+          "resourceClassName": "desc-ficsitemesh-c",
           "amount": 3
         }
       ],
@@ -891,17 +891,17 @@
       "shortName": "Recipe_FicsiteIngot_Iron_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 4
         },
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-ficsiteingot-c",
+          "resourceClassName": "desc-ficsiteingot-c",
           "amount": 1
         }
       ],
@@ -915,17 +915,17 @@
       "shortName": "Recipe_FicsiteIngot_AL_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 2
         },
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-ficsiteingot-c",
+          "resourceClassName": "desc-ficsiteingot-c",
           "amount": 1
         }
       ],
@@ -939,17 +939,17 @@
       "shortName": "Recipe_FicsiteIngot_CAT_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 3
         },
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-ficsiteingot-c",
+          "resourceClassName": "desc-ficsiteingot-c",
           "amount": 1
         }
       ],
@@ -965,13 +965,13 @@
       "shortName": "Recipe_TimeCrystal_C",
       "ingredients": [
         {
-          "className": "desc-diamond-c",
+          "resourceClassName": "desc-diamond-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-timecrystal-c",
+          "resourceClassName": "desc-timecrystal-c",
           "amount": 1
         }
       ],
@@ -987,13 +987,13 @@
       "shortName": "Recipe_IngotSAM_C",
       "ingredients": [
         {
-          "className": "desc-sam-c",
+          "resourceClassName": "desc-sam-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         }
       ],
@@ -1009,21 +1009,21 @@
       "shortName": "Recipe_SpaceElevatorPart_10_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-7-c",
+          "resourceClassName": "desc-spaceelevatorpart-7-c",
           "amount": 1
         },
         {
-          "className": "desc-ficsitemesh-c",
+          "resourceClassName": "desc-ficsitemesh-c",
           "amount": 80
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 20000
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-10-c",
+          "resourceClassName": "desc-spaceelevatorpart-10-c",
           "amount": 4
         }
       ],
@@ -1039,17 +1039,17 @@
       "shortName": "Recipe_Bauxite_Caterium_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 15
         }
       ],
       "products": [
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 12
         }
       ],
@@ -1063,17 +1063,17 @@
       "shortName": "Recipe_Bauxite_Copper_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 18
         }
       ],
       "products": [
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 12
         }
       ],
@@ -1089,17 +1089,17 @@
       "shortName": "Recipe_Caterium_Copper_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 15
         }
       ],
       "products": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 12
         }
       ],
@@ -1113,17 +1113,17 @@
       "shortName": "Recipe_Caterium_Quartz_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 12
         }
       ],
@@ -1139,17 +1139,17 @@
       "shortName": "Recipe_Coal_Iron_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 18
         }
       ],
       "products": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 12
         }
       ],
@@ -1163,17 +1163,17 @@
       "shortName": "Recipe_Coal_Limestone_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 36
         }
       ],
       "products": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 12
         }
       ],
@@ -1187,13 +1187,13 @@
       "shortName": "Recipe_Alternate_Coal_1_C",
       "ingredients": [
         {
-          "className": "desc-wood-c",
+          "resourceClassName": "desc-wood-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 10
         }
       ],
@@ -1207,13 +1207,13 @@
       "shortName": "Recipe_Alternate_Coal_2_C",
       "ingredients": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 6
         }
       ],
@@ -1229,17 +1229,17 @@
       "shortName": "Recipe_Copper_Quartz_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 12
         }
       ],
@@ -1253,17 +1253,17 @@
       "shortName": "Recipe_Copper_Sulfur_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 12
         }
       ],
@@ -1279,17 +1279,17 @@
       "shortName": "Recipe_Iron_Limestone_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 12
         }
       ],
@@ -1305,17 +1305,17 @@
       "shortName": "Recipe_Limestone_Sulfur_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 12
         }
       ],
@@ -1331,17 +1331,17 @@
       "shortName": "Recipe_Nitrogen_Bauxite_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 12000
         }
       ],
@@ -1355,17 +1355,17 @@
       "shortName": "Recipe_Nitrogen_Caterium_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 12000
         }
       ],
@@ -1379,17 +1379,17 @@
       "shortName": "Recipe_UnpackageNitrogen_C",
       "ingredients": [
         {
-          "className": "desc-packagednitrogengas-c",
+          "resourceClassName": "desc-packagednitrogengas-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 4000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
@@ -1405,17 +1405,17 @@
       "shortName": "Recipe_Quartz_Bauxite_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 12
         }
       ],
@@ -1429,17 +1429,17 @@
       "shortName": "Recipe_Quartz_Coal_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 12
         }
       ],
@@ -1455,17 +1455,17 @@
       "shortName": "Recipe_Sulfur_Coal_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 12
         }
       ],
@@ -1479,17 +1479,17 @@
       "shortName": "Recipe_Sulfur_Iron_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 30
         }
       ],
       "products": [
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 12
         }
       ],
@@ -1505,17 +1505,17 @@
       "shortName": "Recipe_Uranium_Bauxite_C",
       "ingredients": [
         {
-          "className": "desc-samingot-c",
+          "resourceClassName": "desc-samingot-c",
           "amount": 1
         },
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 48
         }
       ],
       "products": [
         {
-          "className": "desc-oreuranium-c",
+          "resourceClassName": "desc-oreuranium-c",
           "amount": 12
         }
       ],
@@ -1531,17 +1531,17 @@
       "shortName": "Recipe_Alternate_Turbofuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 6000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 5000
         }
       ],
@@ -1555,17 +1555,17 @@
       "shortName": "Recipe_UnpackageTurboFuel_C",
       "ingredients": [
         {
-          "className": "desc-turbofuel-c",
+          "resourceClassName": "desc-turbofuel-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -1579,17 +1579,17 @@
       "shortName": "Recipe_Alternate_TurboHeavyFuel_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 5000
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 4000
         }
       ],
@@ -1603,25 +1603,25 @@
       "shortName": "Recipe_Alternate_TurboBlendFuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 4000
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 3
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 6000
         }
       ],
@@ -1637,17 +1637,17 @@
       "shortName": "Recipe_PackagedTurboFuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-turbofuel-c",
+          "resourceClassName": "desc-turbofuel-c",
           "amount": 2
         }
       ],
@@ -1663,17 +1663,17 @@
       "shortName": "Recipe_Alternate_EnrichedCoal_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 5
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 5
         }
       ],
@@ -1689,17 +1689,17 @@
       "shortName": "Recipe_CircuitBoard_C",
       "ingredients": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 2
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 1
         }
       ],
@@ -1713,17 +1713,17 @@
       "shortName": "Recipe_Alternate_ElectrodeCircuitBoard_C",
       "ingredients": [
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 4
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 1
         }
       ],
@@ -1737,17 +1737,17 @@
       "shortName": "Recipe_Alternate_CircuitBoard_2_C",
       "ingredients": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 10
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 30
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 7
         }
       ],
@@ -1761,17 +1761,17 @@
       "shortName": "Recipe_Alternate_CircuitBoard_1_C",
       "ingredients": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 11
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 11
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 5
         }
       ],
@@ -1787,17 +1787,17 @@
       "shortName": "Recipe_LiquidFuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 4000
         },
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 3
         }
       ],
@@ -1811,13 +1811,13 @@
       "shortName": "Recipe_ResidualFuel_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 4000
         }
       ],
@@ -1831,17 +1831,17 @@
       "shortName": "Recipe_UnpackageFuel_C",
       "ingredients": [
         {
-          "className": "desc-fuel-c",
+          "resourceClassName": "desc-fuel-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -1855,17 +1855,17 @@
       "shortName": "Recipe_Alternate_DilutedFuel_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 5000
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 10000
         }
       ],
@@ -1881,13 +1881,13 @@
       "shortName": "Recipe_PetroleumCoke_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 4000
         }
       ],
       "products": [
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 12
         }
       ],
@@ -1903,17 +1903,17 @@
       "shortName": "Recipe_Plastic_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 2
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 1000
         }
       ],
@@ -1927,17 +1927,17 @@
       "shortName": "Recipe_ResidualPlastic_C",
       "ingredients": [
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 6
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 2000
         }
       ],
       "products": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 2
         }
       ],
@@ -1951,17 +1951,17 @@
       "shortName": "Recipe_Alternate_Plastic_1_C",
       "ingredients": [
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 6
         },
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 12
         }
       ],
@@ -1977,17 +1977,17 @@
       "shortName": "Recipe_Rubber_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 2
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 2000
         }
       ],
@@ -2001,17 +2001,17 @@
       "shortName": "Recipe_ResidualRubber_C",
       "ingredients": [
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 4
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 4000
         }
       ],
       "products": [
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 2
         }
       ],
@@ -2025,17 +2025,17 @@
       "shortName": "Recipe_Alternate_RecycledRubber_C",
       "ingredients": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 6
         },
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 12
         }
       ],
@@ -2051,17 +2051,17 @@
       "shortName": "Recipe_Alternate_WetConcrete_C",
       "ingredients": [
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 6
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 4
         }
       ],
@@ -2075,17 +2075,17 @@
       "shortName": "Recipe_Alternate_RubberConcrete_C",
       "ingredients": [
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 10
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 9
         }
       ],
@@ -2099,17 +2099,17 @@
       "shortName": "Recipe_Alternate_Concrete_C",
       "ingredients": [
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 3
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 10
         }
       ],
@@ -2123,13 +2123,13 @@
       "shortName": "Recipe_Concrete_C",
       "ingredients": [
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 1
         }
       ],
@@ -2145,13 +2145,13 @@
       "shortName": "Recipe_SteelBeam_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 1
         }
       ],
@@ -2165,17 +2165,17 @@
       "shortName": "Recipe_Alternate_SteelBeam_Molded_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 24
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 16
         }
       ],
       "products": [
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 9
         }
       ],
@@ -2189,13 +2189,13 @@
       "shortName": "Recipe_Alternate_SteelBeam_Aluminum_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 3
         }
       ],
@@ -2211,13 +2211,13 @@
       "shortName": "Recipe_SteelPipe_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 2
         }
       ],
@@ -2231,17 +2231,17 @@
       "shortName": "Recipe_Alternate_SteelPipe_Molded_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 5
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 5
         }
       ],
@@ -2255,13 +2255,13 @@
       "shortName": "Recipe_Alternate_SteelPipe_Iron_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 5
         }
       ],
@@ -2277,17 +2277,17 @@
       "shortName": "Recipe_IngotSteel_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 3
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 3
         }
       ],
@@ -2301,17 +2301,17 @@
       "shortName": "Recipe_Alternate_CokeSteelIngot_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 15
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 15
         }
       ],
       "products": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 20
         }
       ],
@@ -2325,17 +2325,17 @@
       "shortName": "Recipe_Alternate_IngotSteel_2_C",
       "ingredients": [
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 2
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 4
         }
       ],
@@ -2349,17 +2349,17 @@
       "shortName": "Recipe_Alternate_IngotSteel_1_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 2
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 3
         }
       ],
@@ -2375,17 +2375,17 @@
       "shortName": "Recipe_SpaceElevatorPart_2_C",
       "ingredients": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 1
         },
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-2-c",
+          "resourceClassName": "desc-spaceelevatorpart-2-c",
           "amount": 2
         }
       ],
@@ -2399,21 +2399,21 @@
       "shortName": "Recipe_Alternate_FlexibleFramework_C",
       "ingredients": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 1
         },
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 6
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-2-c",
+          "resourceClassName": "desc-spaceelevatorpart-2-c",
           "amount": 2
         }
       ],
@@ -2429,13 +2429,13 @@
       "shortName": "Recipe_Alternate_SteelCanister_C",
       "ingredients": [
         {
-          "className": "desc-steelingot-c",
+          "resourceClassName": "desc-steelingot-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 4
         }
       ],
@@ -2449,13 +2449,13 @@
       "shortName": "Recipe_FluidCanister_C",
       "ingredients": [
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 4
         }
       ],
@@ -2469,17 +2469,17 @@
       "shortName": "Recipe_Alternate_CoatedIronCanister_C",
       "ingredients": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 2
         },
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 4
         }
       ],
@@ -2495,17 +2495,17 @@
       "shortName": "Recipe_Fuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-fuel-c",
+          "resourceClassName": "desc-fuel-c",
           "amount": 2
         }
       ],
@@ -2519,17 +2519,17 @@
       "shortName": "Recipe_Alternate_DilutedPackagedFuel_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 1000
         },
         {
-          "className": "desc-packagedwater-c",
+          "resourceClassName": "desc-packagedwater-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-fuel-c",
+          "resourceClassName": "desc-fuel-c",
           "amount": 2
         }
       ],
@@ -2545,17 +2545,17 @@
       "shortName": "Recipe_LiquidBiofuel_C",
       "ingredients": [
         {
-          "className": "desc-biofuel-c",
+          "resourceClassName": "desc-biofuel-c",
           "amount": 6
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-liquidbiofuel-c",
+          "resourceClassName": "desc-liquidbiofuel-c",
           "amount": 4000
         }
       ],
@@ -2569,17 +2569,17 @@
       "shortName": "Recipe_UnpackageBioFuel_C",
       "ingredients": [
         {
-          "className": "desc-packagedbiofuel-c",
+          "resourceClassName": "desc-packagedbiofuel-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-liquidbiofuel-c",
+          "resourceClassName": "desc-liquidbiofuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -2595,17 +2595,17 @@
       "shortName": "Recipe_PackagedBiofuel_C",
       "ingredients": [
         {
-          "className": "desc-liquidbiofuel-c",
+          "resourceClassName": "desc-liquidbiofuel-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedbiofuel-c",
+          "resourceClassName": "desc-packagedbiofuel-c",
           "amount": 2
         }
       ],
@@ -2621,17 +2621,17 @@
       "shortName": "Recipe_PackagedCrudeOil_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedoil-c",
+          "resourceClassName": "desc-packagedoil-c",
           "amount": 2
         }
       ],
@@ -2647,17 +2647,17 @@
       "shortName": "Recipe_PackagedOilResidue_C",
       "ingredients": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedoilresidue-c",
+          "resourceClassName": "desc-packagedoilresidue-c",
           "amount": 2
         }
       ],
@@ -2673,17 +2673,17 @@
       "shortName": "Recipe_PackagedWater_C",
       "ingredients": [
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedwater-c",
+          "resourceClassName": "desc-packagedwater-c",
           "amount": 2
         }
       ],
@@ -2699,17 +2699,17 @@
       "shortName": "Recipe_UnpackageOil_C",
       "ingredients": [
         {
-          "className": "desc-packagedoil-c",
+          "resourceClassName": "desc-packagedoil-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -2725,17 +2725,17 @@
       "shortName": "Recipe_UnpackageOilResidue_C",
       "ingredients": [
         {
-          "className": "desc-packagedoilresidue-c",
+          "resourceClassName": "desc-packagedoilresidue-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -2749,17 +2749,17 @@
       "shortName": "Recipe_Alternate_HeavyOilResidue_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 4000
         },
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 2
         }
       ],
@@ -2775,17 +2775,17 @@
       "shortName": "Recipe_UnpackageWater_C",
       "ingredients": [
         {
-          "className": "desc-packagedwater-c",
+          "resourceClassName": "desc-packagedwater-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -2801,17 +2801,17 @@
       "shortName": "Recipe_Alternate_SteamedCopperSheet_C",
       "ingredients": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 3
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 3
         }
       ],
@@ -2825,13 +2825,13 @@
       "shortName": "Recipe_CopperSheet_C",
       "ingredients": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 1
         }
       ],
@@ -2847,17 +2847,17 @@
       "shortName": "Recipe_Alternate_PureQuartzCrystal_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 9
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 7
         }
       ],
@@ -2871,13 +2871,13 @@
       "shortName": "Recipe_QuartzCrystal_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 3
         }
       ],
@@ -2891,21 +2891,21 @@
       "shortName": "Recipe_Alternate_Quartz_Purified_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 24
         },
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 2000
         }
       ],
       "products": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 15
         },
         {
-          "className": "desc-dissolvedsilica-c",
+          "resourceClassName": "desc-dissolvedsilica-c",
           "amount": 12000
         }
       ],
@@ -2919,17 +2919,17 @@
       "shortName": "Recipe_Alternate_Quartz_Fused_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 25
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 18
         }
       ],
@@ -2945,17 +2945,17 @@
       "shortName": "Recipe_Alternate_PureCopperIngot_C",
       "ingredients": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 6
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 4000
         }
       ],
       "products": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 15
         }
       ],
@@ -2969,17 +2969,17 @@
       "shortName": "Recipe_Alternate_CopperAlloyIngot_C",
       "ingredients": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 5
         },
         {
-          "className": "desc-oreiron-c",
+          "resourceClassName": "desc-oreiron-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 10
         }
       ],
@@ -2993,17 +2993,17 @@
       "shortName": "Recipe_Alternate_CopperIngot_Tempered_C",
       "ingredients": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 5
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 12
         }
       ],
@@ -3017,17 +3017,17 @@
       "shortName": "Recipe_Alternate_CopperIngot_Leached_C",
       "ingredients": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 9
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 22
         }
       ],
@@ -3041,13 +3041,13 @@
       "shortName": "Recipe_IngotCopper_C",
       "ingredients": [
         {
-          "className": "desc-orecopper-c",
+          "resourceClassName": "desc-orecopper-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 1
         }
       ],
@@ -3063,17 +3063,17 @@
       "shortName": "Recipe_Alternate_PureCateriumIngot_C",
       "ingredients": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 2
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 2000
         }
       ],
       "products": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         }
       ],
@@ -3087,17 +3087,17 @@
       "shortName": "Recipe_Alternate_CateriumIngot_Tempered_C",
       "ingredients": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 6
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 3
         }
       ],
@@ -3111,17 +3111,17 @@
       "shortName": "Recipe_Alternate_CateriumIngot_Leached_C",
       "ingredients": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 9
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 6
         }
       ],
@@ -3135,13 +3135,13 @@
       "shortName": "Recipe_IngotCaterium_C",
       "ingredients": [
         {
-          "className": "desc-oregold-c",
+          "resourceClassName": "desc-oregold-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         }
       ],
@@ -3157,13 +3157,13 @@
       "shortName": "Recipe_PureAluminumIngot_C",
       "ingredients": [
         {
-          "className": "desc-aluminumscrap-c",
+          "resourceClassName": "desc-aluminumscrap-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 1
         }
       ],
@@ -3177,17 +3177,17 @@
       "shortName": "Recipe_IngotAluminum_C",
       "ingredients": [
         {
-          "className": "desc-aluminumscrap-c",
+          "resourceClassName": "desc-aluminumscrap-c",
           "amount": 6
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 4
         }
       ],
@@ -3203,13 +3203,13 @@
       "shortName": "Recipe_AluminumCasing_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 2
         }
       ],
@@ -3223,17 +3223,17 @@
       "shortName": "Recipe_Alternate_AlcladCasing_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 20
         },
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 15
         }
       ],
@@ -3249,17 +3249,17 @@
       "shortName": "Recipe_AluminumSheet_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 3
         },
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumplate-c",
+          "resourceClassName": "desc-aluminumplate-c",
           "amount": 3
         }
       ],
@@ -3275,21 +3275,21 @@
       "shortName": "Recipe_AluminaSolution_C",
       "ingredients": [
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 12
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 18000
         }
       ],
       "products": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 12000
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 5
         }
       ],
@@ -3303,17 +3303,17 @@
       "shortName": "Recipe_UnpackageAlumina_C",
       "ingredients": [
         {
-          "className": "desc-packagedalumina-c",
+          "resourceClassName": "desc-packagedalumina-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
@@ -3327,17 +3327,17 @@
       "shortName": "Recipe_Alternate_SloppyAlumina_C",
       "ingredients": [
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 10
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 12000
         }
       ],
@@ -3353,21 +3353,21 @@
       "shortName": "Recipe_AluminumScrap_C",
       "ingredients": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 4000
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumscrap-c",
+          "resourceClassName": "desc-aluminumscrap-c",
           "amount": 6
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 2000
         }
       ],
@@ -3381,21 +3381,21 @@
       "shortName": "Recipe_Alternate_ElectroAluminumScrap_C",
       "ingredients": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 12000
         },
         {
-          "className": "desc-petroleumcoke-c",
+          "resourceClassName": "desc-petroleumcoke-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumscrap-c",
+          "resourceClassName": "desc-aluminumscrap-c",
           "amount": 20
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 7000
         }
       ],
@@ -3409,29 +3409,29 @@
       "shortName": "Recipe_Alternate_InstantScrap_C",
       "ingredients": [
         {
-          "className": "desc-orebauxite-c",
+          "resourceClassName": "desc-orebauxite-c",
           "amount": 15
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 10
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 5000
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumscrap-c",
+          "resourceClassName": "desc-aluminumscrap-c",
           "amount": 30
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 5000
         }
       ],
@@ -3447,17 +3447,17 @@
       "shortName": "Recipe_PackagedAlumina_C",
       "ingredients": [
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedalumina-c",
+          "resourceClassName": "desc-packagedalumina-c",
           "amount": 2
         }
       ],
@@ -3473,13 +3473,13 @@
       "shortName": "Recipe_Silica_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 5
         }
       ],
@@ -3493,25 +3493,25 @@
       "shortName": "Recipe_Alternate_Silica_Distilled_C",
       "ingredients": [
         {
-          "className": "desc-dissolvedsilica-c",
+          "resourceClassName": "desc-dissolvedsilica-c",
           "amount": 12000
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 5
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 27
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 8000
         }
       ],
@@ -3525,17 +3525,17 @@
       "shortName": "Recipe_Alternate_Silica_C",
       "ingredients": [
         {
-          "className": "desc-rawquartz-c",
+          "resourceClassName": "desc-rawquartz-c",
           "amount": 3
         },
         {
-          "className": "desc-stone-c",
+          "resourceClassName": "desc-stone-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 7
         }
       ],
@@ -3551,21 +3551,21 @@
       "shortName": "Recipe_CrystalOscillator_C",
       "ingredients": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 36
         },
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 28
         },
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 2
         }
       ],
@@ -3579,21 +3579,21 @@
       "shortName": "Recipe_Alternate_CrystalOscillator_C",
       "ingredients": [
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 10
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 7
         },
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         }
       ],
@@ -3609,17 +3609,17 @@
       "shortName": "Recipe_Alternate_PolymerResin_C",
       "ingredients": [
         {
-          "className": "desc-liquidoil-c",
+          "resourceClassName": "desc-liquidoil-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 13
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 2000
         }
       ],
@@ -3635,21 +3635,21 @@
       "shortName": "Recipe_Alternate_PlasticSmartPlating_C",
       "ingredients": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 1
         },
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 1
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-1-c",
+          "resourceClassName": "desc-spaceelevatorpart-1-c",
           "amount": 2
         }
       ],
@@ -3663,17 +3663,17 @@
       "shortName": "Recipe_SpaceElevatorPart_1_C",
       "ingredients": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 1
         },
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-1-c",
+          "resourceClassName": "desc-spaceelevatorpart-1-c",
           "amount": 1
         }
       ],
@@ -3689,21 +3689,21 @@
       "shortName": "Recipe_Alternate_HighSpeedWiring_C",
       "ingredients": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 2
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 40
         },
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-3-c",
+          "resourceClassName": "desc-spaceelevatorpart-3-c",
           "amount": 4
         }
       ],
@@ -3717,17 +3717,17 @@
       "shortName": "Recipe_SpaceElevatorPart_3_C",
       "ingredients": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 1
         },
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-3-c",
+          "resourceClassName": "desc-spaceelevatorpart-3-c",
           "amount": 1
         }
       ],
@@ -3743,17 +3743,17 @@
       "shortName": "Recipe_EncasedIndustrialBeam_C",
       "ingredients": [
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 3
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 6
         }
       ],
       "products": [
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 1
         }
       ],
@@ -3767,17 +3767,17 @@
       "shortName": "Recipe_Alternate_EncasedIndustrialBeam_C",
       "ingredients": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 6
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 1
         }
       ],
@@ -3793,17 +3793,17 @@
       "shortName": "Recipe_Motor_C",
       "ingredients": [
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 2
         },
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 1
         }
       ],
@@ -3817,17 +3817,17 @@
       "shortName": "Recipe_Alternate_ElectricMotor_C",
       "ingredients": [
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 1
         },
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 2
         }
       ],
@@ -3841,21 +3841,21 @@
       "shortName": "Recipe_Alternate_Motor_1_C",
       "ingredients": [
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 3
         },
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 3
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 6
         }
       ],
@@ -3871,17 +3871,17 @@
       "shortName": "Recipe_Stator_C",
       "ingredients": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 3
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 1
         }
       ],
@@ -3895,17 +3895,17 @@
       "shortName": "Recipe_Alternate_Stator_C",
       "ingredients": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 4
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 15
         }
       ],
       "products": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 2
         }
       ],
@@ -3921,17 +3921,17 @@
       "shortName": "Recipe_AILimiter_C",
       "ingredients": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 5
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 1
         }
       ],
@@ -3945,17 +3945,17 @@
       "shortName": "Recipe_Alternate_AILimiter_Plastic_C",
       "ingredients": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 30
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 7
         }
       ],
       "products": [
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 2
         }
       ],
@@ -3971,25 +3971,25 @@
       "shortName": "Recipe_Alternate_HeavyFlexibleFrame_C",
       "ingredients": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 5
         },
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 3
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 20
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 104
         }
       ],
       "products": [
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 1
         }
       ],
@@ -4003,25 +4003,25 @@
       "shortName": "Recipe_ModularFrameHeavy_C",
       "ingredients": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 5
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 20
         },
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 5
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 120
         }
       ],
       "products": [
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 1
         }
       ],
@@ -4035,25 +4035,25 @@
       "shortName": "Recipe_Alternate_ModularFrameHeavy_C",
       "ingredients": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 8
         },
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 10
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 36
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 22
         }
       ],
       "products": [
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 3
         }
       ],
@@ -4069,21 +4069,21 @@
       "shortName": "Recipe_Computer_C",
       "ingredients": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 4
         },
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 8
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 16
         }
       ],
       "products": [
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 1
         }
       ],
@@ -4097,17 +4097,17 @@
       "shortName": "Recipe_Alternate_Computer_2_C",
       "ingredients": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 3
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 2
         }
       ],
@@ -4121,21 +4121,21 @@
       "shortName": "Recipe_Alternate_Computer_1_C",
       "ingredients": [
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 4
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 14
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 6
         }
       ],
       "products": [
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 1
         }
       ],
@@ -4151,21 +4151,21 @@
       "shortName": "Recipe_SpaceElevatorPart_4_C",
       "ingredients": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 2
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 15
         },
         {
-          "className": "desc-spaceelevatorpart-1-c",
+          "resourceClassName": "desc-spaceelevatorpart-1-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-4-c",
+          "resourceClassName": "desc-spaceelevatorpart-4-c",
           "amount": 1
         }
       ],
@@ -4181,25 +4181,25 @@
       "shortName": "Recipe_SpaceElevatorPart_5_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-3-c",
+          "resourceClassName": "desc-spaceelevatorpart-3-c",
           "amount": 5
         },
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 5
         },
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 1
         },
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-5-c",
+          "resourceClassName": "desc-spaceelevatorpart-5-c",
           "amount": 1
         }
       ],
@@ -4215,17 +4215,17 @@
       "shortName": "Recipe_Alternate_FusedWire_C",
       "ingredients": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 4
         },
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 30
         }
       ],
@@ -4239,13 +4239,13 @@
       "shortName": "Recipe_Alternate_Wire_2_C",
       "ingredients": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 8
         }
       ],
@@ -4259,13 +4259,13 @@
       "shortName": "Recipe_Alternate_Wire_1_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 9
         }
       ],
@@ -4279,13 +4279,13 @@
       "shortName": "Recipe_Wire_C",
       "ingredients": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 2
         }
       ],
@@ -4301,17 +4301,17 @@
       "shortName": "Recipe_Alternate_CopperRotor_C",
       "ingredients": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 6
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 52
         }
       ],
       "products": [
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 3
         }
       ],
@@ -4325,17 +4325,17 @@
       "shortName": "Recipe_Rotor_C",
       "ingredients": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 5
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 25
         }
       ],
       "products": [
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 1
         }
       ],
@@ -4349,17 +4349,17 @@
       "shortName": "Recipe_Alternate_Rotor_C",
       "ingredients": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 2
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 6
         }
       ],
       "products": [
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 1
         }
       ],
@@ -4375,17 +4375,17 @@
       "shortName": "Recipe_ModularFrame_C",
       "ingredients": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 3
         },
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 2
         }
       ],
@@ -4399,17 +4399,17 @@
       "shortName": "Recipe_Alternate_BoltedFrame_C",
       "ingredients": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 3
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 56
         }
       ],
       "products": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 2
         }
       ],
@@ -4423,17 +4423,17 @@
       "shortName": "Recipe_Alternate_ModularFrame_C",
       "ingredients": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 2
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-modularframe-c",
+          "resourceClassName": "desc-modularframe-c",
           "amount": 3
         }
       ],
@@ -4449,17 +4449,17 @@
       "shortName": "Recipe_Alternate_CoatedCable_C",
       "ingredients": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 5
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 2000
         }
       ],
       "products": [
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 9
         }
       ],
@@ -4473,17 +4473,17 @@
       "shortName": "Recipe_Alternate_Cable_2_C",
       "ingredients": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 3
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 11
         }
       ],
@@ -4497,17 +4497,17 @@
       "shortName": "Recipe_Alternate_Cable_1_C",
       "ingredients": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 9
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 6
         }
       ],
       "products": [
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 20
         }
       ],
@@ -4521,13 +4521,13 @@
       "shortName": "Recipe_Cable_C",
       "ingredients": [
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 1
         }
       ],
@@ -4543,17 +4543,17 @@
       "shortName": "Recipe_Alternate_AdheredIronPlate_C",
       "ingredients": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 3
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 1
         }
       ],
@@ -4567,17 +4567,17 @@
       "shortName": "Recipe_Alternate_ReinforcedIronPlate_2_C",
       "ingredients": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 10
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 3
         }
       ],
@@ -4591,17 +4591,17 @@
       "shortName": "Recipe_Alternate_ReinforcedIronPlate_1_C",
       "ingredients": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 18
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 50
         }
       ],
       "products": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 3
         }
       ],
@@ -4615,17 +4615,17 @@
       "shortName": "Recipe_IronPlateReinforced_C",
       "ingredients": [
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 6
         },
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-ironplatereinforced-c",
+          "resourceClassName": "desc-ironplatereinforced-c",
           "amount": 1
         }
       ],
@@ -4641,25 +4641,25 @@
       "shortName": "Recipe_Alternate_TurboPressureMotor_C",
       "ingredients": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 4
         },
         {
-          "className": "desc-pressureconversioncube-c",
+          "resourceClassName": "desc-pressureconversioncube-c",
           "amount": 1
         },
         {
-          "className": "desc-packagednitrogengas-c",
+          "resourceClassName": "desc-packagednitrogengas-c",
           "amount": 24
         },
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-motorlightweight-c",
+          "resourceClassName": "desc-motorlightweight-c",
           "amount": 2
         }
       ],
@@ -4673,25 +4673,25 @@
       "shortName": "Recipe_Alternate_TurboMotor_1_C",
       "ingredients": [
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 7
         },
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 9
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 5
         },
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 7
         }
       ],
       "products": [
         {
-          "className": "desc-motorlightweight-c",
+          "resourceClassName": "desc-motorlightweight-c",
           "amount": 3
         }
       ],
@@ -4705,25 +4705,25 @@
       "shortName": "Recipe_MotorTurbo_C",
       "ingredients": [
         {
-          "className": "desc-coolingsystem-c",
+          "resourceClassName": "desc-coolingsystem-c",
           "amount": 4
         },
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 2
         },
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 4
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 24
         }
       ],
       "products": [
         {
-          "className": "desc-motorlightweight-c",
+          "resourceClassName": "desc-motorlightweight-c",
           "amount": 1
         }
       ],
@@ -4739,17 +4739,17 @@
       "shortName": "Recipe_PlutoniumCell_C",
       "ingredients": [
         {
-          "className": "desc-plutoniumpellet-c",
+          "resourceClassName": "desc-plutoniumpellet-c",
           "amount": 2
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-plutoniumcell-c",
+          "resourceClassName": "desc-plutoniumcell-c",
           "amount": 1
         }
       ],
@@ -4763,17 +4763,17 @@
       "shortName": "Recipe_Alternate_InstantPlutoniumCell_C",
       "ingredients": [
         {
-          "className": "desc-nonfissibleuranium-c",
+          "resourceClassName": "desc-nonfissibleuranium-c",
           "amount": 150
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 20
         }
       ],
       "products": [
         {
-          "className": "desc-plutoniumcell-c",
+          "resourceClassName": "desc-plutoniumcell-c",
           "amount": 20
         }
       ],
@@ -4789,17 +4789,17 @@
       "shortName": "Recipe_PressureConversionCube_C",
       "ingredients": [
         {
-          "className": "desc-modularframefused-c",
+          "resourceClassName": "desc-modularframefused-c",
           "amount": 1
         },
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-pressureconversioncube-c",
+          "resourceClassName": "desc-pressureconversioncube-c",
           "amount": 1
         }
       ],
@@ -4815,21 +4815,21 @@
       "shortName": "Recipe_NitricAcid_C",
       "ingredients": [
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 12000
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 3000
         },
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 3000
         }
       ],
@@ -4843,17 +4843,17 @@
       "shortName": "Recipe_UnpackageNitricAcid_C",
       "ingredients": [
         {
-          "className": "desc-packagednitricacid-c",
+          "resourceClassName": "desc-packagednitricacid-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 1000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
@@ -4869,29 +4869,29 @@
       "shortName": "Recipe_NonFissileUranium_C",
       "ingredients": [
         {
-          "className": "desc-nuclearwaste-c",
+          "resourceClassName": "desc-nuclearwaste-c",
           "amount": 15
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 10
         },
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 6000
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 6000
         }
       ],
       "products": [
         {
-          "className": "desc-nonfissibleuranium-c",
+          "resourceClassName": "desc-nonfissibleuranium-c",
           "amount": 20
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 6000
         }
       ],
@@ -4905,29 +4905,29 @@
       "shortName": "Recipe_Alternate_FertileUranium_C",
       "ingredients": [
         {
-          "className": "desc-oreuranium-c",
+          "resourceClassName": "desc-oreuranium-c",
           "amount": 5
         },
         {
-          "className": "desc-nuclearwaste-c",
+          "resourceClassName": "desc-nuclearwaste-c",
           "amount": 5
         },
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 3000
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-nonfissibleuranium-c",
+          "resourceClassName": "desc-nonfissibleuranium-c",
           "amount": 20
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 8000
         }
       ],
@@ -4943,13 +4943,13 @@
       "shortName": "Recipe_CopperDust_C",
       "ingredients": [
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 30
         }
       ],
       "products": [
         {
-          "className": "desc-copperdust-c",
+          "resourceClassName": "desc-copperdust-c",
           "amount": 5
         }
       ],
@@ -4965,17 +4965,17 @@
       "shortName": "Recipe_Plutonium_C",
       "ingredients": [
         {
-          "className": "desc-nonfissibleuranium-c",
+          "resourceClassName": "desc-nonfissibleuranium-c",
           "amount": 100
         },
         {
-          "className": "desc-nuclearwaste-c",
+          "resourceClassName": "desc-nuclearwaste-c",
           "amount": 25
         }
       ],
       "products": [
         {
-          "className": "desc-plutoniumpellet-c",
+          "resourceClassName": "desc-plutoniumpellet-c",
           "amount": 30
         }
       ],
@@ -4991,25 +4991,25 @@
       "shortName": "Recipe_PlutoniumFuelRod_C",
       "ingredients": [
         {
-          "className": "desc-plutoniumcell-c",
+          "resourceClassName": "desc-plutoniumcell-c",
           "amount": 30
         },
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 18
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 6
         },
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-plutoniumfuelrod-c",
+          "resourceClassName": "desc-plutoniumfuelrod-c",
           "amount": 1
         }
       ],
@@ -5023,17 +5023,17 @@
       "shortName": "Recipe_Alternate_PlutoniumFuelUnit_C",
       "ingredients": [
         {
-          "className": "desc-plutoniumcell-c",
+          "resourceClassName": "desc-plutoniumcell-c",
           "amount": 20
         },
         {
-          "className": "desc-pressureconversioncube-c",
+          "resourceClassName": "desc-pressureconversioncube-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-plutoniumfuelrod-c",
+          "resourceClassName": "desc-plutoniumfuelrod-c",
           "amount": 1
         }
       ],
@@ -5049,17 +5049,17 @@
       "shortName": "Recipe_PackagedNitricAcid_C",
       "ingredients": [
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 1000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-packagednitricacid-c",
+          "resourceClassName": "desc-packagednitricacid-c",
           "amount": 1
         }
       ],
@@ -5075,17 +5075,17 @@
       "shortName": "Recipe_SpaceElevatorPart_9_C",
       "ingredients": [
         {
-          "className": "desc-copperdust-c",
+          "resourceClassName": "desc-copperdust-c",
           "amount": 200
         },
         {
-          "className": "desc-pressureconversioncube-c",
+          "resourceClassName": "desc-pressureconversioncube-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-9-c",
+          "resourceClassName": "desc-spaceelevatorpart-9-c",
           "amount": 1
         }
       ],
@@ -5101,25 +5101,25 @@
       "shortName": "Recipe_UraniumCell_C",
       "ingredients": [
         {
-          "className": "desc-oreuranium-c",
+          "resourceClassName": "desc-oreuranium-c",
           "amount": 10
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 3
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 8000
         }
       ],
       "products": [
         {
-          "className": "desc-uraniumcell-c",
+          "resourceClassName": "desc-uraniumcell-c",
           "amount": 5
         },
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 2000
         }
       ],
@@ -5133,25 +5133,25 @@
       "shortName": "Recipe_Alternate_UraniumCell_1_C",
       "ingredients": [
         {
-          "className": "desc-oreuranium-c",
+          "resourceClassName": "desc-oreuranium-c",
           "amount": 5
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 3
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 5
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 15
         }
       ],
       "products": [
         {
-          "className": "desc-uraniumcell-c",
+          "resourceClassName": "desc-uraniumcell-c",
           "amount": 4
         }
       ],
@@ -5167,25 +5167,25 @@
       "shortName": "Recipe_CoolingSystem_C",
       "ingredients": [
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 2
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 2
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 5000
         },
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 25000
         }
       ],
       "products": [
         {
-          "className": "desc-coolingsystem-c",
+          "resourceClassName": "desc-coolingsystem-c",
           "amount": 1
         }
       ],
@@ -5199,21 +5199,21 @@
       "shortName": "Recipe_Alternate_CoolingDevice_C",
       "ingredients": [
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 4
         },
         {
-          "className": "desc-motor-c",
+          "resourceClassName": "desc-motor-c",
           "amount": 1
         },
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 24000
         }
       ],
       "products": [
         {
-          "className": "desc-coolingsystem-c",
+          "resourceClassName": "desc-coolingsystem-c",
           "amount": 2
         }
       ],
@@ -5229,25 +5229,25 @@
       "shortName": "Recipe_Battery_C",
       "ingredients": [
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 2500
         },
         {
-          "className": "desc-aluminasolution-c",
+          "resourceClassName": "desc-aluminasolution-c",
           "amount": 2000
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-battery-c",
+          "resourceClassName": "desc-battery-c",
           "amount": 1
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 1500
         }
       ],
@@ -5261,25 +5261,25 @@
       "shortName": "Recipe_Alternate_ClassicBattery_C",
       "ingredients": [
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 6
         },
         {
-          "className": "desc-aluminumplate-c",
+          "resourceClassName": "desc-aluminumplate-c",
           "amount": 7
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 8
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-battery-c",
+          "resourceClassName": "desc-battery-c",
           "amount": 4
         }
       ],
@@ -5295,25 +5295,25 @@
       "shortName": "Recipe_ComputerSuper_C",
       "ingredients": [
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 4
         },
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 2
         },
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 3
         },
         {
-          "className": "desc-plastic-c",
+          "resourceClassName": "desc-plastic-c",
           "amount": 28
         }
       ],
       "products": [
         {
-          "className": "desc-computersuper-c",
+          "resourceClassName": "desc-computersuper-c",
           "amount": 1
         }
       ],
@@ -5327,25 +5327,25 @@
       "shortName": "Recipe_Alternate_SuperStateComputer_C",
       "ingredients": [
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 3
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 1
         },
         {
-          "className": "desc-battery-c",
+          "resourceClassName": "desc-battery-c",
           "amount": 10
         },
         {
-          "className": "desc-wire-c",
+          "resourceClassName": "desc-wire-c",
           "amount": 25
         }
       ],
       "products": [
         {
-          "className": "desc-computersuper-c",
+          "resourceClassName": "desc-computersuper-c",
           "amount": 1
         }
       ],
@@ -5359,17 +5359,17 @@
       "shortName": "Recipe_Alternate_OCSupercomputer_C",
       "ingredients": [
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 2
         },
         {
-          "className": "desc-coolingsystem-c",
+          "resourceClassName": "desc-coolingsystem-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-computersuper-c",
+          "resourceClassName": "desc-computersuper-c",
           "amount": 1
         }
       ],
@@ -5385,21 +5385,21 @@
       "shortName": "Recipe_RadioControlUnit_C",
       "ingredients": [
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 32
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         },
         {
-          "className": "desc-computer-c",
+          "resourceClassName": "desc-computer-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 2
         }
       ],
@@ -5413,25 +5413,25 @@
       "shortName": "Recipe_Alternate_RadioControlSystem_C",
       "ingredients": [
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         },
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 10
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 60
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 30
         }
       ],
       "products": [
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 3
         }
       ],
@@ -5445,21 +5445,21 @@
       "shortName": "Recipe_Alternate_RadioControlUnit_1_C",
       "ingredients": [
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 4
         },
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 2
         },
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 12
         }
       ],
       "products": [
         {
-          "className": "desc-modularframelightweight-c",
+          "resourceClassName": "desc-modularframelightweight-c",
           "amount": 1
         }
       ],
@@ -5475,17 +5475,17 @@
       "shortName": "Recipe_SulfuricAcid_C",
       "ingredients": [
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 5
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 5000
         }
       ],
       "products": [
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 5000
         }
       ],
@@ -5499,17 +5499,17 @@
       "shortName": "Recipe_UnpackageSulfuricAcid_C",
       "ingredients": [
         {
-          "className": "desc-packagedsulfuricacid-c",
+          "resourceClassName": "desc-packagedsulfuricacid-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 1000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 1
         }
       ],
@@ -5525,17 +5525,17 @@
       "shortName": "Recipe_PackagedSulfuricAcid_C",
       "ingredients": [
         {
-          "className": "desc-sulfuricacid-c",
+          "resourceClassName": "desc-sulfuricacid-c",
           "amount": 2000
         },
         {
-          "className": "desc-fluidcanister-c",
+          "resourceClassName": "desc-fluidcanister-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-packagedsulfuricacid-c",
+          "resourceClassName": "desc-packagedsulfuricacid-c",
           "amount": 2
         }
       ],
@@ -5551,17 +5551,17 @@
       "shortName": "Recipe_SpaceElevatorPart_7_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-5-c",
+          "resourceClassName": "desc-spaceelevatorpart-5-c",
           "amount": 2
         },
         {
-          "className": "desc-computersuper-c",
+          "resourceClassName": "desc-computersuper-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-7-c",
+          "resourceClassName": "desc-spaceelevatorpart-7-c",
           "amount": 1
         }
       ],
@@ -5577,21 +5577,21 @@
       "shortName": "Recipe_HighSpeedConnector_C",
       "ingredients": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 56
         },
         {
-          "className": "desc-cable-c",
+          "resourceClassName": "desc-cable-c",
           "amount": 10
         },
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 1
         }
       ],
@@ -5605,21 +5605,21 @@
       "shortName": "Recipe_Alternate_HighSpeedConnector_C",
       "ingredients": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 60
         },
         {
-          "className": "desc-silica-c",
+          "resourceClassName": "desc-silica-c",
           "amount": 25
         },
         {
-          "className": "desc-circuitboard-c",
+          "resourceClassName": "desc-circuitboard-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 2
         }
       ],
@@ -5635,17 +5635,17 @@
       "shortName": "Recipe_ElectromagneticControlRod_C",
       "ingredients": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 3
         },
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 2
         }
       ],
@@ -5659,17 +5659,17 @@
       "shortName": "Recipe_Alternate_ElectromagneticControlRod_1_C",
       "ingredients": [
         {
-          "className": "desc-stator-c",
+          "resourceClassName": "desc-stator-c",
           "amount": 2
         },
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 2
         }
       ],
@@ -5685,21 +5685,21 @@
       "shortName": "Recipe_NuclearFuelRod_C",
       "ingredients": [
         {
-          "className": "desc-uraniumcell-c",
+          "resourceClassName": "desc-uraniumcell-c",
           "amount": 50
         },
         {
-          "className": "desc-steelplatereinforced-c",
+          "resourceClassName": "desc-steelplatereinforced-c",
           "amount": 3
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-nuclearfuelrod-c",
+          "resourceClassName": "desc-nuclearfuelrod-c",
           "amount": 1
         }
       ],
@@ -5713,25 +5713,25 @@
       "shortName": "Recipe_Alternate_NuclearFuelRod_1_C",
       "ingredients": [
         {
-          "className": "desc-uraniumcell-c",
+          "resourceClassName": "desc-uraniumcell-c",
           "amount": 100
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 10
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 3
         },
         {
-          "className": "desc-rotor-c",
+          "resourceClassName": "desc-rotor-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-nuclearfuelrod-c",
+          "resourceClassName": "desc-nuclearfuelrod-c",
           "amount": 3
         }
       ],
@@ -5747,17 +5747,17 @@
       "shortName": "Recipe_SpaceElevatorPart_6_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-2-c",
+          "resourceClassName": "desc-spaceelevatorpart-2-c",
           "amount": 5
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-6-c",
+          "resourceClassName": "desc-spaceelevatorpart-6-c",
           "amount": 2
         }
       ],
@@ -5773,17 +5773,17 @@
       "shortName": "Recipe_HeatSink_C",
       "ingredients": [
         {
-          "className": "desc-aluminumplate-c",
+          "resourceClassName": "desc-aluminumplate-c",
           "amount": 5
         },
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 1
         }
       ],
@@ -5797,17 +5797,17 @@
       "shortName": "Recipe_Alternate_HeatSink_1_C",
       "ingredients": [
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 3
         },
         {
-          "className": "desc-rubber-c",
+          "resourceClassName": "desc-rubber-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-aluminumplatereinforced-c",
+          "resourceClassName": "desc-aluminumplatereinforced-c",
           "amount": 1
         }
       ],
@@ -5823,21 +5823,21 @@
       "shortName": "Recipe_FusedModularFrame_C",
       "ingredients": [
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 1
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 50
         },
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 25000
         }
       ],
       "products": [
         {
-          "className": "desc-modularframefused-c",
+          "resourceClassName": "desc-modularframefused-c",
           "amount": 1
         }
       ],
@@ -5851,25 +5851,25 @@
       "shortName": "Recipe_Alternate_HeatFusedFrame_C",
       "ingredients": [
         {
-          "className": "desc-modularframeheavy-c",
+          "resourceClassName": "desc-modularframeheavy-c",
           "amount": 1
         },
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 50
         },
         {
-          "className": "desc-nitricacid-c",
+          "resourceClassName": "desc-nitricacid-c",
           "amount": 8000
         },
         {
-          "className": "desc-liquidfuel-c",
+          "resourceClassName": "desc-liquidfuel-c",
           "amount": 10000
         }
       ],
       "products": [
         {
-          "className": "desc-modularframefused-c",
+          "resourceClassName": "desc-modularframefused-c",
           "amount": 1
         }
       ],
@@ -5885,13 +5885,13 @@
       "shortName": "Recipe_GasTank_C",
       "ingredients": [
         {
-          "className": "desc-aluminumingot-c",
+          "resourceClassName": "desc-aluminumingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
@@ -5907,17 +5907,17 @@
       "shortName": "Recipe_PackagedNitrogen_C",
       "ingredients": [
         {
-          "className": "desc-nitrogengas-c",
+          "resourceClassName": "desc-nitrogengas-c",
           "amount": 4000
         },
         {
-          "className": "desc-gastank-c",
+          "resourceClassName": "desc-gastank-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-packagednitrogengas-c",
+          "resourceClassName": "desc-packagednitrogengas-c",
           "amount": 1
         }
       ],
@@ -5933,17 +5933,17 @@
       "shortName": "Recipe_Alternate_AutomatedMiner_C",
       "ingredients": [
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 4
         },
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "bp-itemdescriptorportableminer-c",
+          "resourceClassName": "bp-itemdescriptorportableminer-c",
           "amount": 1
         }
       ],
@@ -5959,25 +5959,25 @@
       "shortName": "Recipe_SpaceElevatorPart_8_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-4-c",
+          "resourceClassName": "desc-spaceelevatorpart-4-c",
           "amount": 5
         },
         {
-          "className": "desc-motorlightweight-c",
+          "resourceClassName": "desc-motorlightweight-c",
           "amount": 2
         },
         {
-          "className": "desc-coolingsystem-c",
+          "resourceClassName": "desc-coolingsystem-c",
           "amount": 6
         },
         {
-          "className": "desc-modularframefused-c",
+          "resourceClassName": "desc-modularframefused-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-8-c",
+          "resourceClassName": "desc-spaceelevatorpart-8-c",
           "amount": 2
         }
       ],
@@ -5993,13 +5993,13 @@
       "shortName": "Recipe_Alternate_Screw_2_C",
       "ingredients": [
         {
-          "className": "desc-steelplate-c",
+          "resourceClassName": "desc-steelplate-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 52
         }
       ],
@@ -6013,13 +6013,13 @@
       "shortName": "Recipe_Alternate_Screw_C",
       "ingredients": [
         {
-          "className": "desc-ironingot-c",
+          "resourceClassName": "desc-ironingot-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 20
         }
       ],
@@ -6033,13 +6033,13 @@
       "shortName": "Recipe_Screw_C",
       "ingredients": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-ironscrew-c",
+          "resourceClassName": "desc-ironscrew-c",
           "amount": 4
         }
       ],
@@ -6055,17 +6055,17 @@
       "shortName": "Recipe_Alternate_Quickwire_C",
       "ingredients": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         },
         {
-          "className": "desc-copperingot-c",
+          "resourceClassName": "desc-copperingot-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 12
         }
       ],
@@ -6079,13 +6079,13 @@
       "shortName": "Recipe_Quickwire_C",
       "ingredients": [
         {
-          "className": "desc-goldingot-c",
+          "resourceClassName": "desc-goldingot-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 5
         }
       ],
@@ -6101,17 +6101,17 @@
       "shortName": "Recipe_Alternate_Gunpowder_1_C",
       "ingredients": [
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 1
         },
         {
-          "className": "desc-compactedcoal-c",
+          "resourceClassName": "desc-compactedcoal-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-gunpowder-c",
+          "resourceClassName": "desc-gunpowder-c",
           "amount": 6
         }
       ],
@@ -6125,17 +6125,17 @@
       "shortName": "Recipe_Gunpowder_C",
       "ingredients": [
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 1
         },
         {
-          "className": "desc-sulfur-c",
+          "resourceClassName": "desc-sulfur-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-gunpowder-c",
+          "resourceClassName": "desc-gunpowder-c",
           "amount": 2
         }
       ],
@@ -6151,21 +6151,21 @@
       "shortName": "Recipe_Ficsonium_C",
       "ingredients": [
         {
-          "className": "desc-plutoniumwaste-c",
+          "resourceClassName": "desc-plutoniumwaste-c",
           "amount": 1
         },
         {
-          "className": "desc-singularitycell-c",
+          "resourceClassName": "desc-singularitycell-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 20000
         }
       ],
       "products": [
         {
-          "className": "desc-ficsonium-c",
+          "resourceClassName": "desc-ficsonium-c",
           "amount": 1
         }
       ],
@@ -6181,29 +6181,29 @@
       "shortName": "Recipe_FicsoniumFuelRod_C",
       "ingredients": [
         {
-          "className": "desc-ficsonium-c",
+          "resourceClassName": "desc-ficsonium-c",
           "amount": 2
         },
         {
-          "className": "desc-electromagneticcontrolrod-c",
+          "resourceClassName": "desc-electromagneticcontrolrod-c",
           "amount": 2
         },
         {
-          "className": "desc-ficsitemesh-c",
+          "resourceClassName": "desc-ficsitemesh-c",
           "amount": 40
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 20000
         }
       ],
       "products": [
         {
-          "className": "desc-ficsoniumfuelrod-c",
+          "resourceClassName": "desc-ficsoniumfuelrod-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 20000
         }
       ],
@@ -6219,25 +6219,25 @@
       "shortName": "Recipe_SingularityCell_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-9-c",
+          "resourceClassName": "desc-spaceelevatorpart-9-c",
           "amount": 1
         },
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 20
         },
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 100
         },
         {
-          "className": "desc-cement-c",
+          "resourceClassName": "desc-cement-c",
           "amount": 200
         }
       ],
       "products": [
         {
-          "className": "desc-singularitycell-c",
+          "resourceClassName": "desc-singularitycell-c",
           "amount": 10
         }
       ],
@@ -6253,25 +6253,25 @@
       "shortName": "Recipe_SpaceElevatorPart_11_C",
       "ingredients": [
         {
-          "className": "desc-spaceelevatorpart-8-c",
+          "resourceClassName": "desc-spaceelevatorpart-8-c",
           "amount": 1
         },
         {
-          "className": "desc-singularitycell-c",
+          "resourceClassName": "desc-singularitycell-c",
           "amount": 5
         },
         {
-          "className": "desc-quantumoscillator-c",
+          "resourceClassName": "desc-quantumoscillator-c",
           "amount": 2
         },
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 40
         }
       ],
       "products": [
         {
-          "className": "desc-spaceelevatorpart-11-c",
+          "resourceClassName": "desc-spaceelevatorpart-11-c",
           "amount": 1
         }
       ],
@@ -6287,21 +6287,21 @@
       "shortName": "Recipe_FilterHazmat_C",
       "ingredients": [
         {
-          "className": "desc-filter-c",
+          "resourceClassName": "desc-filter-c",
           "amount": 1
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 8
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-hazmatfilter-c",
+          "resourceClassName": "desc-hazmatfilter-c",
           "amount": 1
         }
       ],
@@ -6317,13 +6317,13 @@
       "shortName": "Recipe_Biofuel_C",
       "ingredients": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 8
         }
       ],
       "products": [
         {
-          "className": "desc-biofuel-c",
+          "resourceClassName": "desc-biofuel-c",
           "amount": 4
         }
       ],
@@ -6339,13 +6339,13 @@
       "shortName": "Recipe_Protein_Hog_C",
       "ingredients": [
         {
-          "className": "desc-hogparts-c",
+          "resourceClassName": "desc-hogparts-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
@@ -6359,13 +6359,13 @@
       "shortName": "Recipe_Protein_Spitter_C",
       "ingredients": [
         {
-          "className": "desc-spitterparts-c",
+          "resourceClassName": "desc-spitterparts-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
@@ -6379,13 +6379,13 @@
       "shortName": "Recipe_Protein_Stinger_C",
       "ingredients": [
         {
-          "className": "desc-stingerparts-c",
+          "resourceClassName": "desc-stingerparts-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
@@ -6399,13 +6399,13 @@
       "shortName": "Recipe_Protein_Crab_C",
       "ingredients": [
         {
-          "className": "desc-hatcherparts-c",
+          "resourceClassName": "desc-hatcherparts-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
@@ -6421,13 +6421,13 @@
       "shortName": "Recipe_Biomass_Mycelia_C",
       "ingredients": [
         {
-          "className": "desc-mycelia-c",
+          "resourceClassName": "desc-mycelia-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 10
         }
       ],
@@ -6441,13 +6441,13 @@
       "shortName": "Recipe_Biomass_AlienProtein_C",
       "ingredients": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 100
         }
       ],
@@ -6461,13 +6461,13 @@
       "shortName": "Recipe_Biomass_Leaves_C",
       "ingredients": [
         {
-          "className": "desc-leaves-c",
+          "resourceClassName": "desc-leaves-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 5
         }
       ],
@@ -6481,13 +6481,13 @@
       "shortName": "Recipe_Biomass_Wood_C",
       "ingredients": [
         {
-          "className": "desc-wood-c",
+          "resourceClassName": "desc-wood-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 20
         }
       ],
@@ -6503,13 +6503,13 @@
       "shortName": "Recipe_PowerCrystalShard_1_C",
       "ingredients": [
         {
-          "className": "desc-crystal-c",
+          "resourceClassName": "desc-crystal-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 1
         }
       ],
@@ -6523,29 +6523,29 @@
       "shortName": "Recipe_SyntheticPowerShard_C",
       "ingredients": [
         {
-          "className": "desc-timecrystal-c",
+          "resourceClassName": "desc-timecrystal-c",
           "amount": 2
         },
         {
-          "className": "desc-darkmatter-c",
+          "resourceClassName": "desc-darkmatter-c",
           "amount": 2
         },
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 12
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 12000
         }
       ],
       "products": [
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 12000
         }
       ],
@@ -6559,13 +6559,13 @@
       "shortName": "Recipe_PowerCrystalShard_3_C",
       "ingredients": [
         {
-          "className": "desc-crystal-mk3-c",
+          "resourceClassName": "desc-crystal-mk3-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 5
         }
       ],
@@ -6579,13 +6579,13 @@
       "shortName": "Recipe_PowerCrystalShard_2_C",
       "ingredients": [
         {
-          "className": "desc-crystal-mk2-c",
+          "resourceClassName": "desc-crystal-mk2-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 2
         }
       ],
@@ -6601,13 +6601,13 @@
       "shortName": "Recipe_AlienDNACapsule_C",
       "ingredients": [
         {
-          "className": "desc-alienprotein-c",
+          "resourceClassName": "desc-alienprotein-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-aliendnacapsule-c",
+          "resourceClassName": "desc-aliendnacapsule-c",
           "amount": 1
         }
       ],
@@ -6623,13 +6623,13 @@
       "shortName": "Recipe_SpikedRebar_C",
       "ingredients": [
         {
-          "className": "desc-ironrod-c",
+          "resourceClassName": "desc-ironrod-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-spikedrebar-c",
+          "resourceClassName": "desc-spikedrebar-c",
           "amount": 1
         }
       ],
@@ -6645,29 +6645,29 @@
       "shortName": "Recipe_AlienPowerFuel_C",
       "ingredients": [
         {
-          "className": "desc-samfluctuator-c",
+          "resourceClassName": "desc-samfluctuator-c",
           "amount": 5
         },
         {
-          "className": "desc-crystalshard-c",
+          "resourceClassName": "desc-crystalshard-c",
           "amount": 3
         },
         {
-          "className": "desc-quantumoscillator-c",
+          "resourceClassName": "desc-quantumoscillator-c",
           "amount": 3
         },
         {
-          "className": "desc-quantumenergy-c",
+          "resourceClassName": "desc-quantumenergy-c",
           "amount": 24000
         }
       ],
       "products": [
         {
-          "className": "desc-alienpowerfuel-c",
+          "resourceClassName": "desc-alienpowerfuel-c",
           "amount": 1
         },
         {
-          "className": "desc-darkenergy-c",
+          "resourceClassName": "desc-darkenergy-c",
           "amount": 24000
         }
       ],
@@ -6683,17 +6683,17 @@
       "shortName": "Recipe_CartridgeSmart_C",
       "ingredients": [
         {
-          "className": "desc-cartridgestandard-c",
+          "resourceClassName": "desc-cartridgestandard-c",
           "amount": 20
         },
         {
-          "className": "desc-highspeedconnector-c",
+          "resourceClassName": "desc-highspeedconnector-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-cartridgesmartprojectile-c",
+          "resourceClassName": "desc-cartridgesmartprojectile-c",
           "amount": 10
         }
       ],
@@ -6709,17 +6709,17 @@
       "shortName": "Recipe_Rebar_Stunshot_C",
       "ingredients": [
         {
-          "className": "desc-spikedrebar-c",
+          "resourceClassName": "desc-spikedrebar-c",
           "amount": 1
         },
         {
-          "className": "desc-highspeedwire-c",
+          "resourceClassName": "desc-highspeedwire-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-rebar-stunshot-c",
+          "resourceClassName": "desc-rebar-stunshot-c",
           "amount": 1
         }
       ],
@@ -6735,21 +6735,21 @@
       "shortName": "Recipe_FilterGasMask_C",
       "ingredients": [
         {
-          "className": "desc-fabric-c",
+          "resourceClassName": "desc-fabric-c",
           "amount": 2
         },
         {
-          "className": "desc-coal-c",
+          "resourceClassName": "desc-coal-c",
           "amount": 4
         },
         {
-          "className": "desc-ironplate-c",
+          "resourceClassName": "desc-ironplate-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-filter-c",
+          "resourceClassName": "desc-filter-c",
           "amount": 1
         }
       ],
@@ -6765,17 +6765,17 @@
       "shortName": "Recipe_NobeliskGas_C",
       "ingredients": [
         {
-          "className": "desc-nobeliskexplosive-c",
+          "resourceClassName": "desc-nobeliskexplosive-c",
           "amount": 1
         },
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 10
         }
       ],
       "products": [
         {
-          "className": "desc-nobeliskgas-c",
+          "resourceClassName": "desc-nobeliskgas-c",
           "amount": 1
         }
       ],
@@ -6791,17 +6791,17 @@
       "shortName": "Recipe_Alternate_PolyesterFabric_C",
       "ingredients": [
         {
-          "className": "desc-polymerresin-c",
+          "resourceClassName": "desc-polymerresin-c",
           "amount": 1
         },
         {
-          "className": "desc-water-c",
+          "resourceClassName": "desc-water-c",
           "amount": 1000
         }
       ],
       "products": [
         {
-          "className": "desc-fabric-c",
+          "resourceClassName": "desc-fabric-c",
           "amount": 1
         }
       ],
@@ -6815,17 +6815,17 @@
       "shortName": "Recipe_Fabric_C",
       "ingredients": [
         {
-          "className": "desc-mycelia-c",
+          "resourceClassName": "desc-mycelia-c",
           "amount": 1
         },
         {
-          "className": "desc-genericbiomass-c",
+          "resourceClassName": "desc-genericbiomass-c",
           "amount": 5
         }
       ],
       "products": [
         {
-          "className": "desc-fabric-c",
+          "resourceClassName": "desc-fabric-c",
           "amount": 1
         }
       ],
@@ -6841,17 +6841,17 @@
       "shortName": "Recipe_NobeliskShockwave_C",
       "ingredients": [
         {
-          "className": "desc-nobeliskexplosive-c",
+          "resourceClassName": "desc-nobeliskexplosive-c",
           "amount": 5
         },
         {
-          "className": "desc-crystaloscillator-c",
+          "resourceClassName": "desc-crystaloscillator-c",
           "amount": 1
         }
       ],
       "products": [
         {
-          "className": "desc-nobeliskshockwave-c",
+          "resourceClassName": "desc-nobeliskshockwave-c",
           "amount": 5
         }
       ],
@@ -6867,17 +6867,17 @@
       "shortName": "Recipe_Rebar_Spreadshot_C",
       "ingredients": [
         {
-          "className": "desc-spikedrebar-c",
+          "resourceClassName": "desc-spikedrebar-c",
           "amount": 2
         },
         {
-          "className": "desc-quartzcrystal-c",
+          "resourceClassName": "desc-quartzcrystal-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-rebar-spreadshot-c",
+          "resourceClassName": "desc-rebar-spreadshot-c",
           "amount": 1
         }
       ],
@@ -6893,21 +6893,21 @@
       "shortName": "Recipe_CartridgeChaos_Packaged_C",
       "ingredients": [
         {
-          "className": "desc-cartridgestandard-c",
+          "resourceClassName": "desc-cartridgestandard-c",
           "amount": 25
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 3
         },
         {
-          "className": "desc-turbofuel-c",
+          "resourceClassName": "desc-turbofuel-c",
           "amount": 3
         }
       ],
       "products": [
         {
-          "className": "desc-cartridgechaos-c",
+          "resourceClassName": "desc-cartridgechaos-c",
           "amount": 50
         }
       ],
@@ -6921,21 +6921,21 @@
       "shortName": "Recipe_CartridgeChaos_C",
       "ingredients": [
         {
-          "className": "desc-cartridgestandard-c",
+          "resourceClassName": "desc-cartridgestandard-c",
           "amount": 25
         },
         {
-          "className": "desc-aluminumcasing-c",
+          "resourceClassName": "desc-aluminumcasing-c",
           "amount": 3
         },
         {
-          "className": "desc-liquidturbofuel-c",
+          "resourceClassName": "desc-liquidturbofuel-c",
           "amount": 3000
         }
       ],
       "products": [
         {
-          "className": "desc-cartridgechaos-c",
+          "resourceClassName": "desc-cartridgechaos-c",
           "amount": 50
         }
       ],
@@ -6951,25 +6951,25 @@
       "shortName": "Recipe_NobeliskNuke_C",
       "ingredients": [
         {
-          "className": "desc-nobeliskexplosive-c",
+          "resourceClassName": "desc-nobeliskexplosive-c",
           "amount": 5
         },
         {
-          "className": "desc-uraniumcell-c",
+          "resourceClassName": "desc-uraniumcell-c",
           "amount": 20
         },
         {
-          "className": "desc-gunpowdermk2-c",
+          "resourceClassName": "desc-gunpowdermk2-c",
           "amount": 10
         },
         {
-          "className": "desc-circuitboardhighspeed-c",
+          "resourceClassName": "desc-circuitboardhighspeed-c",
           "amount": 6
         }
       ],
       "products": [
         {
-          "className": "desc-nobelisknuke-c",
+          "resourceClassName": "desc-nobelisknuke-c",
           "amount": 1
         }
       ],
@@ -6985,17 +6985,17 @@
       "shortName": "Recipe_Cartridge_C",
       "ingredients": [
         {
-          "className": "desc-coppersheet-c",
+          "resourceClassName": "desc-coppersheet-c",
           "amount": 3
         },
         {
-          "className": "desc-gunpowdermk2-c",
+          "resourceClassName": "desc-gunpowdermk2-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-cartridgestandard-c",
+          "resourceClassName": "desc-cartridgestandard-c",
           "amount": 15
         }
       ],
@@ -7011,21 +7011,21 @@
       "shortName": "Recipe_Rebar_Explosive_C",
       "ingredients": [
         {
-          "className": "desc-spikedrebar-c",
+          "resourceClassName": "desc-spikedrebar-c",
           "amount": 2
         },
         {
-          "className": "desc-gunpowdermk2-c",
+          "resourceClassName": "desc-gunpowdermk2-c",
           "amount": 2
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-rebar-explosive-c",
+          "resourceClassName": "desc-rebar-explosive-c",
           "amount": 1
         }
       ],
@@ -7041,17 +7041,17 @@
       "shortName": "Recipe_NobeliskCluster_C",
       "ingredients": [
         {
-          "className": "desc-nobeliskexplosive-c",
+          "resourceClassName": "desc-nobeliskexplosive-c",
           "amount": 3
         },
         {
-          "className": "desc-gunpowdermk2-c",
+          "resourceClassName": "desc-gunpowdermk2-c",
           "amount": 4
         }
       ],
       "products": [
         {
-          "className": "desc-nobeliskcluster-c",
+          "resourceClassName": "desc-nobeliskcluster-c",
           "amount": 1
         }
       ],
@@ -7067,17 +7067,17 @@
       "shortName": "Recipe_Nobelisk_C",
       "ingredients": [
         {
-          "className": "desc-gunpowder-c",
+          "resourceClassName": "desc-gunpowder-c",
           "amount": 2
         },
         {
-          "className": "desc-steelpipe-c",
+          "resourceClassName": "desc-steelpipe-c",
           "amount": 2
         }
       ],
       "products": [
         {
-          "className": "desc-nobeliskexplosive-c",
+          "resourceClassName": "desc-nobeliskexplosive-c",
           "amount": 1
         }
       ],
@@ -7093,17 +7093,17 @@
       "shortName": "Recipe_GunpowderMK2_C",
       "ingredients": [
         {
-          "className": "desc-gunpowder-c",
+          "resourceClassName": "desc-gunpowder-c",
           "amount": 2
         },
         {
-          "className": "desc-heavyoilresidue-c",
+          "resourceClassName": "desc-heavyoilresidue-c",
           "amount": 1000
         }
       ],
       "products": [
         {
-          "className": "desc-gunpowdermk2-c",
+          "resourceClassName": "desc-gunpowdermk2-c",
           "amount": 2
         }
       ],

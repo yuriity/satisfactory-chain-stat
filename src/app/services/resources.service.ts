@@ -65,12 +65,7 @@ export class ResourcesService {
     this.http.get<any[]>(this.resourcesDataSource).subscribe({
       next: (data) => {
         const resources = data.map(
-          (item) =>
-            ({
-              className: item.className,
-              displayName: item.displayName,
-              description: item.description,
-            } as Resource)
+          (item) => this.mapToResources(item)
         );
         this.resourcesSignal.set(resources);
         this.isLoading.set(false);
@@ -81,5 +76,20 @@ export class ResourcesService {
         this.isLoading.set(false);
       },
     });
+  }
+
+  private mapToResources(dataItem: any): Resource {
+    try {
+      return {
+      className: dataItem.className,
+      displayName: dataItem.displayName,
+      description: dataItem.description,
+      stackSize: dataItem.stackSize,
+      sinkPoints: dataItem.sinkPoints,
+      };
+    } catch (error) {
+      console.warn('Failed to map resource data item:', dataItem, error);
+      throw error;
+    }
   }
 }

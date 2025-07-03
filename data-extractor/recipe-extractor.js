@@ -85,7 +85,7 @@ try {
   for (const recipe of extractedRecipes) {
     if (!Array.isArray(recipe.products) || recipe.products.length === 0)
       continue;
-    const firstProduct = recipe.products[0].className;
+    const firstProduct = recipe.products[0].resourceClassName;
     if (!groupedRecipes[firstProduct]) {
       groupedRecipes[firstProduct] = [];
     }
@@ -192,7 +192,7 @@ function processIngradients(ingredientsStr) {
   const ingredients = [];
   for (const ingredient of jsonData) {
     ingredients.push({
-      className: processClassName(ingredient.ItemClass),
+      resourceClassName: processClassName(ingredient.ItemClass),
       amount: ingredient.Amount,
     });
   }

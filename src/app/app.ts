@@ -5,6 +5,7 @@ import { LocationsService } from './services/locations.service';
 import { Resource } from './models/resource';
 import { ResourcesService } from './services/resources.service';
 import { BoardComponent } from './components/board/board.component';
+import { RecipesService } from './services/recipes.service';
 
 @Component({
   selector: 'scs-root',
@@ -15,6 +16,7 @@ import { BoardComponent } from './components/board/board.component';
 })
 export class App {
   protected title = 'Satisfactory Chain Stat';
+  protected recipesService = inject(RecipesService);
   protected locationsService = inject(LocationsService);
   protected resourcesService = inject(ResourcesService);
   protected selectedResource = signal<Resource | null>(null);
