@@ -185,7 +185,7 @@ function processShortName(fullNameStr) {
 
 function processIngradients(ingredientsStr) {
   if (!ingredientsStr || ingredientsStr === "") {
-    return [""];
+    return [];
   }
   const jsonStr = transformString(ingredientsStr);
   const jsonData = JSON.parse(jsonStr);

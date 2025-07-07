@@ -474,9 +474,7 @@
       "displayName": "Excited Photonic Matter",
       "alternate": false,
       "shortName": "Recipe_QuantumEnergy_C",
-      "ingredients": [
-        ""
-      ],
+      "ingredients": [],
       "products": [
         {
           "resourceClassName": "desc-quantumenergy-c",

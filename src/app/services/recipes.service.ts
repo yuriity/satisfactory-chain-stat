@@ -87,6 +87,9 @@ export class RecipesService {
   private processGroupedRecipes(groupedRecipes: GroupedRecipes): void {
     const recipeGroups: RecipeGroup[] = [];
 
+    // console.log(
+    //   `groupedRecipes.length BEFORE: ${Object.keys(groupedRecipes).length}`
+    // );
     for (const groupScaffold of RecipeGroupScaffold) {
       const recipeGroup = {
         name: groupScaffold.name,
@@ -98,6 +101,7 @@ export class RecipesService {
         if (productClassName in groupedRecipes) {
           const recipes = this.processRecipes(groupedRecipes[productClassName]);
           recipeGroup.recipes.push(...recipes);
+          delete groupedRecipes[productClassName];
         } else {
           console.warn(
             `No recipes found for product class name: ${productClassName}`
@@ -105,37 +109,14 @@ export class RecipesService {
         }
       }
 
-      // for (const recipe of recipeGroup.recipes) {
-      //   const ingredientsSinkPoint = recipe.ingredients.reduce(
-      //     (acc, curr) => acc + curr.resource.sinkPoints,
-      //     0
-      //   );
-      //   console.log(
-      //     `Recipe: ${recipe.displayName}, techTier: ${
-      //       recipe.techTier
-      //     }, ingredientsSinkPoint : ${ingredientsSinkPoint}${
-      //       recipe.alternate ? ', ALT' : ''
-      //     }`
-      //   );
-      // }
       recipeGroups.push(recipeGroup);
     }
+    // console.log(
+    //   `groupedRecipes.length AFTER: ${Object.keys(groupedRecipes).length}`
+    // );
 
-    // for (const element of recipeGroups) {
-    //   console.log(element.name);
-    //   for (const recipe of element.recipes) {
-    //     const ingredientsSinkPoint = recipe.ingredients.reduce(
-    //       (acc, curr) => acc + curr.resource.sinkPoints,
-    //       0
-    //     );
-    //     console.log(
-    //       `Recipe: ${recipe.displayName}, producedIn: ${
-    //         recipe.producedIn
-    //       }, ingredientsSinkPoint : ${ingredientsSinkPoint}${
-    //         recipe.alternate ? ', ALT' : ''
-    //       }`
-    //     );
-    //   }
+    // for (const element of Object.keys(groupedRecipes)) {
+    //   console.log(element);
     // }
 
     this.recipeGroupsSignal.set(recipeGroups);
