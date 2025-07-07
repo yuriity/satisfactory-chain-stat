@@ -1,6 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Resource } from '../models/resource';
 import { Recipe, RecipeGroup } from '../models/recipe';
 import { RecipeGroupScaffold } from './recipe-group-scaffold';
 import { ResourcesService } from './resources.service';
