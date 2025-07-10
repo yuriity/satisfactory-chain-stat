@@ -44,7 +44,7 @@ interface GroupedRecipes {
 })
 export class RecipesService {
   private resourcesService = inject(ResourcesService);
-  private resourcesDataSource = '/data/en-US_recipes.json';
+  private resourcesDataSource = 'data/en-US_recipes.json';
   private recipeGroupsSignal = signal<RecipeGroup[]>([]);
   private isLoading = signal(false);
   private error = signal<Error | null>(null);
