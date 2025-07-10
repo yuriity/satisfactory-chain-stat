@@ -4,11 +4,7 @@
 
       <a class="navbar-brand" href="#">{{ title }}</a>
 
-      <button class="btn btn-success me-auto" (click)="createNewLocation()">
-        <i class="bi bi-plus-circle me-2"></i>Create Location
-      </button>
-
-      <div ngbDropdown class="dropdown">
+      <div ngbDropdown class="dropdown ms-auto">
         <button class="btn btn-light" type="button" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
           <i class="bi bi-three-dots-vertical"></i>
         </button>
@@ -34,6 +30,16 @@
 <main role="main" class="container-fluid mt-4 mb-4">
   <scs-board></scs-board>
 </main>
+
+<!-- Floating Action Button -->
+<button
+  class="btn btn-success rounded-circle shadow position-fixed fab"
+  (click)="createNewLocation()"
+  title="Create location"
+  aria-label="Create location"
+>
+  <i class="bi bi-plus-lg fs-4"></i>
+</button>
 
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container text-center">
