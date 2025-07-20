@@ -2,756 +2,1058 @@
   {
     "className": "desc-aliendnacapsule-c",
     "displayName": "Alien DNA Capsule",
-    "description": "Translates organic chemicals into readable alien genetic information. Used for researching alien organisms. Go the extra kilometer! Knowledge is power, and power is just efficiency with fewer steps. Depositing Alien DNA Capsules in the AWESOME Sink provides FICSIT with knowledge, and pioneers with Coupons."
+    "description": "Translates organic chemicals into readable alien genetic information. Used for researching alien organisms. Go the extra kilometer! Knowledge is power, and power is just efficiency with fewer steps. Depositing Alien DNA Capsules in the AWESOME Sink provides FICSIT with knowledge, and pioneers with Coupons.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-alienpowerfuel-c",
     "displayName": "Alien Power Matrix",
-    "description": "This intricate condensed-matter matrix is used to enhance the output of the Alien Power Augmenter. Initially developed in efforts to create a human-made Somersloop, the Alien Power Matrix cannot sustain the extra-dimensional energy connection on its own. However, it can effectively stabilize the energy stream of the Somersloop."
+    "description": "This intricate condensed-matter matrix is used to enhance the output of the Alien Power Augmenter. Initially developed in efforts to create a human-made Somersloop, the Alien Power Matrix cannot sustain the extra-dimensional energy connection on its own. However, it can effectively stabilize the energy stream of the Somersloop.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 210
   },
   {
     "className": "desc-alienprotein-c",
     "displayName": "Alien Protein",
-    "description": "Ground-up Alien Remains in a neat little package. Used for medical purposes and to research alien organisms."
+    "description": "Ground-up Alien Remains in a neat little package. Used for medical purposes and to research alien organisms.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 0
   },
   {
     "className": "desc-aluminasolution-c",
     "displayName": "Alumina Solution",
-    "description": "Dissolved Alumina, extracted from Bauxite. Can be further refined into Aluminum Scrap for Aluminum Ingot production."
+    "description": "Dissolved Alumina, extracted from Bauxite. Can be further refined into Aluminum Scrap for Aluminum Ingot production.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 20
   },
   {
     "className": "desc-aluminumcasing-c",
     "displayName": "Aluminum Casing",
-    "description": "A versatile container cast from Aluminum Ingots."
+    "description": "A versatile container cast from Aluminum Ingots.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 393
   },
   {
     "className": "desc-aluminumingot-c",
     "displayName": "Aluminum Ingot",
-    "description": "Smelted from Aluminum Scrap, which is refined from Alumina Solution. Used to produce specialized aluminum-based parts."
+    "description": "Smelted from Aluminum Scrap, which is refined from Alumina Solution. Used to produce specialized aluminum-based parts.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 131
   },
   {
     "className": "desc-aluminumplate-c",
     "displayName": "Alclad Aluminum Sheet",
-    "description": "Used to make products that require high heat conduction or a high specific strength. Thin, lightweight, and highly durable."
+    "description": "Used to make products that require high heat conduction or a high specific strength. Thin, lightweight, and highly durable.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 266
   },
   {
     "className": "desc-aluminumplatereinforced-c",
     "displayName": "Heat Sink",
-    "description": "Used to dissipate heat faster."
+    "description": "Used to dissipate heat faster.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 2804
   },
   {
     "className": "desc-aluminumscrap-c",
     "displayName": "Aluminum Scrap",
-    "description": "Refined from Alumina. Can be smelted into Aluminum Ingots for industrial usage."
+    "description": "Refined from Alumina. Can be smelted into Aluminum Ingots for industrial usage.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 27
   },
   {
     "className": "desc-battery-c",
     "displayName": "Battery",
-    "description": "Primarily used as fuel for Drones and vehicles."
+    "description": "Primarily used as fuel for Drones and vehicles.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 465
   },
   {
     "className": "desc-biofuel-c",
     "displayName": "Solid Biofuel",
-    "description": "The most energy-efficient form of solid Biomass. Can be used as fuel for the Chainsaw."
+    "description": "The most energy-efficient form of solid Biomass. Can be used as fuel for the Chainsaw.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 48
   },
   {
     "className": "desc-cable-c",
     "displayName": "Cable",
-    "description": "Used for crafting. Primarily used to build Power Lines."
+    "description": "Used for crafting. Primarily used to build Power Lines.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 24
   },
   {
     "className": "desc-candycane-c",
     "displayName": "Candy Cane",
-    "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays. *Disclaimer: Not for human consumption..."
+    "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays. *Disclaimer: Not for human consumption...",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 6
   },
   {
     "className": "desc-cement-c",
     "displayName": "Concrete",
-    "description": "Used for building. Good for stable Foundations."
+    "description": "Used for building. Good for stable Foundations.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 12
   },
   {
     "className": "desc-circuitboard-c",
     "displayName": "Circuit Board",
-    "description": "Advanced electronics that have a plethora of different uses."
+    "description": "Advanced electronics that have a plethora of different uses.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 696
   },
   {
     "className": "desc-circuitboardhighspeed-c",
     "displayName": "AI Limiter",
-    "description": "Controls AIs and keeps them from evolving in malicious ways. Super advanced electronics."
+    "description": "Controls AIs and keeps them from evolving in malicious ways. Super advanced electronics.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 920
   },
   {
     "className": "desc-coal-c",
     "displayName": "Coal",
-    "description": "Mainly used as fuel for vehicles & Coal-Powered Generators, or in Steel production."
+    "description": "Mainly used as fuel for vehicles & Coal-Powered Generators, or in Steel production.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 3
   },
   {
     "className": "desc-compactedcoal-c",
     "displayName": "Compacted Coal",
-    "description": "A much more efficient alternative to Coal. Used as fuel for vehicles and Coal-Powered Generators."
+    "description": "A much more efficient alternative to Coal. Used as fuel for vehicles and Coal-Powered Generators.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 28
   },
   {
     "className": "desc-computer-c",
     "displayName": "Computer",
-    "description": "A complex logic machine that is used to control advanced behavior in other machines."
+    "description": "A complex logic machine that is used to control advanced behavior in other machines.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 8352
   },
   {
     "className": "desc-computersuper-c",
     "displayName": "Supercomputer",
-    "description": "The next-gen version of a Computer."
+    "description": "The next-gen version of a Computer.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 97352
   },
   {
     "className": "desc-coolingsystem-c",
     "displayName": "Cooling System",
-    "description": "Keeps advanced parts and buildings from exceeding efficient temperature levels."
+    "description": "Keeps advanced parts and buildings from exceeding efficient temperature levels.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 12006
   },
   {
     "className": "desc-copperdust-c",
     "displayName": "Copper Powder",
-    "description": "Ground-up Copper Ingots. The high natural density of Copper, combined with the granularity of the powder, makes this part perfect for producing Nuclear Pasta in the Particle Accelerator."
+    "description": "Ground-up Copper Ingots. The high natural density of Copper, combined with the granularity of the powder, makes this part perfect for producing Nuclear Pasta in the Particle Accelerator.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 72
   },
   {
     "className": "desc-copperingot-c",
     "displayName": "Copper Ingot",
-    "description": "Used for crafting the most basic parts."
+    "description": "Used for crafting the most basic parts.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 6
   },
   {
     "className": "desc-coppersheet-c",
     "displayName": "Copper Sheet",
-    "description": "Used for crafting. Primarily used for Pipelines due to its high corrosion resistance."
+    "description": "Used for crafting. Primarily used for Pipelines due to its high corrosion resistance.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 24
   },
   {
     "className": "desc-crystal-c",
     "displayName": "Blue Power Slug",
-    "description": "A strange slug radiating an unknown weak power."
+    "description": "A strange slug radiating an unknown weak power.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-crystal-mk2-c",
     "displayName": "Yellow Power Slug",
-    "description": "A strange slug radiating an unknown power."
+    "description": "A strange slug radiating an unknown power.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-crystal-mk3-c",
     "displayName": "Purple Power Slug",
-    "description": "A strange slug radiating a powerful unknown power."
+    "description": "A strange slug radiating a powerful unknown power.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-crystaloscillator-c",
     "displayName": "Crystal Oscillator",
-    "description": "An electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency."
+    "description": "An electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 3072
   },
   {
     "className": "desc-darkenergy-c",
     "displayName": "Dark Matter Residue",
-    "description": "Produced as a by-product of Quantum Encoding processes and alternatively generated in the Converter. Various fields of science are still debating the nature and properties of Dark Matter. Meanwhile, FICSIT has found several applications for it in space-time manipulation."
+    "description": "Produced as a by-product of Quantum Encoding processes and alternatively generated in the Converter. Various fields of science are still debating the nature and properties of Dark Matter. Meanwhile, FICSIT has found several applications for it in space-time manipulation.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 130
   },
   {
     "className": "desc-darkmatter-c",
     "displayName": "Dark Matter Crystal",
-    "description": "Concentrated Dark Matter Residue that is isolated within a crystalline vessel. This form of containment allows for utilising Dark Matter reliably in other production processes. Power Usage: 500-1500 MW (1000 MW average)."
+    "description": "Concentrated Dark Matter Residue that is isolated within a crystalline vessel. This form of containment allows for utilising Dark Matter reliably in other production processes. Power Usage: 500-1500 MW (1000 MW average).",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 1780
   },
   {
     "className": "desc-diamond-c",
     "displayName": "Diamonds",
-    "description": "Synthetic Diamonds produced by exposing Coal to extreme heat and pressure. Used in the production of Time Crystals and Dark Matter Crystals. Power Usage: 250-750 MW (500 MW average)."
+    "description": "Synthetic Diamonds produced by exposing Coal to extreme heat and pressure. Used in the production of Time Crystals and Dark Matter Crystals. Power Usage: 250-750 MW (500 MW average).",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 240
   },
   {
     "className": "desc-dissolvedsilica-c",
     "displayName": "Dissolved Silica",
-    "description": "Silica dissolved in Water, produced as part of the alternative refinement of Raw Quartz. The Silica can be extracted from the Water to complete the refinement process."
+    "description": "Silica dissolved in Water, produced as part of the alternative refinement of Raw Quartz. The Silica can be extracted from the Water to complete the refinement process.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 0
   },
   {
     "className": "desc-electromagneticcontrolrod-c",
     "displayName": "Electromagnetic Control Rod",
-    "description": "Regulates power output via electromagnetism."
+    "description": "Regulates power output via electromagnetism.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 2560
   },
   {
     "className": "desc-fabric-c",
     "displayName": "Fabric",
-    "description": "Used to craft equipment. Flexible but durable fabric."
+    "description": "Used to craft equipment. Flexible but durable fabric.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 140
   },
   {
     "className": "desc-ficsiteingot-c",
     "displayName": "Ficsite Ingot",
-    "description": "Produced by reconstructing other metals on a molecular level using Strange Alien Matter. Synthesized by FICSIT to be the perfect construction material, and used in the most high-end processes."
+    "description": "Produced by reconstructing other metals on a molecular level using Strange Alien Matter. Synthesized by FICSIT to be the perfect construction material, and used in the most high-end processes.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 1936
   },
   {
     "className": "desc-ficsitemesh-c",
     "displayName": "Ficsite Trigon",
-    "description": "The Ficsite Trigon, made from Ficsite Ingots, is perfectly shaped for all construction challenges. Its performance is so exceptional, it basically solved structural engineering."
+    "description": "The Ficsite Trigon, made from Ficsite Ingots, is perfectly shaped for all construction challenges. Its performance is so exceptional, it basically solved structural engineering.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 1291
   },
   {
     "className": "desc-ficsonium-c",
     "displayName": "Ficsonium",
-    "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. Power Usage: 500-1500 MW (1000 MW average). Caution: Moderately Radioactive."
+    "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. Power Usage: 500-1500 MW (1000 MW average). Caution: Moderately Radioactive.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 0
   },
   {
     "className": "desc-ficsoniumfuelrod-c",
     "displayName": "Ficsonium Fuel Rod",
-    "description": "Used as fuel for Nuclear Power Plants. The power source that put FICSIT on the map. Literally. The crater is still there. Caution: Moderately Radioactive."
+    "description": "Used as fuel for Nuclear Power Plants. The power source that put FICSIT on the map. Literally. The crater is still there. Caution: Moderately Radioactive.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-filter-c",
     "displayName": "Gas Filter",
-    "description": "Filters out toxins and pollutants from the air when used with a Gas Mask."
+    "description": "Filters out toxins and pollutants from the air when used with a Gas Mask.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 608
   },
   {
     "className": "desc-fluidcanister-c",
     "displayName": "Empty Canister",
-    "description": "Used to package fluids for transportation."
+    "description": "Used to package fluids for transportation.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 60
   },
   {
     "className": "desc-fuel-c",
     "displayName": "Packaged Fuel",
-    "description": "Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack."
+    "description": "Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 270
   },
   {
     "className": "desc-gastank-c",
     "displayName": "Empty Fluid Tank",
-    "description": "Used to package gases and volatile liquids for transportation."
+    "description": "Used to package gases and volatile liquids for transportation.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 170
   },
   {
     "className": "desc-genericbiomass-c",
     "displayName": "Biomass",
-    "description": "Primarily used as fuel. Biomass Burners and vehicles can use it for power. Biomass is much more energy-efficient than raw biological matter."
+    "description": "Primarily used as fuel. Biomass Burners and vehicles can use it for power. Biomass is much more energy-efficient than raw biological matter.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 12
   },
   {
     "className": "desc-gift-c",
     "displayName": "FICSMAS Gift",
-    "description": "Gifts that have inexplicably fallen from the sky or spawned from a FICSMAS Gift Tree. Don’t question it—they’re used to produce FICSMAS buildings and parts. These Gifts are part of the FICSMAS Event, like the calendar in the HUB."
+    "description": "Gifts that have inexplicably fallen from the sky or spawned from a FICSMAS Gift Tree. Don’t question it—they’re used to produce FICSMAS buildings and parts. These Gifts are part of the FICSMAS Event, like the calendar in the HUB.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 1
   },
   {
     "className": "desc-goldingot-c",
     "displayName": "Caterium Ingot",
-    "description": "Smelted from Caterium Ore. Primarily used for advanced electronics."
+    "description": "Smelted from Caterium Ore. Primarily used for advanced electronics.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 42
   },
   {
     "className": "desc-gunpowder-c",
     "displayName": "Black Powder",
-    "description": "An explosive powder that is commonly used to produce simple explosives."
+    "description": "An explosive powder that is commonly used to produce simple explosives.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 14
   },
   {
     "className": "desc-gunpowdermk2-c",
     "displayName": "Smokeless Powder",
-    "description": "An explosive powder that is commonly used to produce modern firearms."
+    "description": "An explosive powder that is commonly used to produce modern firearms.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 58
   },
   {
     "className": "desc-hatcherparts-c",
     "displayName": "Hatcher Remains",
-    "description": "The shell-like remains of an alien... thing. Used for MAM research."
+    "description": "The shell-like remains of an alien... thing. Used for MAM research.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-hazmatfilter-c",
     "displayName": "Iodine-Infused Filter",
-    "description": "Absorbs radioactive particles when used with the Hazmat Suit."
+    "description": "Absorbs radioactive particles when used with the Hazmat Suit.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 2274
   },
   {
     "className": "desc-heavyoilresidue-c",
     "displayName": "Heavy Oil Residue",
-    "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke."
+    "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 30
   },
   {
     "className": "desc-highspeedconnector-c",
     "displayName": "High-Speed Connector",
-    "description": "Connects multiple cables and wires in a very efficient way. Uses a standard pattern, so it has many varied applications."
+    "description": "Connects multiple cables and wires in a very efficient way. Uses a standard pattern, so it has many varied applications.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 3776
   },
   {
     "className": "desc-highspeedwire-c",
     "displayName": "Quickwire",
-    "description": "Caterium's high conductivity and resistance to corrosion make it ideal for small, advanced electronics."
+    "description": "Caterium's high conductivity and resistance to corrosion make it ideal for small, advanced electronics.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 17
   },
   {
     "className": "desc-hogparts-c",
     "displayName": "Hog Remains",
-    "description": "The carapace of an alien Hog creature. Used for MAM research."
+    "description": "The carapace of an alien Hog creature. Used for MAM research.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-ionizedfuel-c",
     "displayName": "Ionized Fuel",
-    "description": "Fuel that has been ionized, allowing it to deliver incredible output. Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack."
+    "description": "Fuel that has been ionized, allowing it to deliver incredible output. Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 2398
   },
   {
     "className": "desc-ironingot-c",
     "displayName": "Iron Ingot",
-    "description": "Used for crafting the most basic parts."
+    "description": "Used for crafting the most basic parts.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 2
   },
   {
     "className": "desc-ironplate-c",
     "displayName": "Iron Plate",
-    "description": "Used for crafting. One of the most basic parts."
+    "description": "Used for crafting. One of the most basic parts.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 6
   },
   {
     "className": "desc-ironplatereinforced-c",
     "displayName": "Reinforced Iron Plate",
-    "description": "Used for crafting. A sturdier and more durable Iron Plate."
+    "description": "Used for crafting. A sturdier and more durable Iron Plate.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 120
   },
   {
     "className": "desc-ironrod-c",
     "displayName": "Iron Rod",
-    "description": "Used for crafting. One of the most basic parts."
+    "description": "Used for crafting. One of the most basic parts.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 4
   },
   {
     "className": "desc-ironscrew-c",
     "displayName": "Screws",
-    "description": "Used for crafting. One of the most basic parts."
+    "description": "Used for crafting. One of the most basic parts.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 2
   },
   {
     "className": "desc-leaves-c",
     "displayName": "Leaves",
-    "description": "Primarily used as fuel. Biomass Burners and vehicles can use Leaves for power."
+    "description": "Primarily used as fuel. Biomass Burners and vehicles can use Leaves for power.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 3
   },
   {
     "className": "desc-liquidbiofuel-c",
     "displayName": "Liquid Biofuel",
-    "description": "Liquid Biofuel can be used as-is to generate power, or packaged to be used as fuel for vehicles."
+    "description": "Liquid Biofuel can be used as-is to generate power, or packaged to be used as fuel for vehicles.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 261
   },
   {
     "className": "desc-liquidfuel-c",
     "displayName": "Fuel",
-    "description": "Can be used as-is to generate power, or packaged to be used as fuel for vehicles or the Jetpack."
+    "description": "Can be used as-is to generate power, or packaged to be used as fuel for vehicles or the Jetpack.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 75
   },
   {
     "className": "desc-liquidoil-c",
     "displayName": "Crude Oil",
-    "description": "Refined into all kinds of Oil-based resources, like Fuel and Plastic."
+    "description": "Refined into all kinds of Oil-based resources, like Fuel and Plastic.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 30
   },
   {
     "className": "desc-liquidturbofuel-c",
     "displayName": "Turbofuel",
-    "description": "A more efficient alternative to Fuel. Can be used as-is to generate power, or packaged to be used as fuel for vehicles."
+    "description": "A more efficient alternative to Fuel. Can be used as-is to generate power, or packaged to be used as fuel for vehicles.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 225
   },
   {
     "className": "desc-modularframe-c",
     "displayName": "Modular Frame",
-    "description": "Used for crafting. A multipurpose building block."
+    "description": "Used for crafting. A multipurpose building block.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 408
   },
   {
     "className": "desc-modularframefused-c",
     "displayName": "Fused Modular Frame",
-    "description": "A corrosion-resistant, nitride-hardened, highly-robust-yet-lightweight modular frame."
+    "description": "A corrosion-resistant, nitride-hardened, highly-robust-yet-lightweight modular frame.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 62840
   },
   {
     "className": "desc-modularframeheavy-c",
     "displayName": "Heavy Modular Frame",
-    "description": "A more robust multipurpose frame."
+    "description": "A more robust multipurpose frame.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 10800
   },
   {
     "className": "desc-modularframelightweight-c",
     "displayName": "Radio Control Unit",
-    "description": "Enhances and directs radio signals."
+    "description": "Enhances and directs radio signals.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 32352
   },
   {
     "className": "desc-motor-c",
     "displayName": "Motor",
-    "description": "Creates a mechanical force that is used to move things from machines to vehicles."
+    "description": "Creates a mechanical force that is used to move things from machines to vehicles.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 1520
   },
   {
     "className": "desc-motorlightweight-c",
     "displayName": "Turbo Motor",
-    "description": "A more complex and powerful version of the regular Motor."
+    "description": "A more complex and powerful version of the regular Motor.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 240496
   },
   {
     "className": "desc-mycelia-c",
     "displayName": "Mycelia",
-    "description": "Used for crafting. Biomass Burners and vehicles can also use Mycelia for power."
+    "description": "Used for crafting. Biomass Burners and vehicles can also use Mycelia for power.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 10
   },
   {
     "className": "desc-nitricacid-c",
     "displayName": "Nitric Acid",
-    "description": "Produced when Nitrogen Gas reacts with Water. Its high corrosiveness and oxidizing properties make it an excellent choice for refinement and fuel production processes."
+    "description": "Produced when Nitrogen Gas reacts with Water. Its high corrosiveness and oxidizing properties make it an excellent choice for refinement and fuel production processes.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 94
   },
   {
     "className": "desc-nitrogengas-c",
     "displayName": "Nitrogen Gas",
-    "description": "Has a variety of uses, including metallurgy, cooling, and Nitric Acid production. On MASSAGE-2 (AB)b, it can be extracted from underground gas wells."
+    "description": "Has a variety of uses, including metallurgy, cooling, and Nitric Acid production. On MASSAGE-2 (AB)b, it can be extracted from underground gas wells.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 10
   },
   {
     "className": "desc-nonfissibleuranium-c",
     "displayName": "Non-Fissile Uranium",
-    "description": "The Uranium-238 isotope is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be converted into fissile Plutonium in the Particle Accelerator. Caution: Mildly Radioactive."
+    "description": "The Uranium-238 isotope is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be converted into fissile Plutonium in the Particle Accelerator. Caution: Mildly Radioactive.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 0
   },
   {
     "className": "desc-nuclearfuelrod-c",
     "displayName": "Uranium Fuel Rod",
-    "description": "Used as fuel for Nuclear Power Plants. Caution: Produces radioactive Uranium Waste when consumed. Caution: Moderately Radioactive."
+    "description": "Used as fuel for Nuclear Power Plants. Caution: Produces radioactive Uranium Waste when consumed. Caution: Moderately Radioactive.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 43468
   },
   {
     "className": "desc-nuclearwaste-c",
     "displayName": "Uranium Waste",
-    "description": "The by-product of consuming Uranium Fuel Rods in a Nuclear Power Plant. Non-Fissile Uranium can be extracted. Handle with caution. Caution: HIGHLY Radioactive."
+    "description": "The by-product of consuming Uranium Fuel Rods in a Nuclear Power Plant. Non-Fissile Uranium can be extracted. Handle with caution. Caution: HIGHLY Radioactive.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 0
   },
   {
     "className": "desc-orebauxite-c",
     "displayName": "Bauxite",
-    "description": "Used to produce Alumina, which can be further refined into the Aluminum Scrap required to produce Aluminum Ingots."
+    "description": "Used to produce Alumina, which can be further refined into the Aluminum Scrap required to produce Aluminum Ingots.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 8
   },
   {
     "className": "desc-orecopper-c",
     "displayName": "Copper Ore",
-    "description": "Used for crafting. A basic resource primarily used for electricity."
+    "description": "Used for crafting. A basic resource primarily used for electricity.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 3
   },
   {
     "className": "desc-oregold-c",
     "displayName": "Caterium Ore",
-    "description": "Smelted into Caterium Ingots, which are primarily used for advanced electronics."
+    "description": "Smelted into Caterium Ingots, which are primarily used for advanced electronics.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 7
   },
   {
     "className": "desc-oreiron-c",
     "displayName": "Iron Ore",
-    "description": "Used for crafting. The most essential basic resource."
+    "description": "Used for crafting. The most essential basic resource.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 1
   },
   {
     "className": "desc-oreuranium-c",
     "displayName": "Uranium",
-    "description": "A radioactive element. Used to produce Encased Uranium Cells for Uranium Fuel Rods. Caution: Moderately Radioactive."
+    "description": "A radioactive element. Used to produce Encased Uranium Cells for Uranium Fuel Rods. Caution: Moderately Radioactive.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 35
   },
   {
     "className": "desc-packagedalumina-c",
     "displayName": "Packaged Alumina Solution",
-    "description": "Alumina Solution, packaged for alternative transport."
+    "description": "Alumina Solution, packaged for alternative transport.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 160
   },
   {
     "className": "desc-packagedbiofuel-c",
     "displayName": "Packaged Liquid Biofuel",
-    "description": "Liquid Biofuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack."
+    "description": "Liquid Biofuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 370
   },
   {
     "className": "desc-packagedionizedfuel-c",
     "displayName": "Packaged Ionized Fuel",
-    "description": "Ionized Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack."
+    "description": "Ionized Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 5246
   },
   {
     "className": "desc-packagednitricacid-c",
     "displayName": "Packaged Nitric Acid",
-    "description": "Nitric Acid, packaged for alternative transport."
+    "description": "Nitric Acid, packaged for alternative transport.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 412
   },
   {
     "className": "desc-packagednitrogengas-c",
     "displayName": "Packaged Nitrogen Gas",
-    "description": "Nitrogen Gas, packaged for alternative transport."
+    "description": "Nitrogen Gas, packaged for alternative transport.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 312
   },
   {
     "className": "desc-packagedoil-c",
     "displayName": "Packaged Oil",
-    "description": "Crude Oil, packaged for alternative transport. Can be used as fuel for vehicles."
+    "description": "Crude Oil, packaged for alternative transport. Can be used as fuel for vehicles.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 180
   },
   {
     "className": "desc-packagedoilresidue-c",
     "displayName": "Packaged Heavy Oil Residue",
-    "description": "Heavy Oil Residue, packaged for alternative transport. Can be used as fuel for vehicles."
+    "description": "Heavy Oil Residue, packaged for alternative transport. Can be used as fuel for vehicles.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 180
   },
   {
     "className": "desc-packagedrocketfuel-c",
     "displayName": "Packaged Rocket Fuel",
-    "description": "Rocket Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack."
+    "description": "Rocket Fuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 1028
   },
   {
     "className": "desc-packagedsulfuricacid-c",
     "displayName": "Packaged Sulfuric Acid",
-    "description": "Sulfuric Acid, packaged for alternative transport."
+    "description": "Sulfuric Acid, packaged for alternative transport.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 152
   },
   {
     "className": "desc-packagedwater-c",
     "displayName": "Packaged Water",
-    "description": "Water, packaged for alternative transport."
+    "description": "Water, packaged for alternative transport.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 130
   },
   {
     "className": "desc-petroleumcoke-c",
     "displayName": "Petroleum Coke",
-    "description": "Used for crafting. A carbon-rich material distilled from Heavy Oil Residue. Used as a less efficient Coal replacement."
+    "description": "Used for crafting. A carbon-rich material distilled from Heavy Oil Residue. Used as a less efficient Coal replacement.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 20
   },
   {
     "className": "desc-plastic-c",
     "displayName": "Plastic",
-    "description": "Versatile and easy to manufacture, this material has a wide range of uses."
+    "description": "Versatile and easy to manufacture, this material has a wide range of uses.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 75
   },
   {
     "className": "desc-plutoniumcell-c",
     "displayName": "Encased Plutonium Cell",
-    "description": "Plutonium Pellets encased in concrete. Used to produce Plutonium Fuel Rods for Nuclear Power production. Power Usage: 250-750 MW (500 MW average). Caution: Moderately Radioactive."
+    "description": "Plutonium Pellets encased in concrete. Used to produce Plutonium Fuel Rods for Nuclear Power production. Power Usage: 250-750 MW (500 MW average). Caution: Moderately Radioactive.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 0
   },
   {
     "className": "desc-plutoniumfuelrod-c",
     "displayName": "Plutonium Fuel Rod",
-    "description": "Used as fuel for Nuclear Power Plants. Caution: Produces radioactive Plutonium Waste when consumed. Caution: HIGHLY Radioactive."
+    "description": "Used as fuel for Nuclear Power Plants. Caution: Produces radioactive Plutonium Waste when consumed. Caution: HIGHLY Radioactive.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 153184
   },
   {
     "className": "desc-plutoniumpellet-c",
     "displayName": "Plutonium Pellet",
-    "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium. Used to produce Encased Plutonium Cells for Plutonium Fuel Rods. Power Usage: 250-750 MW (500 MW average). Caution: Moderately Radioactive."
+    "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium. Used to produce Encased Plutonium Cells for Plutonium Fuel Rods. Power Usage: 250-750 MW (500 MW average). Caution: Moderately Radioactive.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 0
   },
   {
     "className": "desc-plutoniumwaste-c",
     "displayName": "Plutonium Waste",
-    "description": "The by-product of consuming Plutonium Fuel Rods in a Nuclear Power Plant. Must be stored in a safe location. Handle with caution. Caution: EXTREMELY Radioactive."
+    "description": "The by-product of consuming Plutonium Fuel Rods in a Nuclear Power Plant. Must be stored in a safe location. Handle with caution. Caution: EXTREMELY Radioactive.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 0
   },
   {
     "className": "desc-polymerresin-c",
     "displayName": "Polymer Resin",
-    "description": "A by-product of Crude Oil refinement into Fuel. Commonly used to manufacture Plastic and Rubber."
+    "description": "A by-product of Crude Oil refinement into Fuel. Commonly used to manufacture Plastic and Rubber.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 12
   },
   {
     "className": "desc-pressureconversioncube-c",
     "displayName": "Pressure Conversion Cube",
-    "description": "Converts outgoing force into internal pressure. Required to contain unstable, high-energy matter."
+    "description": "Converts outgoing force into internal pressure. Required to contain unstable, high-energy matter.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 255088
   },
   {
     "className": "desc-quantumenergy-c",
     "displayName": "Excited Photonic Matter",
-    "description": "Excited Photonic Matter is essential for all production processes in the Quantum Encoder. Formed in the Converter by inducing intense photon interactions through exposure to SAM in a high-energy environment."
+    "description": "Excited Photonic Matter is essential for all production processes in the Quantum Encoder. Formed in the Converter by inducing intense photon interactions through exposure to SAM in a high-energy environment.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 100
   },
   {
     "className": "desc-quantumoscillator-c",
     "displayName": "Superposition Oscillator",
-    "description": "An oscillator circuit that uses the mechanical resonance of a vibrating crystal to create a string vibration with a precise frequency. Often used in teleportation technology and dimensional manipulation."
+    "description": "An oscillator circuit that uses the mechanical resonance of a vibrating crystal to create a string vibration with a precise frequency. Often used in teleportation technology and dimensional manipulation.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 37292
   },
   {
     "className": "desc-quartzcrystal-c",
     "displayName": "Quartz Crystal",
-    "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens."
+    "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 50
   },
   {
     "className": "desc-rawquartz-c",
     "displayName": "Raw Quartz",
-    "description": "Can be processed into Quartz Crystals and Silica, which both offer a variety of applications."
+    "description": "Can be processed into Quartz Crystals and Silica, which both offer a variety of applications.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 15
   },
   {
     "className": "desc-rocketfuel-c",
     "displayName": "Rocket Fuel",
-    "description": "A high-impulse compressed gas fuel. Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack."
+    "description": "A high-impulse compressed gas fuel. Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 289
   },
   {
     "className": "desc-rotor-c",
     "displayName": "Rotor",
-    "description": "Used for crafting. The moving parts of a motor."
+    "description": "Used for crafting. The moving parts of a motor.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 140
   },
   {
     "className": "desc-rubber-c",
     "displayName": "Rubber",
-    "description": "A very flexible material that has a lot of friction."
+    "description": "A very flexible material that has a lot of friction.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 60
   },
   {
     "className": "desc-sam-c",
     "displayName": "SAM",
-    "description": "Strange Alien Matter, commonly referred to as SAM, doesn't seem to follow the known laws of physics. It whispers of new possibilities."
+    "description": "Strange Alien Matter, commonly referred to as SAM, doesn't seem to follow the known laws of physics. It whispers of new possibilities.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 20
   },
   {
     "className": "desc-samfluctuator-c",
     "displayName": "SAM Fluctuator",
-    "description": "The SAM Fluctuator is able to regulate and direct the behavior of Reanimated SAM through the application of electric charges with varying frequencies. This control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation."
+    "description": "The SAM Fluctuator is able to regulate and direct the behavior of Reanimated SAM through the application of electric charges with varying frequencies. This control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 1968
   },
   {
     "className": "desc-samingot-c",
     "displayName": "Reanimated SAM",
-    "description": "The active and contained form of the Strange Alien Matter. Proper electromagnetic containment is required, as it appears to be able to manipulate the atomic bonds of any matter it comes into contact with."
+    "description": "The active and contained form of the Strange Alien Matter. Proper electromagnetic containment is required, as it appears to be able to manipulate the atomic bonds of any matter it comes into contact with.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 160
   },
   {
     "className": "desc-silica-c",
     "displayName": "Silica",
-    "description": "Derived from Raw Quartz. Commonly used to create glass structures, in advanced refinement processes, and for alternative production of electronics."
+    "description": "Derived from Raw Quartz. Commonly used to create glass structures, in advanced refinement processes, and for alternative production of electronics.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 20
   },
   {
     "className": "desc-singularitycell-c",
     "displayName": "Singularity Cell",
-    "description": "Used to break down space and time. Required to power Portals."
+    "description": "Used to break down space and time. Required to power Portals.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 114675
   },
   {
     "className": "desc-snow-c",
     "displayName": "FICSMAS Actual Snow",
-    "description": "This Actual Snow is made from several chemical elements and experiences 100% like naturally occuring snow after extensive user testing."
+    "description": "This Actual Snow is made from several chemical elements and experiences 100% like naturally occuring snow after extensive user testing.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 5
   },
   {
     "className": "desc-spaceelevatorpart-1-c",
     "displayName": "Smart Plating",
-    "description": "Project Part #1. Ship via the Space Elevator to complete phases of Project Assembly."
+    "description": "Project Part #1. Ship via the Space Elevator to complete phases of Project Assembly.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 520
   },
   {
     "className": "desc-spaceelevatorpart-10-c",
     "displayName": "Biochemical Sculptor",
-    "description": "Project Part #10. Ship via the Space Elevator to complete phases of Project Assembly. Years ahead of the competition, this top-of-the-line 3D printer is used for the production of synthetic biological resources."
+    "description": "Project Part #10. Ship via the Space Elevator to complete phases of Project Assembly. Years ahead of the competition, this top-of-the-line 3D printer is used for the production of synthetic biological resources.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 301778
   },
   {
     "className": "desc-spaceelevatorpart-11-c",
     "displayName": "Ballistic Warp Drive",
-    "description": "Project Part #11. Ship via the Space Elevator to complete phases of Project Assembly. A large amount of force is required for the Warp Drives to activate, so sticking them to rockets was the logical next step. Additionally, results improved immensely when the observers were further removed from the Warp Drives upon activation."
+    "description": "Project Part #11. Ship via the Space Elevator to complete phases of Project Assembly. A large amount of force is required for the Warp Drives to activate, so sticking them to rockets was the logical next step. Additionally, results improved immensely when the observers were further removed from the Warp Drives upon activation.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 2895334
   },
   {
     "className": "desc-spaceelevatorpart-12-c",
     "displayName": "AI Expansion Server",
-    "description": "Project Part #12. Ship via the Space Elevator to complete phases of Project Assembly. Power Usage: 0-2000 MW (1000 MW average). Growth is the metric by which we measure success."
+    "description": "Project Part #12. Ship via the Space Elevator to complete phases of Project Assembly. Power Usage: 0-2000 MW (1000 MW average). Growth is the metric by which we measure success.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 597652
   },
   {
     "className": "desc-spaceelevatorpart-2-c",
     "displayName": "Versatile Framework",
-    "description": "Project Part #2. Ship via the Space Elevator to complete phases of Project Assembly."
+    "description": "Project Part #2. Ship via the Space Elevator to complete phases of Project Assembly.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 1176
   },
   {
     "className": "desc-spaceelevatorpart-3-c",
     "displayName": "Automated Wiring",
-    "description": "Project Part #3. Ship via the Space Elevator to complete phases of Project Assembly."
+    "description": "Project Part #3. Ship via the Space Elevator to complete phases of Project Assembly.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 1440
   },
   {
     "className": "desc-spaceelevatorpart-4-c",
     "displayName": "Modular Engine",
-    "description": "Project Part #4. Ship via the Space Elevator to complete phases of Project Assembly."
+    "description": "Project Part #4. Ship via the Space Elevator to complete phases of Project Assembly.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 9960
   },
   {
     "className": "desc-spaceelevatorpart-5-c",
     "displayName": "Adaptive Control Unit",
-    "description": "Project Part #5. Ship via the Space Elevator to complete phases of Project Assembly."
+    "description": "Project Part #5. Ship via the Space Elevator to complete phases of Project Assembly.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 76368
   },
   {
     "className": "desc-spaceelevatorpart-6-c",
     "displayName": "Magnetic Field Generator",
-    "description": "Project Part #7. Ship via the Space Elevator to complete phases of Project Assembly. These modular generators use superconducting magnets and vast amounts of electricity to produce a powerful and easily expandable magnetic field."
+    "description": "Project Part #7. Ship via the Space Elevator to complete phases of Project Assembly. These modular generators use superconducting magnets and vast amounts of electricity to produce a powerful and easily expandable magnetic field.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 11000
   },
   {
     "className": "desc-spaceelevatorpart-7-c",
     "displayName": "Assembly Director System",
-    "description": "Project Part #6. Ship via the Space Elevator to complete phases of Project Assembly. This extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase."
+    "description": "Project Part #6. Ship via the Space Elevator to complete phases of Project Assembly. This extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 500176
   },
   {
     "className": "desc-spaceelevatorpart-8-c",
     "displayName": "Thermal Propulsion Rocket",
-    "description": "Project Part #8. Ship via the Space Elevator to complete phases of Project Assembly. Uses extreme heat to produce the high-pressure plasma required to get Project Assembly into motion."
+    "description": "Project Part #8. Ship via the Space Elevator to complete phases of Project Assembly. Uses extreme heat to produce the high-pressure plasma required to get Project Assembly into motion.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 728508
   },
   {
     "className": "desc-spaceelevatorpart-9-c",
     "displayName": "Nuclear Pasta",
-    "description": "Project Part #9. Ship via the Space Elevator to complete phases of Project Assembly. Power Usage: 500-1500 MW (1000 MW average). Nuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars."
+    "description": "Project Part #9. Ship via the Space Elevator to complete phases of Project Assembly. Power Usage: 500-1500 MW (1000 MW average). Nuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 538976
   },
   {
     "className": "desc-spitterparts-c",
     "displayName": "Spitter Remains",
-    "description": "The remains of a plasma-spitting alien creature. Used for MAM research."
+    "description": "The remains of a plasma-spitting alien creature. Used for MAM research.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-stator-c",
     "displayName": "Stator",
-    "description": "Used for crafting. The static parts of a motor."
+    "description": "Used for crafting. The static parts of a motor.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 240
   },
   {
     "className": "desc-steelingot-c",
     "displayName": "Steel Ingot",
-    "description": "Smelted from a combination of Iron Ore and Coal. Can be made into several parts used in building construction."
+    "description": "Smelted from a combination of Iron Ore and Coal. Can be made into several parts used in building construction.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 8
   },
   {
     "className": "desc-steelpipe-c",
     "displayName": "Steel Pipe",
-    "description": "Primarily used when constructing slightly more advanced buildings."
+    "description": "Primarily used when constructing slightly more advanced buildings.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 24
   },
   {
     "className": "desc-steelplate-c",
     "displayName": "Steel Beam",
-    "description": "Primarily used when constructing slightly more advanced buildings."
+    "description": "Primarily used when constructing slightly more advanced buildings.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 64
   },
   {
     "className": "desc-steelplatereinforced-c",
     "displayName": "Encased Industrial Beam",
-    "description": "Simultaneously utilizes the compressive strength of concrete and the tensile strength of steel. Mostly used as a stable base for constructing buildings."
+    "description": "Simultaneously utilizes the compressive strength of concrete and the tensile strength of steel. Mostly used as a stable base for constructing buildings.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 528
   },
   {
     "className": "desc-stingerparts-c",
     "displayName": "Stinger Remains",
-    "description": "The remains of whatever that creepy thing was. Used for MAM research."
+    "description": "The remains of whatever that creepy thing was. Used for MAM research.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-stone-c",
     "displayName": "Limestone",
-    "description": "Used for crafting. A basic resource primarily used for stable Foundations."
+    "description": "Used for crafting. A basic resource primarily used for stable Foundations.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 2
   },
   {
     "className": "desc-sulfur-c",
     "displayName": "Sulfur",
-    "description": "Primarily used to produce Black Powder."
+    "description": "Primarily used to produce Black Powder.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 11
   },
   {
     "className": "desc-sulfuricacid-c",
     "displayName": "Sulfuric Acid",
-    "description": "Produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production."
+    "description": "Produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 16
   },
   {
     "className": "desc-temporalprocessor-c",
     "displayName": "Neural-Quantum Processor",
-    "description": "The Neural-Quantum Processor utilizes a combination of neural network architecture and quantum computing techniques to achieve unprecedented performance. This technology has enabled some of FICSIT's biggest advancements in artificial intelligence and relativistic engineering."
+    "description": "The Neural-Quantum Processor utilizes a combination of neural network architecture and quantum computing techniques to achieve unprecedented performance. This technology has enabled some of FICSIT's biggest advancements in artificial intelligence and relativistic engineering.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 248034
   },
   {
     "className": "desc-timecrystal-c",
     "displayName": "Time Crystal",
-    "description": "Time Crystals are Diamonds that have been reconfigured on a sub-atomic level in the Converter to retain a time-periodic self-organizing structure. This allows them to be used in the development of quantum processing and storage technologies."
+    "description": "Time Crystals are Diamonds that have been reconfigured on a sub-atomic level in the Converter to retain a time-periodic self-organizing structure. This allows them to be used in the development of quantum processing and storage technologies.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 960
   },
   {
     "className": "desc-turbofuel-c",
     "displayName": "Packaged Turbofuel",
-    "description": "Turbofuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack."
+    "description": "Turbofuel, packaged for alternative transport. Can be used as fuel for vehicles and the Jetpack.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 570
   },
   {
     "className": "desc-uraniumcell-c",
     "displayName": "Encased Uranium Cell",
-    "description": "Used to produce Uranium Fuel Rods for Nuclear Power production. Made from Uranium Ore. Caution: Mildly Radioactive."
+    "description": "Used to produce Uranium Fuel Rods for Nuclear Power production. Made from Uranium Ore. Caution: Mildly Radioactive.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 147
   },
   {
     "className": "desc-wat2-c",
     "displayName": "Mercer Sphere",
-    "description": "A weird alien phenomenon. While the sphere appears liquid, it behaves like a solid and does not have any detectable mass. It seems to somehow interact with and have awareness of its environment."
+    "description": "A weird alien phenomenon. While the sphere appears liquid, it behaves like a solid and does not have any detectable mass. It seems to somehow interact with and have awareness of its environment.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 0
   },
   {
     "className": "desc-water-c",
     "displayName": "Water",
-    "description": "It's water."
+    "description": "It's water.",
+    "stackSize": "SS_FLUID",
+    "sinkPoints": 5
   },
   {
     "className": "desc-wire-c",
     "displayName": "Wire",
-    "description": "Used for crafting. One of the most basic parts."
+    "description": "Used for crafting. One of the most basic parts.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 6
   },
   {
     "className": "desc-wood-c",
     "displayName": "Wood",
-    "description": "Primarily used as fuel. Biomass Burners and vehicles can use Wood for power."
+    "description": "Primarily used as fuel. Biomass Burners and vehicles can use Wood for power.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 30
   },
   {
     "className": "desc-xmasball1-c",
     "displayName": "Red FICSMAS Ornament",
-    "description": "An ornament for making FICSMAS Decorations. An acceptable red."
+    "description": "An ornament for making FICSMAS Decorations. An acceptable red.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 2
   },
   {
     "className": "desc-xmasball2-c",
     "displayName": "Blue FICSMAS Ornament",
-    "description": "An ornament for making FICSMAS Decorations. A mildly pleasing blue."
+    "description": "An ornament for making FICSMAS Decorations. A mildly pleasing blue.",
+    "stackSize": "SS_BIG",
+    "sinkPoints": 1
   },
   {
     "className": "desc-xmasball3-c",
     "displayName": "Copper FICSMAS Ornament",
-    "description": "An ornament for making FICSMAS Decorations. A slightly dignified copper."
+    "description": "An ornament for making FICSMAS Decorations. A slightly dignified copper.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 32
   },
   {
     "className": "desc-xmasball4-c",
     "displayName": "Iron FICSMAS Ornament",
-    "description": "An ornament for making FICSMAS Decorations. An okay iron."
+    "description": "An ornament for making FICSMAS Decorations. An okay iron.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 18
   },
   {
     "className": "desc-xmasballcluster-c",
     "displayName": "FICSMAS Ornament Bundle",
-    "description": "A collection of FICSMAS ornaments and also an eyesore."
+    "description": "A collection of FICSMAS ornaments and also an eyesore.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 100
   },
   {
     "className": "desc-xmasbow-c",
     "displayName": "FICSMAS Bow",
-    "description": "A fancy bow. Not for wearing, eating, admiring, Lizard Doggos, humans, aliens, or anything not related to FICSMAS factory production."
+    "description": "A fancy bow. Not for wearing, eating, admiring, Lizard Doggos, humans, aliens, or anything not related to FICSMAS factory production.",
+    "stackSize": "SS_MEDIUM",
+    "sinkPoints": 4
   },
   {
     "className": "desc-xmasbranch-c",
     "displayName": "FICSMAS Tree Branch",
-    "description": "This FICSMAS Tree Branch is very different from regular tree branches: it's used to produce parts and buildings during the FICSMAS event, rather than for combustion."
+    "description": "This FICSMAS Tree Branch is very different from regular tree branches: it's used to produce parts and buildings during the FICSMAS event, rather than for combustion.",
+    "stackSize": "SS_HUGE",
+    "sinkPoints": 2
   },
   {
     "className": "desc-xmasstar-c",
     "displayName": "FICSMAS Wonder Star",
-    "description": "A symbol of appreciation for all the hard work FICSIT has done for its employees. It seems to have an aura of gratitude. Seeing this also means the seasonal event is nearly done, and we can finally get back to Saving The Day."
+    "description": "A symbol of appreciation for all the hard work FICSIT has done for its employees. It seems to have an aura of gratitude. Seeing this also means the seasonal event is nearly done, and we can finally get back to Saving The Day.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 6540
   },
   {
     "className": "desc-xmaswreath-c",
     "displayName": "FICSMAS Wreath",
-    "description": "FICSIT's newest holiday innovation: decorations that can be turned into decorations! Efficiency and waste-conscious design at its best."
+    "description": "FICSIT's newest holiday innovation: decorations that can be turned into decorations! Efficiency and waste-conscious design at its best.",
+    "stackSize": "SS_SMALL",
+    "sinkPoints": 630
   }
 ]
