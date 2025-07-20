@@ -76,7 +76,7 @@ export class RecipesService {
     this.http.get<GroupedRecipes>(this.resourcesDataSource).subscribe({
       next: (groupedRecipes) => this.processGroupedRecipes(groupedRecipes),
       error: (err) => {
-        console.error('Failed to load resources:', err);
+        console.error('Failed to load recipes:', err);
         this.error.set(err);
         this.isLoading.set(false);
       },
