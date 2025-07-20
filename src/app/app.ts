@@ -1,6 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import {
+  RouterOutlet,
+  RouterLink,
+  RouterLinkActive,
+  Router,
+} from '@angular/router';
 
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,7 +18,13 @@ import { RecipesService } from './services/recipes.service';
 @Component({
   selector: 'scs-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, NgbDropdownModule],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    CommonModule,
+    NgbDropdownModule,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
