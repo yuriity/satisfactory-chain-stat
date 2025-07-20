@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductionRecord } from '../../../models/location';
+import { getSmallIconUrl } from '../../../models/resource';
 
 @Component({
   selector: 'scs-prodaction-statistics',
@@ -50,4 +51,9 @@ export class ProdactionStatisticsComponent {
   protected isShortage = computed(
     () => this.productionRecord().consumption > this.productionRecord().amount
   );
+
+  // Helper method to get resource icon URL
+  protected getResourceIconUrl() {
+    return getSmallIconUrl(this.productionRecord().resource);
+  }
 }

@@ -1,41 +1,59 @@
 import { Resource } from '../models/resource';
 import { Location } from '../models/location';
 
-export const RawQuartzResource = new Resource(
-  'desc-rawquartz-c',
-  'Raw Quartz',
-  'Can be processed into Quartz Crystals and Silica, which both offer a variety of applications.'
-);
+export const RawQuartzResource: Resource = {
+  className: 'desc-rawquartz-c',
+  displayName: 'Raw Quartz',
+  description:
+    'Can be processed into Quartz Crystals and Silica, which both offer a variety of applications.',
+  stackSize: 'SS_MEDIUM',
+  sinkPoints: 15,
+};
 
-export const LimestoneResource = new Resource(
-  'desc-stone-c',
-  'Limestone',
-  'Used for crafting. A basic resource primarily used for stable Foundations.'
-);
+export const LimestoneResource: Resource = {
+  className: 'desc-stone-c',
+  displayName: 'Limestone',
+  description:
+    'Used for crafting. A basic resource primarily used for stable Foundations.',
+  stackSize: 'SS_MEDIUM',
+  sinkPoints: 2,
+};
 
-export const SilicaResource = new Resource(
-  'desc-silica-c',
-  'Silica',
-  'Derived from Raw Quartz, Silica is a key component in electronics and construction materials.'
-);
+export const SilicaResource: Resource = {
+  className: 'desc-silica-c',
+  displayName: 'Silica',
+  description:
+    'Derived from Raw Quartz, Silica is a key component in electronics and construction materials.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 20,
+};
 
-export const CrudeOilResource = new Resource(
-  'desc-liquidoil-c',
-  'Crude Oil',
-  'Refined into all kinds of Oil-based resources, like Fuel and Plastic.'
-);
+export const CrudeOilResource: Resource = {
+  className: 'desc-liquidoil-c',
+  displayName: 'Crude Oil',
+  description:
+    'Refined into all kinds of Oil-based resources, like Fuel and Plastic.',
+  stackSize: 'SS_FLUID',
+  sinkPoints: 30,
+};
 
-export const PlasticResource = new Resource(
-  'desc-plastic-c',
-  'Plastic',
-  'Versatile and easy to manufacture, Plastic is used in a wide range of products from packaging to electronics.'
-);
+export const PlasticResource: Resource = {
+  className: 'desc-plastic-c',
+  displayName: 'Plastic',
+  description:
+    'Versatile and easy to manufacture, Plastic is used in a wide range of products from packaging to electronics.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 75,
+};
 
-export const CircuitBoardResource = new Resource(
-  'desc-circuitboard-c',
-  'Circuit Board',
-  'Advanced electronics component used in various devices, essential for modern technology.'
-);
+export const CircuitBoardResource: Resource = {
+  className: 'desc-circuitboard-c',
+  displayName: 'Circuit Board',
+  description:
+    'Advanced electronics component used in various devices, essential for modern technology.',
+  stackSize: 'SS_BIG',
+  sinkPoints: 696,
+};
 
 export const LOCATIONS: Location[] = [
   {

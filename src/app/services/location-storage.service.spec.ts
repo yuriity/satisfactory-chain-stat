@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { LocationStorageService, ExportData } from './location-storage.service';
 import { Location } from '../models/location';
+import { getSmallIconUrl, getLargeIconUrl } from '../models/resource';
 
 describe('LocationStorageService', () => {
   let service: LocationStorageService;
@@ -257,14 +258,14 @@ describe('LocationStorageService', () => {
       expect(result[0].consumption).toBeDefined();
       expect(result[0].consumption!.length).toBe(1);
       expect(result[0].consumption![0].resource.className).toBe('desc-test-c');
-      expect(result[0].consumption![0].resource.getSmallIconUrl()).toContain(
+      expect(getSmallIconUrl(result[0].consumption![0].resource)).toContain(
         'desc-test-c'
       );
 
       expect(result[0].production).toBeDefined();
       expect(result[0].production!.length).toBe(1);
       expect(result[0].production![0].resource.className).toBe('desc-output-c');
-      expect(result[0].production![0].resource.getLargeIconUrl()).toContain(
+      expect(getLargeIconUrl(result[0].production![0].resource)).toContain(
         'desc-output-c'
       );
     });
