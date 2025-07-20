@@ -33,12 +33,16 @@ describe('ResourcesService', () => {
       className: 'Resource_Copper',
       displayName: 'Copper',
       description: 'Copper ore',
-    } as Resource,
+      stackSize: 'Small',
+      sinkPoints: 10,
+    },
     {
       className: 'Resource_Iron',
       displayName: 'Iron',
       description: 'Iron ore',
-    } as Resource,
+      stackSize: 'Large',
+      sinkPoints: 20,
+    },
   ];
 
   beforeEach(() => {
