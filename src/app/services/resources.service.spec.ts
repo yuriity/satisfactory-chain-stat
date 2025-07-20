@@ -64,13 +64,13 @@ describe('ResourcesService', () => {
 
   it('should be created', () => {
     // Service makes HTTP request on initialization, so we need to handle it
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     expect(service).toBeTruthy();
   });
 
   it('should load resources on init (success)', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     expect(req.request.method).toBe('GET');
     req.flush(mockResourcesRaw);
     expect(service.resources())
@@ -85,7 +85,7 @@ describe('ResourcesService', () => {
   });
 
   it('should set error signal on load failure', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.error(new ProgressEvent('Network error'));
     expect(service.resources())
       .withContext('Resources signal should be empty on error')
@@ -99,7 +99,7 @@ describe('ResourcesService', () => {
   });
 
   it('getResourceByClassName should return correct resource', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     const found = service.getResourceByClassName('Resource_Copper');
     expect(found)
@@ -108,7 +108,7 @@ describe('ResourcesService', () => {
   });
 
   it('getResourceByClassName should return undefined for missing className', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     const found = service.getResourceByClassName('Resource_Gold');
     expect(found)
@@ -117,7 +117,7 @@ describe('ResourcesService', () => {
   });
 
   it('findResourcesByName should return matching resources (case-insensitive, partial)', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     const results = service.findResourcesByName('cop');
     expect(results)
@@ -126,7 +126,7 @@ describe('ResourcesService', () => {
   });
 
   it('findResourcesByName should return empty array for empty or no match', () => {
-    const req = httpMock.expectOne('/data/en-US_resources.json');
+    const req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     expect(service.findResourcesByName(''))
       .withContext('Should return [] for empty string')
@@ -137,10 +137,10 @@ describe('ResourcesService', () => {
   });
 
   it('reloadResources should trigger a new HTTP request', () => {
-    let req = httpMock.expectOne('/data/en-US_resources.json');
+    let req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     service.reloadResources();
-    req = httpMock.expectOne('/data/en-US_resources.json');
+    req = httpMock.expectOne('data/en-US_resources.json');
     req.flush(mockResourcesRaw);
     expect(service.resources())
       .withContext('Resources should be reloaded')
