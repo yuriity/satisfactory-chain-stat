@@ -28,18 +28,9 @@
 </header>
 
 <main role="main" class="container-fluid mt-4 mb-4">
-  <scs-board></scs-board>
+  <router-outlet></router-outlet>
 </main>
 
-<!-- Floating Action Button -->
-<button
-  class="btn btn-success rounded-circle shadow position-fixed fab"
-  (click)="createNewLocation()"
-  title="Create location"
-  aria-label="Create location"
->
-  <i class="bi bi-plus-lg fs-4"></i>
-</button>
 
 <footer class="footer mt-auto py-3 bg-light">
   <div class="container text-center">

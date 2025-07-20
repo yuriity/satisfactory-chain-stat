@@ -50,6 +50,10 @@ export class BoardComponent implements AfterViewInit {
     });
   }
 
+  protected createNewLocation(): void {
+    this.locationsService.newLocation();
+  }
+
   ngAfterViewInit(): void {
     this.jsPlumbInstance = newInstance({
       container: this.board.nativeElement,
