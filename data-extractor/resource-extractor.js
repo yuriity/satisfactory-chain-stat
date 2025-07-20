@@ -26,6 +26,9 @@ try {
     // and would only be hit if the file was misidentified and somehow partially readable.
     // A more robust solution would be to detect encoding first.
     // For now, focusing on utf16le as the prime suspect.
+    console.warn(
+      "Warning: Detected potential UTF-8 BOM, but proceeding with utf16le parsing."
+    );
   }
 
   const jsonData = JSON.parse(rawData);
@@ -35,6 +38,7 @@ try {
   // Iterate through the top-level array
   for (const topLevelItem of jsonData) {
     if (topLevelItem && Array.isArray(topLevelItem.Classes)) {
+      // console.log(topLevelItem.NativeClass);
       if (
         typeof topLevelItem.NativeClass === "string" &&
         (topLevelItem.NativeClass.startsWith(
@@ -44,7 +48,6 @@ try {
             "/Script/CoreUObject.Class'/Script/FactoryGame.FGResource"
           ))
       ) {
-        // "/Script/CoreUObject.Class'/Script/FactoryGame.FGItemDescriptor'"
         for (const classItem of topLevelItem.Classes) {
           if (classItem) {
             const resource = {
@@ -57,6 +60,10 @@ try {
                     .replace(/\s+/g, " ")
                     .trim()
                 : "",
+              stackSize: classItem.mStackSize,
+              sinkPoints: classItem.mResourceSinkPoints
+                ? Number(classItem.mResourceSinkPoints)
+                : undefined,
             };
             if (
               resource.className &&

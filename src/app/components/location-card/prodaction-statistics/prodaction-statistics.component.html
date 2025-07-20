@@ -2,7 +2,7 @@
   <!-- Resource Icon (spans 2 rows) -->
   <div class="resource-icon">
     <img
-      [src]="productionRecord().resource.getSmallIconUrl()"
+      [src]="getResourceIconUrl()"
       [alt]="productionRecord().resource.displayName"
       class="img-fluid"
       loading="lazy"
