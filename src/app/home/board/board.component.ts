@@ -8,11 +8,11 @@ import {
   ChangeDetectionStrategy,
 } from '@angular/core';
 import { BrowserJsPlumbInstance, newInstance } from '@jsplumb/browser-ui';
-import { LocationsService } from '../../services/locations.service';
-import { Location } from '../../models/location';
-import { debounce } from '../../utils/debounce';
-import { ScsDraggableDirective } from '../../directives/scs-draggable.directive';
+import { Location } from '../../shared/models/location';
+import { ScsDraggableDirective } from './scs-draggable.directive';
 import { LocationCardComponent } from '../location-card/location-card.component';
+import { LocationsService } from '../../shared/services/locations.service';
+import { debounce } from '../../shared/utils/debounce';
 
 @Component({
   selector: 'scs-board',

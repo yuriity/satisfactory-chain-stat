@@ -5,10 +5,10 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { BrowserJsPlumbInstance } from '@jsplumb/browser-ui';
 
 import { BoardComponent } from './board.component';
-import { LocationsService } from '../../services/locations.service';
-import { Location } from '../../models/location';
-import { ScsDraggableDirective } from '../../directives/scs-draggable.directive';
+import { Location } from '../../shared/models/location';
+import { ScsDraggableDirective } from './scs-draggable.directive';
 import { LocationCardComponent } from '../location-card/location-card.component';
+import { LocationsService } from '../../shared/services/locations.service';
 
 // Mock location data for testing
 const mockLocations: Location[] = [

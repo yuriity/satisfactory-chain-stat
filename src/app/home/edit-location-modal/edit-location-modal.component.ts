@@ -11,10 +11,11 @@ import {
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { ResourceSelectorComponent } from '../resource-selector/resource-selector.component';
-import { LocationsService } from '../../services/locations.service';
-import { Location } from '../../models/location';
-import { Resource } from '../../models/resource';
+import { Location } from '../../shared/models/location';
+import { Resource } from '../../shared/models/resource';
+import { LocationsService } from '../../shared/services/locations.service';
 
 @Component({
   selector: 'scs-edit-location-modal',

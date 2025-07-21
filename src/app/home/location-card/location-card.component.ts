@@ -1,9 +1,9 @@
 import { Component, input, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Resource, getSmallIconUrl } from '../../models/resource';
-import { Location } from '../../models/location';
-import { LocationsService } from '../../services/locations.service';
+import { Resource, getSmallIconUrl } from '../../shared/models/resource';
+import { Location } from '../../shared/models/location';
 import { ProdactionStatisticsComponent } from './prodaction-statistics/prodaction-statistics.component';
+import { LocationsService } from '../../shared/services/locations.service';
 
 @Component({
   selector: 'scs-location-card',

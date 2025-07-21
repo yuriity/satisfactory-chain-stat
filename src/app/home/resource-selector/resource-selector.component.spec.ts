@@ -4,8 +4,8 @@ import { By } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ResourceSelectorComponent } from './resource-selector.component';
-import { ResourcesService } from '../../services/resources.service';
-import { Resource } from '../../models/resource';
+import { Resource } from '../../shared/models/resource';
+import { ResourcesService } from '../../shared/services/resources.service';
 
 describe('ResourceSelectorComponent', () => {
   let component: ResourceSelectorComponent;

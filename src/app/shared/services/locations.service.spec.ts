@@ -5,7 +5,7 @@ import { LocationsService } from './locations.service';
 import { ModalService } from './modal.service';
 import { LocationStorageService } from './location-storage.service';
 import { LOCATIONS, PlasticResource, SilicaResource } from './mock-locations';
-import { Location } from '../models/location';
+import { Location } from '../../shared/models/location';
 
 describe('LocationsService', () => {
   let service: LocationsService;

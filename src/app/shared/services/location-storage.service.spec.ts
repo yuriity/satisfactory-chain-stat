@@ -1,8 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
+
 import { LocationStorageService, ExportData } from './location-storage.service';
-import { Location } from '../models/location';
-import { getSmallIconUrl, getLargeIconUrl } from '../models/resource';
+import { Location } from '../../shared/models/location';
+import { getSmallIconUrl, getLargeIconUrl } from '../../shared/models/resource';
 
 describe('LocationStorageService', () => {
   let service: LocationStorageService;

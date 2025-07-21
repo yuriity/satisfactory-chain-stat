@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { ModalService } from './modal.service';
-import { EditLocationModalComponent } from '../components/edit-location-modal/edit-location-modal.component';
 import { Location } from '../models/location';
+import { ModalService } from './modal.service';
+import { EditLocationModalComponent } from '../../home/edit-location-modal/edit-location-modal.component';
 
 describe('ModalService', () => {
   let service: ModalService;

@@ -3,9 +3,9 @@ import { By } from '@angular/platform-browser';
 import { provideZonelessChangeDetection } from '@angular/core';
 
 import { LocationCardComponent } from './location-card.component';
-import { Resource, getSmallIconUrl } from '../../models/resource';
-import { Location } from '../../models/location';
-import { LocationsService } from '../../services/locations.service';
+import { Resource, getSmallIconUrl } from '../../shared/models/resource';
+import { Location } from '../../shared/models/location';
+import { LocationsService } from '../../shared/services/locations.service';
 
 describe('LocationCardComponent', () => {
   let component: LocationCardComponent;

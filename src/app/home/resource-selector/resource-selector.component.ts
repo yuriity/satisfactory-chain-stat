@@ -13,9 +13,9 @@ import {
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbDropdown, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { ResourcesService } from '../../services/resources.service';
-import { Resource, getSmallIconUrl } from '../../models/resource';
-import { debounce } from '../../utils/debounce';
+import { Resource, getSmallIconUrl } from '../../shared/models/resource';
+import { ResourcesService } from '../../shared/services/resources.service';
+import { debounce } from '../../shared/utils/debounce';
 
 @Component({
   selector: 'scs-resource-selector',

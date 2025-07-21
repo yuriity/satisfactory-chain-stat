@@ -1,8 +1,8 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Recipe, RecipeGroup } from '../models/recipe';
+import { Recipe, RecipeGroup } from '../shared/models/recipe';
+import { ResourcesService } from '../shared/services/resources.service';
 import { RecipeGroupScaffold } from './recipe-group-scaffold';
-import { ResourcesService } from './resources.service';
 
 const ProducedInPriority: { [key: string]: number } = {
   'desc-smeltermk1-c': 1,

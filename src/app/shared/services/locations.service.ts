@@ -1,9 +1,9 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { Location } from '../models/location';
+import { Location } from '../../shared/models/location';
 import { LOCATIONS } from './mock-locations';
-import { calculateConsumption } from '../utils/calculate-consupmtion';
-import { ModalService } from './modal.service';
 import { LocationStorageService } from './location-storage.service';
+import { ModalService } from './modal.service';
+import { calculateConsumption } from '../utils/calculate-consupmtion';
 
 @Injectable({
   providedIn: 'root',

@@ -5,8 +5,8 @@ import {
   ChangeDetectionStrategy,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductionRecord } from '../../../models/location';
-import { getSmallIconUrl } from '../../../models/resource';
+import { ProductionRecord } from '../../../shared/models/location';
+import { getSmallIconUrl } from '../../../shared/models/resource';
 
 @Component({
   selector: 'scs-prodaction-statistics',

@@ -1,5 +1,5 @@
-import { Resource } from '../models/resource';
-import { Location } from '../models/location';
+import { Resource } from '../../shared/models/resource';
+import { Location } from '../../shared/models/location';
 
 export const RawQuartzResource: Resource = {
   className: 'desc-rawquartz-c',

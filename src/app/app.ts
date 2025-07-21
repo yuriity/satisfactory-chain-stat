@@ -9,11 +9,10 @@ import {
 
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { LocationsService } from './services/locations.service';
-import { Resource } from './models/resource';
-import { ResourcesService } from './services/resources.service';
-import { BoardComponent } from './components/board/board.component';
-import { RecipesService } from './services/recipes.service';
+import { Resource } from './shared/models/resource';
+import { RecipesService } from './recipes/recipes.service';
+import { LocationsService } from './shared/services/locations.service';
+import { ResourcesService } from './shared/services/resources.service';
 
 @Component({
   selector: 'scs-root',

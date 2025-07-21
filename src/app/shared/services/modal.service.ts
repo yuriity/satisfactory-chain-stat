@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { EditLocationModalComponent } from '../components/edit-location-modal/edit-location-modal.component';
 import { Location } from '../models/location';
+import { EditLocationModalComponent } from '../../home/edit-location-modal/edit-location-modal.component';
 
 @Injectable({
   providedIn: 'root',

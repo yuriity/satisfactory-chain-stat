@@ -3,8 +3,8 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditLocationModalComponent } from './edit-location-modal.component';
-import { LocationsService } from '../../services/locations.service';
-import { Location } from '../../models/location';
+import { Location } from '../../shared/models/location';
+import { LocationsService } from '../../shared/services/locations.service';
 
 describe('EditLocationModalComponent', () => {
   let component: EditLocationModalComponent;

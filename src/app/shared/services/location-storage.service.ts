@@ -3,8 +3,8 @@ import {
   Location,
   ConsumptionRecord,
   ProductionRecord,
-} from '../models/location';
-import { Resource } from '../models/resource';
+} from '../../shared/models/location';
+import { Resource } from '../../shared/models/resource';
 import { calculateConsumption } from '../utils/calculate-consupmtion';
 
 export interface ExportData {

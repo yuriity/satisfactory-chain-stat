@@ -6,7 +6,7 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { ResourcesService } from './resources.service';
-import { Resource } from '../models/resource';
+import { Resource } from '../../shared/models/resource';
 
 describe('ResourcesService', () => {
   let service: ResourcesService;

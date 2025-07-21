@@ -2,8 +2,8 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ProdactionStatisticsComponent } from './prodaction-statistics.component';
-import { Resource } from '../../../models/resource';
-import { ProductionRecord } from '../../../models/location';
+import { Resource } from '../../../shared/models/resource';
+import { ProductionRecord } from '../../../shared/models/location';
 
 describe('ProdactionStatisticsComponent', () => {
   let component: ProdactionStatisticsComponent;

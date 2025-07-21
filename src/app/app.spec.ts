@@ -2,9 +2,9 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { App } from './app';
-import { LocationsService } from './services/locations.service';
-import { ResourcesService } from './services/resources.service';
-import { Location } from './models/location';
+import { Location } from './shared/models/location';
+import { LocationsService } from './shared/services/locations.service';
+import { ResourcesService } from './shared/services/resources.service';
 
 xdescribe('App', () => {
   let component: App;

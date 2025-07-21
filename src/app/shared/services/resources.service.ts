@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Resource } from '../models/resource';
+import { Resource } from '../../shared/models/resource';
 
 @Injectable({
   providedIn: 'root',
@@ -64,9 +64,7 @@ export class ResourcesService {
 
     this.http.get<any[]>(this.resourcesDataSource).subscribe({
       next: (data) => {
-        const resources = data.map(
-          (item) => this.mapToResources(item)
-        );
+        const resources = data.map((item) => this.mapToResources(item));
         this.resourcesSignal.set(resources);
         this.isLoading.set(false);
       },
@@ -81,11 +79,11 @@ export class ResourcesService {
   private mapToResources(dataItem: any): Resource {
     try {
       return {
-      className: dataItem.className,
-      displayName: dataItem.displayName,
-      description: dataItem.description,
-      stackSize: dataItem.stackSize,
-      sinkPoints: dataItem.sinkPoints,
+        className: dataItem.className,
+        displayName: dataItem.displayName,
+        description: dataItem.description,
+        stackSize: dataItem.stackSize,
+        sinkPoints: dataItem.sinkPoints,
       };
     } catch (error) {
       console.warn('Failed to map resource data item:', dataItem, error);
